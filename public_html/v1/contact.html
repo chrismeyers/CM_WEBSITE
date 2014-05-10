@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Chris Meyers: Contact</title>
+        <link rel="shortcut icon" href="images/icon.ico">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="Author" content="Chris Meyers" />
+        <link rel="stylesheet" href="csselements.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        
+    </head>
+    
+    <body>
+        <p>
+        <p id="banner">
+            <a href="index.html">
+                <img src="images/titlepic.png" onmouseover="this.src='images/titlepic_hover.png'" onmouseout="this.src='images/titlepic.png'" alt="banner">
+            </a>
+        </p>
+        
+        <?php include 'email_form.php'; ?>
+        
+        <!--
+        <div id="wrap">
+            <div id="main">
+                <div id="bio" style="color:#FFFAFA">
+                    Form under construction.  Feel free to contact me at my email:
+                    <a style="color:#FFFAFA" href="mailto:cm.02.93@gmail.com">
+                        cm.02.93@gmail.com
+                    </a>
+                </div>
+            </div>
+        </div>
+        -->
+        
+        <br>
+        <div id="wrap">
+            <div id="main">
+                <div id="text" style="color:#FFFAFA">
+                    <p>
+                        Questions?&nbsp;&nbsp;Comments?&nbsp;&nbsp;Concerns?&nbsp;&nbsp;Send me a message!
+                    </p>
+                    <p>&nbsp;</p>
+                    
+                    <form action="email_form.php?do=send" method="POST">                        
+                        <table style="width:500px;">
+                            <tr><td style="text-align: left">Name: </td>
+                                <td><input type="text" name="name" size="30"></td>
+                            </tr>
+                            
+                            <tr><td style="text-align: left">Primary Email: </td>
+                                <td><input type="text" name="fromemail" size="40"></td>
+                            </tr>
+                        </table>
+
+                        <p>
+                        <table style="width:500px;">
+                            <tr>
+                                <td>
+                                    Comments:<br />
+                                    <TEXTAREA class="field span6" name="usercomments" ROWS="6" COLS="60"></TEXTAREA>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <button class="btn btn-large btn-success" type="submit">Send Now</button>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div id="footer">
+                <div id="infoPanel" style="color:#FFFAFA">
+                    <a href="https://www.facebook.com/meyers42" target="_blank"><img src="images/fb.ico" alt="Facebook"></a>
+                    &bull;
+                    <a href="http://www.linkedin.com/pub/chris-meyers/61/7a9/b09" target="_blank"><img src="images/li.ico" alt="LinkedIn"></a>
+                    &bull;
+                    <a href="builds.html" class="fancytxt">Builds</a>
+                    &bull;
+                    <a href="contact.html" class="fancytxt">Contact</a>
+                    &bull;
+                    <a href='downloads/Resume_ChrisMeyers.pdf' download="ChrisMeyersResume" class="fancytxt">
+                        Download Résumé
+                    </a>
+                    <p></p>
+                    <p>Designed and Developed by Chris Meyers, 2013-2014</p>
+                </div>
+        </div>
+
+    </body>
+</html>

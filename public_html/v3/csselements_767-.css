@@ -1,0 +1,299 @@
+/* 
+    Document   : csselements_699-
+    Created on : Jan 28, 2014, 10:33:50 AM
+    Author     : Chris Meyers
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+@media screen and (max-width: 767px){
+    html{
+        position: relative;
+        min-height: 100%;
+    }
+    
+    body { 
+        /*background-image: url(images/Grey-website-background.png);*/
+        background: url(images/colorado.jpg) no-repeat center center fixed;
+        background-attachment: fixed;
+        background-position: center;
+        margin: 0 0 60px; /*3rd parameter must = #footer height*/
+        background-size: cover;
+    }
+
+    .errors{
+        font-weight: bold;
+        color: red;
+        text-align: center;
+    }
+    
+    img {
+        height: auto;
+        max-width: 100%;
+    }
+    
+    p.message{
+        width:auto;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    td.force-col-right, td.force-col-left{
+        display:block;
+        width: auto;
+    }
+
+    td.force-col-specs, td.force-col-specs-widepic{
+        display:block;
+        width: auto;
+        padding-top: 10px;
+        text-align: center;
+    }
+    
+    span.whichComp{
+        display:block;
+        text-align: center;
+    }
+    
+    table.computers{
+        width:auto;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+
+    table.inputs{
+        width:auto;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+    
+    table.comments{
+        width:auto;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+    input{
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        width: auto;
+        height:30px;
+        font-family: Verdana, Geneva, sans-serif;
+    }
+    
+    textarea{
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        height: 100px;
+        font-family: Verdana, Geneva, sans-serif;
+    }
+
+    a.fancytxt{
+        /*color: #a9302a;*/
+        /*color: #CC2900;*/
+        color: #FFFFFF;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+    a.fancytxt:hover{
+        color:#5bb75b;
+    }
+
+
+    #navMenu{
+        float: left;
+        margin-left: 330px;
+        border: 5px solid gray;
+        background-color: rgb(33,40,55);
+        height: 150px;
+        width: 200px;
+    }
+
+    #navButtonShow{
+        position: absolute;
+        left: 820px;
+        top: 10px;
+        float: right;
+        margin-left: 540px;
+        background-color: rgb(33,40,55);
+        height: 15px;
+        width: 20px;
+    }
+
+    #banner{
+        padding: 10px;
+        color: #cccccc;
+        text-shadow: 2px 2px #000000;
+        margin-top: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #main {
+        color:#FFFAFA;
+        width: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+        background-color: rgba(33,40,55,0.75);
+        padding: 5px;
+        margin-bottom: 150px; /* Add more spacing between footer and main */
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: small;
+    }  
+
+    #footer {
+        color:#FFFAFA;
+        position: absolute;
+        bottom: 0px;
+        height: 70px; /* make bigger to add more lines in footer */
+        margin-left: 10px;
+        margin-right: 10px;
+        left:0;
+        right:0;
+        text-align: center;
+        background-color: rgba(33,40,55,0.75);
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: small; 
+        padding-top:5px;
+        width:auto;
+    }
+    
+    /*About section, defaults to open*/
+    ul.tabs-ul { 
+        margin: 0; 
+        padding: 0; 
+    }
+    ul.tabs-ul li.FIRSTmoreinfo-li { 
+        margin: 0; 
+        padding: 0;
+        list-style: none; 
+    }
+    ul.tabs-ul li.FIRSTmoreinfo-li img.FIRSTmoreinfo-img {  
+        cursor: pointer;
+    }
+    /*Second Section (Builds) and Third Section (Contact), defaults to closed*/
+    ul.tabs-ul, ul.tabs-ul { 
+        margin: 0; 
+        padding: 0;
+    }
+    ul.tabs-ul li.SECmoreinfo-li, ul.tabs-ul li.THIRDmoreinfo-li { 
+        margin: 0; 
+        padding: 0;
+        list-style: none; 
+    }
+    ul.tabs-ul li.SECmoreinfo-li img, ul.tabs-ul li.THIRDmoreinfo-li img {  
+        cursor: pointer;
+    }
+    ul.tabs-ul li.SECmoreinfo-li div.SECmoreinfo-div, ul.tabs-ul li.THIRDmoreinfo-li div.THIRDmoreinfo-div { 
+        display: none; 
+    }
+
+
+    /*Used in builds section*/
+    ul.specs1-ul, ul.specs2-ul, ul.specs3-ul { 
+        margin: 0; 
+        padding: 0; 
+    }
+    ul.specs1-ul li.specs1-li, ul.specs2-ul li.specs2-li, ul.specs3-ul li.specs3-li { 
+        margin: 0; 
+        padding: 0;
+        list-style: none; 
+    }
+    ul.specs1-ul li.specs1-li a, ul.specs2-ul li.specs2-li a, ul.specs3-ul li.specs3-li a {  
+        cursor: pointer;
+    }
+    ul.specs1-ul li.specs1-li div.specs1-div, ul.specs2-ul li.specs2-li div.specs2-div, ul.specs3-ul li.specs3-li div.specs3-div  { 
+        display: none; 
+    }  
+    
+    /* This button was generated using CSSButtonGenerator.com */
+    .submit-button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #3d94f6), color-stop(1, #1e62d0) );
+	background:-moz-linear-gradient( center top, #3d94f6 5%, #1e62d0 100% );
+	/*filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6', endColorstr='#1e62d0');*/
+	background-color:#3d94f6;
+	-webkit-border-top-left-radius:6px;
+	-moz-border-radius-topleft:6px;
+	border-top-left-radius:6px;
+	-webkit-border-top-right-radius:6px;
+	-moz-border-radius-topright:6px;
+	border-top-right-radius:6px;
+	-webkit-border-bottom-right-radius:6px;
+	-moz-border-radius-bottomright:6px;
+	border-bottom-right-radius:6px;
+	-webkit-border-bottom-left-radius:6px;
+	-moz-border-radius-bottomleft:6px;
+	border-bottom-left-radius:6px;
+	text-indent:0;
+	border:1px solid #337fed;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:40px;
+	line-height:40px;
+	width:100px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #1570cd;
+    }
+    .submit-button:hover {
+            background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #1e62d0), color-stop(1, #3d94f6) );
+            background:-moz-linear-gradient( center top, #1e62d0 5%, #3d94f6 100% );
+            /*filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e62d0', endColorstr='#3d94f6');*/
+            background-color:#1e62d0;
+    }.submit-button:active {
+            position:relative;
+            top:1px;
+    }
+    
+    .inputbox-mod{
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: small;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        -moz-background-clip: padding;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        border: 1px solid #cccccc;
+    }
+    .inputbox-mod:focus{
+        outline: none;
+        border-color: #5bb75b;
+        box-shadow: 0 0 10px #5bb75b;
+    }
+    
+    .textarea-mod{
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: small;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        -moz-background-clip: padding;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        border: 1px solid #cccccc;
+    }
+    .textarea-mod:focus{
+        outline: none;
+        border-color: #5bb75b;
+        box-shadow: 0 0 10px #5bb75b;
+    }
+}
+

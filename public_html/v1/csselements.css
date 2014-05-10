@@ -1,0 +1,131 @@
+/* 
+    Document   : csselements
+    Created on : Oct 4, 2013, 7:09:07 PM
+    Author     : Chris_Meyers
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body { 
+    /*background-image: url(images/Grey-website-background.png);*/
+    background-image: url(images/colorado.jpg);
+    /*background-repeat:no-repeat;*/
+    background-attachment: fixed;
+    background-size:cover;
+    margin: 0;
+}
+
+#banner{
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+html, body {
+    height: 90%;
+}
+
+a.fancytxt{
+    color: #a9302a;
+    text-decoration:none;
+}
+
+a.fancytxt:hover{
+    color:#5bb75b;
+}
+
+
+#navMenu{
+    float: left;
+    margin-left: 330px;
+    border: 5px solid gray;
+    background-color: rgb(33,40,55);
+    height: 150px;
+    width: 200px;
+}
+
+#navButtonShow{
+    position: absolute;
+    left: 820px;
+    top: 10px;
+    float: right;
+    margin-left: 540px;
+    background-color: rgb(33,40,55);
+    height: 15px;
+    width: 20px;
+}
+
+#wrap {
+    min-height: 105%;
+}
+
+#main {
+    overflow:visible;
+    padding-bottom: 100px; /* needs to be same as footer height */
+}  
+
+#footer {
+    position: relative;
+    margin-top: -100px; /* negative value of footer height */
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    clear:both;
+    text-align: center;
+    padding-top:10px;
+} 
+
+#text{
+    width: 780px;
+    padding: 5px;
+    border: 5px solid gray;
+    background-color: rgb(33,40,55);
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: medium;
+}
+
+#infoPanel{
+    width: 780px;
+    padding: 5px;
+    border: 5px solid gray;
+    background-color: rgb(33,40,55);
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: small;
+}
+
+specs-ul { 
+    margin: 0; 
+    padding: 0; 
+}
+specs-ul specs-li { 
+    margin: 0; 
+    padding: 0;
+    list-style: none; 
+
+}
+specs-ul specs-li specs-a {  
+    cursor: pointer;
+}
+specs-ul specs-li specs-div { 
+    display: none; 
+}  
+        
+/*Formatting to be used with mobile devices*/
+#background {
+    width: 100%; 
+    height: 100%; 
+    position: fixed; 
+    left: 0px; 
+    top: 0px; 
+    z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+}
+
+.stretch {
+    width:100%;
+    height:100%;
+}
+

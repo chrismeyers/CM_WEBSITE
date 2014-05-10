@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Chris Meyers: Builds</title>
+        <link rel="shortcut icon" href="images/icon.ico">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="Author" content="Chris Meyers" />
+        <link rel="stylesheet" href="csselements.css">
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
+        <script>
+            $(function() {
+                $('#showSpecs specs-li specs-a').each(function() {
+                    $(this).click(function() {
+                        $(this).siblings('specs-div').slideToggle("slow");
+                    });
+                });
+            });
+        </script>
+    </head>
+    
+    <body>
+        <p id="banner">
+            <a href="index.html">
+                <img src="images/titlepic.png" onmouseover="this.src='images/titlepic_hover.png'" onmouseout="this.src='images/titlepic.png'" alt="banner">
+            </a>
+        </p>
+        
+        <div id="wrap">
+            <div id="main">
+                <div id="text" style="color:#FFFAFA">
+                    <table>
+                        <tr>
+                            <th style="width: 400px;text-align: left" >March 2012 - Built for my brother Matt.</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                        <tr>
+                            <td><a href="images/mattBuild.jpg"><img src="images/mattBuild.jpg" height="100" width="150" alt="matts_comp"></a></td>
+
+                            <td>
+                                <specs-ul id="showSpecs">
+                                    <specs-li>
+                                        <specs-a><a class="fancytxt">Specifications</a></specs-a>
+                                        <br />
+                                        <specs-div>
+                                            <u>Processor:</u> AMD 6-core FX-6100 &#64; 3.3GHz 
+                                            <br />
+                                            <u>Mobo:</u> Gigabyte 990FXA-UD3
+                                            <br />
+                                            <u>Memory:</u> 8 GB G.SKILL Ripjaws Series 1600MHz
+                                            <br />
+                                            <u>HDD:</u> WD5000AAKX 500GB &#64; 7200rpm  
+                                            <br />
+                                            <u>Video Card:</u> XFX Radeon 6870 1GB
+                                        </specs-div>
+                                    </specs-li>
+                                </specs-ul>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                    <p></p>
+                    <hr>
+                    
+                    <table>
+                        <tr>
+                            <th style="width: 400px;text-align: left" >February 2013 - Built for myself.</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                        <tr>
+                            <td><a href="images/myBuild.jpg"><img src="images/myBuild.jpg" height="150" width="115" alt="my_comp"></a></td> 
+                            
+                            <td>
+                                <specs-ul id="showSpecs">
+                                    <specs-li>
+                                        <specs-a><a class="fancytxt">Specifications</a></specs-a>
+                                        <br />
+                                        <specs-div>
+                                            <u>Processor:</u> Intel Core i7 3770k &#64; 4.2GHz
+                                            <br />
+                                            <u>Mobo:</u> Asus P8Z77-V LK 
+                                            <br />
+                                            <u>Memory:</u> 8 GB G.SKILL Ripjaws Series 1600MHz  
+                                            <br />
+                                            <u>HDD:</u> WD6400AAKS 640GB &#64; 7200rpm, ST31000524AS 1TB &#64; 7200rpm
+                                            <br />
+                                            <u>SSD:</u> Kingston V300 120GB
+                                            <br />
+                                            <u>Video Card:</u> EVGA GeForce GTX 670 FTW 2GB
+                                        </specs-div>
+                                    </specs-li>
+                                </specs-ul>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                    <p></p>
+                    <hr>
+                    
+                    <table>
+                        <tr>
+                            <th style="width: 400px;text-align: left" >September 2013 - Built for my Neighbor.</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                        <tr>
+                            <td><a href="images/markBuild.jpg"><img src="images/markBuild.jpg" height="150" width="115" alt="marks_comp"></a></td>
+                            
+                            <td>
+                                <specs-ul id="showSpecs">
+                                    <specs-li>
+                                        <specs-a><a class="fancytxt">Specifications</a></specs-a>
+                                        <br />
+                                        <specs-div>
+                                            <u>Processor:</u> Intel Core i7 4770k &#64; 3.5GHz
+                                            <br />
+                                            <u>Mobo:</u> MSI H87-G43
+                                            <br />
+                                            <u>Memory:</u> 16GB G.SKILL Ripjaws X Series 1600MHz  
+                                            <br />
+                                            <u>HDD:</u> ST1000DM003 1TB &#64; 7200rpm
+                                            <br />
+                                            <u>SSD:</u> Kingston HyperX 3K 120GB
+                                            <br />
+                                            <u>Video Card:</u> EVGA GeForce GTX 770 SuperClocked 2GB
+                                        </specs-div>
+                                    </specs-li>
+                                </specs-ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div id="footer">
+                <div id="infoPanel" style="color:#FFFAFA">
+                    <a href="https://www.facebook.com/meyers42" target="_blank"><img src="images/fb.ico" alt="Facebook"></a>
+                    &bull;
+                    <a href="http://www.linkedin.com/pub/chris-meyers/61/7a9/b09" target="_blank"><img src="images/li.ico" alt="LinkedIn"></a>
+                    &bull;
+                    <a href="builds.html" class="fancytxt">Builds</a>
+                    &bull;
+                    <a href="contact.html" class="fancytxt">Contact</a>
+                    &bull;
+                    <a href='downloads/Resume_ChrisMeyers.pdf' download="ChrisMeyersResume" class="fancytxt">
+                        Download Résumé
+                    </a>
+                    <p>Designed and Developed by Chris Meyers, 2013-2014</p>
+                </div>
+        </div>
+
+    </body>
+</html>

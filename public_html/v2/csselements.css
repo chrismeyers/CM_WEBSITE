@@ -1,0 +1,262 @@
+/* 
+    Document   : csselements
+    Created on : Oct 4, 2013, 7:09:07 PM
+    Author     : Chris_Meyers
+    Description:
+        Purpose of the stylesheet follows.
+*/
+@media screen and (min-width: 768px){
+    body { 
+        background-image: url(images/colorado.jpg);
+        /*background-repeat:no-repeat;*/
+        background-attachment: fixed;
+        background-size:cover;
+        margin: 0;
+    }
+    
+    .errors{
+        font-weight: bold;
+        color: red;
+        text-align: center;
+    }
+    
+    p.message{
+        width:auto;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+    /*Only adds padding in fullscreen mode*/
+    td.force-col-right{
+        padding-right: 10px;
+    }
+    td.force-col-left{
+        padding-left: 10px;
+    }
+    td.force-col-specs{
+        width:725px;
+    }
+    td.force-col-specs-widepic{
+        width:680px;
+    }
+    
+    table.inputs{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+    
+    table.comments{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+    
+    input{
+        width: 190px;
+        height:25px;
+        font-family: Verdana, Geneva, sans-serif;
+    }
+    
+    textarea{
+        width: 415px;
+        height: 100px;
+        font-family: Verdana, Geneva, sans-serif;
+    }
+
+    html, body {
+        height: 90%;
+    }
+
+    a.fancytxt{
+        /*color: #a9302a;*/
+        /*color: #CC2900;*/
+        color: #FFFFFF;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+    a.fancytxt:hover{
+        color:#5bb75b;
+    }
+
+    #banner{
+        width: 800px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    #wrap {
+        min-height: 105%;
+    }
+
+    #main {
+        overflow:visible;
+        padding-bottom: 100px; /* needs to be same as footer height */
+    }  
+
+    #footer {
+        position: relative;
+        margin-top: -100px; /* negative value of footer height */
+        height: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        clear:both;
+        text-align: center;
+        padding-top:10px;
+    } 
+
+    #text{
+        width: 780px;
+        padding: 5px;
+        /*border: 5px solid gray;*/
+        background-color: rgba(33,40,55,0.75);
+        margin-left: auto;
+        margin-right: auto;
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: medium;
+    }
+
+    #infoPanel{
+        width: 780px;
+        padding: 5px;
+        border: 5px solid gray;
+        background-color: rgb(33,40,55);
+        margin-left: auto;
+        margin-right: auto;
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: small;
+    }
+    
+    /*Used in info section*/
+    /*First section defaults to display: FIRSTmoreinfo-ul FIRSTmoreinfo-li FIRSTmoreinfo-div */
+    FIRSTmoreinfo-ul { 
+        margin: 0; 
+        padding: 0; 
+    }
+    FIRSTmoreinfo-ul FIRSTmoreinfo-li { 
+        margin: 0; 
+        padding: 0;
+        list-style: none; 
+    }
+    FIRSTmoreinfo-ul FIRSTmoreinfo-li FIRSTmoreinfo-img {  
+        cursor: pointer;
+    }
+    /*Second Section (Builds) and Third Section (Contact)*/
+    SECmoreinfo-ul, THIRDmoreinfo-ul { 
+        margin: 0; 
+        padding: 0; 
+    }
+    SECmoreinfo-ul SECmoreinfo-li, THIRDmoreinfo-ul THIRDmoreinfo-li { 
+        margin: 0; 
+        padding: 0;
+        list-style: none; 
+    }
+    SECmoreinfo-ul SECmoreinfo-li SECmoreinfo-img, THIRDmoreinfo-ul THIRDmoreinfo-li THIRDmoreinfo-img {  
+        cursor: pointer;
+    }
+    SECmoreinfo-ul SECmoreinfo-li SECmoreinfo-div, THIRDmoreinfo-ul THIRDmoreinfo-li THIRDmoreinfo-div { 
+        display: none; 
+    }
+
+    /*Used in builds section*/
+    specs1-ul, specs2-ul, specs3-ul { 
+        margin: 0; 
+        padding: 0; 
+    }
+    specs1-ul specs1-li, specs2-ul specs2-li, specs3-ul specs3-li { 
+        margin: 0; 
+        padding: 0;
+        list-style: none; 
+    }
+    specs1-ul specs1-li specs1-a, specs2-ul specs2-li specs2-a, specs3-ul specs3-li specs3-a {  
+        cursor: pointer;
+    }
+    specs1-ul specs1-li specs1-div, specs2-ul specs2-li specs2-div, specs3-ul specs3-li specs3-div  { 
+        display: none; 
+    }  
+    
+    /* This button was generated using CSSButtonGenerator.com */
+    .submit-button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #3d94f6), color-stop(1, #1e62d0) );
+	background:-moz-linear-gradient( center top, #3d94f6 5%, #1e62d0 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6', endColorstr='#1e62d0');
+	background-color:#3d94f6;
+	-webkit-border-top-left-radius:6px;
+	-moz-border-radius-topleft:6px;
+	border-top-left-radius:6px;
+	-webkit-border-top-right-radius:6px;
+	-moz-border-radius-topright:6px;
+	border-top-right-radius:6px;
+	-webkit-border-bottom-right-radius:6px;
+	-moz-border-radius-bottomright:6px;
+	border-bottom-right-radius:6px;
+	-webkit-border-bottom-left-radius:6px;
+	-moz-border-radius-bottomleft:6px;
+	border-bottom-left-radius:6px;
+	text-indent:0;
+	border:1px solid #337fed;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:40px;
+	line-height:40px;
+	width:100px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #1570cd;
+    }
+    .submit-button:hover {
+            background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #1e62d0), color-stop(1, #3d94f6) );
+            background:-moz-linear-gradient( center top, #1e62d0 5%, #3d94f6 100% );
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e62d0', endColorstr='#3d94f6');
+            background-color:#1e62d0;
+    }.submit-button:active {
+            position:relative;
+            top:1px;
+    }
+    
+    .inputbox-mod{
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: small;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        -moz-background-clip: padding;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        border: 1px solid #cccccc;
+    }
+    .inputbox-mod:focus{
+        outline: none;
+        border-color: #5bb75b;
+        box-shadow: 0 0 10px #5bb75b;
+    }
+    
+    .textarea-mod{
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: small;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        -moz-background-clip: padding;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        border: 1px solid #cccccc;
+    }
+    .textarea-mod:focus{
+        outline: none;
+        border-color: #5bb75b;
+        box-shadow: 0 0 10px #5bb75b;
+    }
+}
+
