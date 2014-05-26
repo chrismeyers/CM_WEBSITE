@@ -108,8 +108,8 @@
                         
                         <p></p>
                         <ul>
-                            <li style="list-style-type:disc;">Java, Visual Basic .NET, C, C++, MIPS assembly, Scheme, HTML, CSS, Javascript,
-                                                              PHP, Ada, Lua</li>
+                            <li style="list-style-type:disc;">Java, HTML, CSS, PHP , Javascript, Visual Basic, C, C++, MIPS assembly, 
+                                                              Scheme(LISP dialect), Ada, Lua, Perl, MySQL.</li>
                         </ul>
 
                         <p></p>       
