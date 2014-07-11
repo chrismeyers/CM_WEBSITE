@@ -176,7 +176,7 @@
         padding: 0;
         list-style: none; 
     }
-    ul.tabs-ul li.FIRSTmoreinfo-li img.FIRSTmoreinfo-img {  
+    ul.tabs-ul li.FIRSTmoreinfo-li img {  
         cursor: pointer;
     }
     /*Second Section (Builds) and Third Section (Contact), defaults to closed*/
