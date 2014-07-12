@@ -6,7 +6,7 @@
         Purpose of the stylesheet follows.
 */
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 768px){
     html{
         position: relative;
         min-height: 100%;
