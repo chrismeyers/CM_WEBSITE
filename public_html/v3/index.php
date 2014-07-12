@@ -10,68 +10,15 @@
 
         <link rel="stylesheet" href="csselements.css">
         <link rel="stylesheet" href="csselements_767-.css">
-        <link rel="stylesheet" href="defunkt-facebox-cbe32e1/src/facebox.css">
-        <link rel="stylesheet" href="defunkt-facebox-cbe32e1/src/facebox_767-.css">
+        <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
-        <script src="defunkt-facebox-cbe32e1/src/facebox.js"></script>
-
-        <script type="text/javascript">
-            jQuery(document).ready(function($) {
-                $('a[rel*=facebox]').facebox({
-                    loadingImage: 'defunkt-facebox-cbe32e1/src/loading.gif',
-                    closeImage: 'defunkt-facebox-cbe32e1/src/closelabel.png'
-                })
-            })
-        </script>
-
-        <script>
-            $(function() {
-                $('#showMoreInfo1').each(function() {
-                    $(this).click(function() {
-                        $('#showMoreInfo2').siblings('div.SECmoreinfo-div').hide("slow");
-                        $('#showMoreInfo3').siblings('div.THIRDmoreinfo-div').hide("slow");
-                        $(this).siblings('div.FIRSTmoreinfo-div').slideToggle("slow");
-                    });
-                });
-
-                $('#showMoreInfo2').each(function() {
-                    $(this).click(function() {
-                        $('#showMoreInfo1').siblings('div.FIRSTmoreinfo-div').hide("slow");
-                        $('#showMoreInfo3').siblings('div.THIRDmoreinfo-div').hide("slow");
-                        $(this).siblings('div.SECmoreinfo-div').slideToggle("slow");
-                    });
-                });
-
-                $('#showMoreInfo3').each(function() {
-                    $(this).click(function() {
-                        $('#showMoreInfo1').siblings('div.FIRSTmoreinfo-div').hide("slow");
-                        $('#showMoreInfo2').siblings('div.SECmoreinfo-div').hide("slow");
-                        $(this).siblings('div.THIRDmoreinfo-div').slideToggle("slow");
-                    });
-                });
-            });
-        </script>
-
-        <script>
-            $(function() {
-                $('#showSpecs1').each(function() {
-                    $(this).click(function() {
-                        $(this).siblings('div.specs1-div').slideToggle("slow");
-                    });
-                });
-                $('#showSpecs2').each(function() {
-                    $(this).click(function() {
-                        $(this).siblings('div.specs2-div').slideToggle("slow");
-                    });
-                });
-                $('#showSpecs3').each(function() {
-                    $(this).click(function() {
-                        $(this).siblings('div.specs3-div').slideToggle("slow");
-                    });
-                });
-            });
-        </script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
+        <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
+        <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js"></script>
+        <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
     </head>
 
     <body>
@@ -154,9 +101,9 @@
                         <table class="computers">
                             <tr>
                                 <td class="force-col-specs-widepic">
-                                    <a href="images/mattBuild.jpg" rel="facebox">
+                                    <a href="images/mattBuild.jpg" class="fancybox" title="Matt's Computer">
                                         <img src="images/mattBuild.jpg" 
-                                             style="height:100px; width: 150px;"
+                                             style="height:150px; width: 230px;"
                                              alt="matts_comp" 
                                              title="Click to enlarge">
                                     </a>
@@ -165,9 +112,9 @@
                                 <td class="force-col-specs">
                                     <ul class="specs1-ul" >
                                         <li class="specs1-li">
-                                            <a class="fancytxt" id="showSpecs1">Specifications</a>
+                                            <b><u>Specifications</u></b>
                                             <br />
-                                            <div class="specs1-div">
+                                            <div>
                                                 <u>Processor:</u> AMD 6-core FX-6100 &#64; 3.3GHz 
                                                 <br />
                                                 <u>Mobo:</u> Gigabyte 990FXA-UD3
@@ -192,9 +139,9 @@
                         <table class="computers">
                             <tr>
                                 <td class="force-col-specs">
-                                    <a href="images/myBuild.jpg" rel="facebox">
+                                    <a href="images/myBuild.jpg" class="fancybox" title="My Computer">
                                         <img src="images/myBuild.jpg" 
-                                             style="height:150px; width:115px;"
+                                             style="height:250px; width:200px;"
                                              alt="my_comp" 
                                              title="Click to enlarge">
                                     </a>
@@ -203,9 +150,9 @@
                                 <td class="force-col-specs">
                                     <ul class="specs2-ul">
                                         <li class="specs2-li">
-                                            <a class="fancytxt" id="showSpecs2">Specifications</a>
+                                            <b><u>Specifications</u></b>
                                             <br />
-                                            <div class="specs2-div">
+                                            <div>
                                                 <u>Processor:</u> Intel Core i7 3770k &#64; 4.2GHz
                                                 <br />
                                                 <u>Mobo:</u> Asus P8Z77-V LK 
@@ -232,11 +179,11 @@
                         <table class="computers">
                             <tr>
                                 <td class="force-col-specs">
-                                    <a href="images/markBuild.jpg" rel="facebox">
+                                    <a href="images/markBuild.jpg" class="fancybox" title="Neighbor's Computer">
                                         <img src="images/markBuild.jpg" 
                                              height="150" 
                                              width="115"
-                                             style="height:150px; width:115px;"
+                                             style="height:250px; width:200px;"
                                              alt="marks_comp" 
                                              title="Click to enlarge">
                                     </a>
@@ -245,9 +192,9 @@
                                 <td class="force-col-specs">
                                     <ul class="specs3-ul">
                                         <li class="specs3-li">
-                                            <a class="fancytxt" id="showSpecs3">Specifications</a>
+                                            <b><u>Specifications</u></b>
                                             <br />
-                                            <div class="specs3-div">
+                                            <div>
                                                 <u>Processor:</u> Intel Core i7 4770k &#64; 3.5GHz
                                                 <br />
                                                 <u>Mobo:</u> MSI H87-G43
@@ -270,17 +217,209 @@
 
 
 
+                <!-- PROJECTS SECTION -->
+                <li class="THIRDmoreinfo-li">
+                    <img src="images/sub_banners/projectsbanner.png"
+                         id="showMoreInfo3"
+                         class="section"  
+                         title='Projects'
+                         alt="Projects">
+
+                    <br />
+                    <div class="THIRDmoreinfo-div">
+                        <!-- cm -->
+                        <h2>chrismeyers.info, this webpage</h2>
+                        <h3>Personal Project, Fall 2013</h3>
+                        <div class="projWrapper">
+                            <div class="projImages">
+                                <a class="fancybox" rel="single1" href="images/project_screenshots/cm.png" title="Personal Website">
+                                    <img src="images/project_screenshots/cm.png" 
+                                         style="height:200px; width: 200px;"
+                                         alt="My personal website" 
+                                         title="Click to enlarge">
+                                </a>
+                            </div>
+
+                            <div class="projDesc">
+                                <b>Language(s):</b> 
+                                    <dd>PHP, Javascript, HTML5, CSS3</dd>
+                                <br />
+                                <b>Description:</b> 
+                                    <dd>My first web project.  A digital representation of myself.</dd>
+                                <br />
+                                <b>My part:</b>
+                                    <dd>Solo project.</dd>
+                                <br />
+                                <b>Status:</b> 
+                                    <dd>Being maintained.</dd>
+                                </div>
+                        </div>
+
+                        
+                        <!-- Genomic -->
+                        <br /> <hr>
+                        <h2>Genomic Solutions Now! Software</h2>
+                        <h3>Software Engineering I, Rowan University, Spring 2014</h3>
+                        <div class="projWrapper">
+                            <div class="projImages">
+                                <a class="fancybox" rel="single2" href="images/project_screenshots/genomic.png" title="Genomic Solutions Now! Software">
+                                    <img src="images/project_screenshots/genomic.png" 
+                                         style="height:125px; width: 200px;"
+                                         alt="Genomic Solutions Now! Software" 
+                                         title="Click to enlarge">
+                                </a>
+                            </div>
+
+                            <div class="projDesc">
+                                <b>Language(s):</b> 
+                                    <dd>Java</dd>
+                                <br />
+                                <b>Description:</b> 
+                                    <dd>An application built for
+                                    <a href="http://www.genomicsolutionsnow.com/" class="fancytxt">Genomic Solutions Now</a>
+                                    that simplifies the patient reports generated by a lab.</dd>
+                                <br />
+                                <b>My part:</b>
+                                    <dd>Responsible for parsing the input reports.  I also handled 
+                                        outputting the simplified reports to an Excel spreadsheet.</dd>
+                                <br />
+                                <b>Status:</b> 
+                                    <dd>Complete.</dd>
+                                </div>
+                        </div>
+                        
+                        <!-- Pinelands -->
+                        <br /> <hr>
+                        <h2>Pinelands Tour Maker</h2>
+                        <h3>Web Programming, Rowan University, Spring 2014</h3>
+                        <div class="projWrapper">
+                            <div class="projImages">
+                                <a class="fancybox" rel="gallery1" href="images/project_screenshots/pinelands_landing.png" title="Landing page">
+                                    <img src="images/project_screenshots/pinelands_landing.png"
+                                         style="height:200px; width: 200px;"
+                                         alt="Pinelands landing page" 
+                                         title="Click to enlarge">
+                                </a>
+                                <div class="projImages-small">
+                                    <a class="fancybox" rel="gallery1" href="images/project_screenshots/pinelands_tour.png" title="Tour page">
+                                        <img src="images/project_screenshots/pinelands_tour.png" 
+                                             style="height:20px; width: 20px;"
+                                             alt="Pinelands tour page" 
+                                             title="Click to enlarge">
+                                        
+                                    </a>
+                                    <a class="fancybox" rel="gallery1" href="images/project_screenshots/pinelands_contact.png" title="Contact page">
+                                        <img src="images/project_screenshots/pinelands_contact.png" 
+                                             style="height:20px; width: 20px;"
+                                             alt="Pinelands contact page" 
+                                             title="Click to enlarge">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="projDesc">
+                                <b>Language(s)</b>: 
+                                    <dd>PHP, Javascript, MySQL, HTML5, CSS3</dd>
+                                <br />
+                                <b>Description:</b> 
+                                    <dd>An application that makes tours depending on selected points of interest.</dd>
+                                <br />
+                                <b>My part:</b> 
+                                    <dd>Solo project.</dd>
+                                <br />
+                                <b>Status:</b>
+                                    <dd>Complete.</dd>
+                            </div>
+                        </div>
+                        
+                        <!-- TTT -->
+                        <br /> <hr>
+                        <h2>Tic Tac Toe Android App</h2>
+                        <h4>Intro to Android Programming, Rowan University, Summer 2014</h4>
+                        <div class="projWrapper">
+                            <div class="projImages">
+                                <a class="fancybox" rel="gallery2" href="images/project_screenshots/ttt_port.png" title="Tic Tac Toe Portrait">
+                                    <img src="images/project_screenshots/ttt_port.png" 
+                                         style="height:200px; width: 125px;"
+                                         alt="Tic tac toe Portrait" 
+                                         title="Click to enlarge">
+                                </a>
+                                <div class="projImages-small">
+                                    <a class="fancybox" rel="gallery2" href="images/project_screenshots/ttt_land.png" title="Tic Tac Toe Landscape">
+                                        <img src="images/project_screenshots/ttt_land.png" 
+                                             style="height:20px; width: 40px;"
+                                             alt="Tic tac toe Landscape" 
+                                             title="Click to enlarge">
+                                    </a>
+                                </div>
+                            </div>
+                        
+                            <div class="projDesc">
+                                <b>Language(s):</b> 
+                                    <dd>Java, XML</dd>
+                                <br />
+                                <b>Description:</b>
+                                    <dd>An android version of tic tac toe.</dd>
+                                <br />
+                                <b>My part:</b>
+                                    <dd>Solo Project.</dd>
+                                <br />
+                                <b>Status:</b> 
+                                    <dd>Complete.</dd>
+                            </div>
+                        </div>
+
+                        <!-- LoL player data -->    
+                        <br /> <hr>
+                        <h2>League of Legends Player Data Parser</h2>
+                        <h3>Personal Project, Summer 2014</h3>
+                        <div class="projWrapper">
+                            <div class="projImages">
+                                <a class="fancybox" rel="gallery3" href="images/project_screenshots/loldata_landing.png" title="LoL player data landing">
+                                    <img src="images/project_screenshots/loldata_landing.png" 
+                                         style="height:200px; width: 200px;"
+                                         alt="LoL_player_data" 
+                                         title="Click to enlarge">
+                                </a>
+                                <div class="projImages-small">
+                                    <a class="fancybox" rel="gallery3" href="images/project_screenshots/loldata.png" title="LoL player data results">
+                                        <img src="images/project_screenshots/loldata.png" 
+                                             style="height:20px; width: 20px;"
+                                             alt="LoL_player_data" 
+                                             title="Click to enlarge">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="projDesc">
+                                <b>Language(s):</b>
+                                    <dd>PHP, HTML5, CSS3</dd>
+                                <br />
+                                <b>Description:</b> 
+                                    <dd>An application based on the video game <i>League of Legends</i> that
+                                    utilizes the Riot Games API to query and parse player data for a specified player.</dd>
+                                <br />
+                                <b>My part:</b>
+                                    <dd>Solo Project.</dd>
+                                <br />
+                                <b>Status:</b>
+                                    <dd>In Development.</dd>
+                            </div>
+                        </div>
+                        
+                    </div>  
+                </li>
+                
                 <!-- CONTACT SECTION -->
 
-                <li class="THIRDmoreinfo-li">
+                <li class="FOURTHmoreinfo-li">
                     <img src="images/sub_banners/contactbanner.png"
-                         id="showMoreInfo3"
+                         id="showMoreInfo4"
                          class="section"  
                          title='Contact'
                          alt="Contact">
 
                     <br />
-                    <div class="THIRDmoreinfo-div">
+                    <div class="FOURTHmoreinfo-div">
                         <div id='errors'></div>
                         <form action="email_form.php" method="post" target="_top">
                             <p class="message"><b>Questions? Comments? Concerns? Send me a message!</b></p>
@@ -373,5 +512,74 @@
             <p>Designed and Developed by Chris Meyers, 2013-2014</p>
         </div>
 
+        
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $(".fancybox").fancybox({
+                    openEffect	: 'none',
+                    closeEffect	: 'none'
+                });
+            });
+        </script>
+
+        <script>
+            $(function() {
+                $('#showMoreInfo1').each(function() {
+                    $(this).click(function() {
+                        $('#showMoreInfo2').siblings('div.SECmoreinfo-div').hide("slow");
+                        $('#showMoreInfo3').siblings('div.THIRDmoreinfo-div').hide("slow");
+                        $('#showMoreInfo4').siblings('div.FOURTHmoreinfo-div').hide("slow");
+                        $(this).siblings('div.FIRSTmoreinfo-div').slideToggle("slow");
+                    });
+                });
+
+                $('#showMoreInfo2').each(function() {
+                    $(this).click(function() {
+                        $('#showMoreInfo1').siblings('div.FIRSTmoreinfo-div').hide("slow");
+                        $('#showMoreInfo3').siblings('div.THIRDmoreinfo-div').hide("slow");
+                        $('#showMoreInfo4').siblings('div.FOURTHmoreinfo-div').hide("slow");
+                        $(this).siblings('div.SECmoreinfo-div').slideToggle("slow");
+                    });
+                });
+
+                $('#showMoreInfo3').each(function() {
+                    $(this).click(function() {
+                        $('#showMoreInfo1').siblings('div.FIRSTmoreinfo-div').hide("slow");
+                        $('#showMoreInfo2').siblings('div.SECmoreinfo-div').hide("slow");
+                        $('#showMoreInfo4').siblings('div.FOURTHmoreinfo-div').hide("slow");
+                        $(this).siblings('div.THIRDmoreinfo-div').slideToggle("slow");
+                    });
+                });
+                
+                $('#showMoreInfo4').each(function() {
+                    $(this).click(function() {
+                        $('#showMoreInfo1').siblings('div.FIRSTmoreinfo-div').hide("slow");
+                        $('#showMoreInfo2').siblings('div.SECmoreinfo-div').hide("slow");
+                        $('#showMoreInfo3').siblings('div.THIRDmoreinfo-div').hide("slow");
+                        $(this).siblings('div.FOURTHmoreinfo-div').slideToggle("slow");
+                    });
+                });
+            });
+        </script>
+
+        <script>
+            $(function() {
+                $('#showSpecs1').each(function() {
+                    $(this).click(function() {
+                        $(this).siblings('div.specs1-div').slideToggle("slow");
+                    });
+                });
+                $('#showSpecs2').each(function() {
+                    $(this).click(function() {
+                        $(this).siblings('div.specs2-div').slideToggle("slow");
+                    });
+                });
+                $('#showSpecs3').each(function() {
+                    $(this).click(function() {
+                        $(this).siblings('div.specs3-div').slideToggle("slow");
+                    });
+                });
+            });
+        </script>
     </body>
 </html>

@@ -27,9 +27,12 @@
         text-align: center;
     }
     
+    
     img {
         height: auto;
         max-width: 100%;
+        /* Remove IE img link border*/
+        border: 0;
     }
     
     p.message{
@@ -179,20 +182,20 @@
     ul.tabs-ul li.FIRSTmoreinfo-li img {  
         cursor: pointer;
     }
-    /*Second Section (Builds) and Third Section (Contact), defaults to closed*/
+/*Second Section (Builds), Third Section (Projects), Fourth Section (Contact) defaults to closed*/
     ul.tabs-ul, ul.tabs-ul { 
         margin: 0; 
         padding: 0;
     }
-    ul.tabs-ul li.SECmoreinfo-li, ul.tabs-ul li.THIRDmoreinfo-li { 
+    ul.tabs-ul li.SECmoreinfo-li, ul.tabs-ul li.THIRDmoreinfo-li, ul.tabs-ul li.FOURTHmoreinfo-li { 
         margin: 0; 
         padding: 0;
         list-style: none; 
     }
-    ul.tabs-ul li.SECmoreinfo-li img, ul.tabs-ul li.THIRDmoreinfo-li img {  
+    ul.tabs-ul li.SECmoreinfo-li img, ul.tabs-ul li.THIRDmoreinfo-li img, ul.tabs-ul li.FOURTHmoreinfo-li img {  
         cursor: pointer;
     }
-    ul.tabs-ul li.SECmoreinfo-li div.SECmoreinfo-div, ul.tabs-ul li.THIRDmoreinfo-li div.THIRDmoreinfo-div { 
+    ul.tabs-ul li.SECmoreinfo-li div.SECmoreinfo-div, ul.tabs-ul li.THIRDmoreinfo-li div.THIRDmoreinfo-div, ul.tabs-ul li.FOURTHmoreinfo-li div.FOURTHmoreinfo-div { 
         display: none; 
     }
 
@@ -213,6 +216,19 @@
     ul.specs1-ul li.specs1-li div.specs1-div, ul.specs2-ul li.specs2-li div.specs2-div, ul.specs3-ul li.specs3-li div.specs3-div  { 
         display: none; 
     }  
+    
+    /*Used in projects section*/
+    div.projWrapper{
+        margin: 10px;
+        padding: 0;
+    }
+    div.projImages{
+        text-align: center;
+    }
+    div.projImages-small{
+        text-align: center;
+        text-decoration: none;
+    }
     
     /* This button was generated using CSSButtonGenerator.com */
     .submit-button {

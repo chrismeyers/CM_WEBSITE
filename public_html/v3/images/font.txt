@@ -1,1 +1,2 @@
 font=mistral
+size=36

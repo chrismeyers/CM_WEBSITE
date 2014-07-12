@@ -32,6 +32,11 @@
         text-align: center;
     }
     
+    /* Remove IE img link border*/
+    img{
+      border: 0;
+    }
+    
     img.section{
         width: 790px;
     }
@@ -97,7 +102,7 @@
         width: 790px;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 150px; /* Add more spacing between footer and main */
+        margin-bottom: 100px; /* Add more spacing between footer and main */
         background-color: rgba(33,40,55,0.75);
         padding: 5px;
         font-family: Verdana, Geneva, sans-serif;
@@ -134,21 +139,21 @@
     ul.tabs-ul li.FIRSTmoreinfo-li img {  
         cursor: pointer;
     }
-    /*Second Section (Builds) and Third Section (Contact), defaults to closed*/
+    /*Second Section (Builds), Third Section (Projects), Fourth Section (Contact) defaults to closed*/
     ul.tabs-ul, ul.tabs-ul { 
         margin: 0; 
         padding: 0;
     }
-    ul.tabs-ul li.SECmoreinfo-li, ul.tabs-ul li.THIRDmoreinfo-li { 
+    ul.tabs-ul li.SECmoreinfo-li, ul.tabs-ul li.THIRDmoreinfo-li, ul.tabs-ul li.FOURTHmoreinfo-li { 
         margin: 0; 
         padding: 0;
         list-style: none; 
     }
-    ul.tabs-ul li.SECmoreinfo-li img, ul.tabs-ul li.THIRDmoreinfo-li img {  
+    ul.tabs-ul li.SECmoreinfo-li img, ul.tabs-ul li.THIRDmoreinfo-li img, ul.tabs-ul li.FOURTHmoreinfo-li img {  
         cursor: pointer;
     }
-    ul.tabs-ul li.SECmoreinfo-li div.SECmoreinfo-div, ul.tabs-ul li.THIRDmoreinfo-li div.THIRDmoreinfo-div { 
-        display: none; 
+    ul.tabs-ul li.SECmoreinfo-li div.SECmoreinfo-div, ul.tabs-ul li.THIRDmoreinfo-li div.THIRDmoreinfo-div, ul.tabs-ul li.FOURTHmoreinfo-li div.FOURTHmoreinfo-div { 
+        display: none;
     }
 
 
@@ -168,6 +173,25 @@
     ul.specs1-ul li.specs1-li div.specs1-div, ul.specs2-ul li.specs2-li div.specs2-div, ul.specs3-ul li.specs3-li div.specs3-div  { 
         display: none; 
     }  
+    
+    /*Used in projects section*/
+    div.projWrapper{
+        margin: 10px;
+        padding: 0;
+        height: 230px;
+    }
+    div.projImages{
+        float:left;
+    }
+    div.projDesc{
+        margin-left: 30%;
+    }
+    
+     div.projWrapper-TTT{
+        margin: 10px;
+        padding: 0;
+        height: 200px;
+    }
     
     /* This button was generated using CSSButtonGenerator.com */
     .submit-button {
