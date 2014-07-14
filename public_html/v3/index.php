@@ -504,7 +504,7 @@
             &bull;
             <a href="http://www.linkedin.com/pub/chris-meyers/61/7a9/b09" target="_blank"><img src="images/li.ico" alt="LinkedIn" title="LinkedIn"></a>
             &bull;
-            <a href="https://github.com/christopher-meyers" target="_blank"><img src="images/github.png" alt="GitHub" title="GitHub"></a>
+            <a href="https://github.com/chrismeyers" target="_blank"><img src="images/github.png" alt="GitHub" title="GitHub"></a>
             &bull;
             <a href='downloads/Resume_ChrisMeyers.pdf' download="Resume_ChrisMeyers" class="fancytxt">
                 Download Résumé
