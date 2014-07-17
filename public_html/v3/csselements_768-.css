@@ -218,6 +218,9 @@
     }  
     
     /*Used in projects section*/
+    div.proj{
+        height: auto;
+    }
     div.projWrapper{
         margin: 10px;
         padding: 0;
