@@ -18,7 +18,9 @@
     <body>
         <p id="banner">
             <a href="index.php">
-                <img src="images/titlepic.png" onmouseover="this.src = 'images/titlepic_hover.png'" onmouseout="this.src = 'images/titlepic.png'" alt="banner">
+                <img src="images/titlepic.png" 
+                     onmouseover="this.src = 'images/titlepic_hover.png'"
+                     onmouseout="this.src = 'images/titlepic.png'" alt="banner">
             </a>
         </p>
 
@@ -29,18 +31,7 @@
 
         </div>
 
-        <div id="footer">
-            <a href="https://www.facebook.com/meyers42" target="_blank"><img src="images/fb.ico" alt="Facebook" title="Facebook"></a>
-            &bull;
-            <a href="http://www.linkedin.com/pub/chris-meyers/61/7a9/b09" target="_blank"><img src="images/li.ico" alt="LinkedIn" title="LinkedIn"></a>
-            &bull;
-            <a href="https://github.com/chrismeyers" target="_blank"><img src="images/github.png" alt="GitHub" title="GitHub"></a>
-            &bull;
-            <a href='downloads/Resume_ChrisMeyers.pdf' download="Resume_ChrisMeyers" class="fancytxt">
-                Download Résumé
-            </a>
-            <p>Designed and Developed by Chris Meyers, 2013-2014</p>
-        </div>
+        <?php include 'footer.php' ?>
 
     </body>
 </html>

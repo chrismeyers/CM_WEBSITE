@@ -28,5 +28,5 @@ mail("$myemail", "$subj", "$emess", "$ehead");
 
 
 //unset($_GET['do']);
-header("Location: thank_you.html");
+header("Location: thank_you.php");
 ?>
