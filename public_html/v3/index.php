@@ -402,7 +402,7 @@
                         <br /> <hr>
                         <div class="proj">
                             <h2>League of Legends Player Data Parser
-                                <a href="http://chrismeyers.info/projects/LoL_player_data/" target="_blank">
+                                <a href="http://chrismeyers.info/projects/LoL_player_data/web" target="_blank">
                                     <img src="images/link.png" 
                                         onmouseover="this.src = 'images/link_hover.png'" 
                                         onmouseout="this.src = 'images/link.png'" 
