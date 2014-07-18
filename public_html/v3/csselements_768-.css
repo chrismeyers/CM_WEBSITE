@@ -6,15 +6,16 @@
         Purpose of the stylesheet follows.
 */
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px),  tablet and (orientation: landscape){
     html{
         position: relative;
         min-height: 100%;
+        background-color: #CFCFCF;
     }
     
     body { 
         /*background-image: url(images/Grey-website-background.png);*/
-        background: url(images/colorado.jpg) no-repeat center center fixed;
+        /*background: url(images/colorado.jpg) no-repeat center center fixed; */
         background-attachment: fixed;
         background-position: center;
         margin: 0 0 60px; /*3rd parameter must = #footer height*/
@@ -35,12 +36,19 @@
         border: 0;
     }
     
+    img.section{
+        height: auto;
+        width: auto;
+    }
+    
     p.message{
         width:auto;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
     }
+    
+    
 
     td.force-col-right, td.force-col-left{
         display:block;
@@ -132,19 +140,15 @@
     }
 
     #banner{
-        padding: 10px;
         color: #cccccc;
         text-shadow: 2px 2px #000000;
         margin-top: 0px;
-        margin-left: auto;
-        margin-right: auto;
+
     }
 
     #main {
         color:#FFFAFA;
         width: auto;
-        margin-left: 10px;
-        margin-right: 10px;
         background-color: rgba(33,40,55,0.75);
         padding: 5px;
         margin-bottom: 150px; /* Add more spacing between footer and main */
@@ -157,8 +161,6 @@
         position: absolute;
         bottom: 0px;
         height: 70px; /* make bigger to add more lines in footer */
-        margin-left: 10px;
-        margin-right: 10px;
         left:0;
         right:0;
         text-align: center;
