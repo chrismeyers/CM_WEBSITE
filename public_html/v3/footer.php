@@ -37,6 +37,6 @@
             <a href='downloads/Resume_ChrisMeyers.pdf' download='Resume_ChrisMeyers' class='fancytxt'>
                 Download Résumé
             </a>
-            <p>Designed and Developed by Chris Meyers, 2013-2014</p>
+            <p>Designed and Developed by Chris Meyers, 2013-" . date("Y") ."</p>
         </div>";
 ?>
