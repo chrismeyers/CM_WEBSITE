@@ -8,8 +8,8 @@
 
         <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
 
-        <link rel="stylesheet" href="csselements.css">
-        <link rel="stylesheet" href="csselements_768-.css">
+        <link rel="stylesheet" href="csselements.css" />
+        <link rel="stylesheet" href="csselements_768-.css" />
         <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
         <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
         <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
@@ -50,12 +50,12 @@
                         Hey there! My name is <b><i>Chris Meyers</i></b> and this page is dedicated to letting you know who I am and 
                         the technology skills that I possess.  I currently attend 
                         <a class="fancytxt" href="http://www.rowan.edu/" target="_blank">Rowan University</a>
-                        in Glassboro, NJ where I am studying Computer Science.  I have strong interests in Information Technology and 
+                        in Glassboro, NJ where I am studying Computer Science.  I have strong interests in Computer Networking and 
                         Web Development.  Over the past few years, I have picked up experience with the following programming languages:
                         
                         <p></p>
                         <ul>
-                            <li style="list-style-type:disc;">Java, HTML, CSS, PHP , Javascript, Visual Basic, C, C++, MIPS assembly, 
+                            <li style="list-style-type:disc;">Java, HTML, CSS, PHP, Javascript, Visual Basic, C, C++, MIPS assembly, 
                                                               Scheme(LISP dialect), Ada, Lua, Perl, MySQL.</li>
                         </ul>
 
@@ -65,7 +65,7 @@
 
                         <p></p>
                         <ul>
-                            <li style="list-style-type:disc;">AutoDesk AutoCAD, AutoDesk Inventor, Rhinoceros</li>
+                            <li style="list-style-type:disc;">AutoDesk AutoCAD, AutoDesk Inventor, Rhinoceros.</li>
                         </ul>
 
                         <p></p>
