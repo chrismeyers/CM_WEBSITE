@@ -6,7 +6,7 @@
         Purpose of the stylesheet follows.
 */
 
-@media screen and (max-width: 768px),  tablet and (orientation: landscape){
+@media screen and (max-width: 819px),  tablet and (orientation: landscape){
     html{
         position: relative;
         min-height: 100%;
