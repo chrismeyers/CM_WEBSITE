@@ -1,0 +1,348 @@
+/* 
+    Document   : csselements
+    Created on : Oct 4, 2013, 7:09:07 PM
+    Author     : Chris Meyers
+    Description:
+        Fullscreen desktop stylesheet.
+*/
+@media screen and (min-width: 1338px){
+    html{
+        position: relative;
+        min-height: 100%;
+    }
+    
+    body { 
+        background-image: url(images/colorado.jpg);
+        /*background-repeat:no-repeat;*/
+        background-attachment: fixed;
+        background-size: cover;
+        margin: 0 0 60px; /*3rd parameter must = #footer height*/
+    }
+    
+    .errors{
+        font-weight: bold;
+        color: red;
+        text-align: center;
+    }
+    
+    p.message{
+        width:auto;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+    /* Remove IE img link border*/
+    img{
+      border: 0;
+    }
+    
+    img.section{
+        width: 790px;
+    }
+    
+    /*Only adds padding in fullscreen mode*/
+    td.force-col-right{
+        padding-right: 10px;
+    }
+    td.force-col-left{
+        padding-left: 10px;
+    }
+    td.force-col-specs{
+        width:725px;
+    }
+    td.force-col-specs-widepic{
+        width:680px;
+    }
+    
+    table.inputs{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+    
+    table.comments{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+    
+    input{
+        width: 190px;
+        height:25px;
+        font-family: Verdana, Geneva, sans-serif;
+    }
+    
+    textarea{
+        width: 415px;
+        height: 100px;
+        font-family: Verdana, Geneva, sans-serif;
+    }
+
+    .fancytxt{
+        /*color: #a9302a;*/
+        /*color: #CC2900;*/
+        color: #FFFFFF;
+        text-decoration: underline;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .fancytxt:hover{
+        color:#5bb75b;
+        cursor: pointer;
+    }
+
+    #banner{
+        float:left;
+    }
+    
+    div.banner-img-small{
+        display: none;
+    }
+    
+    #bannerBar{
+        height: 90px;
+        background-color: rgb(33,40,55);
+        margin-bottom: 20px;
+        padding-right: 6px;
+        box-shadow: 0 0 0 4px grey inset;
+        /*Make content scroll "under" banner*/
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+    
+    #banner-icon-small{
+        display:none;
+    }
+    
+    .sectionTitle-about, .sectionTitle-builds, .sectionTitle-projects{
+        float: right;
+        width:100px;
+        height:82px;
+        background-color: rgb(33,40,55);
+        display: inline-block;
+        margin-right: 30px;
+        margin-top: 4px;
+        color: white;
+        font-size: x-large;
+        font-family: Verdana, Geneva, sans-serif;
+        text-align: center;
+    }
+
+    .sectionTitle-contact{
+        float: right;
+        width: 100px;
+        height:82px;
+        background-color: rgb(33,40,55);
+        display: table-cell;
+        margin-right: 25px;
+        margin-top: 4px;
+        vertical-align: middle;
+        color: white;
+        font-size: x-large;
+        font-family: Verdana, Geneva, sans-serif;
+        text-align: center;
+    }
+    
+    .sectionTitle-txt{
+        margin-top: 20px;
+    }
+    
+    #sectionTitle-menu{
+        display: none;
+    }
+    
+    .sectionTitle-about:hover, .sectionTitle-builds:hover, .sectionTitle-projects:hover,
+        .sectionTitle-contact:hover, #sectionTitle-menu:hover{
+        background-color: #5bb75b;
+        cursor: pointer;
+    }
+    
+    .main {
+        color:#FFFAFA;
+        width: 790px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px; /* Add more spacing between footer and main */
+        margin-top: 100px;/*Used for a fixed banner*/
+        background-color: rgba(33,40,55,0.75);
+        padding: 5px;
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: medium; 
+    }  
+
+    .instructions{
+        display: none;
+    }
+    
+    #footer {
+        font-size: small; 
+        font-family: Verdana, Geneva, sans-serif;
+        color:white;
+        position: fixed;
+        bottom: 0;
+        height: auto;
+        left:0;
+        right:0;
+        background-color: rgb(33,40,55);
+        padding-top:5px;
+        padding-bottom: 5px;
+        border-top-color: grey;
+        border-top-style: solid;
+        border-top-width: 4px;
+    }
+   
+    .footer-links{
+       padding-left: 10px;
+       display: inline-block;
+       float: left;
+    }
+
+    .footer-years{
+        display: inline-block;
+        float: right;
+        padding-right: 10px;
+    }
+    
+    /*About section, defaults to open*/
+    ul.tabs-ul { 
+        margin: 0; 
+        padding: 0; 
+    }
+    ul.tabs-ul li.FIRSTmoreinfo-li { 
+        margin: 0; 
+        padding: 0;
+        list-style: none; 
+    }
+    ul.tabs-ul li.FIRSTmoreinfo-li img {  
+        cursor: pointer;
+    }
+
+    div#builds, div#projects, div#contact{
+        display:none;
+    }
+    
+    /*Used in builds section*/
+    ul.specs1-ul, ul.specs2-ul, ul.specs3-ul { 
+        margin: 0; 
+        padding: 0; 
+    }
+    ul.specs1-ul li.specs1-li, ul.specs2-ul li.specs2-li, ul.specs3-ul li.specs3-li { 
+        margin: 0; 
+        padding: 0;
+        list-style: none; 
+    }
+    ul.specs1-ul li.specs1-li a, ul.specs2-ul li.specs2-li a, ul.specs3-ul li.specs3-li a {  
+        cursor: pointer;
+    }
+    ul.specs1-ul li.specs1-li div.specs1-div, ul.specs2-ul li.specs2-li div.specs2-div, ul.specs3-ul li.specs3-li div.specs3-div  { 
+        display: none; 
+    }
+    
+    /*Used in projects section*/
+    div.proj{
+        height: auto;
+    }
+    div.projWrapper{
+        margin: 10px;
+        padding: 0;
+    }
+    div.projImages{
+        float:left;
+    }
+    div.projDesc{
+        margin-left: 30%;
+    }
+    
+     div.projWrapper-TTT{
+        margin: 10px;
+        padding: 0;
+        height: 200px;
+    }
+    
+    /* This button was generated using CSSButtonGenerator.com */
+    .submit-button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #3d94f6), color-stop(1, #1e62d0) );
+	background:-moz-linear-gradient( center top, #3d94f6 5%, #1e62d0 100% );
+	/*filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6', endColorstr='#1e62d0');*/
+	background-color:#3d94f6;
+	-webkit-border-top-left-radius:6px;
+	-moz-border-radius-topleft:6px;
+	border-top-left-radius:6px;
+	-webkit-border-top-right-radius:6px;
+	-moz-border-radius-topright:6px;
+	border-top-right-radius:6px;
+	-webkit-border-bottom-right-radius:6px;
+	-moz-border-radius-bottomright:6px;
+	border-bottom-right-radius:6px;
+	-webkit-border-bottom-left-radius:6px;
+	-moz-border-radius-bottomleft:6px;
+	border-bottom-left-radius:6px;
+	text-indent:0;
+	border:1px solid #337fed;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:40px;
+	line-height:40px;
+	width:100px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #1570cd;
+    }
+    .submit-button:hover {
+        background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #1e62d0), color-stop(1, #3d94f6) );
+        background:-moz-linear-gradient( center top, #1e62d0 5%, #3d94f6 100% );
+        /*filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e62d0', endColorstr='#3d94f6');*/
+        background-color:#1e62d0;
+    }.submit-button:active {
+        position:relative;
+        top:1px;
+    }
+    
+    .inputbox-mod{
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: small;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        -moz-background-clip: padding;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        border: 1px solid #cccccc;
+    }
+    .inputbox-mod:focus{
+        outline: none;
+        border-color: #5bb75b;
+        box-shadow: 0 0 10px #5bb75b;
+    }
+    
+    .textarea-mod{
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: small;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        -moz-background-clip: padding;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        border: 1px solid #cccccc;
+    }
+    .textarea-mod:focus{
+        outline: none;
+        border-color: #5bb75b;
+        box-shadow: 0 0 10px #5bb75b;
+    }
+}
+
