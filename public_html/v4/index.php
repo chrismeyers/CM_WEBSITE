@@ -505,8 +505,8 @@
                                 </dd>
                             <br />
                             <b>My Role:</b> 
-                                <dd>Parse calculated data worksheets and store in workable data structures to
-                                    be used in plotting.</dd>
+                                <dd>Responsible for parsing the calculated principal component worksheets and storing 
+                                    them in data structures used for plotting.</dd>
                             <br />
                             <b>Status:</b>
                                 <dd>Complete.</dd>
