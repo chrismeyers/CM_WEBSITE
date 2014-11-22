@@ -440,7 +440,76 @@
                                 <dd>Solo Project.</dd>
                             <br />
                             <b>Status:</b>
-                                <dd>In Development.</dd>
+                                <dd>Being maintained.</dd>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- PCA -->
+                <br /> <hr>
+                <div class="proj">
+                    <h2>PCA Visualization</h2>
+                    <h3>Senior Project, Rowan University, Fall 2014</h3>
+                    <div class="projWrapper">
+                        <div class="projImages">
+                            <a class="fancybox" rel="gallery4" href="images/project_screenshots/scoresPlot.png" 
+                               title="A scores plot generated from calculated principal components.">
+                                <img src="images/project_screenshots/scoresPlot.png"
+                                     style="height:200px; width: 200px;"
+                                     alt="A scores plot generated from calculated principal components."
+                                     title="Click to enlarge">
+                            </a>
+                            <div class="projImages-small">
+                                <a class="fancybox"
+                                   rel="gallery4" 
+                                   href="images/project_screenshots/scoresData.png"
+                                   title="The calculated principal component data."
+                                   style="text-decoration: none;">
+                                    <img src="images/project_screenshots/scoresData.png" 
+                                         style="height:20px; width: 20px;"
+                                         alt="The calculated principal component data." 
+                                         title="Click to enlarge">
+                                </a>
+                                <a class="fancybox"
+                                   rel="gallery4"
+                                   href="images/project_screenshots/addinBar.PNG"
+                                   title="The Excel add-in bar. Scores and loadings plot were added in this project."
+                                   style="text-decoration: none;">
+                                    <img src="images/project_screenshots/addinBar.PNG" 
+                                         style="height:20px; width: 20px;"
+                                         alt="The Excel add-in bar. Scores and loadings plot were added in this project." 
+                                         title="Click to enlarge">
+                                </a>
+                                <a class="fancybox"
+                                   rel="gallery4"
+                                   href="images/project_screenshots/scoresInput-full.png"
+                                   title="Input form that is dynamically populated based on the number of principal components."
+                                   style="text-decoration: none;">
+                                    <img src="images/project_screenshots/scoresInput-full.png" 
+                                         style="height:20px; width: 20px;"
+                                         alt="Input form that is dynamically populated based on the number of principal components." 
+                                         title="Click to enlarge">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="projDesc">
+                            <b>Language(s)</b>: 
+                                <dd>C#</dd>
+                            <br />
+                            <b>Description:</b> 
+                                <dd>Principal component analysis (PCA) is a technique used to reduce dimensionality of
+                                    a multivariate data set in order to better understand potentially correlated data.
+                                    The goal of this project was to take an Excel add-in developed by Bristol-Myers 
+                                    Squibb and further develop it to have visualization functionality.
+                                </dd>
+                            <br />
+                            <b>My Role:</b> 
+                                <dd>Parse calculated data worksheets and store in workable data structures to
+                                    be used in plotting.</dd>
+                            <br />
+                            <b>Status:</b>
+                                <dd>Complete.</dd>
                         </div>
                     </div>
                 </div>

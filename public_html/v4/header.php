@@ -3,8 +3,8 @@
             <div class='banner-img'>
                 <a href='index.php' id='banner'>
                     <img src='images/titlepic-v4.png' 
-                         onmouseover='this.src = 'images/titlepic_hover-v4.png''
-                         onmouseout='this.src = 'images/titlepic-v4.png'' 
+                         onmouseover=\"this.src = 'images/titlepic_hover-v4.png'\"
+                         onmouseout=\"this.src = 'images/titlepic-v4.png'\"
                          alt='Chris Meyers. Developer, Tech enthusiast.' 
                          title='Home'>
                 </a>
@@ -13,8 +13,8 @@
             <div class='banner-img-small'>
                 <a href='index.php' id='banner-small'>
                     <img src='images/cmlogocolor_nobackground_WHITE.png' 
-                         onmouseover='this.src = 'images/cmlogocolor_nobackground_GREEN.png''
-                         onmouseout='this.src = 'images/cmlogocolor_nobackground_WHITE.png'' 
+                         onmouseover=\"this.src = 'images/cmlogocolor_nobackground_GREEN.png'\"
+                         onmouseout=\"this.src = 'images/cmlogocolor_nobackground_WHITE.png'\"
                          alt='Chris Meyers. Developer, Tech enthusiast.'
                          title='Home'>
                 </a>
