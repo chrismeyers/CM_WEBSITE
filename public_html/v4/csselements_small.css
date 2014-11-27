@@ -117,8 +117,8 @@
     }
 
     #banner-small img{
-        height: 90px;
-        width: 90px;
+        height: 60px;
+        width: 60px;
         float: left;
         margin-left: 10px;
         display: inline-block;
@@ -130,8 +130,8 @@
     
     div.banner-img-small{
         float: left;
-        height: 90px;
-        width: 100px;
+        height: 60px;
+        width: 70px;
     }
     
     #banner-icon-small{
@@ -140,7 +140,7 @@
     }
     
     #bannerBar{
-        height: 90px;
+        height: 60px;
         background-color: rgb(33,40,55);
         margin-bottom: 20px;
         padding-right: 6px;
@@ -171,8 +171,8 @@
     
     #sectionTitle-menu-small{
         float: right;
-        width: 50px;
-        height:82px;
+        width: 60px;
+        height: 52px;
         background-color: rgb(33,40,55);
         display: table-cell;
         margin-right: 15px;
@@ -217,13 +217,18 @@
         background-color: #5bb75b;
     }
     
+    #menu-toggle-small{
+        width: 50px;
+        height: 52px;
+    }
+    
     .main {
         color:#FFFAFA;
         width: auto;
         background-color: rgba(33,40,55,0.75);
         padding: 5px;
         margin-bottom: 150px; /* Add more spacing between footer and main */
-        margin-top: 100px; /*Used for a fixed banner*/
+        margin-top: 70px; /*Used for a fixed banner*/
         font-family: Verdana, Geneva, sans-serif;
         font-size: medium;
         

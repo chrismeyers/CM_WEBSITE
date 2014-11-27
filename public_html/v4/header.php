@@ -47,7 +47,7 @@
                 <div id='sectionTitle-menu-small'>
                     <ul id='menu-dropdown-small'>
                         <li>
-                            <img id='menu-toggle-small' src='images/menuIcon-small.png'>
+                            <img id='menu-toggle-small' src='images/menuIcon.png'>
                             <ul id='menu-items-small'>
                                 <li onclick='showAbout()'>About</li>
                                 <li onclick='showBuilds()'>Builds</li>
