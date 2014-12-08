@@ -8,12 +8,12 @@ $message = "";
 
 if (!preg_match("/\S+/", $name)) {
     $message = "000"; //Name required. Please try again.
-    header("Location: index.php?m=$message&n=$name&e=$fromemail&c=$usercomments#contact");
+    header("Location: index.php?m=$message&n=$name&e=$fromemail&c=$usercomments#contact-me");
     die();
 } 
 if (!preg_match("/^\S+@[A-Za-z0-9_.-]+\.[A-Za-z]{2,6}$/", $fromemail)) {
     $message = "001"; //Email Address format is incorrect. Please try again.
-    header("Location: index.php?m=$message&n=$name&e=$fromemail&c=$usercomments#contact");
+    header("Location: index.php?m=$message&n=$name&e=$fromemail&c=$usercomments#contact-me");
     die();
 }
 

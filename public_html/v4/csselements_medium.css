@@ -104,7 +104,6 @@
     #bannerBar{
         height: 90px;
         background-color: rgb(33,40,55);
-        margin-bottom: 20px;
         padding-right: 6px;
         box-shadow: 0 0 0 4px grey inset;
         /*Make content scroll "under" banner*/
@@ -117,7 +116,7 @@
     #banner-icon-small{
         display:none;
     }
-    
+
     .sectionTitle-about, .sectionTitle-builds, .sectionTitle-projects, .sectionTitle-contact{
         display: none;
     }
@@ -135,6 +134,10 @@
         font-size: x-large;
         font-family: Verdana, Geneva, sans-serif;
         text-align: center;
+    }
+    
+    .sectionTitle-txt{
+        vertical-align: middle;
     }
     
     .sectionTitle-about:hover, .sectionTitle-builds:hover, .sectionTitle-projects:hover,
@@ -157,16 +160,15 @@
     }
     
     #menu-items{
-        padding: 0;
+        padding: 4px;
         list-style: none;
         display: none;
         background-color: rgb(33,40,55);
-        margin-right: 0px;
-        width:200px;
-        position: relative;
-        box-shadow: 0 0 0 4px grey;
-        float:right; clear:right;
-        margin-right: 4px;
+        position: absolute;
+        box-shadow: 0 0 0 4px grey inset;
+        float:left; clear:right;
+        left: 0px;
+        right: 0px;
     }
     
     #menu-items li{
@@ -175,13 +177,7 @@
     #menu-items li:hover{
         background-color: #5bb75b;
     }
-    
-    /*
-    #menu-toggle:hover + #menu-items{
-        display: block;
-    }
-    */
-    
+
     select.menu-items{
         background-image: url("images/menuIcon.png");
     }
@@ -190,18 +186,30 @@
         background-image: url("images/menuIcon.png");
     }
     
-    .main {
+    .content {
         color:#FFFAFA;
         width: 790px;
+        top: 90px;
+        left: 0;
+        right: 0;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 100px; /* Add more spacing between footer and main */
-        margin-top: 100px; /*Used for a fixed banner*/
+        margin-bottom: 100px; /* Add more spacing between footer and content */
+        margin-top: 20px; /*Used for a fixed banner*/
         background-color: rgba(33,40,55,0.75);
         padding: 5px;
         font-family: Verdana, Geneva, sans-serif;
-        font-size: medium; 
+        font-size: medium;
+        position: absolute;
+        z-index: -1;
+        float: bottom;
     }  
+    
+    .headerLink{
+        color: white;
+        text-decoration: none;
+        font-family: Verdana, Geneva, sans-serif;
+    }
 
     #footer {
         font-size: small; 
@@ -221,9 +229,24 @@
     }
    
     .footer-links{
-       padding-left: 10px;
-       display: inline-block;
-       float: left;
+        padding-left: 10px;
+        display: inline-block;
+        float: left;
+    }
+    
+    .footer-social{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+    .footer-bullets{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+    .footer-resume{
+        display: inline-block;
+        vertical-align: middle;
     }
 
     .footer-years{

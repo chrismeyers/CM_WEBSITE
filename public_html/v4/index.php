@@ -25,10 +25,9 @@
     <body>
 <!-- HEADER -->
         <?php include 'header.php'; ?>
-        
+
 <!-- ABOUT SECTION -->
-        <div id="about" class="main">
-            <a name="about"></a>
+        <div id="about" class="content">
             <img src="images/sub_banners/aboutbanner.png"
                  id="showMoreInfo1"
                  class="section" 
@@ -72,9 +71,9 @@
                 <div class="instructions">
                     To view the other sections of this website, use the menu in the top right corner or the links below:
                     <ul>
-                        <li><a class="fancytxt" onclick="showBuilds()">Builds</a></li>
-                        <li><a class="fancytxt" onclick="showProjects()">Projects</a></li>
-                        <li><a class="fancytxt" onclick="showContact()">Contact</a></li>
+                        <li><a href='#my-builds' class="fancytxt" onclick="showSection('builds')">Builds</a></li>
+                        <li><a href='#my-projects' class="fancytxt" onclick="showSection('projects')">Projects</a></li>
+                        <li><a href='#contact-me' class="fancytxt" onclick="showSection('contact')">Contact</a></li>
                     </ul>
                 </div>
 
@@ -82,7 +81,7 @@
         </div>
 
 <!-- BUILDS SECTION -->
-        <div id="builds" class="main">
+        <div id="builds" class="content">
             <img src="images/sub_banners/buildsbanner.png" 
                  id="showMoreInfo2"
                  class="section" 
@@ -91,7 +90,7 @@
 
             <br />
             <div class="SECmoreinfo-div">
-                
+
                 <!-- MATT'S BUILD -->
                 <span class="whichComp"><b>March 2012 - Built for my brother, Matt.</b></span>
                 <table class="computers">
@@ -108,7 +107,7 @@
                         <td class="force-col-specs">
                             <ul class="specs1-ul" >
                                 <li class="specs1-li">
-                                    <b><u>Specifications</u></b>
+                                    <b>Specifications</b>
                                     <br />
                                     <div class="specs-txt">
                                         <u>Processor:</u> AMD 6-core FX-6100 &#64; 3.3GHz 
@@ -146,7 +145,7 @@
                         <td class="force-col-specs">
                             <ul class="specs2-ul">
                                 <li class="specs2-li">
-                                    <b><u>Specifications</u></b>
+                                    <b>Specifications</b>
                                     <br />
                                     <div class="specs-txt">
                                         <u>Processor:</u> Intel Core i7 3770k &#64; 4.2GHz
@@ -188,7 +187,7 @@
                         <td class="force-col-specs">
                             <ul class="specs3-ul">
                                 <li class="specs3-li">
-                                    <b><u>Specifications</u></b>
+                                    <b>Specifications</b>
                                     <br />
                                     <div class="specs-txt">
                                         <u>Processor:</u> Intel Core i7 4770k &#64; 3.5GHz
@@ -212,8 +211,7 @@
         </div>
 
 <!-- PROJECTS SECTION -->
-        <div id="projects" class="main">
-                
+        <div id="projects" class="content">
             <img src="images/sub_banners/projectsbanner.png"
                  id="showMoreInfo3"
                  class="section"  
@@ -444,7 +442,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- PCA -->
                 <br /> <hr>
                 <div class="proj">
@@ -518,7 +516,7 @@
         </div>
 
 <!-- CONTACT SECTION -->
-        <div id="contact" class="main">
+        <div id="contact" class="content">
             <img src="images/sub_banners/contactbanner.png"
                  id="showMoreInfo4"
                  class="section"  
@@ -593,7 +591,6 @@
                     </table>
                 </form>    
             </div>
-
         </div>
 
  <!-- FOOTER -->
@@ -616,39 +613,24 @@
             var contact = document.getElementById('contact');
             var specificPage = window.location.hash;
 
-            switch(specificPage){
-                case("#about"):
-                    showAbout(); break;
-                case("#builds"):
-                    showBuilds(); break;
-                case("#projects"):
-                    showProjects(); break;
-                case("#contact"):
-                    showContact(); break;
+            // Handles browser back and forward.
+            window.onhashchange = function(){
+                showSection(translateHash(window.location.hash.substr(1)));
+            };
+
+            // Reads hash from url and changes page, defaults to about.
+            if(specificPage === null || specificPage === ''){
+                showSection('about');
             }
-            
-            function showAbout(){
-                hideAll();
-                about.style.display = 'block';
-                topOfPage();
+            else{
+                showSection(translateHash(specificPage.substr(1)));
             }
-            
-            function showBuilds(){
+
+            // Displays new section.
+            function showSection(section){
+                var toShow = document.getElementById(section);
                 hideAll();
-                builds.style.display = 'block';
-                topOfPage();
-            }
-            
-            function showProjects(){
-                hideAll();
-                projects.style.display = 'block';
-                topOfPage();
-            }
-            
-            function showContact(){
-                hideAll();
-                contact.style.display = 'block';
-                topOfPage();
+                toShow.style.display = 'block';
             }
             
             function hideAll(){
@@ -659,23 +641,54 @@
             }
             
             function topOfPage(){
-                document.body.scrollTop = document.documentElement.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
             }
             
-             //Click menu
+            function translateHash(value){
+                switch(value){
+                    case("about-me"):
+                        return "about";
+                    case("my-builds"):
+                        return "builds";
+                    case("my-projects"):
+                        return "projects";
+                    case("contact-me"):
+                        return "contact";
+                    default:
+                        return "about";
+                }
+            }
+            
+            //Click menu
             $(function() {
-                $('#menu-toggle-small').each(function() { //click button
+                $('#menu-click').each(function() { //click button
+                    $(this).click(function() {
+                        $(this).siblings('#menu-items').slideToggle("fast");
+                    });
+                });
+            });
+            $(function() {
+                $('#menu-items').each(function() { //click section
+                    $(this).click(function() {
+                        //close after a selection was made
+                        $('#menu-click').siblings('#menu-items').slideToggle("fast");
+                    });
+                });
+            });
+
+
+            $(function() {
+                $('#menu-click-small').each(function() { //click button
                     $(this).click(function() {
                         $(this).siblings('#menu-items-small').slideToggle("fast");
                     });
                 });
             });
-            
             $(function() {
                 $('#menu-items-small').each(function() { //click section
                     $(this).click(function() {
                         //close after a selection was made
-                        $('#menu-toggle-small').siblings('#menu-items-small').slideToggle("fast");
+                        $('#menu-click-small').siblings('#menu-items-small').slideToggle("fast");
                     });
                 });
             });

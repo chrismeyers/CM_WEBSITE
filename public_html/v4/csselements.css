@@ -32,6 +32,32 @@
         text-align: center;
     }
     
+    .content{
+        color:#FFFAFA;
+        width: 790px;
+        display: block;
+        top: 90px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px; /* Add more spacing between footer and content */
+        margin-top: 20px;
+        background-color: rgba(33,40,55,0.75);
+        padding: 5px;
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: medium;
+        position: absolute;
+        z-index: -1;
+        float: bottom;
+    }
+
+    .headerLink{
+        color: white;
+        text-decoration: none;
+        font-family: Verdana, Geneva, sans-serif;
+    }
+    
     /* Remove IE img link border*/
     img{
       border: 0;
@@ -104,7 +130,6 @@
     #bannerBar{
         height: 90px;
         background-color: rgb(33,40,55);
-        margin-bottom: 20px;
         padding-right: 6px;
         box-shadow: 0 0 0 4px grey inset;
         /*Make content scroll "under" banner*/
@@ -112,6 +137,7 @@
         top: 0;
         right: 0;
         left: 0;
+        float: top;
     }
     
     #banner-icon-small{
@@ -161,19 +187,6 @@
         cursor: pointer;
     }
     
-    .main {
-        color:#FFFAFA;
-        width: 790px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 100px; /* Add more spacing between footer and main */
-        margin-top: 100px;/*Used for a fixed banner*/
-        background-color: rgba(33,40,55,0.75);
-        padding: 5px;
-        font-family: Verdana, Geneva, sans-serif;
-        font-size: medium; 
-    }  
-
     .instructions{
         display: none;
     }
@@ -194,11 +207,26 @@
         border-top-style: solid;
         border-top-width: 4px;
     }
-   
+
     .footer-links{
-       padding-left: 10px;
-       display: inline-block;
-       float: left;
+        padding-left: 10px;
+        display: inline-block;
+        float: left;
+    }
+    
+    .footer-social{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+    .footer-bullets{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+    .footer-resume{
+        display: inline-block;
+        vertical-align: middle;
     }
 
     .footer-years{

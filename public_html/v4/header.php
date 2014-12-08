@@ -20,39 +20,95 @@
                 </a>
             </div>
             
+            <!-- FULL MENU -->
             <div class='banner-nav'>
-                <div class='sectionTitle-contact' onclick='showContact()'><div class='sectionTitle-txt'>Contact</div></div>
-                <div class='sectionTitle-projects' onclick='showProjects()'><div class='sectionTitle-txt'>Projects</div></div>
-                <div class='sectionTitle-builds' onclick='showBuilds()'><div class='sectionTitle-txt'>Builds</div></div>
-                <div class='sectionTitle-about' onclick='showAbout()'><div class='sectionTitle-txt'>About</div></div>
+                <a href='#contact-me'>
+                    <div class='sectionTitle-contact' onclick=showSection('contact')>
+                        <div class='sectionTitle-txt'>
+                            <span class='headerLink'>Contact</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href='#my-projects'>
+                    <div class='sectionTitle-projects' onclick=showSection('projects')>
+                        <div class='sectionTitle-txt'>
+                            <span class='headerLink'>Projects</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href='#my-builds'>
+                    <div class='sectionTitle-builds' onclick=showSection('builds')>
+                        <div class='sectionTitle-txt'>
+                            <span class='headerLink'>Builds</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href='#about-me'>
+                    <div class='sectionTitle-about' onclick=showSection('about')>
+                        <div class='sectionTitle-txt'>
+                            <span class='headerLink'>About</span>
+                        </div>
+                    </div>
+                </a>
             </div>
             
+            <!-- MEDIUM MENU-->
             <div id='banner-icon'>
                 <div id='sectionTitle-menu'>
-                    <ul id='menu-dropdown' onmouseover='showMenuHover()' onmouseout='hideMenuHover()'>
+                    <ul id='menu-dropdown'>
                         <li>
-                            <img id='menu-toggle' src='images/menuIcon.png'>
+                            <div id='menu-click'>
+                                <img id='menu-toggle' src='images/menuIcon.png'>
+                            </div>
                             <ul id='menu-items'>
-                                <li onclick='showAbout()'>About</li>
-                                <li onclick='showBuilds()'>Builds</li>
-                                <li onclick='showProjects()'>Projects</li>
-                                <li onclick='showContact()'>Contact</li>
+                                <a href='#about-me' class='headerLink'>
+                                    <li class='sectionTitle-txt' onclick=showSection('about')>About</li>
+                                </a>
+                                
+                                <a href='#my-builds' class='headerLink'>
+                                    <li onclick=showSection('builds')>Builds</li>
+                                </a>
+                                
+                                <a href='#my-projects' class='headerLink'>
+                                    <li onclick=showSection('projects')>Projects</li>
+                                </a>
+                                
+                                <a href='#contact-me' class='headerLink'>
+                                    <li onclick=showSection('contact')>Contact</li>
+                                </a>
                             </ul>
                         </li>
                     </ul>
                 </div>
             </div>
             
+            <!-- SMALL/MOBILE MENU -->
             <div id='banner-icon-small'>
                 <div id='sectionTitle-menu-small'>
                     <ul id='menu-dropdown-small'>
                         <li>
-                            <img id='menu-toggle-small' src='images/menuIcon.png'>
+                            <div id='menu-click-small'>
+                                <img id='menu-toggle-small' src='images/menuIcon.png'>
+                            </div>
                             <ul id='menu-items-small'>
-                                <li onclick='showAbout()'>About</li>
-                                <li onclick='showBuilds()'>Builds</li>
-                                <li onclick='showProjects()'>Projects</li>
-                                <li onclick='showContact()'>Contact</li>
+                                <a href='#about-me' class='headerLink'>
+                                    <li onclick=showSection('about')>About</li>
+                                </a>
+
+                                <a href='#my-builds' class='headerLink'>
+                                    <li onclick=showSection('builds')>Builds</li>
+                                </a>
+
+                                <a href='#my-projects' class='headerLink'>
+                                    <li onclick=showSection('projects')>Projects</li>
+                                </a>
+
+                                <a href='#contact-me' class='headerLink'>
+                                    <li onclick=showSection('contact')>Contact</li>
+                                </a>
                             </ul>
                         </li>
                     </ul>

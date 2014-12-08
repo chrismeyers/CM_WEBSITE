@@ -142,7 +142,6 @@
     #bannerBar{
         height: 60px;
         background-color: rgb(33,40,55);
-        margin-bottom: 20px;
         padding-right: 6px;
         box-shadow: 0 0 0 4px grey inset;
         clear: both;
@@ -198,16 +197,16 @@
     
     #menu-items-small{
         /*margin: 0;*/
-        padding: 0;
+        padding: 4px;
         list-style: none;
         display: none;
         background-color: rgb(33,40,55);
-        margin-right: 0px;
-        width:200px;
-        position: relative;
-        box-shadow: 0 0 0 4px grey;
-        float:right; clear:right;
-        /*margin-top: 4px;*/
+        margin-top: -2px;
+        position: absolute;
+        box-shadow: 0 0 0 4px grey inset;
+        float:left; clear:right;
+        left: 0px;
+        right: 0px;
     }
     
     #menu-items-small li{
@@ -222,17 +221,22 @@
         height: 52px;
     }
     
-    .main {
+    .content {
         color:#FFFAFA;
         width: auto;
         background-color: rgba(33,40,55,0.75);
         padding: 5px;
-        margin-bottom: 150px; /* Add more spacing between footer and main */
+        margin-bottom: 150px; /* Add more spacing between footer and content */
         margin-top: 70px; /*Used for a fixed banner*/
         font-family: Verdana, Geneva, sans-serif;
         font-size: medium;
-        
-    }  
+    }
+    
+    .headerLink{
+        color: white;
+        text-decoration: none;
+        font-family: Verdana, Geneva, sans-serif;
+    }
 
     #builds, #projects, #contact{
         display: none;
@@ -254,10 +258,28 @@
     }
     
     .footer-links{
-       text-align: center;
+        padding-left: 10px;
+        display: block;
+        text-align: center;
+    }
+    
+    .footer-social{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+    .footer-bullets{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+    .footer-resume{
+        display: inline-block;
+        vertical-align: middle;
     }
 
     .footer-years{
+        display: block;
         text-align: center;
         padding-right: 10px;
     }
