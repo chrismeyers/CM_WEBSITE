@@ -53,13 +53,13 @@
                 </a>
             </div>
             
-            <!-- MEDIUM MENU-->
+            <!-- HAMBURGER MENU-->
             <div id='banner-icon'>
                 <div id='sectionTitle-menu'>
                     <ul id='menu-dropdown'>
                         <li>
                             <div id='menu-click'>
-                                <img id='menu-toggle' src='images/icons/menuIcon.png'>
+                                <img id='menu-toggle' src='images/icons/menuIcon.png' title='Menu' alt='Menu'>
                             </div>
                             <ul id='menu-items'>
                                 <a href='#about-me' class='headerLink'>
@@ -81,38 +81,5 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-            
-            <!-- SMALL/MOBILE MENU -->
-            <div id='banner-icon-small'>
-                <div id='sectionTitle-menu-small'>
-                    <ul id='menu-dropdown-small'>
-                        <li>
-                            <div id='menu-click-small'>
-                                <img id='menu-toggle-small' src='images/icons/menuIcon.png'>
-                            </div>
-                            <ul id='menu-items-small'>
-                                <a href='#about-me' class='headerLink'>
-                                    <li class='sectionTitle-txt' onclick=showSection('about')>About</li>
-                                </a>
-
-                                <a href='#my-builds' class='headerLink'>
-                                    <li class='sectionTitle-txt' onclick=showSection('builds')>Builds</li>
-                                </a>
-
-                                <a href='#my-projects' class='headerLink'>
-                                    <li class='sectionTitle-txt' onclick=showSection('projects')>Projects</li>
-                                </a>
-
-                                <a href='#contact-me' class='headerLink'>
-                                    <li class='sectionTitle-txt' onclick=showSection('contact')>Contact</li>
-                                </a>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            
-        </div>"
-
-?>
+            </div>    
+        </div>";

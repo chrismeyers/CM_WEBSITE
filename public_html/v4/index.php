@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="csselements.css" />
         <link rel="stylesheet" href="csselements_medium.css" />
         <link rel="stylesheet" href="csselements_small.css" />
+        <link rel="stylesheet" href="csselements_print.css" />
         <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
         <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
         <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />

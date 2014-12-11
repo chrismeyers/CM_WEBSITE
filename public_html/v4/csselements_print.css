@@ -1,0 +1,13 @@
+/* 
+    Document   : csselements_print
+    Created on : Dec 10, 2014, 8:20:16 PM
+    Author     : Chris Meyers
+    Description:
+        Printing stylesheet.
+*/
+
+@media print{
+    .banner-img-small, .banner-nav, #banner-icon, #footer{
+        display: none;
+    }
+}

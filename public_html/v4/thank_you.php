@@ -22,8 +22,10 @@
 
 <!-- MESSAGE -->
         <div class="content">
-            <span style="font-size: medium;">Your request has been successfully submitted. Thank you!</span>
-            <p style="font-size: medium;"><b>Redirecting to Homepage in 5 seconds . . . </b></p>
+            <div class="content-text">
+                <span style="font-size: medium;">Your request has been successfully submitted. Thank you!</span>
+                <p style="font-size: medium;"><b>Redirecting to Homepage in 5 seconds . . . </b></p>
+            </div>
         </div>
 
 <!-- FOOTER -->

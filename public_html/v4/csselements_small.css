@@ -134,7 +134,7 @@
         width: 70px;
     }
     
-    #banner-icon-small{
+    #banner-icon{
         float: right;
         margin-right: 0px; 
     }
@@ -158,10 +158,6 @@
         display: none;
     }
     
-    #banner-icon{
-        display: none;
-    }
-    
     #banner{
         float:left;
     }
@@ -170,7 +166,7 @@
         display: none;
     }
     
-    #sectionTitle-menu-small{
+    #sectionTitle-menu{
         float: right;
         width: 60px;
         height: 52px;
@@ -194,17 +190,17 @@
     }
     
     .sectionTitle-about:hover, .sectionTitle-builds:hover, .sectionTitle-projects:hover,
-        .sectionTitle-contact:hover, #sectionTitle-menu-small:hover{
+        .sectionTitle-contact:hover, #sectionTitle-menu:hover{
         cursor: pointer;
     }
     
-    #menu-dropdown-small{
+    #menu-dropdown{
         margin: 0; 
         padding: 0;
         list-style: none;
     }
     
-    #menu-items-small{
+    #menu-items{
         padding: 4px;
         list-style: none;
         display: none;
@@ -216,17 +212,17 @@
         right: 0px;
     }
     
-    #menu-items-small li{
+    #menu-items li{
         height: 50px;
     }
     
-    #menu-toggle-small{
+    #menu-toggle{
         width: 25px;
         height: 27px;
         margin-top: 12px;
     }
     
-    #menu-click-small{
+    #menu-click{
         height: 56px;
     }
     
