@@ -1,2 +1,8 @@
+images
 font=mistral
 size=36
+
+html
+font=font-family: Verdana, Geneva, sans-serif;
+color=white
+size=medium

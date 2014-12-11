@@ -12,7 +12,7 @@
     }
     
     body { 
-        background-image: url(images/colorado.jpg);
+        background-image: url(images/bg/colorado.jpg);
         /*background-repeat:no-repeat;*/
         background-attachment: fixed;
         background-size: cover;
@@ -44,12 +44,15 @@
         margin-bottom: 100px; /* Add more spacing between footer and content */
         margin-top: 20px;
         background-color: rgba(33,40,55,0.75);
-        padding: 5px;
         font-family: Verdana, Geneva, sans-serif;
         font-size: medium;
         position: absolute;
         z-index: -1;
         float: bottom;
+    }
+    
+    .content-text{
+        padding: 5px;
     }
 
     .headerLink{
@@ -121,6 +124,7 @@
 
     #banner{
         float:left;
+        height: 90px;
     }
     
     div.banner-img-small{
@@ -131,7 +135,10 @@
         height: 90px;
         background-color: rgb(33,40,55);
         padding-right: 6px;
-        box-shadow: 0 0 0 4px grey inset;
+        border-bottom-color: white;
+        border-bottom-style: solid;
+        border-bottom-width: 4px;
+        /*box-shadow: 0 0 0 4px grey inset;*/
         /*Make content scroll "under" banner*/
         position: fixed;
         top: 0;
@@ -147,11 +154,10 @@
     .sectionTitle-about, .sectionTitle-builds, .sectionTitle-projects{
         float: right;
         width:100px;
-        height:82px;
+        height:90px;
         background-color: rgb(33,40,55);
         display: inline-block;
         margin-right: 30px;
-        margin-top: 4px;
         color: white;
         font-size: x-large;
         font-family: Verdana, Geneva, sans-serif;
@@ -161,11 +167,10 @@
     .sectionTitle-contact{
         float: right;
         width: 100px;
-        height:82px;
+        height: 90px;
         background-color: rgb(33,40,55);
         display: table-cell;
         margin-right: 25px;
-        margin-top: 4px;
         vertical-align: middle;
         color: white;
         font-size: x-large;
@@ -174,7 +179,7 @@
     }
     
     .sectionTitle-txt{
-        margin-top: 20px;
+        margin-top: 24px;
     }
     
     #sectionTitle-menu{
@@ -203,7 +208,7 @@
         background-color: rgb(33,40,55);
         padding-top:5px;
         padding-bottom: 5px;
-        border-top-color: grey;
+        border-top-color: #FFFFFF;
         border-top-style: solid;
         border-top-width: 4px;
     }

@@ -143,8 +143,10 @@
         height: 60px;
         background-color: rgb(33,40,55);
         padding-right: 6px;
-        box-shadow: 0 0 0 4px grey inset;
-        clear: both;
+        border-bottom-color: white;
+        border-bottom-style: solid;
+        border-bottom-width: 4px;
+        /*box-shadow: 0 0 0 4px grey inset;*/
         /*Make content scroll "under" banner*/
         position: fixed;
         top: 0;
@@ -175,18 +177,25 @@
         background-color: rgb(33,40,55);
         display: table-cell;
         margin-right: 15px;
-        margin-top: 4px;
+        margin-top: 4px; /*2px with border*/
         color: white;
         font-size: x-large;
         font-family: Verdana, Geneva, sans-serif;
         text-align: center;
     }
     
+    .sectionTitle-txt{
+        vertical-align: middle;
+        line-height: 45px;
+        text-align: center;
+        border-bottom-color: white;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+    }
+    
     .sectionTitle-about:hover, .sectionTitle-builds:hover, .sectionTitle-projects:hover,
         .sectionTitle-contact:hover, #sectionTitle-menu-small:hover{
-        background-color: #5bb75b;
         cursor: pointer;
-        display: block;
     }
     
     #menu-dropdown-small{
@@ -196,14 +205,12 @@
     }
     
     #menu-items-small{
-        /*margin: 0;*/
         padding: 4px;
         list-style: none;
         display: none;
         background-color: rgb(33,40,55);
-        margin-top: -2px;
         position: absolute;
-        box-shadow: 0 0 0 4px grey inset;
+        box-shadow: 0 0 0 4px #FFFFFF inset;
         float:left; clear:right;
         left: 0px;
         right: 0px;
@@ -212,24 +219,29 @@
     #menu-items-small li{
         height: 50px;
     }
-    #menu-items-small li:hover{
-        background-color: #5bb75b;
-    }
     
     #menu-toggle-small{
-        width: 50px;
-        height: 52px;
+        width: 25px;
+        height: 27px;
+        margin-top: 12px;
+    }
+    
+    #menu-click-small{
+        height: 56px;
     }
     
     .content {
         color:#FFFAFA;
         width: auto;
         background-color: rgba(33,40,55,0.75);
-        padding: 5px;
         margin-bottom: 150px; /* Add more spacing between footer and content */
-        margin-top: 70px; /*Used for a fixed banner*/
+        margin-top: 80px; /*Used for a fixed banner*/
         font-family: Verdana, Geneva, sans-serif;
         font-size: medium;
+    }
+    
+    .content-text{
+        padding: 5px;
     }
     
     .headerLink{
@@ -255,6 +267,9 @@
         font-size: small; 
         padding-top:5px;
         width:auto;
+        border-top-color: white;
+        border-top-style: solid;
+        border-top-width: 4px;
     }
     
     .footer-links{

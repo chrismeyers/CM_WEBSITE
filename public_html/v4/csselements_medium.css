@@ -12,7 +12,7 @@
     }
     
     body { 
-        background-image: url(images/colorado.jpg);
+        background-image: url(images/bg/colorado.jpg);
         /*background-repeat:no-repeat;*/
         background-attachment: fixed;
         background-size: cover;
@@ -95,6 +95,7 @@
 
     #banner{
         float:left;
+        height: 90px;
     }
     
     div.banner-img-small{
@@ -105,7 +106,10 @@
         height: 90px;
         background-color: rgb(33,40,55);
         padding-right: 6px;
-        box-shadow: 0 0 0 4px grey inset;
+        border-bottom-color: white;
+        border-bottom-style: solid;
+        border-bottom-width: 4px;
+        /*box-shadow: 0 0 0 4px grey inset;*/
         /*Make content scroll "under" banner*/
         position: fixed;
         top: 0;
@@ -124,11 +128,10 @@
     #sectionTitle-menu{
         float: right;
         width: 100px;
-        height:82px;
+        height:90px;
         background-color: rgb(33,40,55);
         display: table-cell;
         margin-right: 20px;
-        margin-top: 4px;
         vertical-align: middle;
         color: white;
         font-size: x-large;
@@ -138,6 +141,11 @@
     
     .sectionTitle-txt{
         vertical-align: middle;
+        line-height: 45px;
+        text-align: center;
+        border-bottom-color: white;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
     }
     
     .sectionTitle-about:hover, .sectionTitle-builds:hover, .sectionTitle-projects:hover,
@@ -148,7 +156,7 @@
     }
     
     #menu-dropdown{
-        margin: 0; 
+        margin-top: 4px;
         padding: 0;
         list-style: none;
     }
@@ -165,7 +173,7 @@
         display: none;
         background-color: rgb(33,40,55);
         position: absolute;
-        box-shadow: 0 0 0 4px grey inset;
+        box-shadow: 0 0 0 4px #FFFFFF inset;
         float:left; clear:right;
         left: 0px;
         right: 0px;
@@ -197,13 +205,16 @@
         margin-bottom: 100px; /* Add more spacing between footer and content */
         margin-top: 20px; /*Used for a fixed banner*/
         background-color: rgba(33,40,55,0.75);
-        padding: 5px;
         font-family: Verdana, Geneva, sans-serif;
         font-size: medium;
         position: absolute;
         z-index: -1;
         float: bottom;
-    }  
+    }
+    
+    .content-text{
+        padding: 5px;
+    }
     
     .headerLink{
         color: white;
@@ -223,7 +234,7 @@
         background-color: rgb(33,40,55);
         padding-top:5px;
         padding-bottom: 5px;
-        border-top-color: grey;
+        border-top-color: white;
         border-top-style: solid;
         border-top-width: 4px;
     }

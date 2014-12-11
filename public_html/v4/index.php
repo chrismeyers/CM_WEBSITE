@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Chris Meyers: Homepage</title>
-        <link rel="shortcut icon" href="images/icon.ico">
+        <link rel="shortcut icon" href="images/icons/icon.ico">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="Author" content="Chris Meyers" />
 
@@ -28,14 +28,14 @@
 
 <!-- ABOUT SECTION -->
         <div id="about" class="content">
-            <img src="images/sub_banners/aboutbanner.png"
+            <img src="images/sub_banners/v4/aboutbanner.png"
                  id="showMoreInfo1"
                  class="section" 
                  title='About' 
                  alt="About">
 
             <br />
-            <div class="FIRSTmoreinfo-div">
+            <div class="content-text">
                 Hey there! My name is <b><i>Chris Meyers</i></b> and this page is dedicated to letting you know who I am and 
                 the technology skills that I possess.  I currently attend 
                 <a class="fancytxt" href="http://www.rowan.edu/" target="_blank">Rowan University</a>
@@ -82,22 +82,22 @@
 
 <!-- BUILDS SECTION -->
         <div id="builds" class="content">
-            <img src="images/sub_banners/buildsbanner.png" 
+            <img src="images/sub_banners/v4/buildsbanner.png" 
                  id="showMoreInfo2"
                  class="section" 
                  title='Builds'
                  alt="Builds">
 
             <br />
-            <div class="SECmoreinfo-div">
+            <div class="content-text">
 
                 <!-- MATT'S BUILD -->
                 <span class="whichComp"><b>March 2012 - Built for my brother, Matt.</b></span>
                 <table class="computers">
                     <tr>
                         <td class="force-col-specs-widepic">
-                            <a href="images/mattBuild.jpg" class="fancybox" title="Matt's Computer">
-                                <img src="images/mattBuild.jpg" 
+                            <a href="images/builds/mattBuild.jpg" class="fancybox" title="Matt's Computer">
+                                <img src="images/builds/mattBuild.jpg" 
                                      style="height:150px; width: 230px;"
                                      alt="matts_comp" 
                                      title="Click to enlarge">
@@ -134,8 +134,8 @@
                 <table class="computers">
                     <tr>
                         <td class="force-col-specs">
-                            <a href="images/myBuild.jpg" class="fancybox" title="My Computer">
-                                <img src="images/myBuild.jpg" 
+                            <a href="images/builds/myBuild.jpg" class="fancybox" title="My Computer">
+                                <img src="images/builds/myBuild.jpg" 
                                      style="height:250px; width:200px;"
                                      alt="my_comp" 
                                      title="Click to enlarge">
@@ -174,8 +174,8 @@
                 <table class="computers">
                     <tr>
                         <td class="force-col-specs">
-                            <a href="images/markBuild.jpg" class="fancybox" title="Neighbor's Computer">
-                                <img src="images/markBuild.jpg" 
+                            <a href="images/builds/markBuild.jpg" class="fancybox" title="Neighbor's Computer">
+                                <img src="images/builds/markBuild.jpg" 
                                      height="150" 
                                      width="115"
                                      style="height:250px; width:200px;"
@@ -212,14 +212,14 @@
 
 <!-- PROJECTS SECTION -->
         <div id="projects" class="content">
-            <img src="images/sub_banners/projectsbanner.png"
+            <img src="images/sub_banners/v4/projectsbanner.png"
                  id="showMoreInfo3"
                  class="section"  
                  title='Projects'
                  alt="Projects">
 
             <br />
-            <div class="THIRDmoreinfo-div">
+            <div class="content-text">
                 <!-- cm -->
                 <div class="proj">
                     <h2>chrismeyers.info, this webpage</h2>
@@ -290,9 +290,9 @@
                 <div class="proj">
                     <h2>Pinelands Tour Maker
                         <a href="http://elvis.rowan.edu/~meyers42/web/final/" target="_blank">
-                            <img src="images/link.png" 
-                                onmouseover="this.src = 'images/link_hover.png'" 
-                                onmouseout="this.src = 'images/link.png'" 
+                            <img src="images/icons/link.png" 
+                                onmouseover="this.src = 'images/icons/link_hover.png'" 
+                                onmouseout="this.src = 'images/icons/link.png'" 
                                 style="width: 16px; height: 16px;"
                                 alt="Link to Pinelands Tour Maker" 
                                 title='View site'>
@@ -396,9 +396,9 @@
                 <div class="proj">
                     <h2>League of Legends Player Data Parser
                         <a href="http://chrismeyers.info/projects/LoL_player_data/web" target="_blank">
-                            <img src="images/link.png" 
-                                onmouseover="this.src = 'images/link_hover.png'" 
-                                onmouseout="this.src = 'images/link.png'" 
+                            <img src="images/icons/link.png" 
+                                onmouseover="this.src = 'images/icons/link_hover.png'" 
+                                onmouseout="this.src = 'images/icons/link.png'" 
                                 style="width: 16px; height: 16px;"
                                 alt="Link to LoL player data" 
                                 title='View site'>
@@ -517,14 +517,14 @@
 
 <!-- CONTACT SECTION -->
         <div id="contact" class="content">
-            <img src="images/sub_banners/contactbanner.png"
+            <img src="images/sub_banners/v4/contactbanner.png"
                  id="showMoreInfo4"
                  class="section"  
                  title='Contact'
                  alt="Contact">
 
             <br />
-            <div class="FOURTHmoreinfo-div">
+            <div class="content-text">
                 <div id='errors'></div>
                 <form action="email_form.php" method="post" target="_top">
                     <p class="message"><b>Questions? Comments? Concerns? Send me a message!</b></p>
@@ -612,6 +612,7 @@
             var projects = document.getElementById('projects');
             var contact = document.getElementById('contact');
             var specificPage = window.location.hash;
+            var menu = false;
 
             // Handles browser back and forward.
             window.onhashchange = function(){
@@ -631,6 +632,7 @@
                 var toShow = document.getElementById(section);
                 hideAll();
                 toShow.style.display = 'block';
+                topOfPage();
             }
             
             function hideAll(){
@@ -641,7 +643,7 @@
             }
             
             function topOfPage(){
-                document.documentElement.scrollTop = 0;
+                window.scrollTo(0, 0);
             }
             
             function translateHash(value){
@@ -659,10 +661,11 @@
                 }
             }
             
-            //Click menu
+            //Click menu for medium
             $(function() {
                 $('#menu-click').each(function() { //click button
                     $(this).click(function() {
+                        console.log("here");
                         $(this).siblings('#menu-items').slideToggle("fast");
                     });
                 });
@@ -676,7 +679,7 @@
                 });
             });
 
-
+            //Click menu for small/mobile
             $(function() {
                 $('#menu-click-small').each(function() { //click button
                     $(this).click(function() {
@@ -687,7 +690,7 @@
             $(function() {
                 $('#menu-items-small').each(function() { //click section
                     $(this).click(function() {
-                        //close after a selection was made
+                        //close menu after a selection was made
                         $('#menu-click-small').siblings('#menu-items-small').slideToggle("fast");
                     });
                 });

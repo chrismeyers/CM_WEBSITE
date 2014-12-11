@@ -6,9 +6,9 @@
                     <a href='https://www.facebook.com/meyers42'
                        target='_blank'
                        style='text-decoration: none;'>
-                        <img src='images/facebook.png'
-                             onmouseover=\"this.src = 'images/facebook_hover.png'\" 
-                             onmouseout=\"this.src = 'images/facebook.png'\"
+                        <img src='images/social/facebook.png'
+                             onmouseover=\"this.src = 'images/social/facebook_hover.png'\" 
+                             onmouseout=\"this.src = 'images/social/facebook.png'\"
                              style='width: 16px; height: 16px;'
                              alt='Facebook'
                              title='Facebook'>
@@ -21,9 +21,9 @@
                     <a href='http://www.linkedin.com/pub/chris-meyers/61/7a9/b09'
                        target='_blank' 
                        style='text-decoration: none;'>
-                        <img src='images/linkedin.png'
-                             onmouseover=\"this.src = 'images/linkedin_hover.png'\" 
-                             onmouseout=\"this.src = 'images/linkedin.png'\"
+                        <img src='images/social/linkedin.png'
+                             onmouseover=\"this.src = 'images/social/linkedin_hover.png'\" 
+                             onmouseout=\"this.src = 'images/social/linkedin.png'\"
                              style='width: 16px; height: 16px;'
                              alt='LinkedIn' 
                              title='LinkedIn'>
@@ -36,9 +36,9 @@
                     <a href='https://github.com/chrismeyers' 
                        target='_blank'
                        style='text-decoration: none;'>
-                        <img src='images/github.png'
-                             onmouseover=\"this.src = 'images/github_hover.png'\" 
-                             onmouseout=\"this.src = 'images/github.png'\"
+                        <img src='images/social/github.png'
+                             onmouseover=\"this.src = 'images/social/github_hover.png'\" 
+                             onmouseout=\"this.src = 'images/social/github.png'\"
                              style='width: 16px; height: 16px;'
                              alt='GitHub'
                              title='GitHub'>
