@@ -209,7 +209,6 @@
         font-size: medium;
         position: absolute;
         z-index: -1;
-        float: bottom;
     }
     
     .content-text{

@@ -66,7 +66,7 @@
 
                 <p></p>
                 A copy of my Résumé is available for download 
-                <a class="fancytxt" href='downloads/Resume_ChrisMeyers.pdf' download="ChrisMeyersResume">here</a>.   
+                <a class="fancytxt" href='downloads/Resume_ChrisMeyers.pdf' download="Resume_ChrisMeyers">here</a>.   
 
                 <p></p>
                 <div class="instructions">
