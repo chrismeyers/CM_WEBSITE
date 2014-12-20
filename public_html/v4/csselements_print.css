@@ -10,4 +10,54 @@
     .banner-img-small, .banner-nav, #banner-icon, #footer{
         display: none;
     }
+    
+    .projImages-full-img-square{
+        height:200px;
+        width: 200px;
+    }
+    
+    .projImages-full-img-land{
+        height:125px;
+        width: 200px;
+    }
+    
+    .projImages-full-img-port{
+        height:200px;
+        width: 125px;
+    }
+    
+    .projImages-small{
+        display: inline;
+    }
+    
+    .projImages-small-img-square{
+        height: 200px;
+        width: 200px;
+        margin-left: 20px;
+    }
+    
+    .projImages-small-img-land{
+        height: 40%;
+        width: 40%;
+        margin-left: 20px;
+    }
+    
+    .projImages-small-img-port{
+        height: 25%;
+        width: 25%;
+        margin-left: 20px;
+    }
+    
+    .no-decoration{
+        text-decoration: none;
+    }
+    
+    .proj-link{
+        width: 16px;
+        height: 16px;
+    }
+    
+    .force-col-specs{
+        display: block;
+    }
 }

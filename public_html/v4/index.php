@@ -30,45 +30,42 @@
 <!-- ABOUT SECTION -->
         <div id="about" class="content">
             <img src="images/sub_banners/v4/aboutbanner.png"
-                 id="showMoreInfo1"
                  class="section" 
                  title='About' 
                  alt="About">
 
-            <br />
             <div class="content-text">
                 Hey there! My name is <b><i>Chris Meyers</i></b> and this page is dedicated to letting you know who I am and 
                 the technology skills that I possess.  I currently attend 
                 <a class="fancytxt" href="http://www.rowan.edu/" target="_blank">Rowan University</a>
                 in Glassboro, NJ where I am studying Computer Science.  I have strong interests in Computer Networking and 
                 Web Development.  Over the past few years, I have picked up experience with the following programming languages:
-
-                <p></p>
+                
                 <ul>
-                    <li style="list-style-type:disc;">Java, HTML, CSS, PHP, Javascript, C#, Visual Basic, C, C++, MIPS assembly, 
+                    <li class="li-filled">Java, HTML, CSS, PHP, Javascript, C#, Visual Basic, C, C++, MIPS assembly, 
                                                       Scheme(LISP dialect), Ada, Lua, Perl, MySQL.</li>
                 </ul>
-
-                <p></p>       
+                
+                <p>      
                 Aside from programming, I have interests in Computer Aided Drafting(CAD) and 3D Modeling.  I have 4+ years of
                 experience in the following programs:
+                </p>
 
-                <p></p>
                 <ul>
-                    <li style="list-style-type:disc;">AutoDesk AutoCAD, AutoDesk Inventor, Rhinoceros.</li>
+                    <li class="li-filled">AutoDesk AutoCAD, AutoDesk Inventor, Rhinoceros.</li>
                 </ul>
 
-                <p></p>
+                <p>
                 During my senior year of High School, I competed in the NJ Technology Student Association annual 
                 competition.  I placed 3rd in the 'Computer-Aided Design (CAD), 3D, Engineering' category
                 (<a class="fancytxt" href="http://njtsa.pages.tcnj.edu/files/2011/04/2011-HS-Event-Results-PPT1.pdf#page=7" target="_blank">Event Results</a>).
+                </p>
 
-
-                <p></p>
+                <p>
                 A copy of my Résumé is available for download 
-                <a class="fancytxt" href='downloads/Resume_ChrisMeyers.pdf' download="Resume_ChrisMeyers">here</a>.   
-
-                <p></p>
+                <a class="fancytxt" href='downloads/Resume_ChrisMeyers.pdf' download="Resume_ChrisMeyers">here</a>.
+                </p>
+                
                 <div class="instructions">
                     To view the other sections of this website, use the menu in the top right corner or the links below:
                     <ul>
@@ -84,170 +81,137 @@
 <!-- BUILDS SECTION -->
         <div id="builds" class="content">
             <img src="images/sub_banners/v4/buildsbanner.png" 
-                 id="showMoreInfo2"
-                 class="section" 
+                 class="section"
                  title='Builds'
                  alt="Builds">
 
-            <br />
             <div class="content-text">
-
                 <!-- MATT'S BUILD -->
-                <span class="whichComp"><b>March 2012 - Built for my brother, Matt.</b></span>
-                <table class="computers">
-                    <tr>
-                        <td class="force-col-specs-widepic">
+                <div class="build">
+                    <h3 class="first-header">March 2012 - Built for my brother, Matt.</h3>
+                    <div class="build-info">
+                        <div class="build-pic">
                             <a href="images/builds/mattBuild.jpg" class="fancybox" title="Matt's Computer">
                                 <img src="images/builds/mattBuild.jpg" 
-                                     style="height:150px; width: 230px;"
-                                     alt="matts_comp" 
+                                     class="build-pic-img-land"
+                                     alt="Matt's computer" 
                                      title="Click to enlarge">
                             </a>
-                        </td>
+                        </div>
 
-                        <td class="force-col-specs">
-                            <ul class="specs1-ul" >
-                                <li class="specs1-li">
-                                    <b>Specifications</b>
-                                    <br />
-                                    <div class="specs-txt">
-                                        <u>Processor:</u> AMD 6-core FX-6100 &#64; 3.3GHz 
-                                        <br />
-                                        <u>Mobo:</u> Gigabyte 990FXA-UD3
-                                        <br />
-                                        <u>Memory:</u> 8GB G.SKILL Ripjaws Series 1600MHz
-                                        <br />
-                                        <u>HDD:</u> WD5000AAKX 500GB &#64; 7200rpm  
-                                        <br />
-                                        <u>Video Card:</u> XFX Radeon 6870 1GB
-                                    </div>
-                                </li>
+                        <div class="build-specs">
+                            <b>Specifications</b>
+                            <ul>
+                                <li><u>Processor:</u> AMD 6-core FX-6100 &#64; 3.3GHz</li>
+                                <li><u>Mobo:</u> Gigabyte 990FXA-UD3</li>
+                                <li><u>Memory:</u> 8GB G.SKILL Ripjaws Series 1600MHz</li>
+                                <li><u>HDD:</u> WD5000AAKX 500GB &#64; 7200rpm</li>
+                                <li><u>Video Card:</u> XFX Radeon 6870 1GB</li>
                             </ul>
-                        </td>
-                    </tr>
-                </table>
+                        </div>
+                    </div>
+                </div>
 
-                <p></p>
+                <br />
                 <hr />
 
                 <!-- MY BUILD -->
-                <span class="whichComp"><b>February 2013 - Built for myself.</b></span>
-                <table class="computers">
-                    <tr>
-                        <td class="force-col-specs">
+                <div class="build">
+                    <h3>February 2013 - Built for myself.</h3>
+                    <div class="build-info">
+                        <div class="build-pic">
                             <a href="images/builds/myBuild.jpg" class="fancybox" title="My Computer">
                                 <img src="images/builds/myBuild.jpg" 
-                                     style="height:250px; width:200px;"
-                                     alt="my_comp" 
+                                     class="build-pic-img-port"
+                                     alt="My computer" 
                                      title="Click to enlarge">
                             </a>
-                        </td> 
+                        </div> 
 
-                        <td class="force-col-specs">
-                            <ul class="specs2-ul">
-                                <li class="specs2-li">
-                                    <b>Specifications</b>
-                                    <br />
-                                    <div class="specs-txt">
-                                        <u>Processor:</u> Intel Core i7 3770k &#64; 4.2GHz
-                                        <br />
-                                        <u>Mobo:</u> Asus P8Z77-V LK 
-                                        <br />
-                                        <u>Memory:</u> 16GB Corsair Vengeance 1600MHz  
-                                        <br />
-                                        <u>HDD:</u> WD6400AAKS 640GB &#64; 7200rpm,<br /> ST31000524AS 1TB &#64; 7200rpm
-                                        <br />
-                                        <u>SSD:</u> Kingston V300 120GB
-                                        <br />
-                                        <u>Video Card:</u> EVGA GeForce GTX 670 FTW 2GB
-                                    </div>
-                                </li>
+                        <div class="build-specs">
+                            <b>Specifications</b>
+                            <ul>
+                                <li><u>Processor:</u> Intel Core i7 3770k &#64; 4.2GHz</li>
+                                <li><u>Mobo:</u> Asus P8Z77-V LK</li>
+                                <li><u>Memory:</u> 16GB Corsair Vengeance 1600MHz</li> 
+                                <li><u>HDD:</u> WD6400AAKS 640GB &#64; 7200rpm, ST31000524AS 1TB &#64; 7200rpm</li>
+                                <li><u>SSD:</u> Kingston V300 120GB</li>
+                                <li><u>Video Card:</u> EVGA GeForce GTX 670 FTW 2GB</li>
                             </ul>
-                        </td>
-                    </tr>
-                </table>
-
-                <p></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <br />
                 <hr />
 
                 <!-- MARK'S BUILD -->
-                <span class="whichComp"><b>September 2013 - Built for my Neighbor.</b></span>
-                <table class="computers">
-                    <tr>
-                        <td class="force-col-specs">
+                <div class="build">
+                    <h3>September 2013 - Built for my Neighbor.</h3>
+                    <div class="build-info">
+                        <div class="build-pic">
                             <a href="images/builds/markBuild.jpg" class="fancybox" title="Neighbor's Computer">
                                 <img src="images/builds/markBuild.jpg" 
-                                     height="150" 
-                                     width="115"
-                                     style="height:250px; width:200px;"
-                                     alt="marks_comp" 
+                                     class="build-pic-img-port"
+                                     alt="Mark's computer" 
                                      title="Click to enlarge">
                             </a>
-                        </td>
+                        </div>
 
-                        <td class="force-col-specs">
-                            <ul class="specs3-ul">
-                                <li class="specs3-li">
-                                    <b>Specifications</b>
-                                    <br />
-                                    <div class="specs-txt">
-                                        <u>Processor:</u> Intel Core i7 4770k &#64; 3.5GHz
-                                        <br />
-                                        <u>Mobo:</u> MSI H87-G43
-                                        <br />
-                                        <u>Memory:</u> 16GB G.SKILL Ripjaws X Series 1600MHz 
-                                        <br />
-                                        <u>HDD:</u> ST1000DM003 1TB &#64; 7200rpm
-                                        <br />
-                                        <u>SSD:</u> Kingston HyperX 3K 120GB
-                                        <br />
-                                        <u>Video Card:</u> EVGA GeForce GTX 770<br /> SuperClocked 2GB
-                                    </div>
-                                </li>
+                        <div class="build-specs">
+                            <b>Specifications</b>
+                            <ul>
+                                <li><u>Processor:</u> Intel Core i7 4770k &#64; 3.5GHz</li>
+                                <li><u>Mobo:</u> MSI H87-G43</li>
+                                <li><u>Memory:</u> 16GB G.SKILL Ripjaws X Series 1600MHz</li>
+                                <li><u>HDD:</u> ST1000DM003 1TB &#64; 7200rpm</li>
+                                <li><u>SSD:</u> Kingston HyperX 3K 120GB</li>
+                                <li><u>Video Card:</u> EVGA GeForce GTX 770 SuperClocked 2GB</li>
                             </ul>
-                        </td>
-                    </tr>
-                </table>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
-
+                
 <!-- PROJECTS SECTION -->
         <div id="projects" class="content">
             <img src="images/sub_banners/v4/projectsbanner.png"
-                 id="showMoreInfo3"
                  class="section"  
                  title='Projects'
                  alt="Projects">
 
-            <br />
             <div class="content-text">
                 <!-- cm -->
                 <div class="proj">
-                    <h2>chrismeyers.info, this webpage</h2>
+                    <h2 class="first-header">chrismeyers.info, this webpage</h2>
                     <h3>Personal Project, Fall 2013</h3>
                     <div class="projWrapper">
                         <div class="projImages">
-                            <a class="fancybox" rel="single1" href="images/project_screenshots/cm.png" title="Personal Website">
+                            <a class="fancybox no-decoration" href="images/project_screenshots/cm.png" title="Personal Website">
                                 <img src="images/project_screenshots/cm.png" 
-                                     style="height:200px; width: 200px;"
+                                     class="projImages-full-img-square"
                                      alt="My personal website" 
                                      title="Click to enlarge">
                             </a>
                         </div>
 
                         <div class="projDesc">
-                            <b>Language(s):</b> 
-                                <dd>PHP, Javascript, HTML5, CSS3</dd>
-                            <br />
-                            <b>Description:</b> 
-                                <dd>My first web project.  A digital representation of myself.</dd>
-                            <br />
-                            <b>My Role:</b>
-                                <dd>Solo project.</dd>
-                            <br />
-                            <b>Status:</b> 
-                                <dd>Being maintained.</dd>
-                            </div>
+                            <dl>
+                                <dt><b>Language(s):</b></dt>
+                                    <dd>PHP, Javascript, HTML5, CSS3</dd>
+                                    
+                                <dt><b>Description:</b></dt>
+                                    <dd>My first web project.  A digital representation of myself.</dd>
+                                    
+                                <dt><b>My Role:</b></dt>
+                                    <dd>Solo project.</dd>
+                                    
+                                <dt><b>Status:</b></dt>
+                                    <dd>Being maintained.</dd>
+                            </dl>
+                        </div>
                     </div>
                 </div>
 
@@ -259,30 +223,32 @@
                     <h3>Software Engineering I, Rowan University, Spring 2014</h3>
                     <div class="projWrapper">
                         <div class="projImages">
-                            <a class="fancybox" rel="single2" href="images/project_screenshots/genomic.png" title="Genomic Solutions Now! Software">
+                            <a class="fancybox no-decoration" href="images/project_screenshots/genomic.png" title="Genomic Solutions Now! Software">
                                 <img src="images/project_screenshots/genomic.png" 
-                                     style="height:125px; width: 200px;"
+                                     class="projImages-full-img-land"
                                      alt="Genomic Solutions Now! Software" 
                                      title="Click to enlarge">
                             </a>
                         </div>
 
                         <div class="projDesc">
-                            <b>Language(s):</b> 
-                                <dd>Java</dd>
-                            <br />
-                            <b>Description:</b> 
-                                <dd>An application built for
-                                <a href="http://www.genomicsolutionsnow.com/" class="fancytxt" target="_blank">Genomic Solutions Now</a>
-                                that simplifies the patient reports generated by a lab.</dd>
-                            <br />
-                            <b>My Role:</b>
-                                <dd>Responsible for parsing the input reports.  I also handled 
-                                    outputting the simplified reports to an Excel spreadsheet.</dd>
-                            <br />
-                            <b>Status:</b> 
-                                <dd>Complete.</dd>
-                            </div>
+                            <dl>
+                                <dt><b>Language(s):</b></dt>
+                                    <dd>Java</dd>
+                                    
+                                <dt><b>Description:</b></dt>
+                                    <dd>An application built for
+                                    <a href="http://www.genomicsolutionsnow.com/" class="fancytxt" target="_blank">Genomic Solutions Now</a>
+                                    that simplifies the patient reports generated by a lab.</dd>
+                                    
+                                <dt><b>My Role:</b></dt>
+                                    <dd>Responsible for parsing the input reports.  I also handled 
+                                        outputting the simplified reports to an Excel spreadsheet.</dd>
+                                    
+                                <dt><b>Status:</b></dt>
+                                    <dd>Complete.</dd>
+                            </dl>
+                        </div>
                     </div>
                 </div>
 
@@ -294,7 +260,7 @@
                             <img src="images/icons/link.png" 
                                 onmouseover="this.src = 'images/icons/link_hover.png'" 
                                 onmouseout="this.src = 'images/icons/link.png'" 
-                                style="width: 16px; height: 16px;"
+                                class="proj-link"
                                 alt="Link to Pinelands Tour Maker" 
                                 title='View site'>
                         </a>
@@ -302,31 +268,29 @@
                     <h3>Web Programming, Rowan University, Spring 2014</h3>
                     <div class="projWrapper">
                         <div class="projImages">
-                            <a class="fancybox" rel="gallery1" href="images/project_screenshots/pinelands_landing.png" title="Landing page">
+                            <a class="fancybox no-decoration" rel="gallery1" href="images/project_screenshots/pinelands_landing.png" title="Landing page">
                                 <img src="images/project_screenshots/pinelands_landing.png"
-                                     style="height:200px; width: 200px;"
+                                     class="projImages-full-img-square"
                                      alt="Pinelands landing page" 
                                      title="Click to enlarge">
                             </a>
                             <div class="projImages-small">
-                                <a class="fancybox"
+                                <a class="fancybox no-decoration"
                                    rel="gallery1" 
                                    href="images/project_screenshots/pinelands_tour.png"
-                                   title="Tour page"
-                                   style="text-decoration: none;">
+                                   title="Tour page">
                                     <img src="images/project_screenshots/pinelands_tour.png" 
-                                         style="height:20px; width: 20px;"
+                                         class="projImages-small-img-square"
                                          alt="Pinelands tour page" 
                                          title="Click to enlarge">
 
                                 </a>
-                                <a class="fancybox"
+                                <a class="fancybox no-decoration"
                                    rel="gallery1"
                                    href="images/project_screenshots/pinelands_contact.png"
-                                   title="Contact page"
-                                   style="text-decoration: none;">
+                                   title="Contact page">
                                     <img src="images/project_screenshots/pinelands_contact.png" 
-                                         style="height:20px; width: 20px;"
+                                         class="projImages-small-img-square"
                                          alt="Pinelands contact page" 
                                          title="Click to enlarge">
                                 </a>
@@ -334,17 +298,19 @@
                         </div>
 
                         <div class="projDesc">
-                            <b>Language(s)</b>: 
-                                <dd>PHP, Javascript, MySQL, HTML5, CSS3</dd>
-                            <br />
-                            <b>Description:</b> 
-                                <dd>An application that makes tours depending on selected points of interest.</dd>
-                            <br />
-                            <b>My Role:</b> 
-                                <dd>Solo project.</dd>
-                            <br />
-                            <b>Status:</b>
-                                <dd>Complete.</dd>
+                            <dl>
+                                <dt><b>Language(s):</b></dt>
+                                    <dd>PHP, Javascript, MySQL, HTML5, CSS3</dd>
+
+                                <dt><b>Description:</b></dt>
+                                    <dd>An application that makes tours depending on selected points of interest.</dd>
+
+                                <dt><b>My Role:</b></dt>
+                                    <dd>Solo project.</dd>
+
+                                <dt><b>Status:</b></dt>
+                                    <dd>Complete.</dd>
+                            </dl>
                         </div>
                     </div>
                 </div>
@@ -356,20 +322,19 @@
                     <h4>Intro to Android Programming, Rowan University, Summer 2014</h4>
                     <div class="projWrapper">
                         <div class="projImages">
-                            <a class="fancybox" rel="gallery2" href="images/project_screenshots/ttt_port.png" title="Tic Tac Toe Portrait">
+                            <a class="fancybox no-decoration" rel="gallery2" href="images/project_screenshots/ttt_port.png" title="Tic Tac Toe Portrait">
                                 <img src="images/project_screenshots/ttt_port.png" 
-                                     style="height:200px; width: 125px;"
+                                     class="projImages-full-img-port"
                                      alt="Tic tac toe Portrait" 
                                      title="Click to enlarge">
                             </a>
                             <div class="projImages-small">
-                                <a class="fancybox" 
+                                <a class="fancybox no-decoration" 
                                    rel="gallery2" 
                                    href="images/project_screenshots/ttt_land.png"
-                                   title="Tic Tac Toe Landscape"
-                                   style="text-decoration: none;">
+                                   title="Tic Tac Toe Landscape">
                                     <img src="images/project_screenshots/ttt_land.png" 
-                                         style="height:20px; width: 40px;"
+                                         class="projImages-small-img-land"
                                          alt="Tic tac toe Landscape" 
                                          title="Click to enlarge">
                                 </a>
@@ -377,17 +342,19 @@
                         </div>
 
                         <div class="projDesc">
-                            <b>Language(s):</b> 
-                                <dd>Java, XML</dd>
-                            <br />
-                            <b>Description:</b>
-                                <dd>An android version of tic tac toe.</dd>
-                            <br />
-                            <b>My Role:</b>
-                                <dd>Solo Project.</dd>
-                            <br />
-                            <b>Status:</b> 
-                                <dd>Complete.</dd>
+                            <dl>
+                                <dt><b>Language(s):</b></dt>
+                                    <dd>Java, XML</dd>
+                                    
+                                <dt><b>Description:</b></dt>
+                                    <dd>An android version of tic tac toe.</dd>
+                                    
+                                <dt><b>My Role:</b></dt>
+                                    <dd>Solo Project.</dd>
+                                    
+                                <dt><b>Status:</b></dt>
+                                    <dd>Complete.</dd>
+                            </dl>
                         </div>
                     </div>
                 </div>
@@ -400,7 +367,7 @@
                             <img src="images/icons/link.png" 
                                 onmouseover="this.src = 'images/icons/link_hover.png'" 
                                 onmouseout="this.src = 'images/icons/link.png'" 
-                                style="width: 16px; height: 16px;"
+                                class="proj-link"
                                 alt="Link to LoL player data" 
                                 title='View site'>
                         </a>
@@ -408,38 +375,39 @@
                     <h3>Personal Project, Summer 2014</h3>
                     <div class="projWrapper">
                         <div class="projImages">
-                            <a class="fancybox" rel="gallery3" href="images/project_screenshots/loldata_landing.png" title="LoL player data landing">
+                            <a class="fancybox no-decoration" rel="gallery3" href="images/project_screenshots/loldata_landing.png" title="LoL player data landing">
                                 <img src="images/project_screenshots/loldata_landing.png" 
-                                     style="height:200px; width: 200px;"
+                                     class="projImages-full-img-square"
                                      alt="LoL_player_data" 
                                      title="Click to enlarge">
                             </a>
                             <div class="projImages-small">
-                                <a class="fancybox"
+                                <a class="fancybox no-decoration"
                                    rel="gallery3"
                                    href="images/project_screenshots/loldata.png"
-                                   title="LoL player data results"
-                                   style="text-decoration: none;">
+                                   title="LoL player data results">
                                     <img src="images/project_screenshots/loldata.png" 
-                                         style="height:20px; width: 20px;"
+                                         class="projImages-small-img-square"
                                          alt="LoL_player_data" 
                                          title="Click to enlarge">
                                 </a>
                             </div>
                         </div>
-                        <div class="projDesc" >
-                            <b>Language(s):</b>
-                                <dd>PHP, HTML5, CSS3</dd>
-                            <br />
-                            <b>Description:</b> 
-                                <dd>An application based on the video game <i>League of Legends</i> that
-                                utilizes the Riot Games API to query and parse player data for a specified player.</dd>
-                            <br />
-                            <b>My Role:</b>
-                                <dd>Solo Project.</dd>
-                            <br />
-                            <b>Status:</b>
-                                <dd>Being maintained.</dd>
+                        <div class="projDesc">
+                            <dl>
+                                <dt><b>Language(s):</b></dt>
+                                    <dd>PHP, HTML5, CSS3</dd>
+                                    
+                                <dt><b>Description:</b></dt>
+                                    <dd>An application based on the video game <i>League of Legends</i> that
+                                    utilizes the Riot Games API to query and parse player data for a specified player.</dd>
+                                    
+                                <dt><b>My Role:</b></dt>
+                                    <dd>Solo Project.</dd>
+                                    
+                                <dt><b>Status:</b></dt>
+                                    <dd>Being maintained.</dd>
+                            </dl>
                         </div>
                     </div>
                 </div>
@@ -451,41 +419,38 @@
                     <h3>Senior Project, Rowan University, Fall 2014</h3>
                     <div class="projWrapper">
                         <div class="projImages">
-                            <a class="fancybox" rel="gallery4" href="images/project_screenshots/scoresPlot.png" 
+                            <a class="fancybox no-decoration" rel="gallery4" href="images/project_screenshots/scoresPlot.png" 
                                title="A scores plot generated from calculated principal components.">
                                 <img src="images/project_screenshots/scoresPlot.png"
-                                     style="height:200px; width: 200px;"
+                                     class="projImages-full-img-square"
                                      alt="A scores plot generated from calculated principal components."
                                      title="Click to enlarge">
                             </a>
                             <div class="projImages-small">
-                                <a class="fancybox"
+                                <a class="fancybox no-decoration"
                                    rel="gallery4" 
                                    href="images/project_screenshots/scoresData.png"
-                                   title="The calculated principal component data."
-                                   style="text-decoration: none;">
+                                   title="The calculated principal component data.">
                                     <img src="images/project_screenshots/scoresData.png" 
-                                         style="height:20px; width: 20px;"
+                                         class="projImages-small-img-square"
                                          alt="The calculated principal component data." 
                                          title="Click to enlarge">
                                 </a>
-                                <a class="fancybox"
+                                <a class="fancybox no-decoration"
                                    rel="gallery4"
                                    href="images/project_screenshots/addinBar.PNG"
-                                   title="The Excel add-in bar. Scores and loadings plot were added in this project."
-                                   style="text-decoration: none;">
+                                   title="The Excel add-in bar. Scores and loadings plot were added in this project.">
                                     <img src="images/project_screenshots/addinBar.PNG" 
-                                         style="height:20px; width: 20px;"
+                                         class="projImages-small-img-land"
                                          alt="The Excel add-in bar. Scores and loadings plot were added in this project." 
                                          title="Click to enlarge">
                                 </a>
-                                <a class="fancybox"
+                                <a class="fancybox no-decoration"
                                    rel="gallery4"
                                    href="images/project_screenshots/scoresInput-full.png"
-                                   title="Input form that is dynamically populated based on the number of principal components."
-                                   style="text-decoration: none;">
+                                   title="Input form that is dynamically populated based on the number of principal components.">
                                     <img src="images/project_screenshots/scoresInput-full.png" 
-                                         style="height:20px; width: 20px;"
+                                         class="projImages-small-img-port"
                                          alt="Input form that is dynamically populated based on the number of principal components." 
                                          title="Click to enlarge">
                                 </a>
@@ -493,22 +458,24 @@
                         </div>
 
                         <div class="projDesc">
-                            <b>Language(s)</b>: 
-                                <dd>C#</dd>
-                            <br />
-                            <b>Description:</b> 
-                                <dd>Principal component analysis (PCA) is a technique used to reduce dimensionality of
-                                    a multivariate data set in order to better understand potentially correlated data.
-                                    The goal of this project was to take an Excel add-in developed by Bristol-Myers 
-                                    Squibb and further develop it to have visualization functionality.
-                                </dd>
-                            <br />
-                            <b>My Role:</b> 
-                                <dd>Responsible for parsing the calculated principal component worksheets and storing 
-                                    them in data structures used for plotting.</dd>
-                            <br />
-                            <b>Status:</b>
-                                <dd>Complete.</dd>
+                            <dl>
+                                <dt><b>Language(s)</b>:</dt>
+                                    <dd>C#</dd>
+
+                                <dt><b>Description:</b></dt>
+                                    <dd>Principal component analysis (PCA) is a technique used to reduce dimensionality of
+                                        a multivariate data set in order to better understand potentially correlated data.
+                                        The goal of this project was to take an Excel add-in developed by Bristol-Myers 
+                                        Squibb and further develop it to have visualization functionality.
+                                    </dd>
+
+                                <dt><b>My Role:</b></dt>
+                                    <dd>Responsible for parsing the calculated principal component worksheets and storing 
+                                        them in data structures used for plotting.</dd>
+
+                                <dt><b>Status:</b></dt>
+                                    <dd>Complete.</dd>
+                            </dl>
                         </div>
                     </div>
                 </div>
@@ -519,7 +486,6 @@
 <!-- CONTACT SECTION -->
         <div id="contact" class="content">
             <img src="images/sub_banners/v4/contactbanner.png"
-                 id="showMoreInfo4"
                  class="section"  
                  title='Contact'
                  alt="Contact">
@@ -595,6 +561,7 @@
         </div>
 
  <!-- FOOTER -->
+        <div class="spacer"></div>
         <?php include 'footer.php'; ?>
 
 

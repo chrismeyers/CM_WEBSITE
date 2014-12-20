@@ -42,21 +42,27 @@
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 100px; /* Add more spacing between footer and content */
+        -webkit-margin-bottom-collapse: separate; /* Fixes margin-bottom for non-chrome browsers*/
         margin-top: 20px;
         background-color: rgba(33,40,55,0.75);
         font-family: Verdana, Geneva, sans-serif;
         font-size: medium;
-        position: absolute;
-        z-index: -1;
+        position: relative;
     }
     
     .content-text{
         padding: 5px;
     }
+    
+    .spacer{
+        overflow: hidden;
+        height: 0px;
+        width: 0px;
+    }
 
     .headerLink{
         color: white;
-        text-decoration: none;
+        text-decoration: none !important;
         font-family: Verdana, Geneva, sans-serif;
     }
     
@@ -69,18 +75,29 @@
         width: 790px;
     }
     
-    /*Only adds padding in fullscreen mode*/
-    td.force-col-right{
-        padding-right: 10px;
+    .build{
+        width: 100%;
+        height: auto;
+        display: inline-block;
+        margin-bottom: 10px;
     }
-    td.force-col-left{
-        padding-left: 10px;
+    .build-info{
+        margin: 10px;
+        padding: 0;
     }
-    td.force-col-specs{
-        width:725px;
+    .build-pic{
+        float: left;
     }
-    td.force-col-specs-widepic{
-        width:680px;
+    .build-pic-img-land{
+        height: 150px;
+        width: 230px;
+    }
+    .build-pic-img-port{
+        height:250px; 
+        width:200px;
+    }
+    .build-specs{
+        margin-left: 50%;
     }
     
     table.inputs{
@@ -94,6 +111,14 @@
         margin-right: auto;
         text-align: left;
     }
+
+    dt {
+        margin-top: 15px;
+    }
+    
+    h2.first-header, h3.first-header{
+        margin-top: 0px;
+    }
     
     input{
         width: 190px;
@@ -105,6 +130,13 @@
         width: 415px;
         height: 100px;
         font-family: Verdana, Geneva, sans-serif;
+    }
+    
+    td.force-col-right{
+        padding-right: 10px;
+    }
+    td.force-col-left{
+        padding-left: 10px;
     }
 
     .fancytxt{
@@ -143,6 +175,7 @@
         top: 0;
         right: 0;
         left: 0;
+        z-index: 1;
     }
     
     #banner-icon-small{
@@ -237,61 +270,64 @@
         float: right;
         padding-right: 10px;
     }
-    
-    /*About section, defaults to open*/
-    ul.tabs-ul { 
-        margin: 0; 
-        padding: 0; 
-    }
-    ul.tabs-ul li.FIRSTmoreinfo-li { 
-        margin: 0; 
-        padding: 0;
-        list-style: none; 
-    }
-    ul.tabs-ul li.FIRSTmoreinfo-li img {  
-        cursor: pointer;
-    }
 
     div#builds, div#projects, div#contact{
         display:none;
     }
-    
-    /*Used in builds section*/
-    ul.specs1-ul, ul.specs2-ul, ul.specs3-ul { 
-        margin: 0; 
-        padding: 0; 
-    }
-    ul.specs1-ul li.specs1-li, ul.specs2-ul li.specs2-li, ul.specs3-ul li.specs3-li { 
-        margin: 0; 
-        padding: 0;
-        list-style: none; 
-    }
-    ul.specs1-ul li.specs1-li a, ul.specs2-ul li.specs2-li a, ul.specs3-ul li.specs3-li a {  
-        cursor: pointer;
-    }
-    ul.specs1-ul li.specs1-li div.specs1-div, ul.specs2-ul li.specs2-li div.specs2-div, ul.specs3-ul li.specs3-li div.specs3-div  { 
-        display: none; 
-    }
-    
-    /*Used in projects section*/
+
     div.proj{
         height: auto;
     }
+    
     div.projWrapper{
         margin: 10px;
         padding: 0;
     }
+    
     div.projImages{
-        float:left;
+        float: left;
     }
+    
+    .projImages-full-img-square{
+        height:200px;
+        width: 200px;
+    }
+    
+    .projImages-full-img-land{
+        height:125px;
+        width: 200px;
+    }
+    
+    .projImages-full-img-port{
+        height:200px;
+        width: 125px;
+    }
+    
+    .projImages-small-img-square, .projImages-small-img-port{
+        height: 20px;
+        width: 20px;
+    }
+    
+    .projImages-small-img-land{
+        height: 20px;
+        width: 40px;
+    }
+    
     div.projDesc{
         margin-left: 30%;
     }
     
-     div.projWrapper-TTT{
-        margin: 10px;
-        padding: 0;
-        height: 200px;
+    .no-decoration{
+        text-decoration: none !important;
+    }
+    
+    .proj-link{
+        width: 16px;
+        height: 16px;
+    }
+    
+    .li-filled{
+        list-style-type: disc;
     }
     
     /* This button was generated using CSSButtonGenerator.com */
