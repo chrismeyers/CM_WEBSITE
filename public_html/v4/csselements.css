@@ -64,6 +64,7 @@
         color: white;
         text-decoration: none !important;
         font-family: Verdana, Geneva, sans-serif;
+        display: inline-block;
     }
     
     /* Remove IE img link border*/
