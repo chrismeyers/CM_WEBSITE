@@ -580,7 +580,6 @@
             var projects = document.getElementById('projects');
             var contact = document.getElementById('contact');
             var specificPage = window.location.hash;
-            var menu = false;
 
             // Handles browser back and forward.
             window.onhashchange = function(){
@@ -629,42 +628,34 @@
                 }
             }
             
-            //Click menu for medium
+            //Click menu
             $(function() {
-                $('#menu-click').each(function() { //click button
-                    $(this).click(function() {
-                        console.log("here");
-                        $(this).siblings('#menu-items').slideToggle("fast");
-                    });
-                });
-            });
-            $(function() {
-                $('#menu-items').each(function() { //click section
-                    $(this).click(function() {
-                        //close after a selection was made
-                        $('#menu-click').siblings('#menu-items').slideToggle("fast");
-                    });
-                });
-            });
+                $(document).each(function() {
+                    $(this).click(function(event) {
+                        var currentID = event.target.id;
 
-            //Click menu for small/mobile
-            $(function() {
-                $('#menu-click-small').each(function() { //click button
-                    $(this).click(function() {
-                        $(this).siblings('#menu-items-small').slideToggle("fast");
+                        if(currentID === "menu-click" || currentID === "menu-toggle"){
+                            //toggles menu on button click
+                            $('#menu-click').siblings('#menu-items').slideToggle("fast");
+                        }
+                        else{
+                            //closes menu when clicked anywhere other than button
+                            $("#menu-click").siblings('#menu-items').slideUp("fast");
+                        }
                     });
                 });
-            });
-            $(function() {
-                $('#menu-items-small').each(function() { //click section
-                    $(this).click(function() {
-                        //close menu after a selection was made
-                        $('#menu-click-small').siblings('#menu-items-small').slideToggle("fast");
-                    });
+                
+                $(document).keyup(function(event) {
+                    var currentKey = event.keyCode;
+                    
+                    //closes menu when esc is pressed
+                    if(currentKey === 27){
+                        $("#menu-click").siblings('#menu-items').slideUp("fast");
+                    }
                 });
             });
-
-            //Hover over menu
+            
+            //Hover menu
             function showMenuHover(){
                 document.getElementById('menu-items').style.display = 'block';
             }
