@@ -7,8 +7,17 @@
 */
 
 @media print{
-    .banner-img-small, .banner-nav, #banner-icon, #footer{
+    .banner-img-small, .banner-nav, #banner-icon, .instructions, #footer{
         display: none;
+    }
+    
+    .build-pic-img-land{
+        height: 150px;
+        width: 230px;
+    }
+    .build-pic-img-port{
+        height:250px; 
+        width:200px;
     }
     
     .projImages-full-img-square{
