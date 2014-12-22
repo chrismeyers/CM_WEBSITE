@@ -18,7 +18,7 @@
         /*background: url(images/colorado.jpg) no-repeat center center fixed; */
         background-attachment: fixed;
         background-position: center;
-        margin: 0 0 60px; /*3rd parameter must = #footer height*/
+        margin: 0 0 70px; /*3rd parameter must = #footer height*/
         background-size: cover;
     }
 
@@ -28,16 +28,25 @@
         text-align: center;
     }
     
-    
     img {
         border: 0;
     }
     
-    img.section{
-        height: auto;
+    .section-header{
         width: 100%;
+        min-height: 60px;
+        background-color: rgb(33,40,55);
+        background-repeat: no-repeat;
+        background-position: 50%, 50%;
+        background-position-x: 50%;
+        background-position-y: 50%;
+        line-height: 55px;
+        text-align: center;
+        vertical-align: middle;
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 30px;
     }
-    
+  
     p.message{
         width:auto;
         margin-left: auto;
@@ -175,7 +184,7 @@
         padding-right: 6px;
         border-bottom-color: white;
         border-bottom-style: solid;
-        border-bottom-width: 4px;
+        border-bottom-width: 1px;
         /*box-shadow: 0 0 0 4px grey inset;*/
         /*Make content scroll "under" banner*/
         position: fixed;
@@ -260,8 +269,9 @@
         color:#FFFAFA;
         width: auto;
         background-color: rgba(33,40,55,0.75);
-        margin-bottom: 150px; /* Add more spacing between footer and content */
-        margin-top: 80px; /*Used for a fixed banner*/
+        margin-bottom: 0; /* Add more spacing between footer and content */
+        margin-top: 60px; /*Used for a fixed banner */
+        padding-bottom: 10px; /* Make same as footer padding top */
         font-family: Verdana, Geneva, sans-serif;
         font-size: medium;
     }
@@ -291,11 +301,11 @@
         background-color: rgb(33,40,55);
         font-family: Verdana, Geneva, sans-serif;
         font-size: small; 
-        padding-top:5px;
+        padding-top: 10px;
         width:auto;
         border-top-color: white;
         border-top-style: solid;
-        border-top-width: 4px;
+        border-top-width: 1px;
     }
     
     .footer-links{
@@ -421,6 +431,7 @@
 	text-decoration:none;
 	text-align:center;
 	text-shadow:1px 1px 0px #1570cd;
+        margin-bottom: 20px;
     }
     .submit-button:hover {
         background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #1e62d0), color-stop(1, #3d94f6) );

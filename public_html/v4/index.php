@@ -29,21 +29,19 @@
 
 <!-- ABOUT SECTION -->
         <div id="about" class="content">
-            <img src="images/sub_banners/v4/aboutbanner.png"
-                 class="section" 
-                 title='About' 
-                 alt="About">
+            <div class="section-header">&lt;About&gt;</span></div>
 
             <div class="content-text">
-                Hey there! My name is <b><i>Chris Meyers</i></b> and this page is dedicated to letting you know who I am and 
+                Hey there! My name is <b>Chris Meyers</b> and this page is dedicated to letting you know who I am and 
                 the technology skills that I possess.  I currently attend 
                 <a class="fancytxt" href="http://www.rowan.edu/" target="_blank">Rowan University</a>
-                in Glassboro, NJ where I am studying Computer Science.  I have strong interests in Computer Networking and 
-                Web Development.  Over the past few years, I have picked up experience with the following programming languages:
+                in Glassboro, NJ where I am studying Computer Science.  Some of my interests include: Software Development, Web 
+                Development and Computer Networking.  Over the past few years, I have picked up experience with the following 
+                programming languages:
                 
                 <ul>
-                    <li class="li-filled">Java, HTML, CSS, PHP, Javascript, C#, Visual Basic, C, C++, MIPS assembly, 
-                                                      Scheme(LISP dialect), Ada, Lua, Perl, MySQL.</li>
+                    <li class="li-filled">Java, HTML5, CSS3, PHP, Javascript, C#, MySQL, Visual Basic, C, C++, Perl, MIPS assembly, 
+                                                      Scheme(LISP dialect), Ada, Lua.</li>
                 </ul>
                 
                 <p>      
@@ -80,10 +78,7 @@
 
 <!-- BUILDS SECTION -->
         <div id="builds" class="content">
-            <img src="images/sub_banners/v4/buildsbanner.png" 
-                 class="section"
-                 title='Builds'
-                 alt="Builds">
+            <div class="section-header">&lt;Builds&gt;</div>
 
             <div class="content-text">
                 <!-- MATT'S BUILD -->
@@ -177,10 +172,7 @@
                 
 <!-- PROJECTS SECTION -->
         <div id="projects" class="content">
-            <img src="images/sub_banners/v4/projectsbanner.png"
-                 class="section"  
-                 title='Projects'
-                 alt="Projects">
+            <div class="section-header">&lt;Projects&gt;</div>
 
             <div class="content-text">
                 <!-- cm -->
@@ -485,12 +477,8 @@
 
 <!-- CONTACT SECTION -->
         <div id="contact" class="content">
-            <img src="images/sub_banners/v4/contactbanner.png"
-                 class="section"  
-                 title='Contact'
-                 alt="Contact">
+            <div class="section-header">&lt;Contact&gt;</div>
 
-            <br />
             <div class="content-text">
                 <div id='errors'></div>
                 <form action="email_form.php" method="post" target="_top">

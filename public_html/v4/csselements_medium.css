@@ -37,10 +37,21 @@
       border: 0;
     }
     
-    img.section{
+    .section-header{
         width: 790px;
+        min-height: 90px;
+        background-color: rgb(33,40,55);
+        background-repeat: no-repeat;
+        background-position: 50%, 50%;
+        background-position-x: 50%;
+        background-position-y: 50%;
+        line-height: 80px;
+        text-align: center;
+        vertical-align: middle;
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 40px;
     }
-    
+ 
     .build{
         width: 100%;
         height: auto;
@@ -144,9 +155,9 @@
         height: 90px;
         background-color: rgb(33,40,55);
         padding-right: 6px;
-        border-bottom-color: white;
+        border-bottom-color: #FFFFFF;
         border-bottom-style: solid;
-        border-bottom-width: 4px;
+        border-bottom-width: 1px;
         /*box-shadow: 0 0 0 4px grey inset;*/
         /*Make content scroll "under" banner*/
         position: fixed;
@@ -280,7 +291,7 @@
         padding-bottom: 5px;
         border-top-color: white;
         border-top-style: solid;
-        border-top-width: 4px;
+        border-top-width: 1px;
     }
    
     .footer-links{
