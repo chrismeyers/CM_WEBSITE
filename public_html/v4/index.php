@@ -181,12 +181,34 @@
                     <h3>Personal Project, Fall 2013</h3>
                     <div class="projWrapper">
                         <div class="projImages">
-                            <a class="fancybox no-decoration" href="images/project_screenshots/cm.png" title="Personal Website">
+                            <a class="fancybox no-decoration" rel="gallery1" href="images/project_screenshots/cm.png" title="Full size version of my personal website.">
                                 <img src="images/project_screenshots/cm.png" 
                                      class="projImages-full-img-square"
-                                     alt="My personal website" 
+                                     alt="Full size version of my personal website." 
                                      title="Click to enlarge">
                             </a>
+                            <div class="projImages-small">
+                                <a class="fancybox no-decoration"
+                                   rel="gallery1" 
+                                   href="images/project_screenshots/cm_mid.png"
+                                   title="Mid size version of my personal website.">
+                                    <img src="images/project_screenshots/cm_mid.png" 
+                                         class="projImages-small-img-square"
+                                         alt="Mid size version of my personal website." 
+                                         title="Click to enlarge">
+
+                                </a>
+                                <a class="fancybox no-decoration"
+                                   rel="gallery1"
+                                   href="images/project_screenshots/cm_mobile.png"
+                                   title="Mobile version of my personal website.">
+                                    <img src="images/project_screenshots/cm_mobile.png" 
+                                         class="projImages-small-img-port"
+                                         alt="Mobile version of my personal website." 
+                                         title="Click to enlarge">
+                                </a>
+                            </div>
+                        </div>
                         </div>
 
                         <div class="projDesc">
@@ -260,7 +282,7 @@
                     <h3>Web Programming, Rowan University, Spring 2014</h3>
                     <div class="projWrapper">
                         <div class="projImages">
-                            <a class="fancybox no-decoration" rel="gallery1" href="images/project_screenshots/pinelands_landing.png" title="Landing page">
+                            <a class="fancybox no-decoration" rel="gallery2" href="images/project_screenshots/pinelands_landing.png" title="Landing page">
                                 <img src="images/project_screenshots/pinelands_landing.png"
                                      class="projImages-full-img-square"
                                      alt="Pinelands landing page" 
@@ -268,7 +290,7 @@
                             </a>
                             <div class="projImages-small">
                                 <a class="fancybox no-decoration"
-                                   rel="gallery1" 
+                                   rel="gallery2" 
                                    href="images/project_screenshots/pinelands_tour.png"
                                    title="Tour page">
                                     <img src="images/project_screenshots/pinelands_tour.png" 
@@ -278,7 +300,7 @@
 
                                 </a>
                                 <a class="fancybox no-decoration"
-                                   rel="gallery1"
+                                   rel="gallery2"
                                    href="images/project_screenshots/pinelands_contact.png"
                                    title="Contact page">
                                     <img src="images/project_screenshots/pinelands_contact.png" 
@@ -314,7 +336,7 @@
                     <h4>Intro to Android Programming, Rowan University, Summer 2014</h4>
                     <div class="projWrapper">
                         <div class="projImages">
-                            <a class="fancybox no-decoration" rel="gallery2" href="images/project_screenshots/ttt_port.png" title="Tic Tac Toe Portrait">
+                            <a class="fancybox no-decoration" rel="gallery3" href="images/project_screenshots/ttt_port.png" title="Tic Tac Toe Portrait">
                                 <img src="images/project_screenshots/ttt_port.png" 
                                      class="projImages-full-img-port"
                                      alt="Tic tac toe Portrait" 
@@ -322,7 +344,7 @@
                             </a>
                             <div class="projImages-small">
                                 <a class="fancybox no-decoration" 
-                                   rel="gallery2" 
+                                   rel="gallery3" 
                                    href="images/project_screenshots/ttt_land.png"
                                    title="Tic Tac Toe Landscape">
                                     <img src="images/project_screenshots/ttt_land.png" 
@@ -367,7 +389,7 @@
                     <h3>Personal Project, Summer 2014</h3>
                     <div class="projWrapper">
                         <div class="projImages">
-                            <a class="fancybox no-decoration" rel="gallery3" href="images/project_screenshots/loldata_landing.png" title="LoL player data landing">
+                            <a class="fancybox no-decoration" rel="gallery4" href="images/project_screenshots/loldata_landing.png" title="LoL player data landing">
                                 <img src="images/project_screenshots/loldata_landing.png" 
                                      class="projImages-full-img-square"
                                      alt="LoL_player_data" 
@@ -375,7 +397,7 @@
                             </a>
                             <div class="projImages-small">
                                 <a class="fancybox no-decoration"
-                                   rel="gallery3"
+                                   rel="gallery4"
                                    href="images/project_screenshots/loldata.png"
                                    title="LoL player data results">
                                     <img src="images/project_screenshots/loldata.png" 
@@ -411,7 +433,7 @@
                     <h3>Senior Project, Rowan University, Fall 2014</h3>
                     <div class="projWrapper">
                         <div class="projImages">
-                            <a class="fancybox no-decoration" rel="gallery4" href="images/project_screenshots/scoresPlot.png" 
+                            <a class="fancybox no-decoration" rel="gallery5" href="images/project_screenshots/scoresPlot.png" 
                                title="A scores plot generated from calculated principal components.">
                                 <img src="images/project_screenshots/scoresPlot.png"
                                      class="projImages-full-img-square"
@@ -420,7 +442,7 @@
                             </a>
                             <div class="projImages-small">
                                 <a class="fancybox no-decoration"
-                                   rel="gallery4" 
+                                   rel="gallery5" 
                                    href="images/project_screenshots/scoresData.png"
                                    title="The calculated principal component data.">
                                     <img src="images/project_screenshots/scoresData.png" 
@@ -429,7 +451,7 @@
                                          title="Click to enlarge">
                                 </a>
                                 <a class="fancybox no-decoration"
-                                   rel="gallery4"
+                                   rel="gallery5"
                                    href="images/project_screenshots/addinBar.PNG"
                                    title="The Excel add-in bar. Scores and loadings plot were added in this project.">
                                     <img src="images/project_screenshots/addinBar.PNG" 
@@ -438,7 +460,7 @@
                                          title="Click to enlarge">
                                 </a>
                                 <a class="fancybox no-decoration"
-                                   rel="gallery4"
+                                   rel="gallery5"
                                    href="images/project_screenshots/scoresInput-full.png"
                                    title="Input form that is dynamically populated based on the number of principal components.">
                                     <img src="images/project_screenshots/scoresInput-full.png" 
