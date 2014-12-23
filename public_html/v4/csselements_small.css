@@ -227,6 +227,11 @@
         border-bottom-style: solid;
         border-bottom-width: 1px;
     }
+    .sectionTitle-txt-last{
+        vertical-align: middle;
+        line-height: 45px;
+        text-align: center;
+    }
     
     .sectionTitle-about:hover, .sectionTitle-builds:hover, .sectionTitle-projects:hover,
         .sectionTitle-contact:hover, #sectionTitle-menu:hover{
@@ -268,7 +273,7 @@
     .content {
         color:#FFFAFA;
         width: auto;
-        background-color: rgba(33,40,55,0.75);
+        background-color: rgba(33,40,55,0.85);
         margin-bottom: 0; /* Add more spacing between footer and content */
         margin-top: 60px; /*Used for a fixed banner */
         padding-bottom: 10px; /* Make same as footer padding top */

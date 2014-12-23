@@ -3,7 +3,7 @@
             <div class=\"banner-img\">
                 <a href=\"index.php\" id=\"banner\">
                     <img src=\"images/banner/v4/no-border/titlepic-v4.png\" 
-                         alt=\"Chris Meyers. Developer, Tech enthusiast.\" 
+                         alt=\"Chris Meyers. Developer, Tech Enthusiast.\" 
                          title=\"Home\">
                 </a>
             </div>
@@ -76,7 +76,7 @@
                                 </a>
 
                                 <a href=\"#contact-me\" class=\"headerLink\">
-                                    <li class=\"sectionTitle-txt\" onclick=\"showSection('contact')\">Contact</li>
+                                    <li class=\"sectionTitle-txt-last\" onclick=\"showSection('contact')\">Contact</li>
                                 </a>
                             </ul>
                         </li>

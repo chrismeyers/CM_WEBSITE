@@ -29,7 +29,7 @@
 
 <!-- ABOUT SECTION -->
         <div id="about" class="content">
-            <div class="section-header">&lt;About&gt;</span></div>
+            <div class="section-header">About</div>
 
             <div class="content-text">
                 Hey there! My name is <b>Chris Meyers</b> and this page is dedicated to letting you know who I am and 
@@ -78,7 +78,7 @@
 
 <!-- BUILDS SECTION -->
         <div id="builds" class="content">
-            <div class="section-header">&lt;Builds&gt;</div>
+            <div class="section-header">Builds</div>
 
             <div class="content-text">
                 <!-- MATT'S BUILD -->
@@ -172,7 +172,7 @@
                 
 <!-- PROJECTS SECTION -->
         <div id="projects" class="content">
-            <div class="section-header">&lt;Projects&gt;</div>
+            <div class="section-header">Projects</div>
 
             <div class="content-text">
                 <!-- cm -->
@@ -227,7 +227,7 @@
                             </dl>
                         </div>
                     </div>
-                </div>
+                
 
 
                 <!-- Genomic -->
@@ -499,7 +499,7 @@
 
 <!-- CONTACT SECTION -->
         <div id="contact" class="content">
-            <div class="section-header">&lt;Contact&gt;</div>
+            <div class="section-header">Contact</div>
 
             <div class="content-text">
                 <div id='errors'></div>

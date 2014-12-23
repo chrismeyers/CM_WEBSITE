@@ -197,6 +197,11 @@
         border-bottom-style: solid;
         border-bottom-width: 1px;
     }
+    .sectionTitle-txt-last{
+        vertical-align: middle;
+        line-height: 45px;
+        text-align: center;
+    }
     
     .sectionTitle-about:hover, .sectionTitle-builds:hover, .sectionTitle-projects:hover,
         .sectionTitle-contact:hover, #sectionTitle-menu:hover{
@@ -255,7 +260,7 @@
         margin-bottom: 100px; /* Add more spacing between footer and content */
         -webkit-margin-bottom-collapse: separate; /* Fixes margin-bottom for non-chrome browsers*/
         margin-top: 20px; /*Used for a fixed banner*/
-        background-color: rgba(33,40,55,0.75);
+        background-color: rgba(33,40,55,0.85);
         font-family: Verdana, Geneva, sans-serif;
         font-size: medium;
         position: relative;

@@ -44,7 +44,7 @@
         margin-bottom: 100px; /* Add more spacing between footer and content */
         -webkit-margin-bottom-collapse: separate; /* Fixes margin-bottom for non-chrome browsers*/
         margin-top: 20px;
-        background-color: rgba(33,40,55,0.75);
+        background-color: rgba(33,40,55,0.85);
         font-family: Verdana, Geneva, sans-serif;
         font-size: medium;
         position: relative;
