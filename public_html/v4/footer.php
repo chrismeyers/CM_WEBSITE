@@ -48,8 +48,16 @@
                 <div class='footer-bullets'>&bull;</div>
             
                 <div class='footer-resume'>
-                    <a href='downloads/Resume_ChrisMeyers.pdf' download='Resume_ChrisMeyers' class='fancytxt'>
-                        Download Résumé
+                    <a class=\"fancytxt\" href=\"resume.php\">
+                        View Résumé
+                    </a>
+                </div>
+                
+                <div class='footer-bullets'>&bull;</div>
+                
+                <div class='footer-resume'>
+                    <a href=\"index.php?m=010&n=&e=&c=I would like a copy of your resume.#contact-me\" class=\"fancytxt\">
+                        Request Résumé
                     </a>
                 </div>
             </div>

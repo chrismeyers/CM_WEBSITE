@@ -1,0 +1,35 @@
+/* 
+    Document   : csselements_resume
+    Created on : Dec 27, 2014, 1:38:04 AM
+    Author     : Chris Meyers
+    Description:
+        Stylesheet for HTML resume.
+*/
+
+.wrapper{
+    width: 100%;
+}
+
+.left{
+    width: 50%;
+}
+
+.right{
+    width: 50%;
+    text-align: right;
+}
+
+.first{
+    padding-left: 20px;
+}
+
+.second{
+    padding-left: 40px;
+}
+
+.footer{
+    color: black;
+    height: auto;
+    margin-top: 75px;
+    width: 100%;
+}

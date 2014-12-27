@@ -41,11 +41,11 @@
                 
                 <ul>
                     <li class="li-filled">Java, HTML5, CSS3, PHP, Javascript, C#, MySQL, Visual Basic, C, C++, Perl, MIPS assembly, 
-                                                      Scheme(LISP dialect), Ada, Lua.</li>
+                                                      Scheme (LISP dialect), Ada, Lua.</li>
                 </ul>
                 
                 <p>      
-                Aside from programming, I have interests in Computer Aided Drafting(CAD) and 3D Modeling.  I have 4+ years of
+                Aside from programming, I have interests in Computer Aided Drafting (CAD) and 3D Modeling.  I have 4+ years of
                 experience in the following programs:
                 </p>
 
@@ -60,8 +60,8 @@
                 </p>
 
                 <p>
-                A copy of my Résumé is available for download 
-                <a class="fancytxt" href='downloads/Resume_ChrisMeyers.pdf' download="Resume_ChrisMeyers">here</a>.
+                For security reasons, an abbreviated HTML version of my resume can be viewed <a class="fancytxt" href="resume.php">here</a>. 
+                A full PDF version with contact information can be requested <a href="index.php?m=010&n=&e=&c=I would like a copy of your resume.#contact-me" class="fancytxt">here</a>.
                 </p>
                 
                 <div class="instructions">
@@ -512,8 +512,12 @@
 
                         if ($message == "000") {
                             echo '<p class="errors">' . "Name required. Please try again." . '</p>';
-                        } elseif ($message == "001") {
+                        } 
+                        elseif ($message == "001") {
                             echo '<p class="errors">' . "Email Address format is incorrect. Please try again." . '</p>';
+                        }
+                        elseif ($message == "010"){
+                            echo '<p class="errors">' . "To request a full version of my resume, please enter your name, email and any additional information." . '</p>';
                         }
                     }
                     ?><p></p>
