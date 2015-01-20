@@ -179,7 +179,17 @@
             <div class="content-text">
                 <!-- cm -->
                 <div class="proj">
-                    <h2 class="first-header">chrismeyers.info, this webpage</h2>
+                    <h2 class="first-header">chrismeyers.info, this webpage
+                        <a href="https://github.com/chrismeyers/CM_WEBSITE/tree/master/public_html/v4" target="_blank" class="no-decoration">
+                            <img src="images/social/github.png" 
+                                onmouseover="this.src = 'images/social/github_hover.png'" 
+                                onmouseout="this.src = 'images/social/github.png'" 
+                                class="proj-link"
+                                alt="Link to Code" 
+                                title='View code'>
+                        </a>
+                    </h2>
+                    
                     <h3>Personal Project, Fall 2013</h3>
                     <div class="projWrapper">
                         <div class="projImages">
@@ -235,7 +245,16 @@
                 <!-- Genomic -->
                 <br /> <hr>
                 <div class="proj">
-                    <h2>Genomic Solutions Now! Software</h2>
+                    <h2>Genomic Solutions Now! Software
+                        <a href="https://github.com/jayact/Genomic_SWE" target="_blank" class="no-decoration">
+                            <img src="images/social/github.png" 
+                                onmouseover="this.src = 'images/social/github_hover.png'" 
+                                onmouseout="this.src = 'images/social/github.png'" 
+                                class="proj-link"
+                                alt="Link to Code" 
+                                title='View code'>
+                        </a>
+                    </h2>
                     <h3>Software Engineering I, Rowan University, Spring 2014</h3>
                     <div class="projWrapper">
                         <div class="projImages">
@@ -272,13 +291,21 @@
                 <br /> <hr>
                 <div class="proj">
                     <h2>Pinelands Tour Maker
-                        <a href="http://elvis.rowan.edu/~meyers42/web/final/" target="_blank">
+                        <a href="http://elvis.rowan.edu/~meyers42/web/final/" target="_blank" class="no-decoration">
                             <img src="images/icons/link.png" 
                                 onmouseover="this.src = 'images/icons/link_hover.png'" 
                                 onmouseout="this.src = 'images/icons/link.png'" 
                                 class="proj-link"
                                 alt="Link to Pinelands Tour Maker" 
                                 title='View site'>
+                        </a>
+                        <a href="https://github.com/chrismeyers/WEB_PROG/tree/master/public_html/pinelands" target="_blank" class="no-decoration">
+                            <img src="images/social/github.png" 
+                                onmouseover="this.src = 'images/social/github_hover.png'" 
+                                onmouseout="this.src = 'images/social/github.png'" 
+                                class="proj-link"
+                                alt="Link to Code" 
+                                title='View code'>
                         </a>
                     </h2>
                     <h3>Web Programming, Rowan University, Spring 2014</h3>
@@ -334,7 +361,16 @@
                 <!-- TTT -->
                 <br /> <hr>
                 <div class="proj">
-                    <h2>Tic Tac Toe Android App</h2>
+                    <h2>Tic Tac Toe Android App
+                        <a href="https://github.com/chrismeyers/Android-TicTacToe" target="_blank" class="no-decoration">
+                            <img src="images/social/github.png" 
+                                onmouseover="this.src = 'images/social/github_hover.png'" 
+                                onmouseout="this.src = 'images/social/github.png'" 
+                                class="proj-link"
+                                alt="Link to Code" 
+                                title='View code'>
+                        </a>
+                    </h2>
                     <h4>Intro to Android Programming, Rowan University, Summer 2014</h4>
                     <div class="projWrapper">
                         <div class="projImages">
@@ -379,13 +415,21 @@
                 <br /> <hr>
                 <div class="proj">
                     <h2>League of Legends Player Data Parser
-                        <a href="http://chrismeyers.info/projects/LoL_player_data/web" target="_blank">
+                        <a href="http://chrismeyers.info/projects/LoL_player_data/web" target="_blank" class="no-decoration">
                             <img src="images/icons/link.png" 
                                 onmouseover="this.src = 'images/icons/link_hover.png'" 
                                 onmouseout="this.src = 'images/icons/link.png'" 
                                 class="proj-link"
                                 alt="Link to LoL player data" 
                                 title='View site'>
+                        </a>
+                        <a href="https://github.com/chrismeyers/LoL_player_data" target="_blank" class="no-decoration">
+                            <img src="images/social/github.png" 
+                                onmouseover="this.src = 'images/social/github_hover.png'" 
+                                onmouseout="this.src = 'images/social/github.png'" 
+                                class="proj-link"
+                                alt="Link to Code" 
+                                title='View code'>
                         </a>
                     </h2>
                     <h3>Personal Project, Summer 2014</h3>
@@ -431,7 +475,16 @@
                 <!-- PCA -->
                 <br /> <hr>
                 <div class="proj">
-                    <h2>PCA Visualization</h2>
+                    <h2>PCA Visualization
+                        <a href="https://github.com/chrismeyers/SeniorProj_BMS_PCA" target="_blank" class="no-decoration">
+                            <img src="images/social/github.png" 
+                                onmouseover="this.src = 'images/social/github_hover.png'" 
+                                onmouseout="this.src = 'images/social/github.png'" 
+                                class="proj-link"
+                                alt="Link to Code" 
+                                title='View code'>
+                        </a>
+                    </h2>
                     <h3>Senior Project, Rowan University, Fall 2014</h3>
                     <div class="projWrapper">
                         <div class="projImages">
@@ -488,6 +541,102 @@
                                 <dt><b>My Role:</b></dt>
                                     <dd>Responsible for parsing the calculated principal component worksheets and storing 
                                         them in data structures used for plotting.</dd>
+
+                                <dt><b>Status:</b></dt>
+                                    <dd>Complete.</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- cardiomyocyte -->
+                <br /> <hr>
+                <div class="proj">
+                    <h2>Cardiomyocyte Data Analysis Automation
+                        <a href="https://github.com/chrismeyers/BMS_Meyers_ExcelAutomation" target="_blank" class="no-decoration">
+                            <img src="images/social/github.png" 
+                                onmouseover="this.src = 'images/social/github_hover.png'" 
+                                onmouseout="this.src = 'images/social/github.png'" 
+                                class="proj-link"
+                                alt="Link to Code" 
+                                title='View code'>
+                        </a>
+                    </h2>
+                    <h3>Personal Project, Winter 2015</h3>
+                    <div class="projWrapper">
+                        <div class="projImages">
+                            <a class="fancybox no-decoration" rel="gallery6" href="images/project_screenshots/bms_rawData.png" 
+                               title="The raw data taken from the lab to be processed.">
+                                <img src="images/project_screenshots/bms_rawData.png"
+                                     class="projImages-full-img-square"
+                                     alt="The raw data taken from the lab to be processed."
+                                     title="Click to enlarge">
+                            </a>
+                            <div class="projImages-small">
+                                <a class="fancybox no-decoration"
+                                   rel="gallery6" 
+                                   href="images/project_screenshots/bms_formatForm.png"
+                                   title="Input form used to select the worksheet to be processed.">
+                                    <img src="images/project_screenshots/bms_formatForm.png" 
+                                         class="projImages-small-img-square"
+                                         alt="Input form used to select the worksheet to be processed." 
+                                         title="Click to enlarge">
+                                </a>
+                                <a class="fancybox no-decoration"
+                                   rel="gallery6" 
+                                   href="images/project_screenshots/bms_formattedData.png"
+                                   title="The entire formatted data set.">
+                                    <img src="images/project_screenshots/bms_formattedData.png" 
+                                         class="projImages-small-img-square"
+                                         alt="The entire formatted data set." 
+                                         title="Click to enlarge">
+                                </a>
+                                <a class="fancybox no-decoration"
+                                   rel="gallery6" 
+                                   href="images/project_screenshots/bms_finalData.png"
+                                   title="A further refined formatted data set used for plotting.">
+                                    <img src="images/project_screenshots/bms_finalData.png" 
+                                         class="projImages-small-img-square"
+                                         alt="A further refined formatted data set used for plotting." 
+                                         title="Click to enlarge">
+                                </a>
+                                <a class="fancybox no-decoration"
+                                   rel="gallery6" 
+                                   href="images/project_screenshots/bms_graphForm.png"
+                                   title="Input form used to select the variables to be plotted.">
+                                    <img src="images/project_screenshots/bms_graphForm.png" 
+                                         class="projImages-small-img-square"
+                                         alt="Input form used to select the variables to be plotted." 
+                                         title="Click to enlarge">
+                                </a>
+                                <a class="fancybox no-decoration"
+                                   rel="gallery6" 
+                                   href="images/project_screenshots/bms_plot.png"
+                                   title="The final plot.">
+                                    <img src="images/project_screenshots/bms_plot.png" 
+                                         class="projImages-small-img-square"
+                                         alt="The final plot." 
+                                         title="Click to enlarge">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="projDesc">
+                            <dl>
+                                <dt><b>Language(s)</b>:</dt>
+                                    <dd>C#</dd>
+
+                                <dt><b>Description:</b></dt>
+                                    <dd>An Excel add-in that was developed to automate data analysis for Dan Meyers, scientist
+                                        at Bristol-Myers Squibb pharmaceutical company.
+                                        The add-in takes in a raw data set, formats the data, performs statistical
+                                        calculations and plots specified variables to a column graph.
+                                        Data is extracted from an <a href="http://www.ionoptix.com/" class="fancytxt" target="_blank">IonOptix</a>
+                                        contraction/calcium monitoring system and is an important add-in for data analysis.
+                                    </dd>
+
+                                <dt><b>My Role:</b></dt>
+                                    <dd>Solo Project.</dd>
 
                                 <dt><b>Status:</b></dt>
                                     <dd>Complete.</dd>
