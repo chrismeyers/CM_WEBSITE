@@ -63,7 +63,7 @@
 
                 <p>
                 For security reasons, an abbreviated HTML version of my resume can be viewed <a class="fancytxt" href="resume.php">here</a>. 
-                A full PDF version with contact information can be requested <a href="index.php?m=010&n=&e=&c=I would like a copy of your resume.#contact-me" class="fancytxt">here</a>.
+                A full PDF version with contact information can be requested <a href="index.php?message=010&name=&email=&comment=I would like a copy of your resume.#contact-me" class="fancytxt">here</a>.
                 </p>
                 
                 <div class="instructions">
@@ -658,8 +658,8 @@
                     <p class="message"><b>Questions? Comments? Concerns? Send me a message!</b></p>
 
                     <?php
-                    if (!empty($_GET['m'])) {
-                        $message = $_GET['m'];
+                    if (!empty($_GET['message'])) {
+                        $message = $_GET['message'];
 
                         if ($message == "000") {
                             echo '<p class="errors">' . "Name required. Please try again." . '</p>';
@@ -670,30 +670,44 @@
                         elseif ($message == "010"){
                             echo '<p class="errors">' . "To request a full version of my resume, please enter your name, email and any additional information." . '</p>';
                         }
+                        elseif ($message == "011"){
+                            echo '<p class="errors">' . "Email Addresses don't match. Please try again." . '</p>';
+                        }
                     }
                     ?><p></p>
 
                     <table class="inputs">
                         <tr>
-                            <td class="force-col-right">
+                            <td class="name-input">
                                 <input class="inputbox-mod" type="text" placeholder="Name" name="name"<?php
-                                if (!empty($_GET['n'])) {
-                                    $name = $_GET['n'];
+                                if (!empty($_GET['name'])) {
+                                    $name = $_GET['name'];
                                     echo 'value="' . $name . '">';
                                 } else {
                                     echo '>';
                                 }
                                 ?></td>
-
-                            <td class="force-col-left">
+                        </tr>
+                        <tr>
+                            <td class="email-input">
                                 <input class="inputbox-mod" type="email" placeholder="Primary Email" name="fromemail"<?php
-                                if (!empty($_GET['e'])) {
-                                    $fromemail = $_GET['e'];
+                                if (!empty($_GET['email'])) {
+                                    $fromemail = $_GET['email'];
                                     echo 'value="' . $fromemail . '">';
                                 } else {
                                     echo '>';
                                 }
                                 ?></td>
+
+                            <td class="email-input">
+                                <input class="inputbox-mod" type="email" placeholder="Confirm Primary Email" name="confirmfromemail"<?php
+                                if (!empty($_GET['confirmemail'])) {
+                                    $fromemail = $_GET['confirmemail'];
+                                    echo 'value="' . $fromemail . '">';
+                                } else {
+                                    echo '>';
+                                }
+                                ?></td> 
                         </tr>
                     </table>
 
@@ -702,8 +716,8 @@
                         <tr>
                             <td>
                                 <textarea class="textarea-mod" name="usercomments" placeholder="Message"><?php
-                                    if (!empty($_GET['c'])) {
-                                        $usercomments = $_GET['c'];
+                                    if (!empty($_GET['comment'])) {
+                                        $usercomments = $_GET['comment'];
                                         echo $usercomments . '</textarea>';
                                     } else {
                                         echo '</textarea>';

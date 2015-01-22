@@ -116,7 +116,7 @@
     }
     
     table.inputs{
-        margin-left: auto;
+        margin-left: 175px;
         margin-right: auto;
         text-align: left;
     }
@@ -147,11 +147,11 @@
         font-family: Verdana, Geneva, sans-serif;
     }
     
-    td.force-col-right{
-        padding-right: 10px;
+    td.name-input{
+        padding-bottom: 10px;
     }
-    td.force-col-left{
-        padding-left: 10px;
+    td.email-input{
+        /*padding-left: 10px;*/
     }
 
     .fancytxt{

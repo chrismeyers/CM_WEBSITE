@@ -18,7 +18,7 @@
         /*background: url(images/colorado.jpg) no-repeat center center fixed; */
         background-attachment: fixed;
         background-position: center;
-        margin: 0 0 70px; /*3rd parameter must = #footer height*/
+        margin: 0 0 100px; /*3rd parameter must = #footer height*/
         background-size: cover;
     }
 
@@ -54,11 +54,17 @@
         text-align: center;
     }
 
-    td.force-col-right, td.force-col-left{
+    td.name-input{
+        display:block;
+        width: auto;
+        padding-bottom: 15px;
+    }
+    
+    td.email-input{
         display:block;
         width: auto;
     }
-
+    
     td.force-col-specs, td.force-col-specs-widepic{
         display:block;
         width: auto;
@@ -299,14 +305,13 @@
         color:#FFFAFA;
         position: absolute;
         bottom: 0px;
-        height: 70px; /* make bigger to add more lines in footer */
+        height:auto; /* make bigger to add more lines in footer */
         left:0;
         right:0;
         text-align: center;
         background-color: rgb(33,40,55);
         font-family: Verdana, Geneva, sans-serif;
         font-size: small; 
-        padding-top: 10px;
         width:auto;
         border-top-color: white;
         border-top-style: solid;
@@ -316,6 +321,10 @@
     .footer-links{
         display: block;
         text-align: center;
+        margin-bottom: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 10px;
     }
     
     .footer-social{
@@ -337,6 +346,8 @@
         display: block;
         text-align: center;
         padding-right: 10px;
+        padding-left: 10px;
+        margin-bottom: 10px;
     }
 
     .specs-txt{
