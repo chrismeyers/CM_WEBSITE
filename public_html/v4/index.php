@@ -132,7 +132,7 @@
                                 <li><u>Mobo:</u> Asus P8Z77-V LK</li>
                                 <li><u>Memory:</u> 16GB Corsair Vengeance 1600MHz</li> 
                                 <li><u>HDD:</u> WD6400AAKS 640GB &#64; 7200rpm, ST31000524AS 1TB &#64; 7200rpm</li>
-                                <li><u>SSD:</u> Kingston V300 120GB</li>
+                                <li><u>SSD:</u> Samsung 850 Pro 256GB</li>
                                 <li><u>Video Card:</u> EVGA GeForce GTX 670 FTW 2GB</li>
                             </ul>
                         </div>
