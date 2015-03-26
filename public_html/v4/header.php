@@ -20,32 +20,32 @@
             
             <!-- FULL MENU -->
             <div class=\"banner-nav\">
-                <a href=\"#contact-me\">
-                    <div class=\"sectionTitle-contact\" onclick=\"showSection('contact')\">
+                <a href=\"#contact\">
+                    <div class=\"sectionTitle-contact\" onclick=\"showSection('contact-me')\">
                         <div class=\"sectionTitle-txt\">
                             <span class=\"headerLink\">Contact</span>
                         </div>
                     </div>
                 </a>
                 
-                <a href=\"#my-projects\">
-                    <div class=\"sectionTitle-projects\" onclick=\"showSection('projects')\">
+                <a href=\"#projects\">
+                    <div class=\"sectionTitle-projects\" onclick=\"showSection('my-projects')\">
                         <div class=\"sectionTitle-txt\">
                             <span class=\"headerLink\">Projects</span>
                         </div>
                     </div>
                 </a>
                 
-                <a href=\"#my-builds\">
-                    <div class=\"sectionTitle-builds\" onclick=\"showSection('builds')\">
+                <a href=\"#builds\">
+                    <div class=\"sectionTitle-builds\" onclick=\"showSection('my-builds')\">
                         <div class=\"sectionTitle-txt\">
                             <span class=\"headerLink\">Builds</span>
                         </div>
                     </div>
                 </a>
                 
-                <a href=\"#about-me\">
-                    <div class=\"sectionTitle-about\" onclick=\"showSection('about')\">
+                <a href=\"#about\">
+                    <div class=\"sectionTitle-about\" onclick=\"showSection('about-me')\">
                         <div class=\"sectionTitle-txt\">
                             <span class=\"headerLink\">About</span>
                         </div>
@@ -63,20 +63,20 @@
                             </div>
                             <ul id=\"menu-items\">
                                 
-                                <a href=\"#about-me\" class=\"headerLink\">
-                                    <li class=\"sectionTitle-txt\" onclick=\"showSection('about')\">About</li>
+                                <a href=\"#about\" class=\"headerLink\">
+                                    <li class=\"sectionTitle-txt\" onclick=\"showSection('about-me')\">About</li>
                                 </a>
                                 
-                                <a href=\"#my-builds\" class=\"headerLink\">
-                                    <li class=\"sectionTitle-txt\" onclick=\"showSection('builds')\">Builds</li>
+                                <a href=\"#builds\" class=\"headerLink\">
+                                    <li class=\"sectionTitle-txt\" onclick=\"showSection('my-builds')\">Builds</li>
                                 </a>
 
-                                <a href=\"#my-projects\" class=\"headerLink\">
-                                    <li class=\"sectionTitle-txt\" onclick=\"showSection('projects')\">Projects</li>
+                                <a href=\"#projects\" class=\"headerLink\">
+                                    <li class=\"sectionTitle-txt\" onclick=\"showSection('my-projects')\">Projects</li>
                                 </a>
 
-                                <a href=\"#contact-me\" class=\"headerLink\">
-                                    <li class=\"sectionTitle-txt-last\" onclick=\"showSection('contact')\">Contact</li>
+                                <a href=\"#contact\" class=\"headerLink\">
+                                    <li class=\"sectionTitle-txt-last\" onclick=\"showSection('contact-me')\">Contact</li>
                                 </a>
                             </ul>
                         </li>

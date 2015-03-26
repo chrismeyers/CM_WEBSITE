@@ -30,7 +30,7 @@
         <?php include 'header.php'; ?>
 
 <!-- ABOUT SECTION -->
-        <div id="about" class="content">
+        <div id="about-me" class="content">
             <div class="section-header">About</div>
 
             <div class="content-text">
@@ -63,15 +63,15 @@
 
                 <p>
                 For security reasons, an abbreviated HTML version of my resume can be viewed <a class="fancytxt" href="resume.php">here</a>. 
-                A full PDF version with contact information can be requested <a href="index.php?message=010&name=&email=&comment=I would like a copy of your resume.#contact-me" class="fancytxt">here</a>.
+                A full PDF version with contact information can be requested <a href="index.php?message=010&name=&email=&comment=I would like a copy of your resume.#contact" class="fancytxt">here</a>.
                 </p>
                 
                 <div class="instructions">
                     To view the other sections of this website, use the menu in the top right corner or the links below:
                     <ul>
-                        <li><a href='#my-builds' class="fancytxt" onclick="showSection('builds')">Builds</a></li>
-                        <li><a href='#my-projects' class="fancytxt" onclick="showSection('projects')">Projects</a></li>
-                        <li><a href='#contact-me' class="fancytxt" onclick="showSection('contact')">Contact</a></li>
+                        <li><a href='#builds' class="fancytxt" onclick="showSection('my-builds')">Builds</a></li>
+                        <li><a href='#projects' class="fancytxt" onclick="showSection('my-projects')">Projects</a></li>
+                        <li><a href='#contact' class="fancytxt" onclick="showSection('contact-me')">Contact</a></li>
                     </ul>
                 </div>
 
@@ -79,7 +79,7 @@
         </div>
 
 <!-- BUILDS SECTION -->
-        <div id="builds" class="content">
+        <div id="my-builds" class="content">
             <div class="section-header">Builds</div>
 
             <div class="content-text">
@@ -173,7 +173,7 @@
         </div>
                 
 <!-- PROJECTS SECTION -->
-        <div id="projects" class="content">
+        <div id="my-projects" class="content">
             <div class="section-header">Projects</div>
 
             <div class="content-text">
@@ -649,7 +649,7 @@
         </div>
 
 <!-- CONTACT SECTION -->
-        <div id="contact" class="content">
+        <div id="contact-me" class="content">
             <div class="section-header">Contact</div>
 
             <div class="content-text">
@@ -754,10 +754,10 @@
         </script>
 
         <script type="text/javascript">
-            var about = document.getElementById('about');
-            var builds = document.getElementById('builds');
-            var projects = document.getElementById('projects');
-            var contact = document.getElementById('contact');
+            var about = document.getElementById('about-me');
+            var builds = document.getElementById('my-builds');
+            var projects = document.getElementById('my-projects');
+            var contact = document.getElementById('contact-me');
             var specificPage = window.location.hash;
 
             // Handles browser back and forward.
@@ -767,7 +767,7 @@
 
             // Reads hash from url and changes page, defaults to about.
             if(specificPage === null || specificPage === ''){
-                showSection('about');
+                showSection('about-me');
             }
             else{
                 showSection(translateHash(specificPage.substr(1)));
@@ -794,16 +794,16 @@
             
             function translateHash(value){
                 switch(value){
-                    case("about-me"):
-                        return "about";
-                    case("my-builds"):
-                        return "builds";
-                    case("my-projects"):
-                        return "projects";
-                    case("contact-me"):
-                        return "contact";
+                    case("about"):
+                        return "about-me";
+                    case("builds"):
+                        return "my-builds";
+                    case("projects"):
+                        return "my-projects";
+                    case("contact"):
+                        return "contact-me";
                     default:
-                        return "about";
+                        return "about-me";
                 }
             }
             

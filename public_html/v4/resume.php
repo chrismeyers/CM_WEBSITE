@@ -37,6 +37,21 @@
         <h2>Work Experience</h2>
         <table class="wrapper">
             <tr>
+                <td class="left">&bull; Mission Solutions Engineering, Moorestown, NJ</td>
+                <td class="right">March 2015  – Present</td>
+            </tr>
+            <tr>
+                <td class="left first">&#9702;Software Engineer Intern</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="left second">&nbsp;</td>
+                <td></td>
+            </tr>
+        </table>
+        
+        <table class="wrapper">
+            <tr>
                 <td class="left">&bull; Rowan University, History Department</td>
                 <td class="right">November 2013 – Present</td>
             </tr>
@@ -87,11 +102,11 @@
         <h2>Technical Experience</h2>
         <table class="wrapper">
             <tr>
-                <td class="left">&bull; Experience developing websites using technologies such as HTML5, CSS3, PHP, Javascript, JSON, Perl CGI scripting and MySQL.</td>
+                <td class="left">&bull; Experience developing various software using languages such as Java, C# and C++.</td>
             </tr>
             
             <tr>
-                <td class="left">&bull; Experience developing various software using languages such as Java and C#.</td>
+                <td class="left">&bull; Experience developing websites using technologies such as HTML5, CSS3, PHP, Javascript, JSON and MySQL.</td>
             </tr>
             
             <tr>
