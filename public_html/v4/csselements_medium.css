@@ -223,9 +223,10 @@
         background-color: rgb(33,40,55);
         position: absolute;
         box-shadow: 0 0 0 4px #FFFFFF inset;
-        float:left; clear:right;
+        margin-left: auto;
         left: 0px;
         right: 0px;
+        width: 300px;
     }
     
     #menu-items li{
