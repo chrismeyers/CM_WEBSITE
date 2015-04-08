@@ -8,17 +8,17 @@ $message = "";
 
 if (!preg_match("/\S+/", $name)) {
     $message = "000"; //Name required. Please try again.
-    header("Location: index.php?message=$message&name=$name&email=$fromemail&comment=$usercomments#contact-me");
+    header("Location: index.php?message=$message&name=$name&email=$fromemail&comment=$usercomments#contact");
     die();
 } 
 if (!preg_match("/^\S+@[A-Za-z0-9_.-]+\.[A-Za-z]{2,6}$/", $fromemail)) {
     $message = "001"; //Email Address format is incorrect. Please try again.
-    header("Location: index.php?message=$message&name=$name&email=$fromemail&comment=$usercomments#contact-me");
+    header("Location: index.php?message=$message&name=$name&email=$fromemail&comment=$usercomments#contact");
     die();
 }
 if (strcmp($fromemail,$confirmfromemail) != 0){
     $message = "011"; //Email Addresses don't match. Please try again.
-    header("Location: index.php?message=$message&name=$name&email=$fromemail&comment=$usercomments#contact-me");
+    header("Location: index.php?message=$message&name=$name&email=$fromemail&comment=$usercomments#contact");
     die();
 }
 
