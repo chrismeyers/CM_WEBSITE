@@ -193,7 +193,10 @@
                     <h3>Personal Project, Fall 2013</h3>
                     <div class="projWrapper">
                         <div class="projImages">
-                            <a class="fancybox no-decoration" rel="gallery1" href="images/project_screenshots/cm.png" title="Full size version of my personal website.">
+                            <a class="fancybox no-decoration" 
+                               rel="gallery1" 
+                               href="images/project_screenshots/cm.png" 
+                               title="Full size version of my personal website.">
                                 <img src="images/project_screenshots/cm.png" 
                                      class="projImages-full-img-square"
                                      alt="Full size version of my personal website." 
@@ -311,7 +314,10 @@
                     <h3>Web Programming, Rowan University, Spring 2014</h3>
                     <div class="projWrapper">
                         <div class="projImages">
-                            <a class="fancybox no-decoration" rel="gallery2" href="images/project_screenshots/pinelands_landing.png" title="Landing page">
+                            <a class="fancybox no-decoration" 
+                               rel="gallery2" 
+                               href="images/project_screenshots/pinelands_landing.png" 
+                               title="Landing page">
                                 <img src="images/project_screenshots/pinelands_landing.png"
                                      class="projImages-full-img-square"
                                      alt="Pinelands landing page" 
@@ -374,7 +380,10 @@
                     <h4>Intro to Android Programming, Rowan University, Summer 2014</h4>
                     <div class="projWrapper">
                         <div class="projImages">
-                            <a class="fancybox no-decoration" rel="gallery3" href="images/project_screenshots/ttt_port.png" title="Tic Tac Toe Portrait">
+                            <a class="fancybox no-decoration" 
+                               rel="gallery3" 
+                               href="images/project_screenshots/ttt_port.png" 
+                               title="Tic Tac Toe Portrait">
                                 <img src="images/project_screenshots/ttt_port.png" 
                                      class="projImages-full-img-port"
                                      alt="Tic tac toe Portrait" 
@@ -435,20 +444,32 @@
                     <h3>Personal Project, Summer 2014</h3>
                     <div class="projWrapper">
                         <div class="projImages">
-                            <a class="fancybox no-decoration" rel="gallery4" href="images/project_screenshots/loldata_landing.png" title="LoL player data landing">
+                            <a class="fancybox no-decoration"
+                               rel="gallery4"
+                               href="images/project_screenshots/loldata_landing.png"
+                               title="LoL player data landing page.">
                                 <img src="images/project_screenshots/loldata_landing.png" 
                                      class="projImages-full-img-square"
-                                     alt="LoL_player_data" 
+                                     alt="LoL player data landing page." 
                                      title="Click to enlarge">
                             </a>
                             <div class="projImages-small">
                                 <a class="fancybox no-decoration"
                                    rel="gallery4"
                                    href="images/project_screenshots/loldata.png"
-                                   title="LoL player data results">
+                                   title="LoL player data results.">
                                     <img src="images/project_screenshots/loldata.png" 
                                          class="projImages-small-img-square"
-                                         alt="LoL_player_data" 
+                                         alt="LoL player data results." 
+                                         title="Click to enlarge">
+                                </a>
+                                <a class="fancybox no-decoration"
+                                   rel="gallery4"
+                                   href="images/project_screenshots/loldata_small.png"
+                                   title="LoL player data results optimized for mobile.">
+                                    <img src="images/project_screenshots/loldata_small.png" 
+                                         class="projImages-small-img-port"
+                                         alt="LoL player data results optimized for mobile." 
                                          title="Click to enlarge">
                                 </a>
                             </div>
