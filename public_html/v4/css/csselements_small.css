@@ -6,11 +6,11 @@
         Small window desktop stylesheet and mobile stylesheet.
 */
 
-@media screen and (max-width: 948px){
+@media screen and (max-width: 806px){
     html{
         position: relative;
         min-height: 100%;
-        background-color: #CFCFCF;
+        background-color: #414753;
     }
     
     body { 
@@ -279,7 +279,7 @@
     .content {
         color:#FFFAFA;
         width: auto;
-        background-color: rgba(33,40,55,0.85);
+        background-color: #414753;
         margin-bottom: 0; /* Add more spacing between footer and content */
         margin-top: 60px; /*Used for a fixed banner */
         padding-bottom: 10px; /* Make same as footer padding top */

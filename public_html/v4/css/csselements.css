@@ -5,7 +5,7 @@
     Description:
         Fullscreen desktop stylesheet.
 */
-@media screen and (min-width: 1338px){
+@media screen and (min-width: 1125px){
     html{
         position: relative;
         min-height: 100%;
