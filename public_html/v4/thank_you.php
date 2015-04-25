@@ -9,9 +9,10 @@
 
         <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
 
-        <link rel="stylesheet" href="csselements.css">
-        <link rel="stylesheet" href="csselements_medium.css">
-        <link rel="stylesheet" href="csselements_small.css">
+        <link rel="stylesheet" href="css/csselements.css" />
+        <link rel="stylesheet" href="css/csselements_medium.css" />
+        <link rel="stylesheet" href="css/csselements_small.css" />
+        <link rel="stylesheet" href="css/csselements_print.css" />
 
         <meta http-equiv="refresh" content="5; url=index.php" />
     </head>

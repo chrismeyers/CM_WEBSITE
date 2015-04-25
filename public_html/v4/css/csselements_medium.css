@@ -1,18 +1,18 @@
 /* 
-    Document   : csselements
+    Document   : csselements_medium
     Created on : Oct 4, 2013, 7:09:07 PM
     Author     : Chris Meyers
     Description:
-        Fullscreen desktop stylesheet.
+        Mid size window desktop stylesheet.
 */
-@media screen and (min-width: 1338px){
+@media screen and (min-width: 949px) and (max-width: 1338px) {
     html{
         position: relative;
         min-height: 100%;
     }
     
     body { 
-        background-image: url(images/bg/colorado.jpg);
+        background-image: url(../images/bg/colorado.jpg);
         /*background-repeat:no-repeat;*/
         background-attachment: fixed;
         background-size: cover;
@@ -32,41 +32,6 @@
         text-align: center;
     }
     
-    .content{
-        color:#FFFAFA;
-        width: 790px;
-        display: block;
-        top: 90px;
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 100px; /* Add more spacing between footer and content */
-        -webkit-margin-bottom-collapse: separate; /* Fixes margin-bottom for non-chrome browsers*/
-        margin-top: 20px;
-        background-color: rgba(33,40,55,0.85);
-        font-family: Verdana, Geneva, sans-serif;
-        font-size: medium;
-        position: relative;
-    }
-    
-    .content-text{
-        padding: 5px;
-    }
-    
-    .spacer{
-        overflow: hidden;
-        height: 0px;
-        width: 0px;
-    }
-
-    .headerLink{
-        color: white;
-        text-decoration: none !important;
-        font-family: Verdana, Geneva, sans-serif;
-        display: inline-block;
-    }
-    
     /* Remove IE img link border*/
     img{
       border: 0;
@@ -74,22 +39,19 @@
     
     .section-header{
         width: 790px;
-        height: 90px;
+        min-height: 90px;
         background-color: rgb(33,40,55);
-        /*background-position: 50%, 50%;
+        background-repeat: no-repeat;
+        background-position: 50%, 50%;
         background-position-x: 50%;
-        background-position-y: 50%;*/
+        background-position-y: 50%;
         line-height: 80px;
         text-align: center;
         vertical-align: middle;
         font-family: Verdana, Geneva, sans-serif;
         font-size: 40px;
     }
-    
-    .wide{
-        width: 50%;
-    }
-    
+ 
     .build{
         width: 100%;
         height: auto;
@@ -114,13 +76,7 @@
     .build-specs{
         margin-left: 50%;
     }
-    
-    table.inputs{
-        margin-left: 175px;
-        margin-right: auto;
-        text-align: left;
-    }
-    
+
     table.comments{
         margin-left: auto;
         margin-right: auto;
@@ -133,6 +89,18 @@
     
     h2.first-header, h3.first-header{
         margin-top: 0px;
+    }
+    
+    table.inputs{
+        margin-left: 175px;
+        margin-right: auto;
+        text-align: left;
+    }
+    
+    table.comments{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
     }
     
     input{
@@ -181,7 +149,7 @@
         height: 90px;
         background-color: rgb(33,40,55);
         padding-right: 6px;
-        border-bottom-color: white;
+        border-bottom-color: #FFFFFF;
         border-bottom-style: solid;
         border-bottom-width: 1px;
         /*box-shadow: 0 0 0 4px grey inset;*/
@@ -192,31 +160,22 @@
         left: 0;
         z-index: 1;
     }
-    
+
     #banner-icon-small{
         display:none;
     }
-    
-    .sectionTitle-about, .sectionTitle-builds, .sectionTitle-projects{
-        float: right;
-        width:100px;
-        height:90px;
-        background-color: rgb(33,40,55);
-        display: inline-block;
-        margin-right: 30px;
-        color: white;
-        font-size: x-large;
-        font-family: Verdana, Geneva, sans-serif;
-        text-align: center;
+
+    .sectionTitle-about, .sectionTitle-builds, .sectionTitle-projects, .sectionTitle-contact{
+        display: none;
     }
 
-    .sectionTitle-contact{
+    #sectionTitle-menu{
         float: right;
         width: 100px;
-        height: 90px;
+        height:90px;
         background-color: rgb(33,40,55);
         display: table-cell;
-        margin-right: 25px;
+        margin-right: 20px;
         vertical-align: middle;
         color: white;
         font-size: x-large;
@@ -225,23 +184,99 @@
     }
     
     .sectionTitle-txt{
-        margin-top: 24px;
+        vertical-align: middle;
+        line-height: 45px;
+        text-align: center;
+        border-bottom-color: white;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
     }
-    
-    #sectionTitle-menu{
-        display: none;
+    .sectionTitle-txt-last{
+        vertical-align: middle;
+        line-height: 45px;
+        text-align: center;
     }
     
     .sectionTitle-about:hover, .sectionTitle-builds:hover, .sectionTitle-projects:hover,
         .sectionTitle-contact:hover, #sectionTitle-menu:hover{
         background-color: #5bb75b;
         cursor: pointer;
+        display: block;
     }
     
-    .instructions{
+    #menu-dropdown{
+        margin-top: 4px;
+        padding: 0;
+        list-style: none;
+    }
+    
+    #menu-toggle{
+        width: 50px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    #menu-items{
+        padding: 4px;
+        list-style: none;
         display: none;
+        background-color: rgb(33,40,55);
+        position: absolute;
+        box-shadow: 0 0 0 4px #FFFFFF inset;
+        margin-left: auto;
+        left: 0px;
+        right: 0px;
+        width: 300px;
     }
     
+    #menu-items li{
+        height: 50px;
+    }
+    #menu-items li:hover{
+        background-color: #5bb75b;
+    }
+
+    select.menu-items{
+        background-image: url("images/menuIcon.png");
+    }
+    
+    select.menu-items:hover{
+        background-image: url("images/menuIcon.png");
+    }
+    
+    .content {
+        color:#FFFAFA;
+        width: 790px;
+        top: 90px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px; /* Add more spacing between footer and content */
+        -webkit-margin-bottom-collapse: separate; /* Fixes margin-bottom for non-chrome browsers*/
+        margin-top: 20px; /*Used for a fixed banner*/
+        background-color: rgba(33,40,55,0.85);
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: medium;
+        position: relative;
+    }
+    
+    .content-text{
+        padding: 5px;
+    }
+    
+    .spacer{
+        overflow: hidden;
+        height: 0px;
+        width: 0px;
+    }
+    
+    .headerLink{
+        color: white;
+        text-decoration: none;
+        font-family: Verdana, Geneva, sans-serif;
+    }
+
     #footer {
         font-size: small; 
         font-family: Verdana, Geneva, sans-serif;
@@ -254,11 +289,11 @@
         background-color: rgb(33,40,55);
         padding-top:5px;
         padding-bottom: 5px;
-        border-top-color: #FFFFFF;
+        border-top-color: white;
         border-top-style: solid;
         border-top-width: 1px;
     }
-
+   
     .footer-links{
         padding-left: 10px;
         display: inline-block;
@@ -289,7 +324,8 @@
     div#builds, div#projects, div#contact{
         display:none;
     }
-
+    
+    /*Used in projects section*/
     div.proj{
         height: auto;
     }
@@ -300,7 +336,7 @@
     }
     
     div.projImages{
-        float: left;
+        float:left;
     }
     
     .projImages-full-img-square{
@@ -333,7 +369,7 @@
     }
     
     .no-decoration{
-        text-decoration: none !important;
+        text-decoration: none;
     }
     
     .proj-link{

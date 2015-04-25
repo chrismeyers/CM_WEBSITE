@@ -10,10 +10,10 @@
 
         <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
 
-        <link rel="stylesheet" href="csselements.css" />
-        <link rel="stylesheet" href="csselements_medium.css" />
-        <link rel="stylesheet" href="csselements_small.css" />
-        <link rel="stylesheet" href="csselements_print.css" />
+        <link rel="stylesheet" href="css/csselements.css" />
+        <link rel="stylesheet" href="css/csselements_medium.css" />
+        <link rel="stylesheet" href="css/csselements_small.css" />
+        <link rel="stylesheet" href="css/csselements_print.css" />
         <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
         <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
         <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
@@ -764,106 +764,7 @@
         <div class="spacer"></div>
         <?php include 'footer.php'; ?>
 
-
-        <script type="text/javascript">
-            $(document).ready(function() {
-                $(".fancybox").fancybox({
-                    openEffect	: 'none',
-                    closeEffect	: 'none'
-                });
-            });
-        </script>
-
-        <script type="text/javascript">
-            var about = document.getElementById('about-me');
-            var builds = document.getElementById('my-builds');
-            var projects = document.getElementById('my-projects');
-            var contact = document.getElementById('contact-me');
-            var specificPage = window.location.hash;
-
-            // Handles browser back and forward.
-            window.onhashchange = function(){
-                showSection(translateHash(window.location.hash.substr(1)));
-            };
-
-            // Reads hash from url and changes page, defaults to about.
-            if(specificPage === null || specificPage === ''){
-                showSection('about-me');
-            }
-            else{
-                showSection(translateHash(specificPage.substr(1)));
-            }
-
-            // Displays new section.
-            function showSection(section){
-                var toShow = document.getElementById(section);
-                hideAll();
-                toShow.style.display = 'block';
-                topOfPage();
-            }
-            
-            function hideAll(){
-                about.style.display = 'none';
-                builds.style.display = 'none';
-                projects.style.display = 'none';
-                contact.style.display = 'none';
-            }
-            
-            function topOfPage(){
-                window.scrollTo(0, 0);
-            }
-            
-            function translateHash(value){
-                switch(value){
-                    case("about"):
-                        return "about-me";
-                    case("builds"):
-                        return "my-builds";
-                    case("projects"):
-                        return "my-projects";
-                    case("contact"):
-                        return "contact-me";
-                    default:
-                        return "about-me";
-                }
-            }
-            
-            //Click menu
-            $(function() {
-                $(document).each(function() {
-                    $(this).click(function(event) {
-                        var currentID = event.target.id;
-
-                        if(currentID === "menu-click" || currentID === "menu-toggle"){
-                            //toggles menu on button click
-                            $('#menu-click').siblings('#menu-items').slideToggle("fast");
-                        }
-                        else{
-                            //closes menu when clicked anywhere other than button
-                            $("#menu-click").siblings('#menu-items').slideUp("fast");
-                        }
-                    });
-                });
-                
-                $(document).keyup(function(event) {
-                    var currentKey = event.keyCode;
-                    
-                    //closes menu when esc is pressed
-                    if(currentKey === 27){
-                        $("#menu-click").siblings('#menu-items').slideUp("fast");
-                    }
-                });
-            });
-            
-            //Hover menu
-            function showMenuHover(){
-                document.getElementById('menu-items').style.display = 'block';
-            }
-            function hideMenuHover(){
-                document.getElementById('menu-items').style.display = 'none';
-            }
-            
-        </script>
+        <script type="text/javascript" src="js/jselements.js"></script>
             
     </body>
 </html>

@@ -8,7 +8,7 @@
 
         <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
 
-        <link rel="stylesheet" href="csselements_resume.css" />
+        <link rel="stylesheet" href="css/csselements_resume.css" />
         <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
         <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
         <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
