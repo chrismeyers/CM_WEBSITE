@@ -35,14 +35,14 @@
 
             <div class="content-text">
                 Hey there! My name is <b>Chris Meyers</b> and this page is dedicated to letting you know who I am and 
-                the technology skills that I possess.  I currently attend 
+                the technology skills that I possess.  I studied Computer Science at 
                 <a class="fancytxt" href="http://www.rowan.edu/" target="_blank">Rowan University</a>
-                in Glassboro, NJ where I am studying Computer Science.  Some of my interests include: Software Development, Web 
+                in Glassboro, NJ and earned a Bachelor of Science in Computer Science.  Some of my professional interests include: Software Development, Web 
                 Development and Computer Networking.  Over the past few years, I have picked up experience with the following 
-                programming languages:
+                programming languages and technologies:
                 
                 <ul>
-                    <li class="li-filled">Java, HTML5, CSS3, PHP, Javascript, C#, MySQL, Visual Basic, C, C++, Perl, MIPS assembly, 
+                    <li class="li-filled">Java, C#, PHP, C++, HTML, CSS, Javascript, MySQL, Visual Basic, C, Perl, MIPS assembly, 
                                                       Scheme (LISP dialect), Ada, Lua.</li>
                 </ul>
                 

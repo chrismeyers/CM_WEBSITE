@@ -26,7 +26,7 @@
         <table class="wrapper">
             <tr>
                 <td class="left">&bull; Rowan University, Glassboro, NJ</td>
-                <td class="right">Expected: May 2015</td>
+                <td class="right">May 2015</td>
             </tr>
             <tr>
                 <td class="first">&#9702; Bachelor of Science, Computer Science</td>
@@ -38,10 +38,25 @@
         <table class="wrapper">
             <tr>
                 <td class="left">&bull; Mission Solutions Engineering, Moorestown, NJ</td>
-                <td class="right">March 2015  – Present</td>
+                <td class="right">May 2015  – Present</td>
             </tr>
             <tr>
-                <td class="left first">&#9702;Software Engineer Intern</td>
+                <td class="left first">&#9702;Software Engineer, Display</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="left second">&nbsp;</td>
+                <td></td>
+            </tr>
+        </table>
+        
+        <table class="wrapper">
+            <tr>
+                <td class="left">&bull; Mission Solutions Engineering, Moorestown, NJ</td>
+                <td class="right">March 2015  – May 2015</td>
+            </tr>
+            <tr>
+                <td class="left first">&#9702;Software Engineer Intern, Display</td>
                 <td></td>
             </tr>
             <tr>
@@ -53,7 +68,7 @@
         <table class="wrapper">
             <tr>
                 <td class="left">&bull; Rowan University, History Department</td>
-                <td class="right">November 2013 – Present</td>
+                <td class="right">November 2013 – May 2015</td>
             </tr>
             <tr>
                 <td class="left first">&#9702; Webpage Design</td>
@@ -82,23 +97,6 @@
             </tr>
         </table>
         
-        <br />
-        
-        <table class="wrapper">
-            <tr>
-                <td class="left">&bull; JDR Shoe Warehouse, Cherry Hill, NJ</td>
-                <td class="right">February 2010 – November 2013</td>
-            </tr>
-            <tr>
-                <td class="left first">&#9702; Sales Associate, Stock</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td class="left second">&#9642; Provided excellent customer service and kept a clean and stocked sales floor.</td>
-                <td></td>
-            </tr>
-        </table>
-
         <h2>Technical Experience</h2>
         <table class="wrapper">
             <tr>
@@ -118,7 +116,19 @@
             </tr>
             
             <tr>
-                <td class="left">&bull; Experience with Git and Subversion revision control.</td>
+                <td class="left">&bull; Experience with ClearCase, Git and Subversion revision control.</td>
+            </tr>
+            
+            <tr>
+                <td class="left">&bull; Highly proficient with Microsoft Office.</td>
+            </tr>
+            
+            <tr>
+                <td class="left">&bull; Highly proficient with Microsoft Windows (XP, Vista, 7, 8).</td>
+            </tr>
+            
+            <tr>
+                <td class="left">&bull; Proficient with command line interfaces (Unix, Linux and SunOS).</td>
             </tr>
             
             <tr>
@@ -137,21 +147,6 @@
                 <td class="left">&bull; 4 years of Computer Aided Drafting experience using technologies such as Autodesk AutoCAD, Rhinoceros 4, Autodesk Inventor.</td>
             </tr>
             
-            <tr>
-                <td class="left">&bull; Highly proficient with Microsoft Office.</td>
-            </tr>
-            
-            <tr>
-                <td class="left">&bull; Highly proficient with Microsoft Windows (XP, Vista, 7, 8).</td>
-            </tr>
-            
-            <tr>
-                <td class="left">&bull; Experience with Unix, Linux, and Android operating systems.</td>
-            </tr>
-            
-            <tr>
-                <td class="left">&bull; Experience with Mac OSX and iOS operating systems.</td>
-            </tr>
         </table>
         
         <div class="footer">
