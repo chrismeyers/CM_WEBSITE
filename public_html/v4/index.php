@@ -195,9 +195,9 @@
                         <div class="projImages">
                             <a class="fancybox no-decoration" 
                                rel="gallery1" 
-                               href="images/project_screenshots/cm.png" 
+                               href="images/project_screenshots/cm/cm.png" 
                                title="Full size version of my personal website.">
-                                <img src="images/project_screenshots/cm.png" 
+                                <img src="images/project_screenshots/cm/cm.png" 
                                      class="projImages-full-img-square"
                                      alt="Full size version of my personal website." 
                                      title="Click to enlarge">
@@ -205,9 +205,9 @@
                             <div class="projImages-small">
                                 <a class="fancybox no-decoration"
                                    rel="gallery1" 
-                                   href="images/project_screenshots/cm_mid.png"
+                                   href="images/project_screenshots/cm/cm_mid.png"
                                    title="Mid size version of my personal website.">
-                                    <img src="images/project_screenshots/cm_mid.png" 
+                                    <img src="images/project_screenshots/cm/cm_mid.png" 
                                          class="projImages-small-img-square"
                                          alt="Mid size version of my personal website." 
                                          title="Click to enlarge">
@@ -215,9 +215,9 @@
                                 </a>
                                 <a class="fancybox no-decoration"
                                    rel="gallery1"
-                                   href="images/project_screenshots/cm_mobile.png"
+                                   href="images/project_screenshots/cm/cm_mobile.png"
                                    title="Mobile version of my personal website.">
-                                    <img src="images/project_screenshots/cm_mobile.png" 
+                                    <img src="images/project_screenshots/cm/cm_mobile.png" 
                                          class="projImages-small-img-port"
                                          alt="Mobile version of my personal website." 
                                          title="Click to enlarge">
@@ -261,8 +261,8 @@
                     <h3>Software Engineering I, Rowan University, Spring 2014</h3>
                     <div class="projWrapper">
                         <div class="projImages">
-                            <a class="fancybox no-decoration" href="images/project_screenshots/genomic.png" title="Genomic Solutions Now! Software">
-                                <img src="images/project_screenshots/genomic.png" 
+                            <a class="fancybox no-decoration" href="images/project_screenshots/genomic/genomic.png" title="Genomic Solutions Now! Software">
+                                <img src="images/project_screenshots/genomic/genomic.png" 
                                      class="projImages-full-img-land"
                                      alt="Genomic Solutions Now! Software" 
                                      title="Click to enlarge">
@@ -316,9 +316,9 @@
                         <div class="projImages">
                             <a class="fancybox no-decoration" 
                                rel="gallery2" 
-                               href="images/project_screenshots/pinelands_landing.png" 
+                               href="images/project_screenshots/pinelands/pinelands_landing.png" 
                                title="Landing page">
-                                <img src="images/project_screenshots/pinelands_landing.png"
+                                <img src="images/project_screenshots/pinelands/pinelands_landing.png"
                                      class="projImages-full-img-square"
                                      alt="Pinelands landing page" 
                                      title="Click to enlarge">
@@ -326,9 +326,9 @@
                             <div class="projImages-small">
                                 <a class="fancybox no-decoration"
                                    rel="gallery2" 
-                                   href="images/project_screenshots/pinelands_tour.png"
+                                   href="images/project_screenshots/pinelands/pinelands_tour.png"
                                    title="Tour page">
-                                    <img src="images/project_screenshots/pinelands_tour.png" 
+                                    <img src="images/project_screenshots/pinelands/pinelands_tour.png" 
                                          class="projImages-small-img-square"
                                          alt="Pinelands tour page" 
                                          title="Click to enlarge">
@@ -336,9 +336,9 @@
                                 </a>
                                 <a class="fancybox no-decoration"
                                    rel="gallery2"
-                                   href="images/project_screenshots/pinelands_contact.png"
+                                   href="images/project_screenshots/pinelands/pinelands_contact.png"
                                    title="Contact page">
-                                    <img src="images/project_screenshots/pinelands_contact.png" 
+                                    <img src="images/project_screenshots/pinelands/pinelands_contact.png" 
                                          class="projImages-small-img-square"
                                          alt="Pinelands contact page" 
                                          title="Click to enlarge">
@@ -382,9 +382,9 @@
                         <div class="projImages">
                             <a class="fancybox no-decoration" 
                                rel="gallery3" 
-                               href="images/project_screenshots/ttt_port.png" 
+                               href="images/project_screenshots/ttt/ttt_port.png" 
                                title="Tic Tac Toe Portrait">
-                                <img src="images/project_screenshots/ttt_port.png" 
+                                <img src="images/project_screenshots/ttt/ttt_port.png" 
                                      class="projImages-full-img-port"
                                      alt="Tic tac toe Portrait" 
                                      title="Click to enlarge">
@@ -392,9 +392,9 @@
                             <div class="projImages-small">
                                 <a class="fancybox no-decoration" 
                                    rel="gallery3" 
-                                   href="images/project_screenshots/ttt_land.png"
+                                   href="images/project_screenshots/ttt/ttt_land.png"
                                    title="Tic Tac Toe Landscape">
-                                    <img src="images/project_screenshots/ttt_land.png" 
+                                    <img src="images/project_screenshots/ttt/ttt_land.png" 
                                          class="projImages-small-img-land"
                                          alt="Tic tac toe Landscape" 
                                          title="Click to enlarge">
@@ -446,9 +446,9 @@
                         <div class="projImages">
                             <a class="fancybox no-decoration"
                                rel="gallery4"
-                               href="images/project_screenshots/loldata_landing.png"
+                               href="images/project_screenshots/lol_playerdata/loldata_landing.png"
                                title="LoL player data landing page.">
-                                <img src="images/project_screenshots/loldata_landing.png" 
+                                <img src="images/project_screenshots/lol_playerdata/loldata_landing.png" 
                                      class="projImages-full-img-square"
                                      alt="LoL player data landing page." 
                                      title="Click to enlarge">
@@ -456,18 +456,18 @@
                             <div class="projImages-small">
                                 <a class="fancybox no-decoration"
                                    rel="gallery4"
-                                   href="images/project_screenshots/loldata.png"
+                                   href="images/project_screenshots/lol_playerdata/loldata.png"
                                    title="LoL player data results.">
-                                    <img src="images/project_screenshots/loldata.png" 
+                                    <img src="images/project_screenshots/lol_playerdata/loldata.png" 
                                          class="projImages-small-img-square"
                                          alt="LoL player data results." 
                                          title="Click to enlarge">
                                 </a>
                                 <a class="fancybox no-decoration"
                                    rel="gallery4"
-                                   href="images/project_screenshots/loldata_small.png"
+                                   href="images/project_screenshots/lol_playerdata/loldata_small.png"
                                    title="LoL player data results optimized for mobile.">
-                                    <img src="images/project_screenshots/loldata_small.png" 
+                                    <img src="images/project_screenshots/lol_playerdata/loldata_small.png" 
                                          class="projImages-small-img-port"
                                          alt="LoL player data results optimized for mobile." 
                                          title="Click to enlarge">
@@ -509,9 +509,9 @@
                     <h3>Senior Project, Rowan University, Fall 2014</h3>
                     <div class="projWrapper">
                         <div class="projImages">
-                            <a class="fancybox no-decoration" rel="gallery5" href="images/project_screenshots/scoresPlot.png" 
+                            <a class="fancybox no-decoration" rel="gallery5" href="images/project_screenshots/pca/scoresPlot.png" 
                                title="A scores plot generated from calculated principal components.">
-                                <img src="images/project_screenshots/scoresPlot.png"
+                                <img src="images/project_screenshots/pca/scoresPlot.png"
                                      class="projImages-full-img-square"
                                      alt="A scores plot generated from calculated principal components."
                                      title="Click to enlarge">
@@ -519,27 +519,27 @@
                             <div class="projImages-small">
                                 <a class="fancybox no-decoration"
                                    rel="gallery5" 
-                                   href="images/project_screenshots/scoresData.png"
+                                   href="images/project_screenshots/pca/scoresData.png"
                                    title="The calculated principal component data.">
-                                    <img src="images/project_screenshots/scoresData.png" 
+                                    <img src="images/project_screenshots/pca/scoresData.png" 
                                          class="projImages-small-img-square"
                                          alt="The calculated principal component data." 
                                          title="Click to enlarge">
                                 </a>
                                 <a class="fancybox no-decoration"
                                    rel="gallery5"
-                                   href="images/project_screenshots/addinBar.PNG"
+                                   href="images/project_screenshots/pca/addinBar.PNG"
                                    title="The Excel add-in bar. Scores and loadings plot were added in this project.">
-                                    <img src="images/project_screenshots/addinBar.PNG" 
+                                    <img src="images/project_screenshots/pca/addinBar.PNG" 
                                          class="projImages-small-img-land"
                                          alt="The Excel add-in bar. Scores and loadings plot were added in this project." 
                                          title="Click to enlarge">
                                 </a>
                                 <a class="fancybox no-decoration"
                                    rel="gallery5"
-                                   href="images/project_screenshots/scoresInput-full.png"
+                                   href="images/project_screenshots/pca/scoresInput-full.png"
                                    title="Input form that is dynamically populated based on the number of principal components.">
-                                    <img src="images/project_screenshots/scoresInput-full.png" 
+                                    <img src="images/project_screenshots/pca/scoresInput-full.png" 
                                          class="projImages-small-img-port"
                                          alt="Input form that is dynamically populated based on the number of principal components." 
                                          title="Click to enlarge">
@@ -586,9 +586,9 @@
                     <h3>Personal Project, Winter 2015</h3>
                     <div class="projWrapper">
                         <div class="projImages">
-                            <a class="fancybox no-decoration" rel="gallery6" href="images/project_screenshots/bms_rawData.png" 
+                            <a class="fancybox no-decoration" rel="gallery6" href="images/project_screenshots/bms/bms_rawData.png" 
                                title="The raw data taken from the lab to be processed.">
-                                <img src="images/project_screenshots/bms_rawData.png"
+                                <img src="images/project_screenshots/bms/bms_rawData.png"
                                      class="projImages-full-img-square"
                                      alt="The raw data taken from the lab to be processed."
                                      title="Click to enlarge">
@@ -596,45 +596,45 @@
                             <div class="projImages-small">
                                 <a class="fancybox no-decoration"
                                    rel="gallery6" 
-                                   href="images/project_screenshots/bms_formatForm.png"
+                                   href="images/project_screenshots/bms/bms_formatForm.png"
                                    title="Input form used to select the worksheet to be processed.">
-                                    <img src="images/project_screenshots/bms_formatForm.png" 
+                                    <img src="images/project_screenshots/bms/bms_formatForm.png" 
                                          class="projImages-small-img-square"
                                          alt="Input form used to select the worksheet to be processed." 
                                          title="Click to enlarge">
                                 </a>
                                 <a class="fancybox no-decoration"
                                    rel="gallery6" 
-                                   href="images/project_screenshots/bms_formattedData.png"
+                                   href="images/project_screenshots/bms/bms_formattedData.png"
                                    title="The entire formatted data set.">
-                                    <img src="images/project_screenshots/bms_formattedData.png" 
+                                    <img src="images/project_screenshots/bms/bms_formattedData.png" 
                                          class="projImages-small-img-square"
                                          alt="The entire formatted data set." 
                                          title="Click to enlarge">
                                 </a>
                                 <a class="fancybox no-decoration"
                                    rel="gallery6" 
-                                   href="images/project_screenshots/bms_finalData.png"
+                                   href="images/project_screenshots/bms/bms_finalData.png"
                                    title="A further refined formatted data set used for plotting.">
-                                    <img src="images/project_screenshots/bms_finalData.png" 
+                                    <img src="images/project_screenshots/bms/bms_finalData.png" 
                                          class="projImages-small-img-square"
                                          alt="A further refined formatted data set used for plotting." 
                                          title="Click to enlarge">
                                 </a>
                                 <a class="fancybox no-decoration"
                                    rel="gallery6" 
-                                   href="images/project_screenshots/bms_graphForm.png"
+                                   href="images/project_screenshots/bms/bms_graphForm.png"
                                    title="Input form used to select the variables to be plotted.">
-                                    <img src="images/project_screenshots/bms_graphForm.png" 
+                                    <img src="images/project_screenshots/bms/bms_graphForm.png" 
                                          class="projImages-small-img-square"
                                          alt="Input form used to select the variables to be plotted." 
                                          title="Click to enlarge">
                                 </a>
                                 <a class="fancybox no-decoration"
                                    rel="gallery6" 
-                                   href="images/project_screenshots/bms_plot.png"
+                                   href="images/project_screenshots/bms/bms_plot.png"
                                    title="The final plot.">
-                                    <img src="images/project_screenshots/bms_plot.png" 
+                                    <img src="images/project_screenshots/bms/bms_plot.png" 
                                          class="projImages-small-img-square"
                                          alt="The final plot." 
                                          title="Click to enlarge">
