@@ -668,6 +668,69 @@
                     </div>
                 </div>
 
+                <!-- LoL status -->
+                <br /> <hr>
+                <div class="proj">
+                    <h2>League of Legends Server Status Checker
+                        <a href="https://github.com/chrismeyers/rito-pls" target="_blank" class="no-decoration">
+                            <img src="images/social/github.png" 
+                                onmouseover="this.src = 'images/social/github_hover.png'" 
+                                onmouseout="this.src = 'images/social/github.png'" 
+                                class="proj-link"
+                                alt="Link to Code" 
+                                title='View code'>
+                        </a>
+                    </h2>
+                    <h3>Personal Project, June 2015</h3>
+                    <div class="projWrapper">
+                        <div class="projImages">
+                            <a class="fancybox no-decoration" rel="gallery7" href="images/project_screenshots/lol_status/gui.png" 
+                               title="The Java GUI that displays the current status of services in a specified region.">
+                                <img src="images/project_screenshots/lol_status/gui.png"
+                                     class="projImages-full-img-square"
+                                     alt="The Java GUI that displays the current status of services in a specified region."
+                                     title="Click to enlarge">
+                            </a>
+                             <div class="projImages-small">
+                                <a class="fancybox no-decoration"
+                                   rel="gallery7" 
+                                   href="images/project_screenshots/lol_status/polling.png"
+                                   title="Input form that allows users to specify how often the GUI updates.">
+                                    <img src="images/project_screenshots/lol_status/polling.png" 
+                                         class="projImages-small-img-square"
+                                         alt="Input form that allows users to specify how often the GUI updates." 
+                                         title="Click to enlarge">
+                                </a>
+                             </div>
+                        </div>
+
+                        <div class="projDesc">
+                            <dl>
+                                <dt><b>Language(s)</b>:</dt>
+                                    <dd>Java</dd>
+
+                                <dt><b>Description:</b></dt>
+                                    <dd>A Java application currently under development that reports the current <i>League of Legends</i>
+                                        service statuses for a specified region. The application queries the <i>League of Legends</i> API
+                                        periodically and presents the current status of several services (Boards, Game, Store and Website).
+                                        <p></p>
+                                        The purpose of this project is to get more practice with Java GUI building and multithreaded
+                                        programming. The polling operation takes place on a new thread that allows for the program to
+                                        function normally while maintaining periodic server checks.
+                                    </dd>
+
+                                <dt><b>My Role:</b></dt>
+                                    <dd>Solo Project.</dd>
+
+                                <dt><b>Status:</b></dt>
+                                    <dd>Under Development.</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
             </div>
         </div>
 
