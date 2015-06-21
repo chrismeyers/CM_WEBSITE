@@ -2,7 +2,7 @@
     echo "<div id=\"bannerBar\">
             <div class=\"banner-img\">
                 <a href=\"index.php\" id=\"banner\">
-                    <img src=\"images/banner/v4/no-border/titlepic-v4.png\" 
+                    <img src=\"images/banner/v4/no-border/titlepic-v4-NObrackets.png\" 
                          alt=\"Chris Meyers. Developer, Tech Enthusiast.\" 
                          title=\"Home\">
                 </a>
