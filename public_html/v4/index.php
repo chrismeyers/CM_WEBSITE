@@ -44,7 +44,7 @@
                 Over the past few years, I have picked up experience with the following programming languages and technologies:
                 
                 <ul>
-                    <li class="li-filled">Java, C#, PHP, C++, HTML, CSS, Javascript, MySQL, Visual Basic, C, Perl, MIPS assembly, 
+                    <li class="li-filled">Java, C#, PHP, HTML, CSS, Javascript, MySQL, C++, C, Visual Basic, Perl, MIPS assembly, 
                                                       Scheme (LISP dialect), Ada, Lua.</li>
                 </ul>
                 
@@ -710,20 +710,20 @@
                                     <dd>Java</dd>
 
                                 <dt><b>Description:</b></dt>
-                                    <dd>A Java application currently under development that reports the current <i>League of Legends</i>
-                                        service statuses for a specified region. The application queries the <i>League of Legends</i> API
-                                        periodically and presents the current status of several services (Boards, Game, Store and Website).
+                                    <dd>A Java application that reports current <i>League of Legends</i> service statuses for a specified region.
+                                        The application queries the <i>League of Legends</i> API periodically and presents the current status of
+                                        several services (Boards/Forums, Game, Store and Website).
                                         <p></p>
-                                        The purpose of this project is to get more practice with Java GUI building and multithreaded
-                                        programming. The polling operation takes place on a new thread that allows for the program to
-                                        function normally while maintaining periodic server checks.
+                                        The purpose of this project was to get more practice with Java GUI building and multithreaded programming.
+                                        The polling operation takes place on a new thread that allows for the program to function normally while
+                                        maintaining periodic server checks.
                                     </dd>
 
                                 <dt><b>My Role:</b></dt>
                                     <dd>Solo Project.</dd>
 
                                 <dt><b>Status:</b></dt>
-                                    <dd>Under Development.</dd>
+                                    <dd>Complete.</dd>
                             </dl>
                         </div>
                     </div>
