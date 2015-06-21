@@ -45,6 +45,9 @@
         vertical-align: middle;
         font-family: Verdana, Geneva, sans-serif;
         font-size: 30px;
+        border-bottom-color: white;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
     }
   
     p.message{
