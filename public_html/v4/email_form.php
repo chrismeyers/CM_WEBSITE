@@ -6,18 +6,34 @@ $confirmfromemail = $_POST['confirmfromemail'];
 $usercomments = $_POST['usercomments'];
 $message = "";
 
+//Verifies the correct format for each field.  If a field is incorrect, a value
+//of "1" is concatenated to the return message; otherwise "0" is concatenated.
+//
+//The return message follows the following format:
+// [0/1][0/1][0/1]
+// [name][email format][emails match]
 if (!preg_match("/\S+/", $name)) {
-    $message = "000"; //Name required. Please try again.
-    header("Location: index.php?message=$message&name=$name&email=$fromemail&comment=$usercomments#contact");
-    die();
-} 
-if (!preg_match("/^\S+@[A-Za-z0-9_.-]+\.[A-Za-z]{2,6}$/", $fromemail)) {
-    $message = "001"; //Email Address format is incorrect. Please try again.
-    header("Location: index.php?message=$message&name=$name&email=$fromemail&comment=$usercomments#contact");
-    die();
+    $message .= "1"; //Name required.
 }
-if (strcmp($fromemail,$confirmfromemail) != 0){
-    $message = "011"; //Email Addresses don't match. Please try again.
+else {
+    $message .= "0"; //Name format OK
+}
+
+if (!preg_match("/^\S+@[A-Za-z0-9_.-]+\.[A-Za-z]{2,6}$/", $fromemail)) {
+    $message .= "1"; //Email Address format is incorrect.
+}
+else {
+    $message .= "0"; //Email format OK
+}
+
+if (strcmp($fromemail, $confirmfromemail) != 0 || empty($fromemail) && empty($confirmfromemail)) {
+    $message .= "1"; //Email Addresses don't match. Excludes them both being blank.
+}
+else {
+    $message .= "0"; //Email match OK
+}
+
+if (strcmp($message, "000") != 0) {
     header("Location: index.php?message=$message&name=$name&email=$fromemail&comment=$usercomments#contact");
     die();
 }

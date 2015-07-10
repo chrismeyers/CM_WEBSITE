@@ -65,7 +65,7 @@
 
                 <p>
                 For security reasons, an abbreviated HTML version of my resume can be viewed <a class="fancytxt" href="resume.php">here</a>. 
-                A full PDF version with contact information can be requested <a href="index.php?message=010&name=&email=&comment=I would like a copy of your resume.#contact" class="fancytxt">here</a>.
+                A full PDF version with contact information can be requested <a href="index.php?message=reqres&name=&email=&comment=I would like a copy of your resume.#contact" class="fancytxt">here</a>.
                 </p>
                 
                 <div class="instructions">
@@ -746,19 +746,26 @@
                     <?php
                     if (!empty($_GET['message'])) {
                         $message = $_GET['message'];
-
-                        if ($message == "000") {
-                            echo '<p class="errors">' . "Name required. Please try again." . '</p>';
-                        } 
-                        elseif ($message == "001") {
-                            echo '<p class="errors">' . "Email Address format is incorrect. Please try again." . '</p>';
+                        
+                        if(strcmp($message, "000") != 0) {
+                            $err_arr = str_split($message);
+                            
+                            echo '<p class="errors">';
+                            if ($err_arr[0] == "1") {
+                                echo "- Name required. Please try again." . '<br />';
+                            } 
+                            if ($err_arr[1] == "1") {
+                                echo "- Email Address format is incorrect. Please try again." . '<br />';
+                            }
+                            if ($err_arr[2] == "1"){
+                                echo "- Email Addresses don't match. Please try again." . '<br />';
+                            }
                         }
-                        elseif ($message == "010"){
+                        
+                        if ($message == "reqres"){
                             echo '<p class="errors">' . "To request a full version of my resume, please enter your name, email and any additional information." . '</p>';
                         }
-                        elseif ($message == "011"){
-                            echo '<p class="errors">' . "Email Addresses don't match. Please try again." . '</p>';
-                        }
+                        
                     }
                     ?><p></p>
 
@@ -801,7 +808,7 @@
                     <table class="comments">
                         <tr>
                             <td>
-                                <textarea class="textarea-mod" name="usercomments" placeholder="Message"><?php
+                                <textarea class="textarea-mod" name="usercomments" placeholder="Comment" maxlength="500"><?php
                                     if (!empty($_GET['comment'])) {
                                         $usercomments = $_GET['comment'];
                                         echo $usercomments . '</textarea>';
@@ -810,9 +817,9 @@
                                     }
                                     ?></td>
                         </tr>
-
+                        
                     </table>
-
+                    
                     <p></p>
                     <table class="inputs">
                         <tr>

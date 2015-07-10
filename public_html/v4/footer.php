@@ -56,7 +56,7 @@
                 <div class='footer-bullets'>&bull;</div>
                 
                 <div class='footer-resume'>
-                    <a href=\"index.php?message=010&name=&email=&comment=I would like a copy of your resume.#contact\" class=\"fancytxt\">
+                    <a href=\"index.php?message=reqres&name=&email=&comment=I would like a copy of your resume.#contact\" class=\"fancytxt\">
                         Request Résumé
                     </a>
                 </div>
