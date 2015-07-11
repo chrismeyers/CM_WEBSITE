@@ -757,12 +757,13 @@
                             if ($err_arr[1] == "1") {
                                 echo "- Email Address format is incorrect. Please try again." . '<br />';
                             }
-                            if ($err_arr[2] == "1"){
+                            if ($err_arr[2] == "1") {
                                 echo "- Email Addresses don't match. Please try again." . '<br />';
                             }
+                            echo '</p>';
                         }
                         
-                        if ($message == "reqres"){
+                        if ($message == "reqres") {
                             echo '<p class="errors">' . "To request a full version of my resume, please enter your name, email and any additional information." . '</p>';
                         }
                         
