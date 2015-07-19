@@ -25,8 +25,8 @@
         <h2>Education</h2>
         <table class="wrapper">
             <tr>
-                <td class="left">&bull; Rowan University, Glassboro, NJ</td>
-                <td class="right">May 2015</td>
+                <td class="left">&bull; <b>Rowan University, Glassboro, NJ</b></td>
+                <td class="right"><b>May 2015</b></td>
             </tr>
             <tr>
                 <td class="first">&#9702; Bachelor of Science, Computer Science</td>
@@ -37,45 +37,16 @@
         <h2>Work Experience</h2>
         <table class="wrapper">
             <tr>
-                <td class="left">&bull; Mission Solutions Engineering, Moorestown, NJ</td>
-                <td class="right">May 2015  – Present</td>
+                <td class="left">&bull; <b>Mission Solutions Engineering, Moorestown, NJ</b></td>
+                <td class="right"><b>May 2015  – Present</b></td>
             </tr>
             <tr>
                 <td class="left first">&#9702;Software Engineer, Display</td>
                 <td></td>
             </tr>
             <tr>
-                <td class="left second">&nbsp;</td>
-                <td></td>
-            </tr>
-        </table>
-        
-        <table class="wrapper">
-            <tr>
-                <td class="left">&bull; Mission Solutions Engineering, Moorestown, NJ</td>
-                <td class="right">March 2015  – May 2015</td>
-            </tr>
-            <tr>
-                <td class="left first">&#9702;Software Engineer Intern, Display</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td class="left second">&nbsp;</td>
-                <td></td>
-            </tr>
-        </table>
-        
-        <table class="wrapper">
-            <tr>
-                <td class="left">&bull; Rowan University, History Department</td>
-                <td class="right">November 2013 – May 2015</td>
-            </tr>
-            <tr>
-                <td class="left first">&#9702; Webpage Design</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td class="left second">&#9642; Updated and maintained the History Department’s website.</td>
+                <td class="left second">&#9642; Designed, developed and tested solutions
+                    for the real-time Aegis BMD system.</td>
                 <td></td>
             </tr>
         </table>
@@ -84,15 +55,52 @@
         
         <table class="wrapper">
             <tr>
-                <td class="left">&bull; Rowan University, Network & System Services</td>
-                <td class="right">July 2014 – September 2014</td>
+                <td class="left">&bull; <b>Mission Solutions Engineering, Moorestown, NJ</b></td>
+                <td class="right"><b>March 2015  – May 2015</b></td>
+            </tr>
+            <tr>
+                <td class="left first">&#9702;Software Engineer Intern, Display</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="left second">&#9642; Assisted a team working on the Aegis
+                    Ballistic Missile Defense (BMD) program.</td>
+                <td></td>
+            </tr>
+        </table>
+        
+        <br />
+        
+        <table class="wrapper">
+            <tr>
+                <td class="left">&bull; <b>Rowan University, History Department</b></td>
+                <td class="right"><b>November 2013 – May 2015</b></td>
+            </tr>
+            <tr>
+                <td class="left first">&#9702; Web Developer</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="left second">&#9642; Updated and maintained the History
+                    Department’s website.</td>
+                <td></td>
+            </tr>
+        </table>
+        
+        <br />
+        
+        <table class="wrapper">
+            <tr>
+                <td class="left">&bull; <b>Rowan University, Network & System Services</b></td>
+                <td class="right"><b>July 2014 – September 2014</b></td>
             </tr>
             <tr>
                 <td class="left first">&#9702; Network Assistant</td>
                 <td></td>
             </tr>
             <tr>
-                <td class="left second">&#9642; Installed and maintained network infrastructure including network switches, UPSs and wireless access points.</td>
+                <td class="left second">&#9642; Installed and maintained network
+                    infrastructure across Rowan’s main campus.</td>
                 <td></td>
             </tr>
         </table>
@@ -100,23 +108,37 @@
         <h2>Technical Experience</h2>
         <table class="wrapper">
             <tr>
-                <td class="left">&bull; Experience developing various software using languages such as Java, C# and C++.</td>
+                <td class="left">&bull; Experience developing various software using
+                    languages such as Java, C# and C++.</td>
             </tr>
             
             <tr>
-                <td class="left">&bull; Experience developing websites using technologies such as HTML5, CSS3, PHP, Javascript, JSON and MySQL.</td>
+                <td class="left">&bull; Experience developing websites using technologies
+                    such as HTML5, CSS3, PHP, Javascript, JSON and MySQL.</td>
             </tr>
             
             <tr>
-                <td class="left">&bull; Member of a software engineering team that produced a piece of software for the Genomic Solutions Now Company during the Spring 2014 semester at Rowan University.</td>
+                <td class="left">&bull; Member of a software engineering team that
+                    produced a piece of software for the Genomic Solutions Now Company
+                    during the Spring 2014 semester at Rowan University.</td>
             </tr>
             
             <tr>
-                <td class="left">&bull; Leader of a software development team that further developed an Excel add-in to perform Principal Component Analysis (PCA) visualization during the Fall 2014 semester at Rowan University in collaboration with Bristol-Myers Squibb.</td>
+                <td class="left">&bull; Leader of a software development team that
+                    further developed an Excel add-in to perform Principal Component
+                    Analysis (PCA) visualization during the Fall 2014 semester at
+                    Rowan University in collaboration with Bristol-Myers Squibb.</td>
             </tr>
             
             <tr>
-                <td class="left">&bull; Experience with ClearCase, Git and Subversion revision control.</td>
+                <td class="left">&bull; Experience with ClearCase, Git and Subversion
+                    revision control.</td>
+            </tr>
+            
+            <tr>
+                <td class="left">&bull; Experience debugging software with visual
+                    debuggers (Netbeans, Eclipse, and Visual Studio) and the command
+                    line based GNU debugger (GDB).</td>
             </tr>
             
             <tr>
@@ -128,23 +150,23 @@
             </tr>
             
             <tr>
-                <td class="left">&bull; Proficient with command line interfaces (Unix, Linux and SunOS).</td>
+                <td class="left">&bull; Proficient with command line interfaces (Unix, Linux and Solaris).</td>
             </tr>
             
             <tr>
-                <td class="left">&bull; Experience configuring and upgrading software images on Cisco network switches.</td>
+                <td class="left">&bull; Experience installing, maintaining and 
+                    relocating data center hardware.</td>
             </tr>
             
             <tr>
-                <td class="left">&bull; Experience installing, maintaining and relocating data center hardware.</td>
+                <td class="left">&bull; Very familiar with computer hardware.  
+                    Built multiple computers from individual components.</td>
             </tr>
             
             <tr>
-                <td class="left">&bull; Very familiar with computer hardware.  Built multiple computers from individual components.</td>
-            </tr>
-            
-            <tr>
-                <td class="left">&bull; 4 years of Computer Aided Drafting experience using technologies such as Autodesk AutoCAD, Rhinoceros 4, Autodesk Inventor.</td>
+                <td class="left">&bull; 4 years of Computer Aided Drafting experience
+                    using technologies such as Autodesk AutoCAD, Rhinoceros 4, Autodesk
+                    Inventor.</td>
             </tr>
             
         </table>
