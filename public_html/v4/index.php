@@ -701,6 +701,16 @@
                                          alt="Input form that allows users to specify how often the GUI updates." 
                                          title="Click to enlarge">
                                 </a>
+                                 
+                                 <a class="fancybox no-decoration"
+                                   rel="gallery7" 
+                                   href="images/project_screenshots/lol_status/tray.png"
+                                   title="Notification area functionality.">
+                                    <img src="images/project_screenshots/lol_status/tray.png" 
+                                         class="projImages-small-img-square"
+                                         alt="Notification area functionality." 
+                                         title="Click to enlarge">
+                                </a>
                              </div>
                         </div>
 
