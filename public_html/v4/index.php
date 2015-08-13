@@ -426,22 +426,22 @@
                 <br /> <hr>
                 <div class="proj">
                     <h2>League of Legends Player Data Parser
-                        <a href="http://chrismeyers.info/projects/LoL_player_data/web" target="_blank" class="no-decoration">
+                            <a href="http://chrismeyers.info/projects/LoL_player_data/web" target="_blank" class="no-decoration">
                             <img src="images/icons/link.png" 
                                 onmouseover="this.src = 'images/icons/link_hover.png'" 
                                 onmouseout="this.src = 'images/icons/link.png'" 
                                 class="proj-link"
                                 alt="Link to LoL player data" 
                                 title='View site'>
-                        </a>
-                        <a href="https://github.com/chrismeyers/LoL_player_data" target="_blank" class="no-decoration">
+                            </a>
+                            <a href="https://github.com/chrismeyers/LoL_player_data" target="_blank" class="no-decoration">
                             <img src="images/social/github.png" 
                                 onmouseover="this.src = 'images/social/github_hover.png'" 
                                 onmouseout="this.src = 'images/social/github.png'" 
                                 class="proj-link"
                                 alt="Link to Code" 
                                 title='View code'>
-                        </a>
+                            </a>
                     </h2>
                     <h3>Personal Project, Summer 2014</h3>
                     <div class="projWrapper">
@@ -483,7 +483,11 @@
                                     
                                 <dt><b>Description:</b></dt>
                                     <dd>An application based on the video game <i>League of Legends</i> that
-                                    utilizes the Riot Games API to query and parse player data for a specified player.</dd>
+                                    utilizes the Riot Games API to query and parse player data for a specified player.
+                                    <p></p>
+                                    If you don't have a <i>League of Legends</i> account and would like to use the 
+                                    website, you can use my account name (Spicy Criticals) to test functionality.
+                                    </dd>
                                     
                                 <dt><b>My Role:</b></dt>
                                     <dd>Solo Project.</dd>
