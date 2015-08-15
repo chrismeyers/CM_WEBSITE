@@ -486,7 +486,9 @@
                                     utilizes the Riot Games API to query and parse player data for a specified player.
                                     <p></p>
                                     If you don't have a <i>League of Legends</i> account and would like to use the 
-                                    website, you can use my account name (Spicy Criticals) to test functionality.
+                                    website, you can use my account name 
+                                    (<a href="http://chrismeyers.info/projects/LoL_player_data/web/main.php?name=Spicy+Criticals&region=na" class="fancytxt" target="_blank">Spicy Criticals</a>)
+                                    to test functionality.
                                     </dd>
                                     
                                 <dt><b>My Role:</b></dt>
