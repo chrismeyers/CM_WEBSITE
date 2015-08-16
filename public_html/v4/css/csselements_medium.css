@@ -267,7 +267,7 @@
     .content-text{
         padding: 5px;
     }
-    
+        
     .spacer{
         overflow: hidden;
         height: 0px;
@@ -373,6 +373,31 @@
     
     .no-decoration{
         text-decoration: none;
+    }
+    
+    #slide-code-cm,
+    #slide-code-genomic,
+    #slide-website-pine, #slide-code-pine,
+    #slide-code-ttt,
+    #slide-website-lol_player, #slide-code-lol_player,
+    #slide-code-pca,
+    #slide-code-bms,
+    #slide-code-lol_status {
+        cursor: pointer;
+        display: none;
+        font-size: 10px;
+        vertical-align: middle;
+        text-decoration: none;
+        color:#5bb75b;
+    }
+    
+    .proj-bullets {
+        font-size: 10px;
+        vertical-align: middle;
+    }
+    
+    .proj-link-block {
+        display: inline-block;
     }
     
     .proj-link{

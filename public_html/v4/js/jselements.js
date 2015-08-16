@@ -93,4 +93,14 @@ function hideMenuHover(){
     document.getElementById('menu-items').style.display = 'none';
 }
 
+function showProjectString(type, proj){
+    if($(window).width() > 789) { // Don't show string on mobile.
+        document.getElementById('slide-' + type + '-' + proj).style.display = 'inline-block';
+    }
+}
 
+function hideProjectString(type, proj){
+    if($(window).width() > 789) { // Don't show string on mobile.
+        document.getElementById('slide-' + type + '-' + proj).style.display = 'none';
+    }
+}

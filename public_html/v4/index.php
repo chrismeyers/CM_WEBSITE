@@ -179,17 +179,22 @@
             <div class="section-header">Projects</div>
 
             <div class="content-text">
-                <!-- cm -->
+                <!-- cm (cm)-->
                 <div class="proj">
                     <h2 class="first-header">chrismeyers.info, this webpage
-                        <a href="https://github.com/chrismeyers/CM_WEBSITE/tree/master/public_html/v4" target="_blank" class="no-decoration">
-                            <img src="images/social/github.png" 
-                                onmouseover="this.src = 'images/social/github_hover.png'" 
-                                onmouseout="this.src = 'images/social/github.png'" 
-                                class="proj-link"
-                                alt="Link to Code" 
-                                title='View code'>
-                        </a>
+                        <div class="proj-link-block">
+                            <span class="proj-bullets">&bull;</span>
+                            <a href="https://github.com/chrismeyers/CM_WEBSITE/tree/master/public_html/v4" target="_blank" class="no-decoration">
+                                <img src="images/social/github.png" 
+                                    onmouseover="this.src = 'images/social/github_hover.png'; showProjectString('code', 'cm');" 
+                                    onmouseout="this.src = 'images/social/github.png'; hideProjectString('code', 'cm')" 
+                                    class="proj-link"
+                                    alt="Link to Code" 
+                                    title='View code'>
+
+                                <span class="fancytxt" id="slide-code-cm">Code</span>
+                            </a>
+                        </div>
                     </h2>
                     
                     <h3>Personal Project, Fall 2013</h3>
@@ -247,18 +252,23 @@
                 
 
 
-                <!-- Genomic -->
+                <!-- Genomic (genomic) -->
                 <br /> <hr>
                 <div class="proj">
                     <h2>Genomic Solutions Now! Software
-                        <a href="https://github.com/jayact/Genomic_SWE" target="_blank" class="no-decoration">
-                            <img src="images/social/github.png" 
-                                onmouseover="this.src = 'images/social/github_hover.png'" 
-                                onmouseout="this.src = 'images/social/github.png'" 
-                                class="proj-link"
-                                alt="Link to Code" 
-                                title='View code'>
-                        </a>
+                        <div class="proj-link-block">
+                            <span class="proj-bullets">&bull;</span>
+                            <a href="https://github.com/jayact/Genomic_SWE" target="_blank" class="no-decoration">
+                                <img src="images/social/github.png" 
+                                    onmouseover="this.src = 'images/social/github_hover.png'; showProjectString('code', 'genomic');" 
+                                    onmouseout="this.src = 'images/social/github.png'; hideProjectString('code', 'genomic');" 
+                                    class="proj-link"
+                                    alt="Link to Code" 
+                                    title='View code'>
+
+                                <span class="fancytxt" id="slide-code-genomic">Code</span>
+                            </a>
+                        </div>
                     </h2>
                     <h3>Software Engineering I, Rowan University, Spring 2014</h3>
                     <div class="projWrapper">
@@ -292,26 +302,34 @@
                     </div>
                 </div>
 
-                <!-- Pinelands -->
+                <!-- Pinelands (pine) -->
                 <br /> <hr>
                 <div class="proj">
                     <h2>Pinelands Tour Maker
-                        <a href="http://elvis.rowan.edu/~meyers42/web/final/" target="_blank" class="no-decoration">
-                            <img src="images/icons/link.png" 
-                                onmouseover="this.src = 'images/icons/link_hover.png'" 
-                                onmouseout="this.src = 'images/icons/link.png'" 
-                                class="proj-link"
-                                alt="Link to Pinelands Tour Maker" 
-                                title='View site'>
-                        </a>
-                        <a href="https://github.com/chrismeyers/WEB_PROG/tree/master/public_html/pinelands" target="_blank" class="no-decoration">
-                            <img src="images/social/github.png" 
-                                onmouseover="this.src = 'images/social/github_hover.png'" 
-                                onmouseout="this.src = 'images/social/github.png'" 
-                                class="proj-link"
-                                alt="Link to Code" 
-                                title='View code'>
-                        </a>
+                        <div class="proj-link-block">
+                            <span class="proj-bullets">&bull;</span>
+                            <a href="http://elvis.rowan.edu/~meyers42/web/final/" target="_blank" class="no-decoration">
+                                <img src="images/icons/link.png" 
+                                    onmouseover="this.src = 'images/icons/link_hover.png'; showProjectString('website', 'pine');" 
+                                    onmouseout="this.src = 'images/icons/link.png'; hideProjectString('website', 'pine');" 
+                                    class="proj-link"
+                                    alt="Link to Pinelands Tour Maker" 
+                                    title='View site'>
+                                
+                                <span class="fancytxt" id="slide-website-pine">Website</span>
+                            </a>
+                            <span class="proj-bullets">&bull;</span>
+                            <a href="https://github.com/chrismeyers/WEB_PROG/tree/master/public_html/pinelands" target="_blank" class="no-decoration">
+                                <img src="images/social/github.png" 
+                                    onmouseover="this.src = 'images/social/github_hover.png'; showProjectString('code', 'pine');" 
+                                    onmouseout="this.src = 'images/social/github.png'; hideProjectString('code', 'pine');" 
+                                    class="proj-link"
+                                    alt="Link to Code" 
+                                    title='View code'>
+                                
+                                <span class="fancytxt" id="slide-code-pine">Code</span>
+                            </a>
+                        </div>
                     </h2>
                     <h3>Web Programming, Rowan University, Spring 2014</h3>
                     <div class="projWrapper">
@@ -366,18 +384,23 @@
                     </div>
                 </div>
 
-                <!-- TTT -->
+                <!-- Android TicTacToe (ttt) -->
                 <br /> <hr>
                 <div class="proj">
                     <h2>Tic Tac Toe Android App
-                        <a href="https://github.com/chrismeyers/Android-TicTacToe" target="_blank" class="no-decoration">
-                            <img src="images/social/github.png" 
-                                onmouseover="this.src = 'images/social/github_hover.png'" 
-                                onmouseout="this.src = 'images/social/github.png'" 
-                                class="proj-link"
-                                alt="Link to Code" 
-                                title='View code'>
-                        </a>
+                        <div class="proj-link-block">
+                            <span class="proj-bullets">&bull;</span>
+                            <a href="https://github.com/chrismeyers/Android-TicTacToe" target="_blank" class="no-decoration">
+                                <img src="images/social/github.png" 
+                                    onmouseover="this.src = 'images/social/github_hover.png'; showProjectString('code', 'ttt');" 
+                                    onmouseout="this.src = 'images/social/github.png'; hideProjectString('code', 'ttt');" 
+                                    class="proj-link"
+                                    alt="Link to Code" 
+                                    title='View code'>
+
+                                <span class="fancytxt" id="slide-code-ttt">Code</span>
+                            </a>
+                        </div>
                     </h2>
                     <h4>Intro to Android Programming, Rowan University, Summer 2014</h4>
                     <div class="projWrapper">
@@ -422,26 +445,34 @@
                     </div>
                 </div>
 
-                <!-- LoL player data -->    
+                <!-- LoL player data (lol_player) -->    
                 <br /> <hr>
                 <div class="proj">
                     <h2>League of Legends Player Data Parser
+                        <div class="proj-link-block">
+                            <span class="proj-bullets">&bull;</span>
                             <a href="http://chrismeyers.info/projects/LoL_player_data/web" target="_blank" class="no-decoration">
-                            <img src="images/icons/link.png" 
-                                onmouseover="this.src = 'images/icons/link_hover.png'" 
-                                onmouseout="this.src = 'images/icons/link.png'" 
-                                class="proj-link"
-                                alt="Link to LoL player data" 
-                                title='View site'>
+                                <img src="images/icons/link.png" 
+                                    onmouseover="this.src = 'images/icons/link_hover.png'; showProjectString('website', 'lol_player');" 
+                                    onmouseout="this.src = 'images/icons/link.png'; hideProjectString('website', 'lol_player');" 
+                                    class="proj-link"
+                                    alt="Link to LoL player data" 
+                                    title='View site'>
+
+                                <span class="fancytxt" id="slide-website-lol_player">Website</span>
                             </a>
+                            <span class="proj-bullets">&bull;</span>
                             <a href="https://github.com/chrismeyers/LoL_player_data" target="_blank" class="no-decoration">
-                            <img src="images/social/github.png" 
-                                onmouseover="this.src = 'images/social/github_hover.png'" 
-                                onmouseout="this.src = 'images/social/github.png'" 
-                                class="proj-link"
-                                alt="Link to Code" 
-                                title='View code'>
+                                <img src="images/social/github.png" 
+                                    onmouseover="this.src = 'images/social/github_hover.png'; showProjectString('code', 'lol_player');" 
+                                    onmouseout="this.src = 'images/social/github.png'; hideProjectString('code', 'lol_player');" 
+                                    class="proj-link"
+                                    alt="Link to Code" 
+                                    title='View code'>
+                                
+                                <span class="fancytxt" id="slide-code-lol_player">Code</span>
                             </a>
+                        </div>
                     </h2>
                     <h3>Personal Project, Summer 2014</h3>
                     <div class="projWrapper">
@@ -501,18 +532,23 @@
                     </div>
                 </div>
 
-                <!-- PCA -->
+                <!-- PCA (pca) -->
                 <br /> <hr>
                 <div class="proj">
                     <h2>PCA Visualization
-                        <a href="https://github.com/chrismeyers/SeniorProj_BMS_PCA" target="_blank" class="no-decoration">
-                            <img src="images/social/github.png" 
-                                onmouseover="this.src = 'images/social/github_hover.png'" 
-                                onmouseout="this.src = 'images/social/github.png'" 
-                                class="proj-link"
-                                alt="Link to Code" 
-                                title='View code'>
-                        </a>
+                        <div class="proj-link-block">
+                            <span class="proj-bullets">&bull;</span>
+                            <a href="https://github.com/chrismeyers/SeniorProj_BMS_PCA" target="_blank" class="no-decoration">
+                                <img src="images/social/github.png" 
+                                    onmouseover="this.src = 'images/social/github_hover.png'; showProjectString('code', 'pca');" 
+                                    onmouseout="this.src = 'images/social/github.png'; hideProjectString('code', 'pca');" 
+                                    class="proj-link"
+                                    alt="Link to Code" 
+                                    title='View code'>
+
+                                <span class="fancytxt" id="slide-code-pca">Code</span>
+                            </a>
+                        </div>
                     </h2>
                     <h3>Senior Project, Rowan University, Fall 2014</h3>
                     <div class="projWrapper">
@@ -578,18 +614,23 @@
                     </div>
                 </div>
                 
-                <!-- cardiomyocyte -->
+                <!-- cardiomyocyte (bms) -->
                 <br /> <hr>
                 <div class="proj">
                     <h2>Cardiomyocyte Data Analysis Automation
-                        <a href="https://github.com/chrismeyers/BMS_Meyers_ExcelAutomation" target="_blank" class="no-decoration">
-                            <img src="images/social/github.png" 
-                                onmouseover="this.src = 'images/social/github_hover.png'" 
-                                onmouseout="this.src = 'images/social/github.png'" 
-                                class="proj-link"
-                                alt="Link to Code" 
-                                title='View code'>
-                        </a>
+                        <div class="proj-link-block">
+                            <span class="proj-bullets">&bull;</span>
+                            <a href="https://github.com/chrismeyers/BMS_Meyers_ExcelAutomation" target="_blank" class="no-decoration">
+                                <img src="images/social/github.png" 
+                                    onmouseover="this.src = 'images/social/github_hover.png'; showProjectString('code', 'bms');" 
+                                    onmouseout="this.src = 'images/social/github.png'; hideProjectString('code', 'bms');" 
+                                    class="proj-link"
+                                    alt="Link to Code" 
+                                    title='View code'>
+
+                                <span class="fancytxt" id="slide-code-bms">Code</span>
+                            </a>
+                        </div>
                     </h2>
                     <h3>Personal Project, Winter 2015</h3>
                     <div class="projWrapper">
@@ -674,18 +715,23 @@
                     </div>
                 </div>
 
-                <!-- LoL status -->
+                <!-- LoL server status checker (lol_status) -->
                 <br /> <hr>
                 <div class="proj">
                     <h2>League of Legends Server Status Checker
-                        <a href="https://github.com/chrismeyers/rito-pls" target="_blank" class="no-decoration">
-                            <img src="images/social/github.png" 
-                                onmouseover="this.src = 'images/social/github_hover.png'" 
-                                onmouseout="this.src = 'images/social/github.png'" 
-                                class="proj-link"
-                                alt="Link to Code" 
-                                title='View code'>
-                        </a>
+                        <div class="proj-link-block">
+                            <span class="proj-bullets">&bull;</span>
+                            <a href="https://github.com/chrismeyers/rito-pls" target="_blank" class="no-decoration">
+                                <img src="images/social/github.png" 
+                                    onmouseover="this.src = 'images/social/github_hover.png'; showProjectString('code', 'lol_status');" 
+                                    onmouseout="this.src = 'images/social/github.png'; hideProjectString('code', 'lol_status');" 
+                                    class="proj-link"
+                                    alt="Link to Code" 
+                                    title='View code'>
+
+                                <span class="fancytxt" id="slide-code-lol_status">Code</span>
+                            </a>
+                        </div>
                     </h2>
                     <h3>Personal Project, June 2015</h3>
                     <div class="projWrapper">
