@@ -148,6 +148,11 @@
         display: none;
     }
     
+    .banner-img {
+        display: inline-block;
+        float: left;
+    }
+    
     #bannerBar{
         height: 90px;
         background-color: rgb(33,40,55);
@@ -186,7 +191,7 @@
         text-align: center;
     }
     
-    .sectionTitle-txt{
+    .sectionTitle-small-txt{
         vertical-align: middle;
         line-height: 45px;
         text-align: center;
@@ -194,7 +199,7 @@
         border-bottom-style: solid;
         border-bottom-width: 1px;
     }
-    .sectionTitle-txt-last{
+    .sectionTitle-small-txt-last{
         vertical-align: middle;
         line-height: 45px;
         text-align: center;

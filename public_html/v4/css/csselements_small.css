@@ -217,18 +217,18 @@
     #sectionTitle-menu{
         float: right;
         width: 60px;
-        height: 52px;
+        height: 60px;
         background-color: rgb(33,40,55);
         display: table-cell;
         margin-right: 15px;
-        margin-top: 4px; /*2px with border*/
+        margin-top: 0px; /*2px with border*/
         color: white;
         font-size: x-large;
         font-family: Verdana, Geneva, sans-serif;
         text-align: center;
     }
     
-    .sectionTitle-txt{
+    .sectionTitle-small-txt{
         vertical-align: middle;
         line-height: 45px;
         text-align: center;
@@ -236,7 +236,7 @@
         border-bottom-style: solid;
         border-bottom-width: 1px;
     }
-    .sectionTitle-txt-last{
+    .sectionTitle-small-txt-last{
         vertical-align: middle;
         line-height: 45px;
         text-align: center;
@@ -272,7 +272,7 @@
     #menu-toggle{
         width: 25px;
         height: 27px;
-        margin-top: 12px;
+        margin-top: 14px;
     }
     
     #menu-click{

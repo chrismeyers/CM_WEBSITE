@@ -180,6 +180,11 @@
         display: none;
     }
     
+    .banner-img {
+        display: inline-block;
+        float: left;
+    }
+    
     #bannerBar{
         height: 90px;
         background-color: rgb(33,40,55);

@@ -4,6 +4,7 @@
                 <a href=\"index.php\" id=\"banner\">
                     <img src=\"images/banner/v4/no-border/titlepic-v4-NObrackets.png\" 
                          alt=\"Chris Meyers. Developer, Tech Enthusiast.\" 
+                         class=\"banner-img\"
                          title=\"Home\">
                 </a>
             </div>
@@ -14,6 +15,7 @@
                          onmouseover=\"this.src='images/logos/cmlogocolor_nobackground_GREEN.png'\"
                          onmouseout=\"this.src='images/logos/cmlogocolor_nobackground_WHITE.png'\"
                          alt=\"Chris Meyers. Developer, Tech enthusiast.\"
+                         class=\"banner-img\"
                          title=\"Home\">
                 </a>
             </div>
@@ -64,19 +66,19 @@
                             <ul id=\"menu-items\">
                                 
                                 <a href=\"#about\" class=\"headerLink\">
-                                    <li class=\"sectionTitle-txt\" onclick=\"showSection('about-me')\">About</li>
+                                    <li class=\"sectionTitle-small-txt\" onclick=\"showSection('about-me')\">About</li>
                                 </a>
                                 
                                 <a href=\"#builds\" class=\"headerLink\">
-                                    <li class=\"sectionTitle-txt\" onclick=\"showSection('my-builds')\">Builds</li>
+                                    <li class=\"sectionTitle-small-txt\" onclick=\"showSection('my-builds')\">Builds</li>
                                 </a>
 
                                 <a href=\"#projects\" class=\"headerLink\">
-                                    <li class=\"sectionTitle-txt\" onclick=\"showSection('my-projects')\">Projects</li>
+                                    <li class=\"sectionTitle-small-txt\" onclick=\"showSection('my-projects')\">Projects</li>
                                 </a>
 
                                 <a href=\"#contact\" class=\"headerLink\">
-                                    <li class=\"sectionTitle-txt-last\" onclick=\"showSection('contact-me')\">Contact</li>
+                                    <li class=\"sectionTitle-small-txt-last\" onclick=\"showSection('contact-me')\">Contact</li>
                                 </a>
                             </ul>
                         </li>
