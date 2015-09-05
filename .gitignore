@@ -1,0 +1,10 @@
+.DS_Store
+misc/
+nbproject/.DS_Store
+nbproject/private/
+proj.sublime-project
+proj.sublime-workspace
+public_html/.DS_Store
+public_html/v2/downloads/
+public_html/v3/downloads/
+public_html/v4/downloads/

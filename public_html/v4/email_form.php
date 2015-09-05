@@ -43,7 +43,7 @@ $emess = "Name: " . $name . "\n";
 $emess.= "Email: " . $fromemail . "\n";
 $emess.= "Comments: " . $usercomments;
 $ehead = "From: " . $fromemail . "\r\n";
-$subj = "An Email from " . $name . ", via chrismeyers.info";
+$subj = "An Email from " . $name . ", via chrismeyers.info[ARVIXE]";
 mail("$myemail", "$subj", "$emess", "$ehead");
 
 header("Location: thank_you.php");
