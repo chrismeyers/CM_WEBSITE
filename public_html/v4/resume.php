@@ -47,7 +47,7 @@
             </tr>
             <tr>
                 <td class="left second">&#9642; Designed, developed and tested solutions
-                    for the real-time Aegis BMD system.</td>
+                    for the real-time Aegis Ballistic Missile Defense (BMD) program.</td>
                 <td></td>
             </tr>
         </table>
@@ -114,8 +114,8 @@
             </tr>
             
             <tr>
-                <td class="left">&bull; Experience developing websites using technologies
-                    such as HTML5, CSS3, PHP, Javascript, JSON and MySQL.</td>
+                <td class="left">&bull; Experience developing websites and web applications using
+                    technologies such as HTML5, CSS3, PHP, Javascript, JSON and MySQL.</td>
             </tr>
             
             <tr>
@@ -138,7 +138,7 @@
             
             <tr>
                 <td class="left">&bull; Experience debugging software with visual
-                    debuggers (Netbeans, Eclipse, and Visual Studio) and the command
+                    debuggers (Netbeans, Eclipse and Visual Studio) and the command
                     line based GNU debugger (GDB).</td>
             </tr>
             
@@ -147,7 +147,7 @@
             </tr>
             
             <tr>
-                <td class="left">&bull; Highly proficient with Microsoft Windows (XP, Vista, 7, 8).</td>
+                <td class="left">&bull; Highly proficient with Microsoft Windows and Mac OSX.</td>
             </tr>
             
             <tr>
@@ -166,7 +166,7 @@
             
             <tr>
                 <td class="left">&bull; 4 years of Computer Aided Drafting experience
-                    using technologies such as Autodesk AutoCAD, Rhinoceros 4, Autodesk
+                    using technologies such as Autodesk AutoCAD, Rhinoceros 4 and Autodesk
                     Inventor.</td>
             </tr>
             
