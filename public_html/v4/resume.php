@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- HOSTED ON ARVIXE -->
 <html>
     <head>
         <title>Chris Meyers: Resume</title>
