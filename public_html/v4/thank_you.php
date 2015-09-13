@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- HOSTED ON SITEGROUND -->
 <html>
     <head>
         <title>Thank you!</title>
