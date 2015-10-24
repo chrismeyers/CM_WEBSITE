@@ -138,6 +138,8 @@ function determineScrollLocation() {
 }
 
 function setupBig() {
+    $('.banner-img img').css('display', 'none');
+
     $('#bannerBar').data('size', 'big');
 
     $('#bannerBar').stop().animate({
@@ -163,9 +165,13 @@ function setupBig() {
 
     $('.banner-img img').attr('height', '90px');
     $('.banner-img img').attr('width', '550px');
+
+    $('.banner-img img').fadeIn('fast');
 }
 
 function setupSmall() {
+    $('.banner-img img').css('display', 'none');
+
     $('#bannerBar').data('size', 'small');
 
     $('#bannerBar').stop().animate({
@@ -192,6 +198,8 @@ function setupSmall() {
     // Maintains constant logo size when changing from mobile to mid size view.
     $('.banner-img img').attr('height', '60px');
     $('.banner-img img').attr('width', '60px');
+
+    $('.banner-img img').fadeIn('fast');
 }
 
 function setupMobile() {
