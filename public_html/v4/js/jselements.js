@@ -119,7 +119,7 @@ $(window).scroll(function() {
 });
 
 function determineScrollLocation() {
-    if ($(document).scrollTop() > 0) {
+    if ($(window).scrollTop() > 0) {
         if($(window).width() <= 789) {
             setupMobile();
         }
@@ -160,6 +160,9 @@ function setupBig() {
     $('.banner-img img').attr('onmouseover', '');
     $('.banner-img img').attr('onmouseout', '');
     $('.banner-img img').css("margin-left", "0px");
+
+    $('.banner-img img').attr('height', '90px');
+    $('.banner-img img').attr('width', '550px');
 }
 
 function setupSmall() {
@@ -185,6 +188,10 @@ function setupSmall() {
     $('.banner-img img').attr('onmouseover', 'this.src=\'images/logos/cmlogocolor_nobackground_GREEN.png\'');
     $('.banner-img img').attr('onmouseout', 'this.src=\'images/logos/cmlogocolor_nobackground_WHITE.png\'');
     $('.banner-img img').css("margin-left", "20px");
+
+    // Maintains constant logo size when changing from mobile to mid size view.
+    $('.banner-img img').attr('height', '60px');
+    $('.banner-img img').attr('width', '60px');
 }
 
 function setupMobile() {
