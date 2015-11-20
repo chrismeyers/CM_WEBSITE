@@ -46,8 +46,14 @@
                 <td></td>
             </tr>
             <tr>
-                <td class="left second">&#9642; Designed, developed and tested solutions
-                    for the real-time Aegis Ballistic Missile Defense (BMD) program.</td>
+                <tr>
+                    <td class="left second">&#9642; Designed, developed and tested solutions
+                        for the real-time Aegis Ballistic Missile Defense (BMD) program.</td>
+                </tr>
+                <tr>
+                    <td class="left second">&#9642; Nominated as a mentor to help new employees
+                        adjust to their position.</td>
+                </tr>
                 <td></td>
             </tr>
         </table>
@@ -109,13 +115,13 @@
         <h2>Technical Experience</h2>
         <table class="wrapper">
             <tr>
-                <td class="left">&bull; Experience developing various software using
-                    languages such as Java, C# and C++.</td>
+                <td class="left">&bull; Experience developing various software using languages
+                    such as Java, C++ and C#.</td>
             </tr>
             
             <tr>
                 <td class="left">&bull; Experience developing websites and web applications using
-                    technologies such as HTML5, CSS3, PHP, Javascript, JSON and MySQL.</td>
+                    technologies such as HTML, CSS, PHP, Javascript, JSON and MySQL.</td>
             </tr>
             
             <tr>
@@ -137,21 +143,17 @@
             </tr>
             
             <tr>
-                <td class="left">&bull; Experience debugging software with visual
-                    debuggers (Netbeans, Eclipse and Visual Studio) and the command
-                    line based GNU debugger (GDB).</td>
+                <td class="left">&bull; Experience debugging software with visual debuggers
+                    (Netbeans, Eclipse, Visual Studio) and the command line GNU debugger (GDB).</td>
+            </tr>
+            
+            <tr>
+                <td class="left">&bull; Highly proficient with Windows, Mac OSX and Command
+                    Line Interfaces (Unix, Linux, Solaris).</td>
             </tr>
             
             <tr>
                 <td class="left">&bull; Highly proficient with Microsoft Office.</td>
-            </tr>
-            
-            <tr>
-                <td class="left">&bull; Highly proficient with Microsoft Windows and Mac OSX.</td>
-            </tr>
-            
-            <tr>
-                <td class="left">&bull; Proficient with command line interfaces (Unix, Linux and Solaris).</td>
             </tr>
             
             <tr>

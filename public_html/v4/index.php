@@ -45,8 +45,8 @@
                 Over the past few years, I have picked up experience with the following programming languages and technologies:
                 
                 <ul>
-                    <li class="li-filled">Java, C#, C++, PHP, HTML, CSS, Javascript, MySQL, C, Visual Basic, Python, Perl, MIPS assembly, 
-                                                      Scheme (LISP dialect), Ada, Lua.</li>
+                    <li class="li-filled">Java, C++, C#, PHP, HTML, CSS, Javascript, MySQL, C, Visual Basic, Python, Perl, 
+                        MIPS assembly, Scheme (LISP dialect), Ada, Lua.</li>
                 </ul>
                 
                 <p>      
