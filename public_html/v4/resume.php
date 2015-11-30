@@ -22,33 +22,23 @@
     </head>
     <body>
         <h1>Christopher C. Meyers</h1>
-        
-        <h2>Education</h2>
-        <table class="wrapper">
-            <tr>
-                <td class="left">&bull; <b>Rowan University, Glassboro, NJ</b></td>
-                <td class="right"><b>May 2015</b></td>
-            </tr>
-            <tr>
-                <td class="first">&#9702; Bachelor of Science, Computer Science</td>
-                <td></td>
-            </tr>
-        </table>
 
+<!-- WORK EXPERIENCE -->
         <h2>Work Experience</h2>
         <table class="wrapper">
             <tr>
-                <td class="left">&bull; <b>Mission Solutions Engineering, Moorestown, NJ</b></td>
-                <td class="right"><b>May 2015  – Present</b></td>
+                <td class="left">&bull; <b>ASRC Federal Mission Solutions Engineering, Moorestown, NJ</b></td>
+                <td class="right"><b>May 2015 – Present</b></td>
             </tr>
             <tr>
-                <td class="left first">&#9702;Software Engineer, Display</td>
+                <td class="left first">&#9702;Software Engineer, Display Systems</td>
                 <td></td>
             </tr>
             <tr>
                 <tr>
-                    <td class="left second">&#9642; Designed, developed and tested solutions
-                        for the real-time Aegis Ballistic Missile Defense (BMD) program.</td>
+                    <td class="left second">&#9642; Designed, developed and tested solutions for
+                        the U.S. Navy's real-time mission critical Aegis Ballistic Missile Defense
+                        (BMD) program.</td>
                 </tr>
                 <tr>
                     <td class="left second">&#9642; Nominated as a mentor to help new employees
@@ -62,11 +52,11 @@
         
         <table class="wrapper">
             <tr>
-                <td class="left">&bull; <b>Mission Solutions Engineering, Moorestown, NJ</b></td>
-                <td class="right"><b>March 2015  – May 2015</b></td>
+                <td class="left">&bull; <b>ASRC Federal Mission Solutions Engineering, Moorestown, NJ</b></td>
+                <td class="right"><b>Mar 2015 – May 2015</b></td>
             </tr>
             <tr>
-                <td class="left first">&#9702;Software Engineer Intern, Display</td>
+                <td class="left first">&#9702;Software Engineer Intern, Display Systems</td>
                 <td></td>
             </tr>
             <tr>
@@ -81,7 +71,7 @@
         <table class="wrapper">
             <tr>
                 <td class="left">&bull; <b>Rowan University, History Department</b></td>
-                <td class="right"><b>November 2013 – May 2015</b></td>
+                <td class="right"><b>Nov 2013 – May 2015</b></td>
             </tr>
             <tr>
                 <td class="left first">&#9702; Web Developer</td>
@@ -89,7 +79,7 @@
             </tr>
             <tr>
                 <td class="left second">&#9642; Updated and maintained the History
-                    Department’s website.</td>
+                    Department's website.</td>
                 <td></td>
             </tr>
         </table>
@@ -99,7 +89,7 @@
         <table class="wrapper">
             <tr>
                 <td class="left">&bull; <b>Rowan University, Network & System Services</b></td>
-                <td class="right"><b>July 2014 – September 2014</b></td>
+                <td class="right"><b>Jul 2014 – Sept 2014</b></td>
             </tr>
             <tr>
                 <td class="left first">&#9702; Network Assistant</td>
@@ -107,11 +97,25 @@
             </tr>
             <tr>
                 <td class="left second">&#9642; Installed and maintained network
-                    infrastructure across Rowan’s main campus.</td>
+                    infrastructure across Rowan's Glassboro campus.</td>
                 <td></td>
             </tr>
         </table>
         
+<!-- EDUCATION -->
+        <h2>Education</h2>
+        <table class="wrapper">
+            <tr>
+                <td class="left">&bull; <b>Rowan University, Glassboro, NJ</b></td>
+                <td class="right"><b>Sept 2011 - May 2015</b></td>
+            </tr>
+            <tr>
+                <td class="first">&#9702; Bachelor of Science, Computer Science</td>
+                <td></td>
+            </tr>
+        </table>
+
+<!-- TECHNICAL EXPERIENCE -->
         <h2>Technical Experience</h2>
         <table class="wrapper">
             <tr>
@@ -125,9 +129,8 @@
             </tr>
             
             <tr>
-                <td class="left">&bull; Member of a software engineering team that
-                    produced a piece of software for the Genomic Solutions Now Company
-                    during the Spring 2014 semester at Rowan University.</td>
+                <td class="left">&bull; Experience as a member of an Agile software development team.
+                    Utilized JIRA to assign and track issues.</td>
             </tr>
             
             <tr>
