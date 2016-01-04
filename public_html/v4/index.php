@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <!-- HOSTED ON SITEGROUND -->
 <html>
@@ -66,7 +69,7 @@
 
                 <p>
                 For security reasons, an abbreviated HTML version of my resume can be viewed <a class="fancytxt" href="resume.php">here</a>. 
-                A full PDF version with contact information can be requested <a href="index.php?message=reqres&name=&email=&comment=I would like a copy of your resume.#contact" class="fancytxt">here</a>.
+                A full PDF version with contact information can be requested <a href="index.php?message=reqres#contact" class="fancytxt">here</a>.
                 </p>
                 
                 <div class="instructions">
@@ -822,13 +825,12 @@
                             if ($err_arr[2] == "1") {
                                 echo "- Email Addresses don't match. Please try again." . '<br />';
                             }
+                            if ($message == "reqres") {
+                                $_SESSION["usercomments"] = "I would like a copy of your resume.";
+                                echo "- To request a full version of my resume, please enter your name, email and any additional information.";
+                            }
                             echo '</p>';
-                        }
-                        
-                        if ($message == "reqres") {
-                            echo '<p class="errors">' . "To request a full version of my resume, please enter your name, email and any additional information." . '</p>';
-                        }
-                        
+                        }  
                     }
                     ?><p></p>
 
@@ -836,9 +838,8 @@
                         <tr>
                             <td class="name-input">
                                 <input class="inputbox-mod" type="text" placeholder="Name" name="name"<?php
-                                if (!empty($_GET['name'])) {
-                                    $name = $_GET['name'];
-                                    echo 'value="' . $name . '">';
+                                if (isset($_SESSION["name"])) {
+                                    echo 'value="' . $_SESSION["name"] . '">';
                                 } else {
                                     echo '>';
                                 }
@@ -847,23 +848,16 @@
                         <tr>
                             <td class="email-input">
                                 <input class="inputbox-mod" type="email" placeholder="Primary Email" name="fromemail"<?php
-                                if (!empty($_GET['email'])) {
-                                    $fromemail = $_GET['email'];
-                                    echo 'value="' . $fromemail . '">';
+                                if (isset($_SESSION["fromemail"])) {
+                                    echo 'value="' . $_SESSION["fromemail"] . '">';
                                 } else {
                                     echo '>';
                                 }
                                 ?></td>
 
                             <td class="email-input">
-                                <input class="inputbox-mod" type="email" placeholder="Confirm Primary Email" name="confirmfromemail"<?php
-                                if (!empty($_GET['confirmemail'])) {
-                                    $fromemail = $_GET['confirmemail'];
-                                    echo 'value="' . $fromemail . '">';
-                                } else {
-                                    echo '>';
-                                }
-                                ?></td> 
+                                <input class="inputbox-mod" type="email" placeholder="Confirm Primary Email" name="confirmfromemail">
+                            </td> 
                         </tr>
                     </table>
 
@@ -872,9 +866,8 @@
                         <tr>
                             <td>
                                 <textarea class="textarea-mod" name="usercomments" placeholder="Comment" maxlength="500"><?php
-                                    if (!empty($_GET['comment'])) {
-                                        $usercomments = $_GET['comment'];
-                                        echo $usercomments . '</textarea>';
+                                    if (isset($_SESSION["usercomments"])) {
+                                        echo $_SESSION["usercomments"] . '</textarea>';
                                     } else {
                                         echo '</textarea>';
                                     }
