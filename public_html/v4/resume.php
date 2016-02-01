@@ -27,7 +27,7 @@
         <h2>Work Experience</h2>
         <table class="wrapper">
             <tr>
-                <td class="left">&bull; <b>ASRC Federal Mission Solutions Engineering, Moorestown, NJ</b></td>
+                <td class="left">&bull; <b>ASRC Federal Mission Solutions, Moorestown, NJ</b></td>
                 <td class="right"><b>May 2015 – Present</b></td>
             </tr>
             <tr>
@@ -36,9 +36,9 @@
             </tr>
             <tr>
                 <tr>
-                    <td class="left second">&#9642; Designed, developed and tested solutions for
-                        the U.S. Navy's real-time mission critical Aegis Ballistic Missile Defense
-                        (BMD) program.</td>
+                    <td class="left second">&#9642; Designed, developed and tested solutions in
+                        CMMI Level 5 for the U.S. Navy’s real-time mission critical Aegis Ballistic
+                        Missile Defense (BMD) system.</td>
                 </tr>
                 <tr>
                     <td class="left second">&#9642; Nominated as a mentor to help new employees
@@ -52,7 +52,7 @@
         
         <table class="wrapper">
             <tr>
-                <td class="left">&bull; <b>ASRC Federal Mission Solutions Engineering, Moorestown, NJ</b></td>
+                <td class="left">&bull; <b>ASRC Federal Mission Solutions, Moorestown, NJ</b></td>
                 <td class="right"><b>Mar 2015 – May 2015</b></td>
             </tr>
             <tr>
@@ -61,7 +61,7 @@
             </tr>
             <tr>
                 <td class="left second">&#9642; Assisted a team working on the Aegis
-                    Ballistic Missile Defense (BMD) program.</td>
+                    Ballistic Missile Defense (BMD) system.</td>
                 <td></td>
             </tr>
         </table>
