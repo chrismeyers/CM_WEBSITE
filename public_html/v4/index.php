@@ -91,7 +91,7 @@
             <div class="content-text">
                 <!-- MATT'S BUILD -->
                 <div class="build">
-                    <h3 class="first-header">March 2012 - Built for my brother, Matt.</h3>
+                    <h3 class="first-header">March 2012 - Built for my brother, Matt</h3>
                     <div class="build-info">
                         <div class="build-pic">
                             <a href="images/builds/mattBuild.jpg" class="fancybox" title="Matt's Computer">
@@ -120,7 +120,7 @@
 
                 <!-- MY BUILD -->
                 <div class="build">
-                    <h3>February 2013 - Built for myself.</h3>
+                    <h3>February 2013 - Built for myself</h3>
                     <div class="build-info">
                         <div class="build-pic">
                             <a href="images/builds/myBuild.jpg" class="fancybox" title="My Computer">
@@ -150,7 +150,7 @@
 
                 <!-- MARK'S BUILD -->
                 <div class="build">
-                    <h3>September 2013 - Built for my Neighbor.</h3>
+                    <h3>September 2013 - Built for my Neighbor</h3>
                     <div class="build-info">
                         <div class="build-pic">
                             <a href="images/builds/markBuild.jpg" class="fancybox" title="Neighbor's Computer">
@@ -170,6 +170,36 @@
                                 <li><u>HDD:</u> ST1000DM003 1TB &#64; 7200rpm</li>
                                 <li><u>SSD:</u> Kingston HyperX 3K 120GB</li>
                                 <li><u>Video Card:</u> EVGA GeForce GTX 770 SuperClocked 2GB</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <br />
+                <hr />
+                
+                <!-- MY BUILD 2016 -->
+                <div class="build">
+                    <h3>February 2016 - Built for myself</h3>
+                    <div class="build-info">
+                        <div class="build-pic">
+                            <a href="images/builds/myBuild2016.jpg" class="fancybox" title="My Computer 2016">
+                                <img src="images/builds/myBuild2016.jpg" 
+                                     class="build-pic-img-port"
+                                     alt="My computer 2016" 
+                                     title="Click to enlarge">
+                            </a>
+                        </div>
+
+                        <div class="build-specs">
+                            <b>Specifications</b>
+                            <ul>
+                                <li><u>Processor:</u> Intel Core i7 6700k &#64; 4.2GHz</li>
+                                <li><u>Mobo:</u> Asus Republic of Gamers Maximus VIII Hero Alpha</li>
+                                <li><u>Memory:</u> 32GB HyperX Fury 2666MHz</li>
+                                <li><u>HDD:</u> Western Digital Blue 1TB &#64; 7200rpm</li>
+                                <li><u>SSD:</u> Samsung 850 EVO 500GB</li>
+                                <li><u>Video Card:</u> EVGA GeForce GTX 980 Ti 6GB</li>
                             </ul>
                         </div>
                     </div>
