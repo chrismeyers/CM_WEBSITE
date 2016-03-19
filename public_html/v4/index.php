@@ -350,7 +350,7 @@
                     <h2>Pinelands Tour Maker
                         <div class="proj-link-block">
                             <span class="proj-bullets">&bull;</span>
-                            <a href="http://elvis.rowan.edu/~meyers42/web/final/" target="_blank" class="no-decoration">
+                            <a href="http://chrismeyers.info/projects/pinelands" target="_blank" class="no-decoration">
                                 <img src="images/icons/link.png" 
                                     onmouseover="this.src = 'images/icons/link_hover.png'; showProjectString('website', 'pine');" 
                                     onmouseout="this.src = 'images/icons/link.png'; hideProjectString('website', 'pine');" 
