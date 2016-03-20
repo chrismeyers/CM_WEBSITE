@@ -201,7 +201,7 @@
                         <div class="build-specs">
                             <b>Specifications</b>
                             <ul>
-                                <li><u>Processor:</u> Intel Core i7 6700k &#64; 4.2GHz</li>
+                                <li><u>Processor:</u> Intel Core i7 6700k &#64; 4.6GHz</li>
                                 <li><u>Cooling:</u> Corsair H100i v2 w/ Noctua NF-F12 120mm PWM Fans</li>
                                 <li><u>Mobo:</u> Asus Republic of Gamers Maximus VIII Hero Alpha</li>
                                 <li><u>Memory:</u> 32GB HyperX Fury 2666MHz</li>
