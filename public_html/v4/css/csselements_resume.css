@@ -21,6 +21,7 @@ html {
 .right{
     width: 50%;
     text-align: right;
+    vertical-align: top;
 }
 
 .first{
@@ -29,6 +30,7 @@ html {
 
 .second{
     padding-left: 40px;
+    width:100%;
 }
 
 .footer{

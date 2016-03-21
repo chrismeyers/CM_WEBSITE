@@ -7,7 +7,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="Author" content="Chris Meyers" />
 
-        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+        <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
 
         <link rel="stylesheet" href="css/csselements_resume.css" />
         <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
@@ -30,22 +30,24 @@
                 <td class="left">&bull; <b>ASRC Federal Mission Solutions, Moorestown, NJ</b></td>
                 <td class="right"><b>May 2015 – Present</b></td>
             </tr>
-            <tr>
-                <td class="left first">&#9702;Software Engineer, Display Systems</td>
-                <td></td>
-            </tr>
-            <tr>
+            <table>
                 <tr>
-                    <td class="left second">&#9642; Designed, developed and tested solutions in
-                        CMMI Level 5 for the U.S. Navy’s real-time mission critical Aegis Ballistic
-                        Missile Defense (BMD) system.</td>
+                    <td class="left first">&#9702;Software Engineer, Display Systems</td>
+                    <td></td>
                 </tr>
                 <tr>
-                    <td class="left second">&#9642; Nominated as a mentor to help new employees
-                        adjust to their position.</td>
+                    <tr>
+                        <td class="left second">&#9642; Designed, developed and tested solutions in
+                            CMMI Level 5 for the U.S. Navy’s real-time mission critical Aegis Ballistic
+                            Missile Defense (BMD) system.</td>
+                    </tr>
+                    <tr>
+                        <td class="left second">&#9642; Nominated as a mentor to help new employees
+                            adjust to their position.</td>
+                    </tr>
+                    <td></td>
                 </tr>
-                <td></td>
-            </tr>
+            </table>
         </table>
         
         <br />
@@ -55,15 +57,17 @@
                 <td class="left">&bull; <b>ASRC Federal Mission Solutions, Moorestown, NJ</b></td>
                 <td class="right"><b>Mar 2015 – May 2015</b></td>
             </tr>
-            <tr>
-                <td class="left first">&#9702;Software Engineer Intern, Display Systems</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td class="left second">&#9642; Assisted a team working on the Aegis
-                    Ballistic Missile Defense (BMD) system.</td>
-                <td></td>
-            </tr>
+            <table>
+                <tr>
+                    <td class="left first">&#9702;Software Engineer Intern, Display Systems</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="left second">&#9642; Assisted a team working on the Aegis
+                        Ballistic Missile Defense (BMD) system.</td>
+                    <td></td>
+                </tr>
+            </table>
         </table>
         
         <br />
@@ -73,15 +77,17 @@
                 <td class="left">&bull; <b>Rowan University, History Department</b></td>
                 <td class="right"><b>Nov 2013 – May 2015</b></td>
             </tr>
-            <tr>
-                <td class="left first">&#9702; Web Developer</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td class="left second">&#9642; Updated and maintained the History
-                    Department's website.</td>
-                <td></td>
-            </tr>
+            <table>
+                <tr>
+                    <td class="left first">&#9702; Web Developer</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="left second">&#9642; Updated and maintained the History
+                        Department's website.</td>
+                    <td></td>
+                </tr>
+            </table>
         </table>
         
         <br />
@@ -91,15 +97,17 @@
                 <td class="left">&bull; <b>Rowan University, Network & System Services</b></td>
                 <td class="right"><b>Jul 2014 – Sept 2014</b></td>
             </tr>
-            <tr>
-                <td class="left first">&#9702; Network Assistant</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td class="left second">&#9642; Installed and maintained network
-                    infrastructure across Rowan's Glassboro campus.</td>
-                <td></td>
-            </tr>
+            <table>
+                <tr>
+                    <td class="left first">&#9702; Network Assistant</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="left second">&#9642; Installed and maintained network
+                        infrastructure across Rowan's Glassboro campus.</td>
+                    <td></td>
+                </tr>
+            </table>
         </table>
         
 <!-- EDUCATION -->
@@ -109,10 +117,12 @@
                 <td class="left">&bull; <b>Rowan University, Glassboro, NJ</b></td>
                 <td class="right"><b>Sept 2011 - May 2015</b></td>
             </tr>
-            <tr>
-                <td class="first">&#9702; Bachelor of Science, Computer Science</td>
-                <td></td>
-            </tr>
+            <table>
+                <tr>
+                    <td class="first">&#9702; Bachelor of Science, Computer Science</td>
+                    <td></td>
+                </tr>
+            </table>
         </table>
 
 <!-- TECHNICAL EXPERIENCE -->
