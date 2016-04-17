@@ -37,13 +37,17 @@
                 </tr>
                 <tr>
                     <tr>
-                        <td class="left second">&#9642; Designed, developed and tested solutions in
+                        <td class="left second">&#9642; Designed, developed, and tested solutions in
                             CMMI Level 5 for the U.S. Navy’s real-time mission critical Aegis Ballistic
                             Missile Defense (BMD) system.</td>
                     </tr>
                     <tr>
                         <td class="left second">&#9642; Nominated as a mentor to help new employees
                             adjust to their position.</td>
+                    </tr>
+                    <tr>
+                        <td class="left second">&#9642; Lead developer of the display component for the
+                            Littoral Combat Ship's (LCS) SeaRAM weapon system.</td>
                     </tr>
                     <td></td>
                 </tr>
@@ -104,7 +108,7 @@
                 </tr>
                 <tr>
                     <td class="left second">&#9642; Installed and maintained network
-                        infrastructure across Rowan's Glassboro campus.</td>
+                        infrastructure across the Glassboro campus.</td>
                     <td></td>
                 </tr>
             </table>
@@ -130,28 +134,21 @@
         <table class="wrapper">
             <tr>
                 <td class="left">&bull; Experience developing various software using languages
-                    such as Java, C++ and C#.</td>
+                    such as Java, C++, and C#.</td>
             </tr>
             
             <tr>
                 <td class="left">&bull; Experience developing websites and web applications using
-                    technologies such as HTML, CSS, PHP, Javascript, JSON and MySQL.</td>
+                    languages and technologies such as HTML, CSS, PHP, Javascript, JSON, and MySQL.</td>
             </tr>
             
             <tr>
-                <td class="left">&bull; Experience as a member of an Agile software development team.
-                    Utilized JIRA to assign and track issues.</td>
+                <td class="left">&bull; Experience as a member of an Agile software development team
+                    utilizing JIRA to track issues.</td>
             </tr>
             
             <tr>
-                <td class="left">&bull; Leader of a software development team that
-                    further developed an Excel add-in to perform Principal Component
-                    Analysis (PCA) visualization during the Fall 2014 semester at
-                    Rowan University in collaboration with Bristol-Myers Squibb.</td>
-            </tr>
-            
-            <tr>
-                <td class="left">&bull; Experience with ClearCase, Git and Subversion
+                <td class="left">&bull; Experience with ClearCase, Git, and Subversion
                     revision control.</td>
             </tr>
             
@@ -161,7 +158,17 @@
             </tr>
             
             <tr>
-                <td class="left">&bull; Highly proficient with Windows, Mac OSX and Command
+                <td class="left">&bull; Experience developing shell scripts to automate processes
+                    and aid in software development.</td>
+            </tr>
+            
+            <tr>
+                <td class="left">&bull; Highly proficient with modern IDE’s such as Netbeans,
+                    Eclipse, and Visual Studio.</td>
+            </tr>
+            
+            <tr>
+                <td class="left">&bull; Highly proficient with Windows, Mac OSX, and Command
                     Line Interfaces (Unix, Linux, Solaris).</td>
             </tr>
             
@@ -170,19 +177,18 @@
             </tr>
             
             <tr>
-                <td class="left">&bull; Experience installing, maintaining and 
-                    relocating data center hardware.</td>
+                <td class="left">&bull; Experience installing, maintaining, and relocating data
+                    center hardware.</td>
             </tr>
             
             <tr>
-                <td class="left">&bull; Very familiar with computer hardware.  
-                    Built multiple computers from individual components.</td>
+                <td class="left">&bull; Very familiar with computer hardware.  Built multiple
+                    computers from individual components.</td>
             </tr>
             
             <tr>
-                <td class="left">&bull; 4 years of Computer Aided Drafting experience
-                    using technologies such as Autodesk AutoCAD, Rhinoceros 4 and Autodesk
-                    Inventor.</td>
+                <td class="left">&bull; Experience with 2D and 3D Computer Aided Drafting (CAD)
+                    using technologies such as Autodesk AutoCAD, Rhinoceros 4, and Autodesk Inventor.</td>
             </tr>
             
         </table>
