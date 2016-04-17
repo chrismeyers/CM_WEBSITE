@@ -7,7 +7,7 @@
 */
 
 @media print{
-    .banner-img-small, .banner-nav, #banner-icon, .instructions, #footer{
+    .banner-img-small, .banner-nav, #banner-icon, #footer{
         display: none;
     }
     

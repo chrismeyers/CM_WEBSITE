@@ -4,8 +4,10 @@ $(document).ready(function() {
         closeEffect	: 'none'
     });
 });
-            
+
+var mobileCutoffWidth = 789; // The size of the viewport; disregards the 17px scrollbar.
 var about = document.getElementById('about-me');
+var resume = document.getElementById('my-resume');
 var builds = document.getElementById('my-builds');
 var projects = document.getElementById('my-projects');
 var contact = document.getElementById('contact-me');
@@ -34,6 +36,7 @@ function showSection(section){
 
 function hideAll(){
     about.style.display = 'none';
+    resume.style.display = 'none';
     builds.style.display = 'none';
     projects.style.display = 'none';
     contact.style.display = 'none';
@@ -47,6 +50,8 @@ function translateHash(value){
     switch(value){
         case("about"):
             return "about-me";
+        case("resume"):
+            return "my-resume";
         case("builds"):
             return "my-builds";
         case("projects"):
@@ -94,13 +99,13 @@ function hideMenuHover(){
 }
 
 function showProjectString(type, proj){
-    if($(window).width() > 789) { // Don't show string on mobile.
+    if($(window).width() > mobileCutoffWidth) { // Don't show string on mobile.
         document.getElementById('slide-' + type + '-' + proj).style.display = 'inline-block';
     }
 }
 
 function hideProjectString(type, proj){
-    if($(window).width() > 789) { // Don't show string on mobile.
+    if($(window).width() > mobileCutoffWidth) { // Don't show string on mobile.
         document.getElementById('slide-' + type + '-' + proj).style.display = 'none';
     }
 }
@@ -120,7 +125,7 @@ $(window).scroll(function() {
 
 function determineScrollLocation() {
     if ($(window).scrollTop() > 0) {
-        if($(window).width() <= 789) {
+        if($(window).width() <= mobileCutoffWidth) {
             setupMobile();
         }
         else if ($('#bannerBar').data('size') === 'big') { 
@@ -128,7 +133,7 @@ function determineScrollLocation() {
         }
     }
     else {
-        if($(window).width() <= 789) {
+        if($(window).width() <= mobileCutoffWidth) {
             setupMobile();
         }
         else if ($('#bannerBar').data('size') === 'small') {
@@ -146,7 +151,7 @@ function setupBig() {
         height: '90px'
     }, 400);
 
-    $('.sectionTitle-about, .sectionTitle-builds, .sectionTitle-projects, .sectionTitle-contact, #sectionTitle-menu, .banner-img').stop().animate({
+    $('.sectionTitle-about, .sectionTitle-resume, .sectionTitle-builds, .sectionTitle-projects, .sectionTitle-contact, #sectionTitle-menu, .banner-img').stop().animate({
         height: "90px"
     }, 400);
 
@@ -178,7 +183,7 @@ function setupSmall() {
         height: '60px'
     }, 400);
 
-    $('.sectionTitle-about, .sectionTitle-builds, .sectionTitle-projects, .sectionTitle-contact, #sectionTitle-menu, .banner-img').stop().animate({
+    $('.sectionTitle-about, .sectionTitle-resume, .sectionTitle-builds, .sectionTitle-projects, .sectionTitle-contact, #sectionTitle-menu, .banner-img').stop().animate({
         height: "60px"
     }, 400);
 

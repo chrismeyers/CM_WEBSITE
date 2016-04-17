@@ -5,7 +5,7 @@
     Description:
         Mid size window desktop stylesheet.
 */
-@media screen and (min-width: 807px) and (max-width: 1124px) {
+@media screen and (min-width: 807px) and (max-width: 1217px) {
     html{
         position: relative;
         min-height: 100%;
@@ -174,7 +174,7 @@
         display:none;
     }
 
-    .sectionTitle-about, .sectionTitle-builds, .sectionTitle-projects, .sectionTitle-contact{
+    .sectionTitle-about, .sectionTitle-resume, .sectionTitle-builds, .sectionTitle-projects, .sectionTitle-contact{
         display: none;
     }
 
@@ -206,8 +206,8 @@
         text-align: center;
     }
     
-    .sectionTitle-about:hover, .sectionTitle-builds:hover, .sectionTitle-projects:hover,
-        .sectionTitle-contact:hover, #sectionTitle-menu:hover{
+    .sectionTitle-about:hover, .sectionTitle-resume:hover, .sectionTitle-builds:hover,
+        .sectionTitle-projects:hover, .sectionTitle-contact:hover, #sectionTitle-menu:hover{
         background-color: #5bb75b;
         cursor: pointer;
         display: block;

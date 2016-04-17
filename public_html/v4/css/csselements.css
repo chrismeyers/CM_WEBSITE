@@ -5,7 +5,7 @@
     Description:
         Fullscreen desktop stylesheet.
 */
-@media screen and (min-width: 1125px){
+@media screen and (min-width: 1218px){
     html{
         position: relative;
         min-height: 100%;
@@ -206,7 +206,7 @@
         display:none;
     }
     
-    .sectionTitle-about, .sectionTitle-builds, .sectionTitle-projects{
+    .sectionTitle-about, .sectionTitle-resume, .sectionTitle-builds, .sectionTitle-projects{
         float: right;
         width:100px;
         height:90px;
@@ -241,14 +241,10 @@
         display: none;
     }
     
-    .sectionTitle-about:hover, .sectionTitle-builds:hover, .sectionTitle-projects:hover,
-        .sectionTitle-contact:hover, #sectionTitle-menu:hover{
+    .sectionTitle-about:hover, .sectionTitle-resume:hover, .sectionTitle-builds:hover, 
+        .sectionTitle-projects:hover, .sectionTitle-contact:hover, #sectionTitle-menu:hover{
         background-color: #5bb75b;
         cursor: pointer;
-    }
-    
-    .instructions{
-        display: none;
     }
     
     #footer {

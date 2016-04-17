@@ -18,6 +18,7 @@
         <link rel="stylesheet" href="css/csselements_medium.css" />
         <link rel="stylesheet" href="css/csselements_small.css" />
         <link rel="stylesheet" href="css/csselements_print.css" />
+        <link rel="stylesheet" href="css/csselements_resume.css" />
         <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
         <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
         <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
@@ -72,22 +73,12 @@
                 <a href='#builds' class="fancytxt" onclick="showSection('my-builds')">here</a>.
                 </p>
 
-                <p>
-                For security reasons, an abbreviated HTML version of my resume can be viewed <a class="fancytxt" href="resume.php">here</a>. 
-                A full PDF version with contact information can be requested <a href="index.php?message=reqres#contact" class="fancytxt">here</a>.
-                </p>
-                
-                <div class="instructions">
-                    To view the other sections of this website, use the menu in the top right corner or the links below:
-                    <ul>
-                        <li><a href='#builds' class="fancytxt" onclick="showSection('my-builds')">Builds</a></li>
-                        <li><a href='#projects' class="fancytxt" onclick="showSection('my-projects')">Projects</a></li>
-                        <li><a href='#contact' class="fancytxt" onclick="showSection('contact-me')">Contact</a></li>
-                    </ul>
-                </div>
-
             </div>
         </div>
+
+<!-- RESUME SECTION -->
+        <?php include 'resume.php'; ?>
+
 
 <!-- BUILDS SECTION -->
         <div id="my-builds" class="content">
@@ -870,11 +861,11 @@
                                 echo "- Email Addresses don't match. Please try again." . '<br />';
                             }
                             if ($message == "reqres") {
-                                $_SESSION["usercomments"] = "I would like a copy of your resume.";
-                                echo "- To request a full version of my resume, please enter your name, email and any additional information.";
+                                $_SESSION["usercomments"] = "I would like a copy of your résumé.";
+                                echo "- To request a PDF version of my résumé, please enter your name, email and any additional information.";
                             }
                             echo '</p>';
-                        }  
+                        }
                     }
                     ?><p></p>
 

@@ -6,20 +6,16 @@
         Stylesheet for HTML resume.
 */
 
-html {
-    background-color: #CFCFCF;    
-}
-
 .wrapper{
     width: 100%;
 }
 
 .left{
-    width: 50%;
+    width: 65%;
 }
 
 .right{
-    width: 50%;
+    width: 35%;
     text-align: right;
     vertical-align: top;
 }
