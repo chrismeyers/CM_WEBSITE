@@ -19,7 +19,7 @@
 
     <body>
 <!-- HEADER -->
-        <?php include 'header.php' ?>
+        <?php include 'sections/header.php' ?>
 
 <!-- MESSAGE -->
         <div class="content">
@@ -30,7 +30,7 @@
         </div>
 
 <!-- FOOTER -->
-        <?php include 'footer.php' ?>
+        <?php include 'sections/footer.php' ?>
 
     </body>
 </html>
