@@ -69,7 +69,7 @@
                     <table class="comments">
                         <tr>
                             <td>
-                                <textarea class="textarea-mod" name="usercomments" placeholder="Comment" maxlength="500"><?php
+                                <textarea class="textarea-mod" name="usercomments" placeholder="Message" maxlength="5000"><?php
                                     if (isset($_SESSION["usercomments"])) {
                                         echo $_SESSION["usercomments"] . '</textarea>';
                                     } else {

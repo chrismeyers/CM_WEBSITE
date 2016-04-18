@@ -450,6 +450,7 @@
         -webkit-background-clip: padding-box;
         background-clip: padding-box;
         border: 1px solid #cccccc;
+        max-width: 750px;
     }
     .textarea-mod:focus{
         outline: none;

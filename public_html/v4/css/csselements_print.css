@@ -7,8 +7,29 @@
 */
 
 @media print{
-    .banner-img-small, .banner-nav, #banner-icon, #footer{
+    html{
+        font-family: Verdana, Geneva, sans-serif;
+    }
+    
+    .banner-img-small, .banner-img, .proj-link, .proj-bullets, .banner-nav, #banner-icon, #footer,
+        #slide-code-cm,
+        #slide-code-genomic,
+        #slide-website-pine, #slide-code-pine,
+        #slide-code-ttt,
+        #slide-website-lol_player, #slide-code-lol_player,
+        #slide-code-pca,
+        #slide-code-bms,
+        #slide-code-lol_status
+    {
         display: none;
+    }
+    
+    .section-header{
+        font-size: 28px;
+    }
+    
+    .content{
+        font-size: 12px;
     }
     
     .build-pic-img-land{
@@ -68,5 +89,10 @@
     
     .force-col-specs{
         display: block;
+    }
+    
+    .textarea-mod{
+        height: 750px;
+        width: 750px;
     }
 }
