@@ -13,11 +13,10 @@
     
     body { 
         background-image: url(../images/bg/colorado.jpg);
-        /*background-repeat:no-repeat;*/
         background-color: #414753;
         background-attachment: fixed;
         background-size: cover;
-        margin: 0 0 60px; /*3rd parameter must = #footer height*/
+        margin: 0 0 60px; /* 3rd parameter must = #footer height */
     }
     
     .errors{
@@ -43,7 +42,7 @@
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 100px; /* Add more spacing between footer and content */
-        -webkit-margin-bottom-collapse: separate; /* Fixes margin-bottom for non-chrome browsers*/
+        -webkit-margin-bottom-collapse: separate; /* Fixes margin-bottom for non-chrome browsers */
         margin-top: 20px;
         background-color: rgba(33,40,55,0.85);
         font-family: Verdana, Geneva, sans-serif;
@@ -68,7 +67,7 @@
         display: inline-block;
     }
     
-    /* Remove IE img link border*/
+    /* Remove IE img link border */
     img{
       border: 0;
     }
@@ -77,9 +76,6 @@
         width: 790px;
         height: 90px;
         background-color: rgb(33,40,55);
-        /*background-position: 50%, 50%;
-        background-position-x: 50%;
-        background-position-y: 50%;*/
         line-height: 80px;
         text-align: center;
         vertical-align: middle;
@@ -120,12 +116,14 @@
     }
     
     table.inputs{
-        margin-left: 175px;
+        width: 500px;
+        margin-left: auto;
         margin-right: auto;
         text-align: left;
     }
     
     table.comments{
+        width: 500px;
         margin-left: auto;
         margin-right: auto;
         text-align: left;
@@ -160,12 +158,10 @@
         padding-bottom: 10px;
     }
     td.email-input{
-        /*padding-left: 10px;*/
+
     }
 
     .fancytxt{
-        /*color: #a9302a;*/
-        /*color: #CC2900;*/
         color: #FFFFFF;
         text-decoration: underline;
         font-weight: bold;
@@ -198,8 +194,8 @@
         border-bottom-color: white;
         border-bottom-style: solid;
         border-bottom-width: 1px;
-        /*box-shadow: 0 0 0 4px grey inset;*/
-        /*Make content scroll "under" banner*/
+
+        /* Make content scroll "under" banner */
         position: fixed;
         top: 0;
         right: 0;
@@ -420,6 +416,7 @@
     }
     
     .inputbox-mod{
+        width: calc(100% - 5px - 5px); /* 100% - padding-left - padding-right */
         padding-left: 5px;
         padding-right: 5px;
         font-size: small;
@@ -438,6 +435,7 @@
     }
     
     .textarea-mod{
+        width: calc(100% - 5px - 5px); /* 100% - padding-left - padding-right */
         padding-left: 5px;
         padding-right: 5px;
         font-size: small;
