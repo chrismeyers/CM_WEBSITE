@@ -5,7 +5,7 @@ $(document).ready(function() {
     });
 });
 
-var mobileCutoffWidth = 789; // The size of the viewport; disregards the 17px scrollbar.
+var mobileCutoffWidth;
 var about = document.getElementById('about-me');
 var resume = document.getElementById('my-resume');
 var builds = document.getElementById('my-builds');
@@ -128,6 +128,13 @@ $(window).scroll(function() {
 });
 
 function determineScrollLocation() {
+    if(hasScrollBar()){
+        mobileCutoffWidth = 789;
+    }
+    else{
+        mobileCutoffWidth = 806;
+    }
+
     if ($(window).scrollTop() > 0) {
         if($(window).width() <= mobileCutoffWidth) {
             setupMobile();
@@ -144,6 +151,42 @@ function determineScrollLocation() {
             setupBig();
         }
     }
+}
+
+// This function is taken from:
+// https://tylercipriani.com/2014/07/12/crossbrowser-javascript-scrollbar-detection.html
+function hasScrollBar(){
+    // The Modern solution
+    if(typeof window.innerWidth === 'number'){
+        return window.innerWidth > document.documentElement.clientWidth;
+    }
+
+    // rootElem for quirksmode
+    var rootElem = document.documentElement || document.body
+
+    // Check overflow style property on body for fauxscrollbars
+    var overflowStyle
+
+    if(typeof rootElem.currentStyle !== 'undefined'){
+        overflowStyle = rootElem.currentStyle.overflow
+    }
+
+    overflowStyle = overflowStyle || window.getComputedStyle(rootElem, '').overflow
+
+    // Also need to check the Y axis overflow
+    var overflowYStyle
+
+    if(typeof rootElem.currentStyle !== 'undefined'){
+        overflowYStyle = rootElem.currentStyle.overflowY
+    }
+
+    overflowYStyle = overflowYStyle || window.getComputedStyle(rootElem, '').overflowY
+
+    var contentOverflows = rootElem.scrollHeight > rootElem.clientHeight
+    var overflowShown    = /^(visible|auto)$/.test(overflowStyle) || /^(visible|auto)$/.test(overflowYStyle)
+    var alwaysShowScroll = overflowStyle === 'scroll' || overflowYStyle === 'scroll'
+
+    return (contentOverflows && overflowShown) || (alwaysShowScroll)
 }
 
 function setupBig() {
