@@ -42,6 +42,10 @@ function hideAll(){
     contact.style.display = 'none';
 }
 
+function deleteCookie(name){
+    document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+}
+
 function topOfPage(){
     window.scrollTo(0, 0);
 }

@@ -81,10 +81,11 @@
                     </table>
                     
                     <p></p>
-                    <table class="inputs">
+                    <table class="buttons">
                         <tr>
                             <td>
                                 <button class="submit-button" type="submit">Send</button>
+                                <button class="submit-button" type="reset" onclick="deleteCookie('PHPSESSID'); window.location='index.php#contact';">Reset</button>
                             </td>
                         </tr>                                        
                     </table>
