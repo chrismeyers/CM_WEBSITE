@@ -514,7 +514,7 @@
         box-shadow: 0 0 10px #5bb75b;
     }
 
-    #prompt-div, #prompt-caret, #prompt, #goto-iframe{{
+    #prompt-div, #prompt-caret, #prompt, #goto-iframe{
         display: none;
     }  
 }
