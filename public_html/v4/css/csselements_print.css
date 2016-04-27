@@ -96,7 +96,7 @@
         width: 750px;
     }
 
-    #prompt-div, #prompt-caret, #prompt{
+    #prompt-div, #prompt-caret, #prompt, #goto-iframe{{
         display: none;
     }   
 }

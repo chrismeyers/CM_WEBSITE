@@ -49,9 +49,10 @@
 <!-- CONTACT SECTION -->
         <?php include 'sections/contact.php'; ?>
 
- <!-- FOOTER -->
+<!-- FOOTER -->
         <?php include 'sections/footer.php'; ?>
 
+<!-- PROMPT -->
         <div id="prompt-div">
             <iframe id="goto-iframe" src=""></iframe>
             <input id="prompt-caret" value=">" maxlength="1" readonly="readonly"></input>
