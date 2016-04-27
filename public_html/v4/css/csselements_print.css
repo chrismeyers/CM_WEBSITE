@@ -95,4 +95,8 @@
         height: 750px;
         width: 750px;
     }
+
+    #prompt-div, #prompt-caret, #prompt{
+        display: none;
+    }   
 }

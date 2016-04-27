@@ -453,5 +453,47 @@
         border-color: #5bb75b;
         box-shadow: 0 0 10px #5bb75b;
     }
+
+    #prompt-div{
+        bottom: 35px;
+        margin-left: 5px;
+        position: fixed;
+        display: none;
+    }
+
+    #prompt-caret{
+        width: 1.5%;
+        float: left;
+        background-color: rgba(0,0,0,0.85);
+        color: #00CC00;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: bold;
+        border: 0;
+    }
+    #prompt-caret:focus{
+        outline: none;
+    }
+
+    #prompt{
+        width: 500px;
+        float: right;
+        background-color: rgba(0,0,0,0.85);
+        color: #00CC00;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: bold;
+        border: 0;
+    }
+    #prompt:focus{
+        outline: none;
+    }
+
+    #goto-iframe{
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        bottom:28px;
+        margin-left: 10px;
+    }
 }
 

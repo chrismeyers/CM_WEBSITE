@@ -1,10 +1,3 @@
-$(document).ready(function() {
-    $(".fancybox").fancybox({
-        openEffect	: 'none',
-        closeEffect	: 'none'
-    });
-});
-
 var mobileCutoffWidth;
 var about = document.getElementById('about-me');
 var resume = document.getElementById('my-resume');
@@ -12,6 +5,17 @@ var builds = document.getElementById('my-builds');
 var projects = document.getElementById('my-projects');
 var contact = document.getElementById('contact-me');
 var specificPage = window.location.hash;
+
+var promptHistory = new Array();
+var promptHistoryLocation = 0;
+
+$(document).ready(function() {
+    $(".fancybox").fancybox({
+        openEffect  : 'none',
+        closeEffect : 'none'
+    });
+});
+
 
 // Handles browser back and forward.
 window.onhashchange = function(){
@@ -67,8 +71,8 @@ function translateHash(value){
     }
 }
 
-//Click menu
 $(function() {
+    // Click menu
     $(document).each(function() {
         $(this).click(function(event) {
             var currentID = event.target.id;
@@ -84,6 +88,7 @@ $(function() {
         });
     });
 
+    // Document scope key events
     $(document).keyup(function(event) {
         var currentKey = event.keyCode;
 
@@ -91,7 +96,72 @@ $(function() {
         if(currentKey === 27){
             $("#menu-click").siblings('#menu-items').slideUp("fast");
         }
+
+        // toggles prompt on ~
+        if(currentKey === 192){
+            if(getComputedStyle(document.getElementById('prompt-div')).getPropertyValue("display") === "none"){
+                // Show prompt box.
+                $('#prompt-div').css('display', 'flex');
+                movePromptCursorToEnd();
+            }
+            else{
+                // Hide prompt box.
+                $('#prompt-div').css('display', 'none');
+            }
+        }
     });
+
+    // Prompt scope key events (when prompt is in focus)
+    $("#prompt").keyup(function(event){
+        var currentKey = event.keyCode;
+
+        // enter - send command
+        if(currentKey == 13){
+            processPromptInput($("#prompt").val());
+            promptHistoryLocation = 0;
+        }
+
+        // up arrow - cycle through history
+        if(currentKey === 38){
+            if(promptHistory.length !== 0){
+                if(promptHistoryLocation < promptHistory.length){
+                    promptHistoryLocation++;
+                    $("#prompt").val(promptHistory[promptHistory.length - promptHistoryLocation]);
+                }
+                else{
+                    movePromptCursorToEnd();
+                }
+            }
+        }
+
+        // down arrow - cycle through history
+        if(currentKey === 40){
+            if(promptHistory.length !== 0 && promptHistoryLocation > 0){
+                promptHistoryLocation--;
+                $("#prompt").val(promptHistory[promptHistory.length - promptHistoryLocation]);   
+            }
+        }
+    });
+
+    $("#prompt").keypress(function(event){
+        // prevent backtick's in prompt
+        if(event.keyCode === 96){
+            return false;
+        }
+    });
+});
+
+// Shrinks header on scroll down.
+$(function(){
+  $('#bannerBar').data('size','big');
+});
+
+$(window).resize(function() {
+    determineScrollLocation();
+});
+
+$(window).scroll(function() {
+    determineScrollLocation();
 });
 
 //Hover menu
@@ -113,19 +183,6 @@ function hideProjectString(type, proj){
         document.getElementById('slide-' + type + '-' + proj).style.display = 'none';
     }
 }
-
-// Shrinks header on scroll down.
-$(function(){
-  $('#bannerBar').data('size','big');
-});
-
-$(window).resize(function() {
-    determineScrollLocation();
-});
-
-$(window).scroll(function() {
-    determineScrollLocation();
-});
 
 function determineScrollLocation() {
     if(hasScrollBar()){
@@ -276,4 +333,60 @@ function setupMobile() {
 
     $('#menu-toggle').css('margin-top', "14px");
     $('#menu-items').css('top', '60px');   
+}
+
+function processPromptInput(input){
+    var sanitizedInput = input.toLowerCase();
+    var parts = sanitizedInput.split(' ');
+
+    switch(parts[0]){
+        case "cd": {
+            switch(parts[1]){
+                case "resume":
+                  showSection('my-resume'); break;
+                case "builds":
+                  showSection('my-builds'); break;
+                case "projects":
+                    showSection('my-projects'); break;
+                case "contact":
+                    showSection('contact-me'); break;
+                default:
+                    showSection('about-me'); break;
+            }
+            break;
+        }
+        case "history": {
+            window.alert(promptHistory);
+            break;
+        }
+        case "goto": {
+            switch(parts[1]){
+                case "close": {
+                    document.getElementById('goto-iframe').src = "";
+                    $('#goto-iframe').css('display', 'none');
+                }
+                default: {
+                    // TODO: ensure url (parts[1]) is in correct format.
+                    document.getElementById('goto-iframe').src = parts[1];
+                    $('#goto-iframe').css('display', 'inline-block');
+                }
+            }
+            break
+        }
+        case "echo": {
+            window.alert(input.substring(input.indexOf(' ') + 1));
+            break;
+        }
+    }
+
+    $("#prompt").val('');
+    promptHistory.push(input);
+}
+
+function movePromptCursorToEnd(){
+    var promptTextbox = document.getElementById("prompt");
+    var promptLength = promptTextbox.value.length;
+
+    promptTextbox.focus();
+    promptTextbox.setSelectionRange(promptLength, promptLength);
 }
