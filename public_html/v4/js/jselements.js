@@ -145,7 +145,7 @@ $(function() {
 
     $("#prompt").keypress(function(event){
         // prevent backtick's in prompt
-        if(event.keyCode === 96){
+        if(event.charCode === 96){
             return false;
         }
     });
@@ -364,14 +364,16 @@ function processPromptInput(input){
                 case "close": {
                     document.getElementById('goto-iframe').src = "";
                     $('#goto-iframe').css('display', 'none');
+                    break;
                 }
                 default: {
                     // TODO: ensure url (parts[1]) is in correct format.
                     document.getElementById('goto-iframe').src = parts[1];
                     $('#goto-iframe').css('display', 'inline-block');
+                    break;
                 }
             }
-            break
+            break;
         }
         case "echo": {
             window.alert(input.substring(input.indexOf(' ') + 1));

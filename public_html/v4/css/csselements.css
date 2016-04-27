@@ -489,11 +489,12 @@
 
     #goto-iframe{
         display: none;
-        width: 500px;
+        width: calc(500px + 1.5%);
+        border: none;
         height: 500px;
         position: absolute;
         bottom:28px;
-        margin-left: 10px;
+        margin-left: 0px;
     }
 }
 
