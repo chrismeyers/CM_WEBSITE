@@ -14,21 +14,20 @@ $(document).ready(function() {
         openEffect  : 'none',
         closeEffect : 'none'
     });
-});
 
+    // Reads hash from url and changes page, defaults to about.
+    if(specificPage === null || specificPage === ''){
+        showSection('about-me');
+    }
+    else{
+        showSection(translateHash(specificPage.substr(1)));
+    }
+});
 
 // Handles browser back and forward.
 window.onhashchange = function(){
     showSection(translateHash(window.location.hash.substr(1)));
 };
-
-// Reads hash from url and changes page, defaults to about.
-if(specificPage === null || specificPage === ''){
-    showSection('about-me');
-}
-else{
-    showSection(translateHash(specificPage.substr(1)));
-}
 
 // Displays new section.
 function showSection(section){

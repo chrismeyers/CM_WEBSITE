@@ -35,6 +35,5 @@
                 I enjoy building custom computers as a hobby and have done so for myself and others over the past few years.  My builds can be seen 
                 <a href='#builds' class="fancytxt" onclick="showSection('my-builds')">here</a>.
                 </p>
-
             </div>
         </div>

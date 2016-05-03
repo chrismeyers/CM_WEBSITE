@@ -71,7 +71,6 @@
                                 <img id="menu-toggle" src="images/icons/menuIcon.png" title="Menu" alt="Menu">
                             </div>
                             <ul id="menu-items">
-                                
                                 <a href="#about" class="headerLink">
                                     <li class="sectionTitle-small-txt" onclick="showSection('about-me')">About</li>
                                 </a>

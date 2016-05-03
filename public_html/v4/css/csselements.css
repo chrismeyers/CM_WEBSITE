@@ -292,7 +292,7 @@
         padding-right: 10px;
     }
 
-    div#builds, div#projects, div#contact{
+    div#about-me, div#my-resume, div#my-builds, div#my-projects, div#contact-me{
         display:none;
     }
 

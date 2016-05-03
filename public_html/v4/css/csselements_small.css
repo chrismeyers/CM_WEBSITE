@@ -300,8 +300,8 @@
         font-family: Verdana, Geneva, sans-serif;
     }
 
-    #builds, #projects, #contact{
-        display: none;
+    div#about-me, div#my-resume, div#my-builds, div#my-projects, div#contact-me{
+        display:none;
     }
 
     #footer {
