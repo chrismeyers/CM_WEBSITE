@@ -338,6 +338,9 @@ function processPromptInput(input){
     var sanitizedInput = input.toLowerCase();
     var parts = sanitizedInput.split(' ');
 
+    $("#prompt").val('');
+    promptHistory.push(input);
+
     switch(parts[0]){
         case "cd": {
             switch(parts[1]){
@@ -358,30 +361,13 @@ function processPromptInput(input){
             window.alert(promptHistory);
             break;
         }
-        case "goto": {
-            switch(parts[1]){
-                case "close": {
-                    document.getElementById('goto-iframe').src = "";
-                    $('#goto-iframe').css('display', 'none');
-                    break;
-                }
-                default: {
-                    // TODO: ensure url (parts[1]) is in correct format.
-                    document.getElementById('goto-iframe').src = parts[1];
-                    $('#goto-iframe').css('display', 'inline-block');
-                    break;
-                }
-            }
-            break;
-        }
         case "echo": {
             window.alert(input.substring(input.indexOf(' ') + 1));
             break;
         }
+        default:
+            break;
     }
-
-    $("#prompt").val('');
-    promptHistory.push(input);
 }
 
 function movePromptCursorToEnd(){

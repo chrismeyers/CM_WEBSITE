@@ -486,15 +486,5 @@
     #prompt:focus{
         outline: none;
     }
-
-    #goto-iframe{
-        display: none;
-        width: calc(500px + 1.5%);
-        border: none;
-        height: 500px;
-        position: absolute;
-        bottom:28px;
-        margin-left: 0px;
-    }
 }
 
