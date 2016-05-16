@@ -335,7 +335,12 @@ function setupMobile() {
 }
 
 function processPromptInput(input){
-    var sanitizedInput = input.toLowerCase();
+    var sanitizedInput = input.trim().toLowerCase().replace(/ +(?= )/g,'');
+    if(sanitizedInput === ""){
+        $("#prompt").val("");
+        return;
+    }
+
     var parts = sanitizedInput.split(' ');
 
     $("#prompt").val('');
@@ -374,9 +379,19 @@ function processPromptInput(input){
             if(isIdShown('prompt-textarea')){
                 hidePromptTextarea();
             }
+            break;
+        }
+        case "help":
+        case "?":
+        case "man": {
+            if(!isIdShown('prompt-textarea')){
+                showPromptTextarea();
+            }
+            printHelpMessage();
+            return;
         }
         default:
-            break;
+            return;
     }
 
     if(isIdShown('prompt-textarea')){
@@ -430,4 +445,20 @@ function showPromptTextarea(){
 function hidePromptTextarea(){
     $('#prompt-textarea').css('display', 'none');
     $('#prompt-textarea-btn').html("&#9650;"); // up symbol
+}
+
+function printHelpMessage(){
+    $('#prompt-textarea').empty();
+
+    var msg = "===== Command Prompt Help =====                 \n";
+    msg +=    "The following commands are available:           \n";
+    msg +=    "  cd [section] - displays the specified section.\n";
+    msg +=    "  history - displays the prompt textarea.       \n";
+    msg +=    "  echo [text] - raises alert window with text.  \n";
+    msg +=    "  clear - clears prompt textarea and history.   \n";
+    msg +=    "  close - lowers the prompt textarea, if shown. \n";
+    msg +=    "  help - displays this message.                 ";
+
+    $('#prompt-textarea').append(msg);
+    $('#prompt-textarea').scrollTop(0);
 }
