@@ -244,7 +244,9 @@
     
     .sectionTitle-about:hover, .sectionTitle-resume:hover, .sectionTitle-builds:hover, 
         .sectionTitle-projects:hover, .sectionTitle-contact:hover, #sectionTitle-menu:hover{
-        background-color: #5bb75b;
+        /*background-color: #5bb75b;*/
+        box-sizing: border-box;
+        border-bottom:solid 5px #5bb75b;
         cursor: pointer;
     }
     

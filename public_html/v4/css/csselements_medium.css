@@ -221,7 +221,7 @@
         margin-top: 4px;
         padding: 0;
         list-style: none;
-        list-style-image: url(data:0);
+        list-style-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7);
     }
     
     #menu-toggle{
@@ -233,7 +233,7 @@
     #menu-items{
         padding: 4px;
         list-style: none;
-        list-style-image: url(data:0);
+        list-style-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7);
         display: none;
         background-color: rgb(33,40,55);
         position: absolute;
