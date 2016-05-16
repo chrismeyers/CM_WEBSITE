@@ -433,6 +433,10 @@
         border-color: #5bb75b;
         box-shadow: 0 0 10px #5bb75b;
     }
+    .inputbox-mod::-ms-clear{
+        width: 0px;
+        height: 0px;
+    }
     
     .textarea-mod{
         width: calc(100% - 5px - 5px); /* 100% - padding-left - padding-right */
@@ -454,6 +458,13 @@
         box-shadow: 0 0 10px #5bb75b;
     }
 
+    .prompt-style{
+        background-color: rgba(0,0,0,0.85);
+        color: #00CC00;
+        font-family: "Courier New", Courier, monospace;
+        border: 0;
+    }
+
     #prompt-div{
         bottom: 35px;
         margin-left: 5px;
@@ -464,11 +475,7 @@
     #prompt-caret{
         width: 1.5%;
         float: left;
-        background-color: rgba(0,0,0,0.85);
-        color: #00CC00;
-        font-family: "Courier New", Courier, monospace;
         font-weight: bold;
-        border: 0;
     }
     #prompt-caret:focus{
         outline: none;
@@ -477,13 +484,30 @@
     #prompt{
         width: 500px;
         float: right;
-        background-color: rgba(0,0,0,0.85);
-        color: #00CC00;
-        font-family: "Courier New", Courier, monospace;
-        font-weight: bold;
-        border: 0;
     }
     #prompt:focus{
+        outline: none;
+    }
+    #prompt::-ms-clear{
+        width: 0px;
+        height: 0px;
+    }
+
+    #prompt-textarea{
+        border: 0;
+        resize: none;
+        position: absolute;
+        bottom:30px;
+        display: none;
+    }
+    #prompt-textarea:focus{
+        outline: none;
+    }
+
+    #prompt-textarea-btn{
+        border: 0;
+    }
+    #prompt-textarea-btn:focus{
         outline: none;
     }
 }

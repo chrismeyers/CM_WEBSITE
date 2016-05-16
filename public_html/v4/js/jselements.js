@@ -98,14 +98,12 @@ $(function() {
 
         // toggles prompt on ~
         if(currentKey === 192){
-            if(getComputedStyle(document.getElementById('prompt-div')).getPropertyValue("display") === "none"){
-                // Show prompt box.
-                $('#prompt-div').css('display', 'flex');
-                movePromptCursorToEnd();
+            if(isIdShown('prompt-div')){
+                $('#prompt-div').css('display', 'none');
             }
             else{
-                // Hide prompt box.
-                $('#prompt-div').css('display', 'none');
+                $('#prompt-div').css('display', 'flex');
+                movePromptCursorToEnd();
             }
         }
     });
@@ -114,31 +112,33 @@ $(function() {
     $("#prompt").keyup(function(event){
         var currentKey = event.keyCode;
 
-        // enter - send command
-        if(currentKey == 13){
-            processPromptInput($("#prompt").val());
-            promptHistoryLocation = 0;
-        }
-
-        // up arrow - cycle through history
-        if(currentKey === 38){
-            if(promptHistory.length !== 0){
-                if(promptHistoryLocation < promptHistory.length){
-                    promptHistoryLocation++;
-                    $("#prompt").val(promptHistory[promptHistory.length - promptHistoryLocation]);
-                }
-                else{
-                    movePromptCursorToEnd();
-                }
+        switch(currentKey){
+            case 13: { // enter - send command
+                processPromptInput($("#prompt").val());
+                promptHistoryLocation = 0;
+                break;
             }
-        }
-
-        // down arrow - cycle through history
-        if(currentKey === 40){
-            if(promptHistory.length !== 0 && promptHistoryLocation > 0){
-                promptHistoryLocation--;
-                $("#prompt").val(promptHistory[promptHistory.length - promptHistoryLocation]);   
+            case 38: { // up arrow - cycle through history
+                if(promptHistory.length !== 0){
+                    if(promptHistoryLocation < promptHistory.length){
+                        promptHistoryLocation++;
+                        $("#prompt").val(promptHistory[promptHistory.length - promptHistoryLocation]);
+                    }
+                    else{
+                        movePromptCursorToEnd();
+                    }
+                }
+                break;
             }
+            case 40: { // down arrow - cycle through history
+                if(promptHistory.length !== 0 && promptHistoryLocation > 0){
+                    promptHistoryLocation--;
+                    $("#prompt").val(promptHistory[promptHistory.length - promptHistoryLocation]);   
+                }
+                break;
+            }
+            default:
+                break;
         }
     });
 
@@ -358,15 +358,29 @@ function processPromptInput(input){
             break;
         }
         case "history": {
-            window.alert(promptHistory);
-            break;
+            showHistory(true);
+            return;
         }
         case "echo": {
             window.alert(input.substring(input.indexOf(' ') + 1));
             break;
         }
+        case "clear": {
+            $('#prompt-textarea').empty();
+            promptHistory = [];
+            return;
+        }
+        case "close": {
+            if(isIdShown('prompt-textarea')){
+                hidePromptTextarea();
+            }
+        }
         default:
             break;
+    }
+
+    if(isIdShown('prompt-textarea')){
+        showHistory(true);
     }
 }
 
@@ -376,4 +390,44 @@ function movePromptCursorToEnd(){
 
     promptTextbox.focus();
     promptTextbox.setSelectionRange(promptLength, promptLength);
+}
+
+function showHistory(fromText){
+    $('#prompt-textarea').empty();
+
+    if(isIdShown('prompt-textarea') && !fromText){
+        hidePromptTextarea();
+    }
+    else{
+        //console.log("button press");
+        showPromptTextarea();
+    }
+
+    for(i = 0; i < promptHistory.length; i++){
+        //console.log(promptHistory[i]);
+        $('#prompt-textarea').append(promptHistory[i]);
+        if(i !== (promptHistory.length - 1)){
+            $('#prompt-textarea').append("\n");
+        }
+    }
+    //console.log("\n");
+    $('#prompt-textarea').scrollTop($('#prompt-textarea')[0].scrollHeight);
+
+    if(!fromText){
+        movePromptCursorToEnd();
+    }
+}
+
+function isIdShown(id){
+   return (getComputedStyle(document.getElementById(id)).getPropertyValue("display") !== "none");
+}
+
+function showPromptTextarea(){
+    $('#prompt-textarea').css('display', 'flex');
+    $('#prompt-textarea-btn').html("&#9660;"); // down symbol
+}
+
+function hidePromptTextarea(){
+    $('#prompt-textarea').css('display', 'none');
+    $('#prompt-textarea-btn').html("&#9650;"); // up symbol
 }

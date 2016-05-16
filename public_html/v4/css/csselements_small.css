@@ -494,7 +494,11 @@
         border-color: #5bb75b;
         box-shadow: 0 0 10px #5bb75b;
     }
-    
+    .inputbox-mod::-ms-clear{
+        width: 0px;
+        height: 0px;
+    }
+
     .textarea-mod{
         width: calc(100% - 5px); /* 100% - padding-left - padding-right */
         padding-left: 5px;
