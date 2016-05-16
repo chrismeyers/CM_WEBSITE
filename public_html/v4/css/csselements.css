@@ -499,6 +499,8 @@
         position: absolute;
         bottom:30px;
         display: none;
+        font-size: 12px;
+        height: 125px;
     }
     #prompt-textarea:focus{
         outline: none;
