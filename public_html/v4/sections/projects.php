@@ -25,9 +25,9 @@
                         <div class="projImages">
                             <a class="fancybox no-decoration" 
                                rel="gallery1" 
-                               href="images/project_screenshots/cm/cm.png" 
+                               href="images/project_screenshots/cm/cm.jpg" 
                                title="Full size version of my personal website.">
-                                <img src="images/project_screenshots/cm/cm.png" 
+                                <img src="images/project_screenshots/cm/cm.jpg" 
                                      class="projImages-full-img-square"
                                      alt="Full size version of my personal website." 
                                      title="Click to enlarge">
@@ -35,9 +35,9 @@
                             <div class="projImages-small">
                                 <a class="fancybox no-decoration"
                                    rel="gallery1" 
-                                   href="images/project_screenshots/cm/cm_mid.png"
+                                   href="images/project_screenshots/cm/cm_mid.jpg"
                                    title="Mid size version of my personal website.">
-                                    <img src="images/project_screenshots/cm/cm_mid.png" 
+                                    <img src="images/project_screenshots/cm/cm_mid.jpg" 
                                          class="projImages-small-img-square"
                                          alt="Mid size version of my personal website." 
                                          title="Click to enlarge">
@@ -159,9 +159,9 @@
                         <div class="projImages">
                             <a class="fancybox no-decoration" 
                                rel="gallery2" 
-                               href="images/project_screenshots/pinelands/pinelands_landing.png" 
+                               href="images/project_screenshots/pinelands/pinelands_landing.jpg" 
                                title="Landing page">
-                                <img src="images/project_screenshots/pinelands/pinelands_landing.png"
+                                <img src="images/project_screenshots/pinelands/pinelands_landing.jpg"
                                      class="projImages-full-img-square"
                                      alt="Pinelands landing page" 
                                      title="Click to enlarge">
@@ -169,9 +169,9 @@
                             <div class="projImages-small">
                                 <a class="fancybox no-decoration"
                                    rel="gallery2" 
-                                   href="images/project_screenshots/pinelands/pinelands_tour.png"
+                                   href="images/project_screenshots/pinelands/pinelands_tour.jpg"
                                    title="Tour page">
-                                    <img src="images/project_screenshots/pinelands/pinelands_tour.png" 
+                                    <img src="images/project_screenshots/pinelands/pinelands_tour.jpg" 
                                          class="projImages-small-img-square"
                                          alt="Pinelands tour page" 
                                          title="Click to enlarge">
@@ -179,9 +179,9 @@
                                 </a>
                                 <a class="fancybox no-decoration"
                                    rel="gallery2"
-                                   href="images/project_screenshots/pinelands/pinelands_contact.png"
+                                   href="images/project_screenshots/pinelands/pinelands_contact.jpg"
                                    title="Contact page">
-                                    <img src="images/project_screenshots/pinelands/pinelands_contact.png" 
+                                    <img src="images/project_screenshots/pinelands/pinelands_contact.jpg" 
                                          class="projImages-small-img-square"
                                          alt="Pinelands contact page" 
                                          title="Click to enlarge">
