@@ -10,7 +10,11 @@
     html{
         font-family: Verdana, Geneva, sans-serif;
     }
-    
+
+    #bannerBar{
+        display: none;
+    }
+
     .banner-img-small, .banner-img, .proj-link, .proj-bullets, .banner-nav, #banner-icon, #footer,
         #slide-code-cm,
         #slide-code-genomic,
@@ -92,7 +96,7 @@
     }
     
     .textarea-mod{
-        height: 750px;
+        height: 700px;
         width: 750px;
     }
 
