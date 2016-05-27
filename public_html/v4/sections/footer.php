@@ -47,7 +47,7 @@
                 <div class='footer-bullets'>&bull;</div>
                 
                 <div class='footer-resume'>
-                    <a href="index.php?message=reqres#contact" class="fancytxt">
+                    <a href="index.php?message=resume#contact" class="fancytxt">
                         Request Résumé
                     </a>
                 </div>

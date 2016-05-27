@@ -25,6 +25,17 @@
         color: red;
         text-align: center;
     }
+
+    .success{
+        font-weight: bold;
+        color: #5bb75b;
+        text-align: center;
+    }
+
+    .contact-symbol{
+        font-size: x-large;
+        font-weight: normal; 
+    }    
     
     img {
         border: 0;

@@ -16,23 +16,31 @@
                     if (!empty($_GET['message'])) {
                         $message = $_GET['message'];
                         
-                        if(strcmp($message, "000") != 0) {
+                        if ($message == "resume") {
+                            $_SESSION["usercomments"] = "I would like a copy of your résumé.";
+                            echo '<p class="errors">';
+                            echo "<span class='contact-symbol'>&#128712;</span> To request a PDF version of my résumé, please enter your name, email and any additional information.";
+                            echo '</p>';
+                        }
+                        else if(strcmp($message, "000") != 0) {
                             $err_arr = str_split($message);
                             
                             echo '<p class="errors">';
                             if ($err_arr[0] == "1") {
-                                echo "- Name required. Please try again." . '<br />';
+                                echo "<span class='contact-symbol'>&#9888;</span> Name required. Please try again." . '<br />';
                             } 
                             if ($err_arr[1] == "1") {
-                                echo "- Email Address format is incorrect. Please try again." . '<br />';
+                                echo "<span class='contact-symbol'>&#9888;</span> Email Address format is incorrect. Please try again." . '<br />';
                             }
                             if ($err_arr[2] == "1") {
-                                echo "- Email Addresses don't match. Please try again." . '<br />';
+                                echo "<span class='contact-symbol'>&#9888;</span> Email Addresses don't match. Please try again." . '<br />';
                             }
-                            if ($message == "reqres") {
-                                $_SESSION["usercomments"] = "I would like a copy of your résumé.";
-                                echo "- To request a PDF version of my résumé, please enter your name, email and any additional information.";
-                            }
+
+                            echo '</p>';
+                        }
+                        else {
+                            echo '<p class="success">';
+                            echo "<span class='contact-symbol'>&#10003;</span> Your request has been successfully submitted. Thank you!";
                             echo '</p>';
                         }
                     }

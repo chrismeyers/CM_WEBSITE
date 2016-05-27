@@ -8,14 +8,14 @@ $_SESSION["confirmfromemail"] = $_POST['confirmfromemail'];
 $_SESSION["usercomments"] = $_POST['usercomments'];
 $message = "";
 
-//
+
 // Verifies the correct format for each field.  If a field is incorrect, a value
 // of "1" is concatenated to the return message; otherwise "0" is concatenated.
 //
-// The return message follows the following format:
-//  [0|1] [0|1] [0|1]
-//  [name][email format][emails match]
-//
+// The return message will be a 3 digit code following the format:
+//  [0|1]  [0|1]          [0|1]
+//  [name] [email format] [emails match]
+
 if (!preg_match("/\S+/", $_SESSION["name"])) {
     $message .= "1"; //Name required.
 }
@@ -53,6 +53,5 @@ mail("$myemail", "$subj", "$emess", "$ehead");
 
 // Cleanup session variables.
 session_unset();
-$message = "";
 
-header("Location: thank_you.php");
+header("Location: index.php?message=$message#contact");
