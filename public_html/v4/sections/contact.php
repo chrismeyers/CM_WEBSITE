@@ -19,7 +19,7 @@
                         if ($message == "resume") {
                             $_SESSION["usercomments"] = "I would like a copy of your résumé.";
                             echo '<p class="errors">';
-                            echo "<span class='contact-symbol'>&#128712;</span> To request a PDF version of my résumé, please enter your name, email and any additional information.";
+                            echo "To request a PDF version of my résumé, please enter your name, email and any additional information.";
                             echo '</p>';
                         }
                         else if(strcmp($message, "000") != 0) {
