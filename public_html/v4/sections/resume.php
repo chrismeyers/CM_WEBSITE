@@ -132,7 +132,7 @@
 
                     <tr>
                         <td class="left">&bull; Experience with ClearCase, Git, and Subversion
-                            revision control.</td>
+                            version control.</td>
                     </tr>
 
                     <tr>

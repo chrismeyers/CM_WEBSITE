@@ -38,7 +38,7 @@ else {
 }
 
 if (strcmp($message, "000") != 0) {
-    header("Location: index.php?message=$message#contact");
+    header("Location: ../index.php?message=$message#contact");
     die();
 }
 
@@ -54,4 +54,4 @@ mail("$myemail", "$subj", "$emess", "$ehead");
 // Cleanup session variables.
 session_unset();
 
-header("Location: index.php?message=$message#contact");
+header("Location: ../index.php?message=$message#contact");

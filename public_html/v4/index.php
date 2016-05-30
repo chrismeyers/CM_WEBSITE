@@ -55,7 +55,7 @@
 <!-- PROMPT -->
         <?php include 'sections/prompt.php'; ?>
  
-        <script type="text/javascript" src="js/jselements.js"></script>
+        <script type="text/javascript" src="scripts/jselements.js"></script>
             
     </body>
 </html>
