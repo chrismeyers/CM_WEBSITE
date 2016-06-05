@@ -1,13 +1,25 @@
-var mobileCutoffWidth;
-var about = document.getElementById('about-me');
-var resume = document.getElementById('my-resume');
-var builds = document.getElementById('my-builds');
-var projects = document.getElementById('my-projects');
-var contact = document.getElementById('contact-me');
-var specificPage = window.location.hash;
-
+var mobileCutoffWidth, about, resume, builds, projects, contact, specificPage;
 var promptHistory = new Array();
-var promptHistoryLocation = 0;
+var sectionTranslations = {};
+
+init();
+
+function init(){
+    about    = document.getElementById('about-me');
+    resume   = document.getElementById('my-resume');
+    builds   = document.getElementById('my-builds');
+    projects = document.getElementById('my-projects');
+    contact  = document.getElementById('contact-me');
+    specificPage = window.location.hash;
+
+    promptHistoryLocation = 0;
+
+    sectionTranslations["about"]    = "about-me";
+    sectionTranslations["resume"]   = "my-resume";
+    sectionTranslations["builds"]   = "my-builds";
+    sectionTranslations["projects"] = "my-projects";
+    sectionTranslations["contact"]  = "contact-me";
+}
 
 $(document).ready(function() {
     $(".fancybox").fancybox({
@@ -20,13 +32,13 @@ $(document).ready(function() {
         showSection('about-me');
     }
     else{
-        showSection(translateHash(specificPage.substr(1)));
+        showSection(sectionTranslations[specificPage.substr(1)]);
     }
 });
 
 // Handles browser back and forward.
 window.onhashchange = function(){
-    showSection(translateHash(window.location.hash.substr(1)));
+    showSection(sectionTranslations[window.location.hash.substr(1)]);
 };
 
 // Displays new section.
@@ -34,15 +46,19 @@ function showSection(section){
     var toShow = document.getElementById(section);
     hideAll();
     toShow.style.display = 'block';
+
+    deselectAllSectionTitles();
+    selectSectionTitle(section);
+
     topOfPage();
 }
 
 function hideAll(){
-    about.style.display = 'none';
-    resume.style.display = 'none';
-    builds.style.display = 'none';
+    about.style.display    = 'none';
+    resume.style.display   = 'none';
+    builds.style.display   = 'none';
     projects.style.display = 'none';
-    contact.style.display = 'none';
+    contact.style.display  = 'none';
 }
 
 function deleteCookie(name){
@@ -53,20 +69,24 @@ function topOfPage(){
     window.scrollTo(0, 0);
 }
 
-function translateHash(value){
-    switch(value){
-        case("about"):
-            return "about-me";
-        case("resume"):
-            return "my-resume";
-        case("builds"):
-            return "my-builds";
-        case("projects"):
-            return "my-projects";
-        case("contact"):
-            return "contact-me";
-        default:
-            return "about-me";
+function translateToHash(value){
+    if(value.substring(0, 3) === "my-"){
+        return value.substring(3);
+    }
+    else if(value.substring(value.length - 3) === "-me"){
+        return value.substring(0, value.length - 3);
+    }
+}
+
+function selectSectionTitle(section){
+    $('.sectionTitle-' + translateToHash(section)).css('border-bottom', 'solid 5px #5bb75b');
+    $('.sectionTitle-' + translateToHash(section)).css('box-sizing', 'border-box');
+}
+
+function deselectAllSectionTitles(){
+    for(var section in sectionTranslations){
+        $('.sectionTitle-' + section).css('border-bottom', '');
+        $('.sectionTitle-' + section).css('box-sizing', '');
     }
 }
 
