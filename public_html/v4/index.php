@@ -14,20 +14,7 @@
 
         <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
 
-        <link rel="stylesheet" href="css/csselements.css" />
-        <link rel="stylesheet" href="css/csselements_medium.css" />
-        <link rel="stylesheet" href="css/csselements_small.css" />
-        <link rel="stylesheet" href="css/csselements_print.css" />
-        <link rel="stylesheet" href="css/csselements_resume.css" />
-        <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
-        <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
-        <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
-
-        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-        <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
-        <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
-        <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js"></script>
-        <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+        <link rel="stylesheet" href="dist/production.min.css"/>        
     </head>
 
     <body>
@@ -54,8 +41,8 @@
 
 <!-- PROMPT -->
         <?php include 'sections/prompt.php'; ?>
- 
-        <script type="text/javascript" src="scripts/jselements.js"></script>
+
+        <script src="dist/production.min.js"></script>        
             
     </body>
 </html>
