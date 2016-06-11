@@ -211,7 +211,7 @@ function determineScrollLocation() {
         mobileCutoffWidth = 806;
     }
 
-    if ($(window).scrollTop() > 0) {
+    if ($(window).scrollTop() > 1) {
         if($(window).width() <= mobileCutoffWidth) {
             setupMobile();
         }
@@ -434,18 +434,16 @@ function showHistory(fromText){
         hidePromptTextarea();
     }
     else{
-        //console.log("button press");
         showPromptTextarea();
     }
 
     for(i = 0; i < promptHistory.length; i++){
-        //console.log(promptHistory[i]);
         $('#prompt-textarea').append(promptHistory[i]);
         if(i !== (promptHistory.length - 1)){
             $('#prompt-textarea').append("\n");
         }
     }
-    //console.log("\n");
+
     $('#prompt-textarea').scrollTop($('#prompt-textarea')[0].scrollHeight);
 
     if(!fromText){
