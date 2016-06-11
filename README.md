@@ -6,5 +6,5 @@ a place to present who I am and the technology skills I possess.  Aside from its
 (hence the domain extension), it also serves as a sandbox where I can experiment with new technologies.
 
 ## Credit
-The site uses the [fancybox](http://fancybox.net/) tool to make viewing images a lot more pleasant.  Aside
-from that, everything else has been handmade by myself (and a little help from Google).
+The site uses the [fancybox](http://www.fancyapps.com/fancybox/) tool to make viewing images a lot more
+pleasant.  Aside from that, everything else has been handmade by myself (and a little help from Google).
