@@ -1,7 +1,6 @@
 .DS_Store
 misc/
-nbproject/.DS_Store
-nbproject/private/
+nbproject/
 proj.sublime-project
 proj.sublime-workspace
 public_html/.DS_Store
