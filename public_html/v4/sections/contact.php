@@ -3,7 +3,7 @@
 
             <div class="content-text">
                 <div id='errors'></div>
-                <form action="scripts/email_form.php" method="post" target="_top">
+                <form action="scripts/php/email_form.php" method="post" target="_top">
                     <div class="message">
                         Find me on <a class="fancytxt" href="https://www.facebook.com/meyers42" target="_blank">Facebook</a>,<br />
                         see my professional profile on <a class="fancytxt" href="http://www.linkedin.com/pub/chris-meyers/61/7a9/b09" target="_blank">LinkedIn</a>,<br/>

@@ -11,20 +11,23 @@ module.exports = function(grunt) {
                     'css/csselements_small.css',
                     'css/csselements_print.css',
                     'css/csselements_resume.css',
-                    'fancybox/source/jquery.fancybox.css',
-                    'fancybox/source/helpers/jquery.fancybox-buttons.css',
-                    'fancybox/source/helpers/jquery.fancybox-thumbs.css'
+                    'scripts/vendor/fancybox/source/jquery.fancybox.css',
+                    'scripts/vendor/fancybox/source/helpers/jquery.fancybox-buttons.css',
+                    'scripts/vendor/fancybox/source/helpers/jquery.fancybox-thumbs.css'
                 ],
                 dest: 'dist/production.css'
             },
             js: {
                 src: [
-                    'scripts/jquery-2.2.4.min.js',
-                    'scripts/jselements.js',
-                    'fancybox/source/jquery.fancybox.pack.js',
-                    'fancybox/source/helpers/jquery.fancybox-buttons.js',
-                    'fancybox/source/helpers/jquery.fancybox-media.js',
-                    'fancybox/source/helpers/jquery.fancybox-thumbs.js'
+                    'scripts/vendor/jquery-2.2.4.min.js',
+                    'scripts/js/jselements.js',
+                    'scripts/js/callbacks.js',
+                    'scripts/js/header.js',
+                    'scripts/js/prompt.js',
+                    'scripts/vendor/fancybox/source/jquery.fancybox.pack.js',
+                    'scripts/vendor/fancybox/source/helpers/jquery.fancybox-buttons.js',
+                    'scripts/vendor/fancybox/source/helpers/jquery.fancybox-media.js',
+                    'scripts/vendor/fancybox/source/helpers/jquery.fancybox-thumbs.js'
                 ],
                 dest: 'dist/production.js'
             }
