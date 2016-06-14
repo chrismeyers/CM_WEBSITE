@@ -1,6 +1,6 @@
 /* 
     Document   : callbacks.js
-    Created on : Jun 16, 2016
+    Created on : June 13, 2016
     Author     : Chris Meyers
     Description:
         Handles all Javascript callbacks.
