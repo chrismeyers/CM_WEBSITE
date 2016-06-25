@@ -81,7 +81,7 @@
                     <h2>Genomic Solutions Now! Software
                         <div class="proj-link-block">
                             <span class="proj-bullets">&bull;</span>
-                            <a href="https://github.com/jayact/Genomic_SWE" target="_blank" class="no-decoration">
+                            <a href="https://github.com/chrismeyers/Genomic_SWE" target="_blank" class="no-decoration">
                                 <img src="images/social/github.png" 
                                     onmouseover="this.src = 'images/social/github_hover.png'; showProjectString('code', 'genomic');" 
                                     onmouseout="this.src = 'images/social/github.png'; hideProjectString('code', 'genomic');" 
