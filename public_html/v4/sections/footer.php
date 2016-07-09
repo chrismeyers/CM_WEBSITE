@@ -17,7 +17,7 @@
                 <div class='footer-bullets'>&bull;</div>
 
                 <div class='footer-social'>
-                    <a href='http://www.linkedin.com/pub/chris-meyers/61/7a9/b09'
+                    <a href='https://www.linkedin.com/in/chris-meyers'
                        target='_blank' 
                        style='text-decoration: none;'>
                         <img src='images/social/linkedin.png'

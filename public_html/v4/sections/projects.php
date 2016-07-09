@@ -73,8 +73,6 @@
                         </div>
                     </div>
                 
-
-
                 <!-- Genomic (genomic) -->
                 <br /> <hr>
                 <div class="proj">
