@@ -5,7 +5,7 @@ void 0!==c?e&&"set"in e&&void 0!==(d=e.set(a,c,b))?d:a[b]=c:e&&"get"in e&&null!=
 
 /* 
     Document   : jselements.js
-    Created on : Jun 16, 2016
+    Created on : June 13, 2016
     Author     : Chris Meyers
     Description:
         General Javascript functionality.
@@ -89,7 +89,7 @@ function isIdShown(id) {
 
 /* 
     Document   : callbacks.js
-    Created on : Jun 16, 2016
+    Created on : June 13, 2016
     Author     : Chris Meyers
     Description:
         Handles all Javascript callbacks.
@@ -210,7 +210,7 @@ $(function() {
 
 /* 
     Document   : header.js
-    Created on : Jun 16, 2016
+    Created on : June 13, 2016
     Author     : Chris Meyers
     Description:
         Handles the functionality of the dynamic header.
@@ -299,7 +299,11 @@ function setupBig() {
         height: '90px'
     }, 400);
 
-    $('.sectionTitle-about, .sectionTitle-resume, .sectionTitle-builds, .sectionTitle-projects, .sectionTitle-contact, #sectionTitle-menu, .banner-img').stop().animate({
+    $('.sectionTitle-about, .sectionTitle-resume, .sectionTitle-builds, .sectionTitle-projects, .sectionTitle-contact, #sectionTitle-menu').stop().animate({
+        height: "90px"
+    }, 400);
+
+    $('.banner-img').stop().animate({
         height: "90px"
     }, 400);
 
@@ -318,6 +322,7 @@ function setupBig() {
 
     $('.banner-img img').attr('height', '90px');
     $('.banner-img img').attr('width', '550px');
+    $('.banner-img img').css('padding-top', '0px');
 
     $('.banner-img img').fadeIn('fast');
 }
@@ -331,8 +336,12 @@ function setupSmall() {
         height: '60px'
     }, 400);
 
-    $('.sectionTitle-about, .sectionTitle-resume, .sectionTitle-builds, .sectionTitle-projects, .sectionTitle-contact, #sectionTitle-menu, .banner-img').stop().animate({
+    $('.sectionTitle-about, .sectionTitle-resume, .sectionTitle-builds, .sectionTitle-projects, .sectionTitle-contact, #sectionTitle-menu').stop().animate({
         height: "60px"
+    }, 400);
+
+    $('.banner-img').stop().animate({
+        height: "30px"
     }, 400);
 
     $('.sectionTitle-txt').css('margin-top', 12);
@@ -343,14 +352,15 @@ function setupSmall() {
     $('#menu-toggle').css('margin-top', 6);
     $('#menu-items').css('top', '60px');
 
-    $('.banner-img img').attr("src", "images/logos/cmlogocolor_nobackground_WHITE.png");
-    $('.banner-img img').attr('onmouseover', 'this.src=\'images/logos/cmlogocolor_nobackground_GREEN.png\'');
-    $('.banner-img img').attr('onmouseout', 'this.src=\'images/logos/cmlogocolor_nobackground_WHITE.png\'');
+    $('.banner-img img').attr("src", "images/logos/v2/meyers-logo-side-white.png");
+    $('.banner-img img').attr('onmouseover', 'this.src=\'images/logos/v2/meyers-logo-side-green.png\'');
+    $('.banner-img img').attr('onmouseout', 'this.src=\'images/logos/v2/meyers-logo-side-white.png\'');
     $('.banner-img img').css("margin-left", "20px");
 
     // Maintains constant logo size when changing from mobile to mid size view.
-    $('.banner-img img').attr('height', '60px');
-    $('.banner-img img').attr('width', '60px');
+    $('.banner-img img').attr('height', '30px');
+    $('.banner-img img').attr('width', '113px');
+    $('.banner-img img').css('padding-top', '15px');
 
     $('.banner-img img').fadeIn('fast');
 }
@@ -381,7 +391,7 @@ function setupMobile() {
 
 /* 
     Document   : prompt.js
-    Created on : Jun 16, 2016
+    Created on : June 13, 2016
     Author     : Chris Meyers
     Description:
         Handles the functionality of the hidden prompt.

@@ -10,9 +10,9 @@
             
             <div class="banner-img-small">
                 <a href="index.php" id="banner-small">
-                    <img src="images/logos/cmlogocolor_nobackground_WHITE.png" 
-                         onmouseover="this.src='images/logos/cmlogocolor_nobackground_GREEN.png'"
-                         onmouseout="this.src='images/logos/cmlogocolor_nobackground_WHITE.png'"
+                    <img src="images/logos/v2/meyers-logo-side-white.png" 
+                         onmouseover="this.src='images/logos/v2/meyers-logo-side-green.png'"
+                         onmouseout="this.src='images/logos/v2/meyers-logo-side-white.png'"
                          alt="Chris Meyers. Developer, Tech enthusiast."
                          class="banner-img"
                          title="Home">

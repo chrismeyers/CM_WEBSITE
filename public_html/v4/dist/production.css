@@ -1229,8 +1229,9 @@
     }
 
     #banner-small img{
-        height: 60px;
-        width: 60px;
+        height: 30px;
+        width: 113px;
+        padding-top: 15px;
         float: left;
         margin-left: 10px;
         display: inline-block;
@@ -1242,7 +1243,7 @@
     
     div.banner-img-small{
         float: left;
-        height: 60px;
+        height: 20px;
         width: 70px;
     }
     
