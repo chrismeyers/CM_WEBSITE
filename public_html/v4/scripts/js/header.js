@@ -142,9 +142,9 @@ function setupSmall() {
     $('#menu-toggle').css('margin-top', 6);
     $('#menu-items').css('top', '60px');
 
-    $('.banner-img img').attr("src", "images/logos/v2/meyers-logo-side-white.png");
-    $('.banner-img img').attr('onmouseover', 'this.src=\'images/logos/v2/meyers-logo-side-green.png\'');
-    $('.banner-img img').attr('onmouseout', 'this.src=\'images/logos/v2/meyers-logo-side-white.png\'');
+    $('.banner-img img').attr("src", "images/logos/v2/meyers-logo-side-rs-white.png");
+    $('.banner-img img').attr('onmouseover', 'this.src=\'images/logos/v2/meyers-logo-side-rs-green.png\'');
+    $('.banner-img img').attr('onmouseout', 'this.src=\'images/logos/v2/meyers-logo-side-rs-white.png\'');
     $('.banner-img img').css("margin-left", "20px");
 
     // Maintains constant logo size when changing from mobile to mid size view.
