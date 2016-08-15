@@ -63,10 +63,10 @@
         <!-- build:js:dist dist/production.min.js -->
         <!-- /build -->
         <!-- build:remove:dist -->
-        <script type="text/javascript" src="scripts/js/jselements.js"></script>
         <script type="text/javascript" src="scripts/js/callbacks.js"></script>
         <script type="text/javascript" src="scripts/js/header.js"></script>
         <script type="text/javascript" src="scripts/js/prompt.js"></script>
+        <script type="text/javascript" src="scripts/js/jselements.js"></script>
         <!-- /build -->
         
             

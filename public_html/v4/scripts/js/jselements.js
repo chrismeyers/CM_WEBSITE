@@ -27,6 +27,8 @@ function init() {
     sectionTranslations["builds"]   = "my-builds";
     sectionTranslations["projects"] = "my-projects";
     sectionTranslations["contact"]  = "contact-me";
+
+    determineCutoffWidth(); //initializes mobileCutoffWidth
 }
 
 // Displays new section.
