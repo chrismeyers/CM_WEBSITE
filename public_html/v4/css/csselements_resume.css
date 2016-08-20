@@ -6,30 +6,30 @@
         Stylesheet for HTML resume.
 */
 
-.wrapper{
+.wrapper {
     width: 100%;
 }
 
-.left{
+.left {
     width: 65%;
 }
 
-.right{
+.right {
     width: 35%;
     text-align: right;
     vertical-align: top;
 }
 
-.first{
+.first {
     padding-left: 20px;
 }
 
-.second{
+.second {
     padding-left: 40px;
     width:100%;
 }
 
-.footer{
+.footer {
     color: black;
     height: auto;
     margin-top: 25px;

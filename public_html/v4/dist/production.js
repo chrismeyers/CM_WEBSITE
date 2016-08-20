@@ -235,10 +235,10 @@ function setupBig() {
     $('#menu-toggle').css('margin-top', 20);
     $('#menu-items').css('top', '90px');
 
-    $('.banner-img img').attr("src", "images/banner/v4/no-border/titlepic-v4-NObrackets.png");
+    $('.banner-img img').attr('src', 'images/banner/v4/no-border/titlepic-v4-NObrackets.png');
     $('.banner-img img').attr('onmouseover', '');
     $('.banner-img img').attr('onmouseout', '');
-    $('.banner-img img').css("margin-left", "0px");
+    $('.banner-img img').css('margin-left', '0px');
 
     $('.banner-img img').attr('height', '90px');
     $('.banner-img img').attr('width', '550px');
@@ -269,13 +269,15 @@ function setupSmall() {
         height: "50px"
     }, 400);
 
+    $('#banner').css('height', '60px');
+
     $('#menu-toggle').css('margin-top', 6);
     $('#menu-items').css('top', '60px');
 
-    $('.banner-img img').attr("src", "images/logos/v2/meyers-logo-white.png");
+    $('.banner-img img').attr('src', 'images/logos/v2/meyers-logo-white.png');
     $('.banner-img img').attr('onmouseover', 'this.src=\'images/logos/v2/meyers-logo-green.png\'');
     $('.banner-img img').attr('onmouseout', 'this.src=\'images/logos/v2/meyers-logo-white.png\'');
-    $('.banner-img img').css("margin-left", "20px");
+    $('.banner-img img').css('margin-left', '20px');
 
     // Maintains constant logo size when changing from mobile to mid size view.
     $('.banner-img img').attr('height', '30px');
@@ -293,10 +295,12 @@ function setupMobile() {
         $('#bannerBar').data('size', 'small');
     }
     
+    $('#banner-small').css('height', '60px');
+
     $('#bannerBar').css('height', '60px');
 
-    $('.banner-img').css("height", "");
-    $('.banner-img').css("width", "");
+    $('.banner-img').css('height', '');
+    $('.banner-img').css('width', '');
 
     $('#sectionTitle-menu').css('height', '60px');
     $('#sectionTitle-menu').css('margin-top', '0px');
@@ -305,7 +309,7 @@ function setupMobile() {
         height: "50px"
     }, 400);
 
-    $('#menu-toggle').css('margin-top', "14px");
+    $('#menu-toggle').css('margin-top', '14px');
     $('#menu-items').css('top', '60px');   
 }
 
