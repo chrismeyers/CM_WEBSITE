@@ -126,6 +126,11 @@
                     </tr>
 
                     <tr>
+                        <td class="left">&bull; Experience writing Bash and Python scripts to automate 
+                            processes and aid in development.</td>
+                    </tr>
+
+                    <tr>
                         <td class="left">&bull; Experience as a member of an Agile software development team
                             utilizing JIRA to track issues.</td>
                     </tr>
@@ -138,11 +143,6 @@
                     <tr>
                         <td class="left">&bull; Experience debugging software with visual debuggers
                             (Netbeans, Eclipse, Visual Studio) and the command line GNU debugger (GDB).</td>
-                    </tr>
-
-                    <tr>
-                        <td class="left">&bull; Experience developing shell scripts to automate processes
-                            and aid in software development.</td>
                     </tr>
 
                     <tr>
