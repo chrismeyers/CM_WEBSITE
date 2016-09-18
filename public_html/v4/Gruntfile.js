@@ -47,8 +47,15 @@ module.exports = function(grunt) {
             }
         },
         processhtml: {
-            files: {
-                'index.php': ['sections/index_var.php']
+            dist: {
+                files: {
+                    'index.php': ['sections/index_var.php']
+                }
+            },
+            dev: {
+                files: {
+                    'index.php': ['sections/index_var.php']
+                }
             }
         }
 
@@ -63,7 +70,7 @@ module.exports = function(grunt) {
 
 
     // "grunt" commands
-    grunt.registerTask('default', ['newer:concat', 'newer:uglify', 'newer:cssmin', 'processhtml']);
-    grunt.registerTask('dist',    ['newer:concat', 'newer:uglify', 'newer:cssmin', 'processhtml']);
-    grunt.registerTask('dev',     ['processhtml']);
+    grunt.registerTask('default', ['newer:concat', 'newer:uglify', 'newer:cssmin', 'processhtml:dist']);
+    grunt.registerTask('dist',    ['newer:concat', 'newer:uglify', 'newer:cssmin', 'processhtml:dist']);
+    grunt.registerTask('dev',     ['processhtml:dev']);
 };

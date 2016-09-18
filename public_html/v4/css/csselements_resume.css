@@ -12,26 +12,23 @@
 
 .left {
     width: 65%;
+    float: left;
 }
 
 .right {
+    float: right;
     width: 35%;
     text-align: right;
-    vertical-align: top;
 }
 
 .first {
-    padding-left: 20px;
+    padding-left: 40px;
 }
 
 .second {
-    padding-left: 40px;
-    width:100%;
+    padding-left: 80px;
 }
 
-.footer {
-    color: black;
-    height: auto;
-    margin-top: 25px;
-    width: 100%;
+.info {
+    display: inline-block;
 }

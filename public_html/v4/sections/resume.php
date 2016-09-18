@@ -2,179 +2,97 @@
             <div class="section-header">Résumé</div>
             
             <div class="content-text">
-                <!-- WORK EXPERIENCE -->
                 <h2>Work Experience</h2>
-                <table class="wrapper">
-                    <tr>
-                        <td class="left">&bull; <b>ASRC Federal Mission Solutions, Moorestown, NJ</b></td>
-                        <td class="right"><b>May 2015 – Present</b></td>
-                    </tr>
-                    <table>
-                        <tr>
-                            <td class="left first">&#9702; Software Engineer, Display Systems</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <tr>
-                                <td class="left second">&#9642; Designed, developed, and tested solutions in
-                                    CMMI Level 5 for the U.S. Navy’s real-time mission critical Aegis Ballistic
-                                    Missile Defense (BMD) system.</td>
-                            </tr>
-                            <tr>
-                                <td class="left second">&#9642; Nominated as a mentor to help new employees
-                                    adjust to their position.</td>
-                            </tr>
-                            <tr>
-                                <td class="left second">&#9642; Lead developer of the display component for the
-                                    Littoral Combat Ship's (LCS) SeaRAM weapon system.</td>
-                            </tr>
-                            <td></td>
-                        </tr>
-                    </table>
-                </table>
 
-                <br />
+                <div class="left">&bull; <b>ASRC Federal Mission Solutions, Moorestown, NJ</b></div>
+                <div class="right"><b>May 2015 – Present</b></div>
+                <div class=info>
+                    <div class="first">&#9702; Software Engineer, Display Systems</div>
+                        <div class="second">&#9642; Designed, developed, and tested solutions in
+                            CMMI Level 5 for the U.S. Navy’s real-time mission critical Aegis Ballistic
+                            Missile Defense (BMD) system.</div>
+                        <div class="second">&#9642; Nominated as a mentor to help new employees
+                            adjust to their position.</div>
+                        <div class="second">&#9642; Lead developer of the display component for the
+                            Littoral Combat Ship's (LCS) SeaRAM weapon system.</div>
+                </div>
 
-                <table class="wrapper">
-                    <tr>
-                        <td class="left">&bull; <b>ASRC Federal Mission Solutions, Moorestown, NJ</b></td>
-                        <td class="right"><b>Mar 2015 – May 2015</b></td>
-                    </tr>
-                    <table>
-                        <tr>
-                            <td class="left first">&#9702; Software Engineer Intern, Display Systems</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td class="left second">&#9642; Assisted a team working on the Aegis
-                                Ballistic Missile Defense (BMD) system.</td>
-                            <td></td>
-                        </tr>
-                    </table>
-                </table>
+                <br /> <br />
 
-                <br />
+                <div class="left">&bull; <b>ASRC Federal Mission Solutions, Moorestown, NJ</b></div>
+                <div class="right"><b>Mar 2015 – May 2015</b></div>
+                <div class=info>
+                    <div class="first">&#9702; Software Engineer Intern, Display Systems</div>   
+                        <div class="second">&#9642; Assisted a team working on the Aegis
+                            Ballistic Missile Defense (BMD) system.</div>
+                </div>
 
-                <table class="wrapper">
-                    <tr>
-                        <td class="left">&bull; <b>Rowan University, History Department</b></td>
-                        <td class="right"><b>Nov 2013 – May 2015</b></td>
-                    </tr>
-                    <table>
-                        <tr>
-                            <td class="left first">&#9702; Web Developer</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td class="left second">&#9642; Updated and maintained the History
-                                Department's website.</td>
-                            <td></td>
-                        </tr>
-                    </table>
-                </table>
+                <br /> <br />
 
-                <br />
+                <div class="left">&bull; <b>Rowan University, History Department</b></div>
+                <div class="right"><b>Nov 2013 – May 2015</b></div>
+                <div class=info>
+                    <div class="first">&#9702; Web Developer</div>
+                        <div class="second">&#9642; Updated and maintained the History Department's
+                            website.</div>
+                </div>
 
-                <table class="wrapper">
-                    <tr>
-                        <td class="left">&bull; <b>Rowan University, Network & System Services</b></td>
-                        <td class="right"><b>Jul 2014 – Sept 2014</b></td>
-                    </tr>
-                    <table>
-                        <tr>
-                            <td class="left first">&#9702; Network Assistant</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td class="left second">&#9642; Installed and maintained network
-                                infrastructure across the Glassboro campus.</td>
-                            <td></td>
-                        </tr>
-                    </table>
-                </table>
+                <br /> <br />
 
-                <br /><hr>
+                <div class="left">&bull; <b>Rowan University, Network &amp; System Services</b></div>
+                <div class="right"><b>Jul 2014 – Sept 2014</b></div>
+                <div class=info>
+                    <div class="first">&#9702; Network Assistant</div>
+                        <div class="second">&#9642; Installed and maintained network
+                            infrastructure across the Glassboro campus.</div>
+                </div>
+
+                <br /> <br /> <hr>
                 
-                <!-- EDUCATION -->
                 <h2>Education</h2>
-                <table class="wrapper">
-                    <tr>
-                        <td class="left">&bull; <b>Rowan University, Glassboro, NJ</b></td>
-                        <td class="right"><b>Sept 2011 - May 2015</b></td>
-                    </tr>
-                    <table>
-                        <tr>
-                            <td class="first">&#9702; Bachelor of Science, Computer Science</td>
-                            <td></td>
-                        </tr>
-                    </table>
-                </table>
+                <div class="left">&bull; <b>Rowan University, Glassboro, NJ</b></div>
+                <div class="right"><b>Sept 2011 - May 2015</b></div>
+                <div class=info>
+                    <div class="first">&#9702; Bachelor of Science, Computer Science</div>
+                </div>
 
-                <br /><hr>
+                <br /> <br /> <hr>
                 
-                <!-- TECHNICAL EXPERIENCE -->
                 <h2>Technical Experience</h2>
-                <table class="wrapper">
-                    <tr>
-                        <td class="left">&bull; Experience developing various software using languages
-                            such as Java, C++, and C#.</td>
-                    </tr>
 
-                    <tr>
-                        <td class="left">&bull; Experience developing websites and web applications using
-                            languages and technologies such as HTML, CSS, PHP, Javascript, JSON, and MySQL.</td>
-                    </tr>
+                <div>&bull; Experience developing various software using languages
+                    such as Java, C++, and C#.</div>
 
-                    <tr>
-                        <td class="left">&bull; Experience writing Bash and Python scripts to automate 
-                            processes and aid in development.</td>
-                    </tr>
+                <div>&bull; Experience developing websites and web applications using
+                    languages and technologies such as HTML, CSS, PHP, Javascript, JSON, and MySQL.</div>
 
-                    <tr>
-                        <td class="left">&bull; Experience as a member of an Agile software development team
-                            utilizing JIRA to track issues.</td>
-                    </tr>
+                <div>&bull; Experience writing Bash and Python scripts to automate 
+                    processes and aid in development.</div>
 
-                    <tr>
-                        <td class="left">&bull; Experience with ClearCase, Git, and Subversion
-                            version control.</td>
-                    </tr>
+                <div>&bull; Experience as a member of an Agile software development team
+                    utilizing JIRA to track issues.</div>
 
-                    <tr>
-                        <td class="left">&bull; Experience debugging software with visual debuggers
-                            (Netbeans, Eclipse, Visual Studio) and the command line GNU debugger (GDB).</td>
-                    </tr>
+                <div>&bull; Experience with ClearCase, Git, and Subversion
+                    version control.</div>
 
-                    <tr>
-                        <td class="left">&bull; Highly proficient with modern IDE’s such as Netbeans,
-                            Eclipse, and Visual Studio.</td>
-                    </tr>
+                <div>&bull; Experience debugging software with visual debuggers
+                    (Netbeans, Eclipse, Visual Studio) and the command line GNU debugger (GDB).</div>
 
-                    <tr>
-                        <td class="left">&bull; Highly proficient with Windows, Mac OSX, and Command
-                            Line Interfaces (Unix, Linux, Solaris).</td>
-                    </tr>
+                <div>&bull; Highly proficient with modern IDE’s such as Netbeans,
+                    Eclipse, and Visual Studio.</div>
 
-                    <tr>
-                        <td class="left">&bull; Highly proficient with Microsoft Office.</td>
-                    </tr>
+                <div>&bull; Highly proficient with Windows, Mac OSX, and Command
+                    Line Interfaces (Unix, Linux, Solaris).</div>
 
-                    <tr>
-                        <td class="left">&bull; Experience installing, maintaining, and relocating data
-                            center hardware.</td>
-                    </tr>
+                <div>&bull; Highly proficient with Microsoft Office.</div>
 
-                    <tr>
-                        <td class="left">&bull; Very familiar with computer hardware.  Built multiple
-                            computers from individual components.</td>
-                    </tr>
+                <div>&bull; Experience installing, maintaining, and relocating data
+                    center hardware.</div>
 
-                    <tr>
-                        <td class="left">&bull; Experience with 2D and 3D Computer Aided Drafting (CAD)
-                            using technologies such as Autodesk AutoCAD, Rhinoceros 4, and Autodesk Inventor.</td>
-                    </tr>
+                <div>&bull; Very familiar with computer hardware.  Built multiple
+                    computers from individual components.</div>
 
-                </table>
+                <div>&bull; Experience with 2D and 3D Computer Aided Drafting (CAD)
+                    using technologies such as Autodesk AutoCAD, Rhinoceros 4, and Autodesk Inventor.</div>
+
                 <br />
-            </div>
-        </div>
