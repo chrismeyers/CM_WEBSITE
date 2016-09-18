@@ -1,5 +1,7 @@
 module.exports = function(grunt) {
 
+    require('time-grunt')(grunt);
+
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
@@ -45,15 +47,8 @@ module.exports = function(grunt) {
             }
         },
         processhtml: {
-            dist: {
-                files: {
-                    'index.php': ['sections/index_var.php']
-                }
-            },
-            dev: {
-                files: {
-                    'index.php': ['sections/index_var.php']
-                }
+            files: {
+                'index.php': ['sections/index_var.php']
             }
         }
 
@@ -64,10 +59,11 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-processhtml');
+    grunt.loadNpmTasks('grunt-newer');
+
 
     // "grunt" commands
-    grunt.registerTask('default', ['concat', 'uglify', 'cssmin', 'processhtml:dist']);
-    grunt.registerTask('dist',    ['concat', 'uglify', 'cssmin', 'processhtml:dist']);
-    grunt.registerTask('dev',     ['processhtml:dev']);
-
+    grunt.registerTask('default', ['newer:concat', 'newer:uglify', 'newer:cssmin', 'processhtml']);
+    grunt.registerTask('dist',    ['newer:concat', 'newer:uglify', 'newer:cssmin', 'processhtml']);
+    grunt.registerTask('dev',     ['processhtml']);
 };
