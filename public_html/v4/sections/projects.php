@@ -65,10 +65,10 @@
                                     <dd>My first web project.  A digital representation of myself.</dd>
                                     
                                 <dt class="dt-mod"><b>My Role:</b></dt>
-                                    <dd>Solo project.</dd>
+                                    <dd>Solo project</dd>
                                     
                                 <dt class="dt-mod"><b>Status:</b></dt>
-                                    <dd>Being maintained.</dd>
+                                    <dd>Being maintained</dd>
                             </dl>
                         </div>
                     </div>
@@ -117,7 +117,7 @@
                                         outputting the simplified reports to an Excel spreadsheet.</dd>
                                     
                                 <dt class="dt-mod"><b>Status:</b></dt>
-                                    <dd>Complete.</dd>
+                                    <dd>Complete</dd>
                             </dl>
                         </div>
                     </div>
@@ -196,10 +196,10 @@
                                     <dd>An application that makes tours depending on selected points of interest.</dd>
 
                                 <dt class="dt-mod"><b>My Role:</b></dt>
-                                    <dd>Solo project.</dd>
+                                    <dd>Solo project</dd>
 
                                 <dt class="dt-mod"><b>Status:</b></dt>
-                                    <dd>Complete.</dd>
+                                    <dd>Complete</dd>
                             </dl>
                         </div>
                     </div>
@@ -257,10 +257,10 @@
                                     <dd>An android version of tic tac toe.</dd>
                                     
                                 <dt class="dt-mod"><b>My Role:</b></dt>
-                                    <dd>Solo Project.</dd>
+                                    <dd>Solo Project</dd>
                                     
                                 <dt class="dt-mod"><b>Status:</b></dt>
-                                    <dd>Complete.</dd>
+                                    <dd>Complete</dd>
                             </dl>
                         </div>
                     </div>
@@ -343,10 +343,10 @@
                                     </dd>
                                     
                                 <dt class="dt-mod"><b>My Role:</b></dt>
-                                    <dd>Solo Project.</dd>
+                                    <dd>Solo Project</dd>
                                     
                                 <dt class="dt-mod"><b>Status:</b></dt>
-                                    <dd>Being maintained.</dd>
+                                    <dd>Complete</dd>
                             </dl>
                         </div>
                     </div>
@@ -428,7 +428,7 @@
                                         them in data structures used for plotting.</dd>
 
                                 <dt class="dt-mod"><b>Status:</b></dt>
-                                    <dd>Complete.</dd>
+                                    <dd>Complete</dd>
                             </dl>
                         </div>
                     </div>
@@ -526,10 +526,10 @@
                                     </dd>
 
                                 <dt class="dt-mod"><b>My Role:</b></dt>
-                                    <dd>Solo Project.</dd>
+                                    <dd>Solo Project</dd>
 
                                 <dt class="dt-mod"><b>Status:</b></dt>
-                                    <dd>Complete.</dd>
+                                    <dd>Complete</dd>
                             </dl>
                         </div>
                     </div>
@@ -602,10 +602,10 @@
                                     </dd>
 
                                 <dt class="dt-mod"><b>My Role:</b></dt>
-                                    <dd>Solo Project.</dd>
+                                    <dd>Solo Project</dd>
 
                                 <dt class="dt-mod"><b>Status:</b></dt>
-                                    <dd>Complete.</dd>
+                                    <dd>Complete</dd>
                             </dl>
                         </div>
                     </div>
