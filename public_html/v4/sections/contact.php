@@ -27,20 +27,20 @@
                             
                             echo '<p class="errors">';
                             if ($err_arr[0] == "1") {
-                                echo "<span class='contact-symbol'>&#9888;</span> Name required. Please try again." . '<br />';
+                                echo "<span class='contact-symbol'><img src='images/icons/alert.svg'> Name required. Please try again.</span>" . '<br />';
                             } 
                             if ($err_arr[1] == "1") {
-                                echo "<span class='contact-symbol'>&#9888;</span> Email Address format is incorrect. Please try again." . '<br />';
+                                echo "<span class='contact-symbol'><img src='images/icons/alert.svg'> Email Address format is incorrect. Please try again.</span>" . '<br />';
                             }
                             if ($err_arr[2] == "1") {
-                                echo "<span class='contact-symbol'>&#9888;</span> Email Addresses don't match. Please try again." . '<br />';
+                                echo "<span class='contact-symbol'><img src='images/icons/alert.svg'> Email Addresses don't match. Please try again.</span>" . '<br />';
                             }
 
                             echo '</p>';
                         }
                         else {
                             echo '<p class="success">';
-                            echo "<span class='contact-symbol'>&#10003;</span> Your request has been successfully submitted. Thank you!";
+                            echo "<span class='contact-symbol'><img src='images/icons/check.svg'> Your request has been successfully submitted. Thank you!</span>";
                             echo '</p>';
                         }
                     }
