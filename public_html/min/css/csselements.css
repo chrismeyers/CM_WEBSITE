@@ -1,0 +1,58 @@
+/* 
+    Document   : csselements
+    Created on : Oct 25, 2013
+    Author     : Chris Meyers
+    Description:
+        Default stylesheet.
+*/
+
+#namebox {
+    position: fixed;
+    font-family: Verdana, Geneva, sans-serif;
+    width: 525px;
+    top: 50%;
+    left: 50%;
+    /* Centers the div */
+    margin-top: -144px; /* Negative Half of of div height */
+    margin-left: -262px; /* Negative Half of of div width */
+}
+
+#nameimage {
+    height: 12%;
+    width: 12%
+}
+
+.header-txt {
+    font-size: x-large;
+    margin-bottom: 5px;
+}
+
+.body-txt {
+    font-size: large;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.link-txt {
+    margin-left: 50px;
+    margin-bottom: 2px;
+    display: block;
+}
+
+.fancytxt {
+    color: #000000;
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+}
+.fancytxt:hover {
+    color:#5bb75b;
+    cursor: pointer;
+}
+
+#linkimage {
+    height: 24px;
+    width: 24px;
+    float: left;
+    margin-right: 5px;
+}
