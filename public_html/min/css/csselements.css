@@ -7,19 +7,18 @@
 */
 
 #namebox {
-    position: fixed;
+    max-width: 517px;
+    height: 300px;
+    padding: 10px;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
     font-family: Verdana, Geneva, sans-serif;
-    width: 525px;
-    top: 50%;
-    left: 50%;
-    /* Centers the div */
-    margin-top: -144px; /* Negative Half of of div height */
-    margin-left: -262px; /* Negative Half of of div width */
 }
 
 #nameimage {
-    height: 12%;
-    width: 12%
+    height: 17px;
+    width: 60px;
 }
 
 .header-txt {
