@@ -12,7 +12,7 @@
         <meta name="google-site-verification" content="hhNNTAa4qOt8sxeukKOI1u9o1w07nP3oHaT-07KvbO0" />
         <meta name="msvalidate.01" content="CF7D97B951B14774BF7EEE3D0BF09DB8" />
 
-        <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <!-- build:css:dist dist/production.min.css -->
         <!-- /build -->
