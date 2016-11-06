@@ -29,6 +29,7 @@ function init() {
     sectionTranslations["contact"]  = "contact-me";
 
     determineCutoffWidth(); //initializes mobileCutoffWidth
+    colorIncorrectInputs();
 }
 
 // Displays new section.
@@ -82,4 +83,30 @@ function hideProjectString(type, proj) {
 
 function isIdShown(id) {
    return (getComputedStyle(document.getElementById(id)).getPropertyValue("display") !== "none");
+}
+
+function colorIncorrectInputs() {
+    var urlVal = window.location.search;
+    if(urlVal  !== "") {
+        // If there's a valid error code in the URL, get it and split it up.
+        // Ex: ...?message=111#contact
+        var nums = urlVal.substring(urlVal.indexOf("=") + 1);
+        var parts = nums.split('')
+
+        var inputsToColor = [];
+        if(parts[0] === '1') {
+            inputsToColor.push('#name-input');
+        }
+        if(parts[1] === '1') {
+            inputsToColor.push('#email1-input');
+        }
+        if(parts[2] === '1') {
+            inputsToColor.push('#email2-input');
+        }
+
+        for(var i = 0; i < inputsToColor.length ; i++) {
+            $(inputsToColor[i]).css('border-color', 'red');
+            $(inputsToColor[i]).css('box-shadow', '0 0 10px red');
+        }
+    }
 }

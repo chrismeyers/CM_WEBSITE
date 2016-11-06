@@ -49,7 +49,7 @@
                     <table class="inputs">
                         <tr>
                             <td class="name-input">
-                                <input class="input-mod inputbox-mod" type="text" placeholder="Name" name="name"<?php
+                                <input id="name-input" class="input-mod inputbox-mod" type="text" placeholder="Name" name="name"<?php
                                 if (isset($_SESSION["name"])) {
                                     echo 'value="' . $_SESSION["name"] . '">';
                                 } else {
@@ -59,7 +59,7 @@
                         </tr>
                         <tr>
                             <td class="email-input">
-                                <input class="input-mod inputbox-mod" type="email" placeholder="Primary Email" name="fromemail"<?php
+                                <input id="email1-input" class="input-mod inputbox-mod" type="email" placeholder="Primary Email" name="fromemail"<?php
                                 if (isset($_SESSION["fromemail"])) {
                                     echo 'value="' . $_SESSION["fromemail"] . '">';
                                 } else {
@@ -68,7 +68,7 @@
                                 ?></td>
 
                             <td class="email-input">
-                                <input class="input-mod inputbox-mod" type="email" placeholder="Confirm Primary Email" name="confirmfromemail">
+                                <input id="email2-input" class="input-mod inputbox-mod" type="email" placeholder="Confirm Primary Email" name="confirmfromemail">
                             </td> 
                         </tr>
                     </table>
