@@ -539,7 +539,7 @@ function colorIncorrectInputs() {
         // If there's a valid error code in the URL, get it and split it up.
         // Ex: ...?message=111#contact
         var nums = urlVal.substring(urlVal.indexOf("=") + 1);
-        var parts = nums.split('')
+        var parts = nums.split('');
 
         var inputsToColor = [];
         if(parts[0] === '1') {
