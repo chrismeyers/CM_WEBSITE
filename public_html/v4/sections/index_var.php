@@ -3,7 +3,7 @@
 ?>
 <!DOCTYPE html>
 <!-- HOSTED ON SITEGROUND -->
-<html>
+<html lang="en">
     <head>
         <title>Chris Meyers: Homepage</title>
         <link rel="shortcut icon" href="images/icons/icon.ico">

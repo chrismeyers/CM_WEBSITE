@@ -32,6 +32,26 @@ module.exports = function(grunt) {
                     'scripts/vendor/fancybox/source/helpers/jquery.fancybox-thumbs.js'
                 ],
                 dest: 'dist/production.js'
+            },
+            db_dev: {
+                options: {
+                    separator: '',
+                },
+                src: [
+                    'db/dev.txt',
+                    'db/login.txt'
+                ],
+                dest: 'db/login_config.txt'
+            },
+            db_prod: {
+                options: {
+                    separator: '',
+                },
+                src: [
+                    'db/production.txt',
+                    'db/login.txt'
+                ],
+                dest: 'db/login_config.txt'
             }
         },
         uglify: {
@@ -70,7 +90,7 @@ module.exports = function(grunt) {
 
 
     // "grunt" commands
-    grunt.registerTask('default', ['newer:concat', 'newer:uglify', 'newer:cssmin', 'processhtml:dist']);
-    grunt.registerTask('dist',    ['newer:concat', 'newer:uglify', 'newer:cssmin', 'processhtml:dist']);
-    grunt.registerTask('dev',     ['processhtml:dev']);
+    grunt.registerTask('default', ['newer:concat:css', 'newer:concat:js', 'concat:db_prod', 'newer:uglify', 'newer:cssmin', 'processhtml:dist']);
+    grunt.registerTask('dist',    ['newer:concat:css', 'newer:concat:js', 'concat:db_prod', 'newer:uglify', 'newer:cssmin', 'processhtml:dist']);
+    grunt.registerTask('dev',     ['concat:db_dev', 'processhtml:dev']);
 };
