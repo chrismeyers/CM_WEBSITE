@@ -45,20 +45,26 @@
                                 </div>
 
                                 <div class='build-specs'>
-                                    <b>Specifications</b>
-                                    <ul>
-                                        <li><u>Processor:</u> " . $proc . "</li>";
+                                    <dl>
+                                        <dt class='dt-mod'><b>Processor:</b></dt>
+                                            <dd>" . $proc . "</dd>";
                                         if($cool != NULL) {
-                                            echo "<li><u>Cooling:</u> " . $cool . "</li>";
+                                            echo "<dt class='dt-mod'><b>Cooling:</b></dt>
+                                                <dd>" . $cool . "</dd>";
                                         }
-                                        echo "<li><u>Mobo:</u> " . $mobo . "</li>
-                                        <li><u>Memory:</u> " . $ram . "</li>
-                                        <li><u>HDD:</u> " . $hdd . "</li>";
+                                        echo "<dt class='dt-mod'><b>Mobo:</b></dt>
+                                            <dd>" . $mobo . "</dd>
+                                        <dt class='dt-mod'><b>Memory:</b></dt>
+                                            <dd>" . $ram . "</dd>
+                                        <dt class='dt-mod'><b>HDD:</b></dt>
+                                            <dd>" . $hdd . "</dd>";
                                         if($ssd != NULL) {
-                                            echo "<li><u>SSD:</u> " . $ssd . "</li>";
+                                            echo "<dt class='dt-mod'><b>SSD:</b></dt>
+                                                <dd>" . $ssd . "</dd>";
                                         }
-                                        echo "<li><u>Video Card:</u> " . $vid. "</li>
-                                    </ul>
+                                        echo "<dt class='dt-mod'><b>Video Card:</b></dt>
+                                            <dd>" . $vid . "</dd>
+                                    </dl>
                                 </div>
                             </div>
                         </div>";
