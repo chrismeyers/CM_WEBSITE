@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:8889
--- Generation Time: Nov 20, 2016 at 03:47 AM
+-- Generation Time: Nov 25, 2016 at 04:45 PM
 -- Server version: 5.5.42
 -- PHP Version: 7.0.0
 
@@ -112,7 +112,7 @@ CREATE TABLE `projects_images` (
   `url` text NOT NULL,
   `title` text NOT NULL,
   `orient` text NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `projects_images`
@@ -143,7 +143,8 @@ INSERT INTO `projects_images` (`id`, `abbrev`, `url`, `title`, `orient`) VALUES
 (22, 'bms', 'images/project_screenshots/bms/bms_plot.png', 'The final plot.', 'square'),
 (23, 'lol_status', 'images/project_screenshots/lol_status/gui.png', 'The Java GUI that displays the current status of services in a specified region.', 'square'),
 (24, 'lol_status', 'images/project_screenshots/lol_status/polling.png', 'Input form that allows users to specify how often the GUI updates.', 'square'),
-(25, 'lol_status', 'images/project_screenshots/lol_status/tray.png', 'Notification area functionality.', 'square');
+(25, 'lol_status', 'images/project_screenshots/lol_status/tray.png', 'Notification area functionality.', 'square'),
+(26, 'cm', 'images/project_screenshots/cm/cm_min.png', 'Minimalist version of my website, <a class="fancytxt" target="_blank"  href="../min">http://links.chrismeyers.info</a>.', 'square');
 
 --
 -- Indexes for dumped tables
@@ -196,4 +197,4 @@ ALTER TABLE `projects`
 -- AUTO_INCREMENT for table `projects_images`
 --
 ALTER TABLE `projects_images`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=26;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=27;
