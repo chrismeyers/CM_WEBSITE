@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:8889
--- Generation Time: Nov 25, 2016 at 04:45 PM
+-- Generation Time: Nov 25, 2016 at 05:23 PM
 -- Server version: 5.5.42
 -- PHP Version: 7.0.0
 
@@ -20,7 +20,8 @@ SET time_zone = "+00:00";
 -- Table structure for table `builds`
 --
 
-CREATE TABLE `builds` (
+DROP TABLE IF EXISTS `builds`;
+CREATE TABLE IF NOT EXISTS `builds` (
   `build` int(11) NOT NULL,
   `date` text NOT NULL,
   `proc` text NOT NULL,
@@ -49,7 +50,8 @@ INSERT INTO `builds` (`build`, `date`, `proc`, `cool`, `mobo`, `ram`, `hdd`, `ss
 -- Table structure for table `builds_images`
 --
 
-CREATE TABLE `builds_images` (
+DROP TABLE IF EXISTS `builds_images`;
+CREATE TABLE IF NOT EXISTS `builds_images` (
   `id` int(11) NOT NULL,
   `abbrev` text NOT NULL,
   `url` text NOT NULL,
@@ -73,7 +75,8 @@ INSERT INTO `builds_images` (`id`, `abbrev`, `url`, `title`, `orient`) VALUES
 -- Table structure for table `projects`
 --
 
-CREATE TABLE `projects` (
+DROP TABLE IF EXISTS `projects`;
+CREATE TABLE IF NOT EXISTS `projects` (
   `proj` int(11) NOT NULL,
   `title` text NOT NULL,
   `web_url` text,
@@ -106,7 +109,8 @@ INSERT INTO `projects` (`proj`, `title`, `web_url`, `code_url`, `date`, `lang`, 
 -- Table structure for table `projects_images`
 --
 
-CREATE TABLE `projects_images` (
+DROP TABLE IF EXISTS `projects_images`;
+CREATE TABLE IF NOT EXISTS `projects_images` (
   `id` int(11) NOT NULL,
   `abbrev` varchar(10) NOT NULL,
   `url` text NOT NULL,
@@ -144,7 +148,7 @@ INSERT INTO `projects_images` (`id`, `abbrev`, `url`, `title`, `orient`) VALUES
 (23, 'lol_status', 'images/project_screenshots/lol_status/gui.png', 'The Java GUI that displays the current status of services in a specified region.', 'square'),
 (24, 'lol_status', 'images/project_screenshots/lol_status/polling.png', 'Input form that allows users to specify how often the GUI updates.', 'square'),
 (25, 'lol_status', 'images/project_screenshots/lol_status/tray.png', 'Notification area functionality.', 'square'),
-(26, 'cm', 'images/project_screenshots/cm/cm_min.png', 'Minimalist version of my website, <a class="fancytxt" target="_blank"  href="../min">http://links.chrismeyers.info</a>.', 'square');
+(26, 'cm', 'images/project_screenshots/cm/cm_min.png', 'Minimalist version of my website, <a class="fancytxt" target="_blank"  href="http://links.chrismeyers.info/">http://links.chrismeyers.info</a>.', 'square');
 
 --
 -- Indexes for dumped tables
