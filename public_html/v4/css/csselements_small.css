@@ -29,6 +29,7 @@
         color: red;
         text-align: left;
         margin-bottom: 10px;
+        margin-left: 5px;
     }
 
     .success {
@@ -36,6 +37,7 @@
         color: #5bb75b;
         text-align: left;
         margin-bottom: 10px;
+        margin-left: 5px;
     }
 
     .contact-alert-symbol {
@@ -44,6 +46,7 @@
     }
 
     .contact-alert-text {
+        margin-left: 25px;
         font-size: medium;
         font-weight: normal; 
     }    

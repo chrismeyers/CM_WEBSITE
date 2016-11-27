@@ -18,7 +18,7 @@
                             if ($message == "resume") {
                                 $_SESSION["usercomments"] = "I would like a copy of your résumé.";
                                 echo '<div class="errors">';
-                                echo "<img class='contact-alert-symbol' src='images/icons/info.svg'><span class='contact-alert-text'> To request a PDF version of my résumé, please enter your name, email and any additional information.</span>";
+                                echo "<img class='contact-alert-symbol' src='images/icons/info.svg'><div class='contact-alert-text'> To request a PDF version of my résumé, please enter your name, email and any additional information.</div>";
                                 echo '</div>';
                             }
                             else if(strcmp($message, "000") != 0) {
@@ -26,20 +26,20 @@
                                 
                                 echo '<div class="errors">';
                                 if ($err_arr[0] == "1") {
-                                    echo "<img class='contact-alert-symbol' src='images/icons/alert.svg'><span class='contact-alert-text'> Name required.</span>" . '<br />';
+                                    echo "<img class='contact-alert-symbol' src='images/icons/alert.svg'><div class='contact-alert-text'> Name required.</div>";
                                 } 
                                 if ($err_arr[1] == "1") {
-                                    echo "<img class='contact-alert-symbol' src='images/icons/alert.svg'><span class='contact-alert-text'> Email Address format is incorrect.</span>" . '<br />';
+                                    echo "<img class='contact-alert-symbol' src='images/icons/alert.svg'><div class='contact-alert-text'> Email Address format is incorrect.</div>";
                                 }
                                 if ($err_arr[2] == "1") {
-                                    echo "<img class='contact-alert-symbol' src='images/icons/alert.svg'><span class='contact-alert-text'> Email Addresses don't match.</span>" . '<br />';
+                                    echo "<img class='contact-alert-symbol' src='images/icons/alert.svg'><div class='contact-alert-text'> Email Addresses don't match.</div>";
                                 }
 
                                 echo '</div>';
                             }
                             else {
                                 echo '<div class="success">';
-                                echo "<img class='contact-alert-symbol' src='images/icons/check.svg'><span class='contact-alert-text'> Your request has been successfully submitted. Thank you!</span>";
+                                echo "<img class='contact-alert-symbol' src='images/icons/check.svg'><div class='contact-alert-text'> Your request has been successfully submitted. Thank you!</div>";
                                 echo '</div>';
                             }
                         }

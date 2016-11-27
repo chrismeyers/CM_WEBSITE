@@ -43,6 +43,7 @@
     }
 
     .contact-alert-text {
+        margin-left: 25px;
         font-size: medium;
         font-weight: normal; 
     }
