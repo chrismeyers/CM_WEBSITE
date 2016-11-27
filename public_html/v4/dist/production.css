@@ -175,6 +175,10 @@
     .dt-mod {
         margin-top: 15px;
     }
+
+    .dt-links {
+        margin-bottom: 5px;
+    }
     
     .first-header {
         margin-top: 0px;
@@ -648,6 +652,10 @@
 
     .dt-mod {
         margin-top: 15px;
+    }
+
+    .dt-links {
+        margin-bottom: 5px;
     }
     
     .first-header {
@@ -1181,6 +1189,10 @@
     
     .dt-mod {
         margin-top: 15px;
+    }
+
+    .dt-links {
+        margin-bottom: 5px;
     }
     
     .first-header {

@@ -84,7 +84,7 @@
                                 <dt class='dt-mod'><b>Status:</b></dt>
                                     <dd>" . $stat . "</dd>
 
-                                <dt class='dt-mod'><b>Links:</b></dt>";
+                                <dt class='dt-mod dt-links'><b>Links:</b></dt>";
                                 if($web_url != NULL) {
                                     echo "<dd class='project-link-image'><img src='images/icons/link.png' class='link-image-small'> <a href='" . $web_url . "' class='fancytxt' target='_blank'>Website</a></dd>";
                                 }
