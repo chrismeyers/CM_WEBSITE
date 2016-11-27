@@ -18,41 +18,12 @@
 
                     echo "<div class='proj'>";
                         if($i == 1) {
-                            echo "<h2 class='first-header'>" . $title . " ";
+                            echo "<h2 class='first-header'>" . $title . " </h2>";
                         }
                         else {
-                            echo "<h2>" . $title . " ";
+                            echo "<h2>" . $title . " </h2>";
                         }
-                        echo "<div class='proj-link-block'>";
-                            if($web_url != NULL) {
-                                echo "<span class='proj-bullets'>&bull;</span>
-                                    <a href='" . $web_url . "' target='_blank' class='no-decoration'>
-                                        <img src='images/icons/link.png'                                             
-                                            onmouseover='this.src = \"images/icons/link_hover.png\"; showProjectString(\"website\", \"" . $abbrev . "\");' 
-                                            onmouseout='this.src = \"images/icons/link.png\"; hideProjectString(\"website\", \"" . $abbrev . "\");'
-                                            class='proj-link'
-                                            alt='Link to Website' 
-                                            title='View site'>
-                                
-                                        <span class='fancytxt' id='slide-website-" . $abbrev . "'>Website</span>
-                                    </a>";
-                            }
-
-                            echo "<span class='proj-bullets'>&bull;</span>
-                                <a href='" . $code_url . "' target='_blank' class='no-decoration'>
-                                    <img src='images/social/github.png'
-                                        onmouseover='this.src = \"images/social/github_hover.png\"; showProjectString(\"code\", \"" . $abbrev . "\");' 
-                                        onmouseout='this.src = \"images/social/github.png\"; hideProjectString(\"code\", \"" . $abbrev . "\");'
-                                        class='proj-link'
-                                        alt='Link to Code' 
-                                        title='View code'>
-
-                                    <span class='fancytxt' id='slide-code-" . $abbrev . "'>Code</span>
-                                </a>
-                            </div>
-                        </h2>
-                        
-                        <h3>" . $date . "</h3>
+                        echo "<h3>" . $date . "</h3>
                         <div class='projWrapper'>";
 
                         $images = mysqli_query($con, "SELECT * FROM `projects_images` WHERE abbrev = '" . $abbrev . "'");
@@ -112,6 +83,12 @@
                                         
                                 <dt class='dt-mod'><b>Status:</b></dt>
                                     <dd>" . $stat . "</dd>
+
+                                <dt class='dt-mod'><b>Links:</b></dt>";
+                                if($web_url != NULL) {
+                                    echo "<dd class='project-link-image'><img src='images/icons/link.png' class='link-image-small'> <a href='" . $web_url . "' class='fancytxt' target='_blank'>Website</a></dd>";
+                                }
+                                echo "<dd class='project-link-image'><img src='images/social/mark-github.svg' class='link-image-small'> <a href='" . $code_url . "' class='fancytxt' target='_blank'>Code</a></dd>
                             </dl>
                         </div>
                     </div>";

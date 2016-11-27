@@ -3,10 +3,10 @@
 
             <div class="content-text">
                 <div class="contact-links">
-                    <span class="link-txt"><img src="images/social/mark-github.svg" class="link-image" alt="GitHub"> <a href="https://github.com/chrismeyers" target='_blank' class="fancytxt">GitHub</a></span>
-                    <span class="link-txt"><img src="images/social/linkedin-logo.svg" class="link-image" alt="LinkedIn"> <a href="https://www.linkedin.com/in/chris-meyers" target='_blank' class="fancytxt">LinkedIn</a></span>
-                    <span class="link-txt"><img src="images/social/facebook-logo.svg" class="link-image" alt="Facebook"> <a href="https://www.facebook.com/meyers42" target='_blank' class="fancytxt">Facebook</a></span>
-                    <span class="link-txt"><img src="images/social/mail.svg" class="link-image" alt="Email"> <a href="mailto:chris@chrismeyers.info" target='_blank' class="fancytxt">chris@chrismeyers.info</a></span>
+                    <span class="link-txt"><img src="images/social/mark-github.svg" class="link-image-big contact-link-image" alt="GitHub"> <a href="https://github.com/chrismeyers" target='_blank' class="fancytxt">GitHub</a></span>
+                    <span class="link-txt"><img src="images/social/linkedin-logo.svg" class="link-image-big contact-link-image" alt="LinkedIn"> <a href="https://www.linkedin.com/in/chris-meyers" target='_blank' class="fancytxt">LinkedIn</a></span>
+                    <span class="link-txt"><img src="images/social/facebook-logo.svg" class="link-image-big contact-link-image" alt="Facebook"> <a href="https://www.facebook.com/meyers42" target='_blank' class="fancytxt">Facebook</a></span>
+                    <span class="link-txt"><img src="images/social/mail.svg" class="link-image-big contact-link-image" alt="Email"> <a href="mailto:chris@chrismeyers.info" target='_blank' class="fancytxt">chris@chrismeyers.info</a></span>
                 </div>
 
                  <div class="contact-form">

@@ -52,20 +52,28 @@
         float: left;
     }
 
-    .link-image {
-        height: 20px;
-        width: 20px;
+    .contact-link-image {
         float: left;
         margin-right: 5px;
+    }
+
+    .project-link-image {
+        margin-bottom: 10px;
+    }
+
+    .link-image-big {
+        height: 20px;
+        width: 20px;
+    }
+
+    .link-image-small {
+        height: 16px;
+        width: 16px;
     }
 
     .link-txt {
         margin-bottom: 10px;
         display: block;
-    }
-
-    .svg-hover {
-        fill: #5bb75b;
     }
     
     .content {
@@ -332,66 +340,36 @@
     }
     
     .projImages-full-img-square {
-        height:200px;
-        width: 200px;
+        height: 250px;
+        width: 250px;
     }
     
     .projImages-full-img-land {
-        height:125px;
-        width: 200px;
+        height: 150px;
+        width: 250px;
     }
     
     .projImages-full-img-port {
-        height:200px;
-        width: 125px;
+        height: 250px;
+        width: 150px;
     }
     
     .projImages-small-img-square, .projImages-small-img-port {
-        height: 20px;
-        width: 20px;
-    }
-    
-    .projImages-small-img-land {
-        height: 20px;
+        height: 40px;
         width: 40px;
     }
     
+    .projImages-small-img-land {
+        height: 25px;
+        width: 60px;
+    }
+    
     .projDesc {
-        margin-left: 30%;
+        margin-left: 40%;
     }
     
     .no-decoration {
         text-decoration: none !important;
-    }
-    
-    #slide-code-cm,
-    #slide-code-genomic,
-    #slide-website-pine, #slide-code-pine,
-    #slide-code-ttt,
-    #slide-website-lol_player, #slide-code-lol_player,
-    #slide-code-pca,
-    #slide-code-bms,
-    #slide-code-lol_status {
-        cursor: pointer;
-        display: none;
-        font-size: 10px;
-        vertical-align: middle;
-        text-decoration: none;
-        color:#5bb75b;
-    }
-    
-    .proj-bullets {
-        font-size: 10px;
-        vertical-align: middle;
-    }    
-    
-    .proj-link-block {
-        display: inline-block;
-    }
-    
-    .proj-link {
-        width: 16px;
-        height: 16px;
     }
     
     .li-filled {

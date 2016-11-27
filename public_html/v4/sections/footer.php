@@ -5,10 +5,8 @@
                     <a href='https://www.facebook.com/meyers42'
                        target='_blank'
                        style='text-decoration: none;'>
-                        <img src='images/social/facebook.png'
-                             onmouseover="this.src = 'images/social/facebook_hover.png'" 
-                             onmouseout="this.src = 'images/social/facebook.png'"
-                             style='width: 16px; height: 16px;'
+                        <img src='images/social/facebook-logo.svg'
+                             class='link-image-small'
                              alt='Facebook'
                              title='Facebook'>
                     </a> 
@@ -20,10 +18,8 @@
                     <a href='https://www.linkedin.com/in/chris-meyers'
                        target='_blank' 
                        style='text-decoration: none;'>
-                        <img src='images/social/linkedin.png'
-                             onmouseover="this.src = 'images/social/linkedin_hover.png'" 
-                             onmouseout="this.src = 'images/social/linkedin.png'"
-                             style='width: 16px; height: 16px;'
+                        <img src='images/social/linkedin-logo.svg'
+                             class='link-image-small'
                              alt='LinkedIn' 
                              title='LinkedIn'>
                     </a> 
@@ -35,10 +31,8 @@
                     <a href='https://github.com/chrismeyers' 
                        target='_blank'
                        style='text-decoration: none;'>
-                        <img src='images/social/github.png'
-                             onmouseover="this.src = 'images/social/github_hover.png'" 
-                             onmouseout="this.src = 'images/social/github.png'"
-                             style='width: 16px; height: 16px;'
+                        <img src='images/social/mark-github.svg'
+                             class='link-image-small'
                              alt='GitHub'
                              title='GitHub'>
                     </a> 
