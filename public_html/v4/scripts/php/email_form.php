@@ -43,7 +43,7 @@ if (strcmp($message, "000") != 0) {
 }
 
 // Constuct and send email from form information.
-$myemail = "cm.02.93@gmail.com";
+$myemail = "chris@chrismeyers.info";
 $emess = "Name: " . $_SESSION["name"] . "\n";
 $emess.= "Email: " . $_SESSION["fromemail"] . "\n";
 $emess.= "Comments: " . $_SESSION["usercomments"];

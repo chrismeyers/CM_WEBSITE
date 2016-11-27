@@ -27,18 +27,46 @@
     .errors {
         font-weight: bold;
         color: red;
-        text-align: center;
+        text-align: left;
+        margin-bottom: 10px;
     }
 
     .success {
         font-weight: bold;
         color: #5bb75b;
-        text-align: center;
+        text-align: left;
+        margin-bottom: 10px;
     }
 
-    .contact-symbol {
-        font-size: large;
+    .contact-alert-symbol {
+        float: left;
+        margin-right: 5px;
+    }
+
+    .contact-alert-text {
+        font-size: medium;
         font-weight: normal; 
+    }    
+    
+    .contact-links {
+        padding-left: 5px;
+        margin-bottom: 20px;
+    }
+
+    .link-image {
+        height: 20px;
+        width: 20px;
+        float: left;
+        margin-right: 5px;
+    }
+
+    .link-txt {
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    .svg-hover {
+        fill: #5bb75b;
     }
     
     .section-header {
@@ -101,20 +129,15 @@
 
     .inputs {
         width: 100%;
-        padding-left: 5%;
-        padding-right: 5%;
         text-align: left;
     }
     
     .comments {
         width:100%;
-        padding-left: 5%;
-        padding-right: 5%;
         text-align: left;
     }
     
-   .buttons {
-        margin-left: auto;
+    .buttons {
         margin-right: auto;
     }
     
