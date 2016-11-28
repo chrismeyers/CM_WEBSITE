@@ -8,6 +8,7 @@ module.exports = function(grunt) {
         concat: {
             css: {
                 src: [
+                    'css/common.css',
                     'css/csselements.css',
                     'css/csselements_medium.css',
                     'css/csselements_small.css',

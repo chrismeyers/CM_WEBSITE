@@ -1,5 +1,5 @@
-<div id="about-me" class="content">
-            <div class="section-header">About</div>
+<div id="about-me" class="content content-size">
+            <div class="section-header section-header-size">About</div>
 
             <div class="content-text">
                 Hello, my name is <b>Chris Meyers</b> and this page is dedicated to letting you know who I am and 

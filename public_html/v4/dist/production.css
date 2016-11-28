@@ -1,11 +1,331 @@
 /* 
-    Document   : csselements
+    Document   : common.css
+    Created on : Nov 27, 2016
+    Author     : Chris Meyers
+    Description:
+        Common rules shared between all stylesheets.
+*/
+
+/********************* GENERAL *********************/
+img {
+    border: 0; /* Remove IE img link border */
+}
+
+.spacer {
+    overflow: hidden;
+    height: 0px;
+    width: 0px;
+}
+
+.fancytxt {
+    color: #FFFFFF;
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.fancytxt:hover {
+    color: #5bb75b;
+    cursor: pointer;
+}
+
+.no-decoration {
+    text-decoration: none !important;
+}
+
+.li-filled {
+    list-style-type: disc;
+}
+
+/********************* HEADER *********************/
+#bannerBar {
+    background-color: rgb(33,40,55);
+    padding-right: 6px;
+    border-bottom-color: #FFFFFF;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+
+    /* Make content scroll "under" banner */
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/********************* CONTENT *********************/
+.section-header {
+    background-color: rgb(33,40,55);
+    text-align: center;
+    vertical-align: middle;
+    font-family: Verdana, Geneva, sans-serif;
+    border-bottom-color: white;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.content-text {
+    padding: 5px;
+}
+
+.dt-mod {
+    margin-top: 15px;
+}
+
+.dt-links {
+    margin-bottom: 5px;
+}
+
+.first-header {
+    margin-top: 0px;
+}
+
+/********************* BUILDS *********************/
+.build {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.build-pic-img-land {
+    height: 220px;
+    width: 350px;
+}
+.build-pic-img-port {
+    height: 375px; 
+    width: 290px;
+}
+.build-info {
+    margin: 10px;
+    padding: 0;
+}
+
+/********************* PROJECTS *********************/
+.project-link-image {
+    margin-bottom: 10px;
+}
+
+.proj {
+    height: auto;
+}
+
+.projWrapper {
+    margin: 10px;
+    padding: 0;
+}
+
+.projImages-small-img-square, .projImages-small-img-port {
+    height: 40px;
+    width: 40px;
+}
+
+.projImages-small-img-land {
+    height: 25px;
+    width: 60px;
+}
+
+/********************* CONTACT *********************/
+.content {
+    color: #FFFAFA;
+    -webkit-margin-bottom-collapse: separate; /* Fixes margin-bottom for non-chrome browsers */
+    background-color: rgba(33,40,55,0.85);
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: medium;
+}
+
+.errors {
+    font-weight: bold;
+    color: red;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.success {
+    font-weight: bold;
+    color: #5bb75b;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.contact-alert-text {
+    margin-left: 25px;
+    font-size: medium;
+    font-weight: normal; 
+}
+
+.contact-link-image {
+    float: left;
+    margin-right: 5px;
+}
+
+.link-image-big {
+    height: 20px;
+    width: 20px;
+}
+
+.link-txt {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.buttons {
+    margin-right: auto;
+}
+
+.inputs {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+/* This button was generated using CSSButtonGenerator.com */
+.submit-button {
+    background-color:#5bb75b;
+    -webkit-border-top-left-radius:0px;
+    -moz-border-radius-topleft:0px;
+    border-top-left-radius:0px;
+    -webkit-border-top-right-radius:0px;
+    -moz-border-radius-topright:0px;
+    border-top-right-radius:0px;
+    -webkit-border-bottom-right-radius:0px;
+    -moz-border-radius-bottomright:0px;
+    border-bottom-right-radius:0px;
+    -webkit-border-bottom-left-radius:0px;
+    -moz-border-radius-bottomleft:0px;
+    border-bottom-left-radius:0px;
+    text-indent:0;
+    border:1px solid #000000;
+    display:inline-block;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:normal;
+    font-style:normal;
+    height:40px;
+    line-height:30px;
+    width:100px;
+    text-decoration:none;
+    text-align:center;
+}
+.submit-button:hover {
+    background-color:#187a87;
+}.submit-button:active {
+    position:relative;
+    top:1px;
+}
+.submit-button:focus {
+    outline: 0;
+}
+
+.inputbox-mod {
+    width: calc(100% - 5px - 5px); /* 100% - padding-left - padding-right */
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: small;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #cccccc;
+}
+.inputbox-mod:focus {
+    outline: none;
+    border-color: #5bb75b;
+    box-shadow: 0 0 10px #5bb75b;
+}
+.inputbox-mod::-ms-clear {
+    width: 0px;
+    height: 0px;
+}
+
+.input-mod {
+    height: 25px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.name-input {
+    padding-bottom: 15px;
+}
+
+.textarea-mod {
+    height: 100px;
+    width: calc(100% - 5px - 5px); /* 100% - padding-left - padding-right */
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: small;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #cccccc;
+    max-width: 750px;
+}
+.textarea-mod:focus {
+    outline: none;
+    border-color: #5bb75b;
+    box-shadow: 0 0 10px #5bb75b;
+}
+
+.comments {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+/********************* FOOTER *********************/
+#footer {
+    font-size: small; 
+    font-family: Verdana, Geneva, sans-serif;
+    color: #FFFFFF;
+    bottom: 0;
+    height: auto;
+    left: 0;
+    right: 0;
+    background-color: rgb(33,40,55);
+    border-top-color: #FFFFFF;
+    border-top-style: solid;
+    border-top-width: 1px;
+}
+
+.link-image-small {
+    height: 16px;
+    width: 16px;
+}
+
+.footer-social {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer-bullets {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer-resume {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/********************* PROMPT *********************/
+
+/* 
+    Document   : csselements.css
     Created on : Oct 4, 2013, 7:09:07 PM
     Author     : Chris Meyers
     Description:
         Fullscreen desktop stylesheet.
 */
+
 @media screen and (min-width: 1218px){
+    /********************* GENERAL *********************/
     html {
         position: relative;
         min-height: 100%;
@@ -18,199 +338,17 @@
         background-size: cover;
         margin: 0 0 60px; /* 3rd parameter must = #footer height */
     }
-    
-    img {
-      border: 0; /* Remove IE img link border */
-    }
 
-    .errors {
-        font-weight: bold;
-        color: red;
-        text-align: left;
-        margin-bottom: 10px;
-    }
-
-    .success {
-        font-weight: bold;
-        color: #5bb75b;
-        text-align: left;
-        margin-bottom: 10px;
-    }
-
-    .contact-alert-symbol {
-        float: left;
-        margin-right: 5px;
-    }
-
-    .contact-alert-text {
-        margin-left: 25px;
-        font-size: medium;
-        font-weight: normal; 
-    }
-    
-    .contact-links {
-        float: left;
-    }
-
-    .contact-link-image {
-        float: left;
-        margin-right: 5px;
-    }
-
-    .project-link-image {
-        margin-bottom: 10px;
-    }
-
-    .link-image-big {
-        height: 20px;
-        width: 20px;
-    }
-
-    .link-image-small {
-        height: 16px;
-        width: 16px;
-    }
-
-    .link-txt {
-        margin-bottom: 10px;
-        display: block;
-    }
-    
-    .content {
-        color:#FFFAFA;
-        width: 790px;
-        display: block;
-        top: 90px;
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 100px; /* Add more spacing between footer and content */
-        -webkit-margin-bottom-collapse: separate; /* Fixes margin-bottom for non-chrome browsers */
-        margin-top: 20px;
-        background-color: rgba(33,40,55,0.85);
-        font-family: Verdana, Geneva, sans-serif;
-        font-size: medium;
-        position: relative;
-    }
-    
-    .content-text {
-        padding: 5px;
-    }
-    
-    .spacer {
-        overflow: hidden;
-        height: 0px;
-        width: 0px;
-    }
-
+    /********************* HEADER *********************/
     .headerLink {
         color: white;
         text-decoration: none !important;
         font-family: Verdana, Geneva, sans-serif;
         display: inline-block;
     }
-    
-    .section-header {
-        width: 790px;
-        height: 90px;
-        background-color: rgb(33,40,55);
-        line-height: 80px;
-        text-align: center;
-        vertical-align: middle;
-        font-family: Verdana, Geneva, sans-serif;
-        font-size: 40px;
-        border-bottom-color: white;
-        border-bottom-style: solid;
-        border-bottom-width: 1px;
-    }
-    
-    .wide {
-        width: 50%;
-    }
-    
-    .build {
-        width: 100%;
-        height: auto;
-        display: inline-block;
-        margin-bottom: 10px;
-    }
-    .build-info {
-        margin: 10px;
-        padding: 0;
-    }
-    .build-pic {
-        float: left;
-    }
-    .build-pic-img-land {
-        height: 220px;
-        width: 350px;
-    }
-    .build-pic-img-port {
-        height: 375px; 
-        width: 290px;
-    }
-    .build-specs {
-        margin-left: 50%;
-    }
-    
-    .inputs {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: left;
-    }
-    
-    .comments {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: left;
-    }
-    
-    .buttons {
-        margin-right: auto;
-    }
-
-    .dt-mod {
-        margin-top: 15px;
-    }
-
-    .dt-links {
-        margin-bottom: 5px;
-    }
-    
-    .first-header {
-        margin-top: 0px;
-    }
-    
-    .contact-form {
-        margin-left: 40%;
-    }
-
-    .input-mod {
-        height: 25px;
-        font-family: Verdana, Geneva, sans-serif;
-    }
-    
-    .name-input {
-        padding-bottom: 10px;
-    }
-
-    .fancytxt {
-        color: #FFFFFF;
-        text-decoration: underline;
-        font-weight: bold;
-        cursor: pointer;
-    }
-
-    .fancytxt:hover {
-        color:#5bb75b;
-        cursor: pointer;
-    }
 
     #banner {
-        float:left;
+        float: left;
         height: 90px;
     }
     
@@ -223,26 +361,14 @@
         float: left;
     }
     
-    #bannerBar {
+    .bannerBar-size {
         height: 90px;
-        background-color: rgb(33,40,55);
-        padding-right: 6px;
-        border-bottom-color: white;
-        border-bottom-style: solid;
-        border-bottom-width: 1px;
-
-        /* Make content scroll "under" banner */
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1;
     }
-    
+
     .sectionTitle-about, .sectionTitle-resume, .sectionTitle-builds, .sectionTitle-projects {
         float: right;
-        width:100px;
-        height:90px;
+        width: 100px;
+        height: 90px;
         background-color: rgb(33,40,55);
         display: inline-block;
         margin-right: 30px;
@@ -276,69 +402,45 @@
     
     .sectionTitle-about:hover, .sectionTitle-resume:hover, .sectionTitle-builds:hover, 
         .sectionTitle-projects:hover, .sectionTitle-contact:hover, #sectionTitle-menu:hover {
-        /*background-color: #5bb75b;*/
         box-sizing: border-box;
-        border-bottom:solid 5px #5bb75b;
+        border-bottom: solid 5px #5bb75b;
         cursor: pointer;
     }
-    
-    #footer {
-        font-size: small; 
-        font-family: Verdana, Geneva, sans-serif;
-        color:white;
-        position: fixed;
-        bottom: 0;
-        height: auto;
-        left:0;
-        right:0;
-        background-color: rgb(33,40,55);
-        padding-top:5px;
-        padding-bottom: 5px;
-        border-top-color: #FFFFFF;
-        border-top-style: solid;
-        border-top-width: 1px;
+
+    /********************* CONTENT *********************/
+    .section-header-size {
+        width: 790px;
+        height: 90px;
+        line-height: 80px;
+        font-size: 40px;
     }
 
-    .footer-links {
-        padding-left: 10px;
-        display: inline-block;
-        float: left;
-    }
-    
-    .footer-social {
-        display: inline-block;
-        vertical-align: middle;
-    }
-    
-    .footer-bullets {
-        display: inline-block;
-        vertical-align: middle;
-    }
-    
-    .footer-resume {
-        display: inline-block;
-        vertical-align: middle;
-    }
-
-    .footer-years {
-        display: inline-block;
-        float: right;
-        padding-right: 10px;
+    .content-size {
+        width: 790px;
+        top: 90px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px; /* Add more spacing between footer and content */
+        margin-top: 20px;
+        position: relative;
     }
 
     #about-me, #my-resume, #my-builds, #my-projects, #contact-me {
-        display:none;
+        display: none;
     }
 
-    .proj {
-        height: auto;
+    /********************* BUILDS *********************/
+    .build-pic {
+        float: left;
     }
-    
-    .projWrapper {
-        margin: 10px;
-        padding: 0;
+
+    .build-specs {
+        margin-left: 50%;
     }
-    
+
+    /********************* PROJECTS *********************/
     .projImages {
         float: left;
     }
@@ -358,111 +460,43 @@
         width: 150px;
     }
     
-    .projImages-small-img-square, .projImages-small-img-port {
-        height: 40px;
-        width: 40px;
-    }
-    
-    .projImages-small-img-land {
-        height: 25px;
-        width: 60px;
-    }
-    
     .projDesc {
         margin-left: 40%;
     }
-    
-    .no-decoration {
-        text-decoration: none !important;
-    }
-    
-    .li-filled {
-        list-style-type: disc;
-    }
-    
-    /* This button was generated using CSSButtonGenerator.com */
-    .submit-button {
-        background-color:#5bb75b;
-        -webkit-border-top-left-radius:0px;
-        -moz-border-radius-topleft:0px;
-        border-top-left-radius:0px;
-        -webkit-border-top-right-radius:0px;
-        -moz-border-radius-topright:0px;
-        border-top-right-radius:0px;
-        -webkit-border-bottom-right-radius:0px;
-        -moz-border-radius-bottomright:0px;
-        border-bottom-right-radius:0px;
-        -webkit-border-bottom-left-radius:0px;
-        -moz-border-radius-bottomleft:0px;
-        border-bottom-left-radius:0px;
-        text-indent:0;
-        border:1px solid #000000;
-        display:inline-block;
-        color:#ffffff;
-        font-family:Arial;
-        font-size:15px;
-        font-weight:normal;
-        font-style:normal;
-        height:40px;
-        line-height:30px;
-        width:100px;
-        text-decoration:none;
-        text-align:center;
-    }
-    .submit-button:hover {
-        background-color:#187a87;
-    }.submit-button:active {
-        position:relative;
-        top:1px;
-    }
-    .submit-button:focus {
-        outline: 0;
-    }
-    
-    .inputbox-mod {
-        width: calc(100% - 5px - 5px); /* 100% - padding-left - padding-right */
-        padding-left: 5px;
-        padding-right: 5px;
-        font-size: small;
-        -moz-border-radius: 4px;
-        -webkit-border-radius: 4px;
-        border-radius: 4px;
-        -moz-background-clip: padding;
-        -webkit-background-clip: padding-box;
-        background-clip: padding-box;
-        border: 1px solid #cccccc;
-    }
-    .inputbox-mod:focus {
-        outline: none;
-        border-color: #5bb75b;
-        box-shadow: 0 0 10px #5bb75b;
-    }
-    .inputbox-mod::-ms-clear {
-        width: 0px;
-        height: 0px;
-    }
-    
-    .textarea-mod {
-        height: 100px;
-        width: calc(100% - 5px - 5px); /* 100% - padding-left - padding-right */
-        padding-left: 5px;
-        padding-right: 5px;
-        font-size: small;
-        -moz-border-radius: 4px;
-        -webkit-border-radius: 4px;
-        border-radius: 4px;
-        -moz-background-clip: padding;
-        -webkit-background-clip: padding-box;
-        background-clip: padding-box;
-        border: 1px solid #cccccc;
-        max-width: 750px;
-    }
-    .textarea-mod:focus {
-        outline: none;
-        border-color: #5bb75b;
-        box-shadow: 0 0 10px #5bb75b;
+
+    /********************* CONTACT *********************/
+    .alert-offset {
+        margin-left: 0px;
     }
 
+    .contact-links {
+        float: left;
+    }
+
+    .contact-form {
+        margin-left: 40%;
+    }
+
+    /********************* FOOTER *********************/
+    .footer-size {
+        position: fixed;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .footer-links {
+        padding-left: 10px;
+        display: inline-block;
+        float: left;
+    }
+
+    .footer-years {
+        display: inline-block;
+        float: right;
+        padding-right: 10px;
+    }
+
+    /********************* PROMPT *********************/
     .prompt-style {
         background-color: rgba(0,0,0,0.85);
         color: #00CC00;
@@ -499,10 +533,11 @@
     }
 
     #prompt-textarea {
+        width: 525px;
         border: 0;
         resize: none;
         position: absolute;
-        bottom:30px;
+        bottom: 30px;
         display: none;
         font-size: 12px;
         height: 125px;
@@ -520,13 +555,15 @@
 }
 
 /* 
-    Document   : csselements_medium
+    Document   : csselements_medium.css
     Created on : Oct 4, 2013, 7:09:07 PM
     Author     : Chris Meyers
     Description:
         Mid size window desktop stylesheet.
 */
+
 @media screen and (min-width: 807px) and (max-width: 1217px) {
+    /********************* GENERAL *********************/
     html {
         position: relative;
         min-height: 100%;
@@ -540,170 +577,15 @@
         margin: 0 0 60px; /* 3rd parameter must = #footer height */
     }
 
-    img {
-      border: 0; /* Remove IE img link border */
-    }
-    
-    .errors {
-        font-weight: bold;
-        color: red;
-        text-align: left;
-        margin-bottom: 10px;
-    }
-
-    .success {
-        font-weight: bold;
-        color: #5bb75b;
-        text-align: left;
-        margin-bottom: 10px;
-    }
-
-    .contact-alert-symbol {
-        float: left;
-        margin-right: 5px;
-    }
-
-    .contact-alert-text {
-        margin-left: 25px;
-        font-size: medium;
-        font-weight: normal; 
-    }    
-    
-    .contact-links {
-        float: left;
-    }
-
-    .contact-link-image {
-        float: left;
-        margin-right: 5px;
-    }
-
-    .project-link-image {
-        margin-bottom: 10px;
-    }
-
-    .link-image-big {
-        height: 20px;
-        width: 20px;
-    }
-
-    .link-image-small {
-        height: 16px;
-        width: 16px;
-    }
-
-    .link-txt {
-        margin-bottom: 10px;
-        display: block;
-    }
-
-    .section-header {
-        width: 790px;
-        min-height: 90px;
-        background-color: rgb(33,40,55);
-        background-repeat: no-repeat;
-        background-position: 50%, 50%;
-        background-position-x: 50%;
-        background-position-y: 50%;
-        line-height: 80px;
-        text-align: center;
-        vertical-align: middle;
+    /********************* HEADER *********************/
+    .headerLink {
+        color: white;
+        text-decoration: none;
         font-family: Verdana, Geneva, sans-serif;
-        font-size: 40px;
-        border-bottom-color: white;
-        border-bottom-style: solid;
-        border-bottom-width: 1px;
-    }
- 
-    .build {
-        width: 100%;
-        height: auto;
-        display: inline-block;
-        margin-bottom: 10px;
-    }
-    .build-info {
-        margin: 10px;
-        padding: 0;
-    }
-    .build-pic {
-        float: left;
-    }
-    .build-pic-img-land {
-        height: 220px;
-        width: 350px;
-    }
-    .build-pic-img-port {
-        height: 375px; 
-        width: 290px;
-    }
-    .build-specs {
-        margin-left: 50%;
-    }
-
-    .comments {
-        margin-left: auto;
-        margin-right: auto;
-        text-align: left;
-    }
-    
-    .buttons {
-        margin-right: auto;
-    }
-
-    .dt-mod {
-        margin-top: 15px;
-    }
-
-    .dt-links {
-        margin-bottom: 5px;
-    }
-    
-    .first-header {
-        margin-top: 0px;
-    }
-
-    .contact-form {
-        margin-left: 40%;
-    }
-
-    .inputs {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: left;
-    }
-    
-    .comments {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: left;
-    }
-    
-    .input-mod {
-        width: 190px;
-        height:25px;
-        font-family: Verdana, Geneva, sans-serif;
-    }
-    
-    .name-input {
-        padding-bottom: 10px;
-    }
-
-    .fancytxt {
-        color: #FFFFFF;
-        text-decoration: underline;
-        font-weight: bold;
-        cursor: pointer;
-    }
-
-    .fancytxt:hover {
-        color:#5bb75b;
-        cursor: pointer;
     }
 
     #banner {
-        float:left;
+        float: left;
         height: 90px;
     }
     
@@ -716,20 +598,8 @@
         float: left;
     }
     
-    #bannerBar {
+    .bannerBar-size {
         height: 90px;
-        background-color: rgb(33,40,55);
-        padding-right: 6px;
-        border-bottom-color: #FFFFFF;
-        border-bottom-style: solid;
-        border-bottom-width: 1px;
-
-        /* Make content scroll "under" banner */
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1;
     }
 
     .sectionTitle-about, .sectionTitle-resume, .sectionTitle-builds, .sectionTitle-projects, .sectionTitle-contact {
@@ -739,7 +609,7 @@
     #sectionTitle-menu {
         float: right;
         width: 100px;
-        height:90px;
+        height: 90px;
         background-color: rgb(33,40,55);
         display: table-cell;
         margin-right: 20px;
@@ -812,9 +682,16 @@
     .menu-items:hover {
         background-image: url("images/menuIcon.png");
     }
-    
-    .content {
-        color:#FFFAFA;
+
+    /********************* CONTENT *********************/
+    .section-header-size {
+        width: 790px;
+        height: 90px;
+        line-height: 80px;
+        font-size: 40px;
+    }
+
+    .content-size {
         width: 790px;
         top: 90px;
         left: 0;
@@ -822,88 +699,24 @@
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 100px; /* Add more spacing between footer and content */
-        -webkit-margin-bottom-collapse: separate; /* Fixes margin-bottom for non-chrome browsers */
         margin-top: 20px; /* Used for a fixed banner */
-        background-color: rgba(33,40,55,0.85);
-        font-family: Verdana, Geneva, sans-serif;
-        font-size: medium;
         position: relative;
-    }
-    
-    .content-text {
-        padding: 5px;
-    }
-        
-    .spacer {
-        overflow: hidden;
-        height: 0px;
-        width: 0px;
-    }
-    
-    .headerLink {
-        color: white;
-        text-decoration: none;
-        font-family: Verdana, Geneva, sans-serif;
-    }
-
-    #footer {
-        font-size: small; 
-        font-family: Verdana, Geneva, sans-serif;
-        color:white;
-        position: fixed;
-        bottom: 0;
-        height: auto;
-        left:0;
-        right:0;
-        background-color: rgb(33,40,55);
-        padding-top:5px;
-        padding-bottom: 5px;
-        border-top-color: white;
-        border-top-style: solid;
-        border-top-width: 1px;
-    }
-   
-    .footer-links {
-        padding-left: 10px;
-        display: inline-block;
-        float: left;
-    }
-    
-    .footer-social {
-        display: inline-block;
-        vertical-align: middle;
-    }
-    
-    .footer-bullets {
-        display: inline-block;
-        vertical-align: middle;
-    }
-    
-    .footer-resume {
-        display: inline-block;
-        vertical-align: middle;
-    }
-
-    .footer-years {
-        display: inline-block;
-        float: right;
-        padding-right: 10px;
     }
 
     #about-me, #my-resume, #my-builds, #my-projects, #contact-me {
-        display:none;
+        display: none;
     }
-    
-    /* Used in projects section */
-    .proj {
-        height: auto;
+
+    /********************* BUILDS *********************/
+    .build-pic {
+        float: left;
     }
-    
-    .projWrapper {
-        margin: 10px;
-        padding: 0;
+
+    .build-specs {
+        margin-left: 50%;
     }
-    
+
+    /********************* PROJECTS *********************/
     .projImages {
         float: left;
     }
@@ -923,118 +736,50 @@
         width: 150px;
     }
     
-    .projImages-small-img-square, .projImages-small-img-port {
-        height: 40px;
-        width: 40px;
-    }
-    
-    .projImages-small-img-land {
-        height: 25px;
-        width: 60px;
-    }
-    
     .projDesc {
         margin-left: 40%;
     }
-    
-    .no-decoration {
-        text-decoration: none;
+
+    /********************* CONTACT *********************/
+    .alert-offset {
+        margin-left: 0px;
     }
     
-    .li-filled {
-        list-style-type: disc;
-    }
-    
-    /* This button was generated using CSSButtonGenerator.com */
-    .submit-button {
-        background-color:#5bb75b;
-        -webkit-border-top-left-radius:0px;
-        -moz-border-radius-topleft:0px;
-        border-top-left-radius:0px;
-        -webkit-border-top-right-radius:0px;
-        -moz-border-radius-topright:0px;
-        border-top-right-radius:0px;
-        -webkit-border-bottom-right-radius:0px;
-        -moz-border-radius-bottomright:0px;
-        border-bottom-right-radius:0px;
-        -webkit-border-bottom-left-radius:0px;
-        -moz-border-radius-bottomleft:0px;
-        border-bottom-left-radius:0px;
-        text-indent:0;
-        border:1px solid #000000;
-        display:inline-block;
-        color:#ffffff;
-        font-family:Arial;
-        font-size:15px;
-        font-weight:normal;
-        font-style:normal;
-        height:40px;
-        line-height:30px;
-        width:100px;
-        text-decoration:none;
-        text-align:center;
-    }
-    .submit-button:hover {
-        background-color:#187a87;
-    }.submit-button:active {
-        position:relative;
-        top:1px;
-    }
-    .submit-button:focus {
-        outline: 0;
-    }
-    
-    .inputbox-mod {
-        width: calc(100% - 5px - 5px); /* 100% - padding-left - padding-right */
-        padding-left: 5px;
-        padding-right: 5px;
-        font-size: small;
-        -moz-border-radius: 4px;
-        -webkit-border-radius: 4px;
-        border-radius: 4px;
-        -moz-background-clip: padding;
-        -webkit-background-clip: padding-box;
-        background-clip: padding-box;
-        border: 1px solid #cccccc;
-    }
-    .inputbox-mod:focus {
-        outline: none;
-        border-color: #5bb75b;
-        box-shadow: 0 0 10px #5bb75b;
-    }
-    .inputbox-mod::-ms-clear {
-        width: 0px;
-        height: 0px;
-    }
-    
-    .textarea-mod {
-        height: 100px;
-        width: calc(100% - 5px - 5px); /* 100% - padding-left - padding-right */
-        padding-left: 5px;
-        padding-right: 5px;
-        font-size: small;
-        -moz-border-radius: 4px;
-        -webkit-border-radius: 4px;
-        border-radius: 4px;
-        -moz-background-clip: padding;
-        -webkit-background-clip: padding-box;
-        background-clip: padding-box;
-        border: 1px solid #cccccc;
-        max-width: 750px;
-    }
-    .textarea-mod:focus {
-        outline: none;
-        border-color: #5bb75b;
-        box-shadow: 0 0 10px #5bb75b;
+    .contact-links {
+        float: left;
     }
 
+    .contact-form {
+        margin-left: 40%;
+    }
+
+    /********************* FOOTER *********************/
+    .footer-size {
+        position: fixed;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+   
+    .footer-links {
+        padding-left: 10px;
+        display: inline-block;
+        float: left;
+    }
+
+    .footer-years {
+        display: inline-block;
+        float: right;
+        padding-right: 10px;
+    }
+
+    /********************* PROMPT *********************/
     #prompt-div, #prompt-caret, #prompt {
         display: none;
     }
 }
 
 /* 
-    Document   : csselements_small
+    Document   : csselements_small.css
     Created on : Jan 28, 2014, 10:33:50 AM
     Author     : Chris Meyers
     Description:
@@ -1042,6 +787,7 @@
 */
 
 @media screen and (max-width: 806px) {
+    /********************* GENERAL *********************/
     html {
         position: relative;
         min-height: 100%;
@@ -1055,170 +801,19 @@
         background-size: cover;
     }
 
-    img {
-        border: 0; /* Remove IE img link border */
-    }
-
-    .errors {
-        font-weight: bold;
-        color: red;
-        text-align: left;
-        margin-bottom: 10px;
-        margin-left: 5px;
-    }
-
-    .success {
-        font-weight: bold;
-        color: #5bb75b;
-        text-align: left;
-        margin-bottom: 10px;
-        margin-left: 5px;
-    }
-
-    .contact-alert-symbol {
-        float: left;
-        margin-right: 5px;
-    }
-
-    .contact-alert-text {
-        margin-left: 25px;
-        font-size: medium;
-        font-weight: normal; 
-    }    
-    
-    .contact-links {
-        padding-left: 5px;
-        margin-bottom: 20px;
-    }
-
-    .contact-link-image {
-        float: left;
-        margin-right: 5px;
-    }
-
-    .project-link-image {
-        margin-bottom: 10px;
-    }
-
-    .link-image-big {
-        height: 20px;
-        width: 20px;
-    }
-
-    .link-image-small {
-        height: 16px;
-        width: 16px;
-    }
-
-    .link-txt {
-        margin-bottom: 10px;
-        display: block;
-    }
-    
-    .section-header {
-        width: 100%;
-        min-height: 60px;
-        background-color: rgb(33,40,55);
-        background-repeat: no-repeat;
-        background-position: 50%, 50%;
-        background-position-x: 50%;
-        background-position-y: 50%;
-        line-height: 55px;
-        text-align: center;
-        vertical-align: middle;
-        font-family: Verdana, Geneva, sans-serif;
-        font-size: 30px;
-        border-bottom-color: white;
-        border-bottom-style: solid;
-        border-bottom-width: 1px;
-    }
-  
-    .message {
-        width:auto;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
-
-    .name-input {
-        display:block;
-        width: auto;
-        padding-bottom: 15px;
-    }
-    
-    .email-input {
-        display:block;
-        width: auto;
-    }
-
-    .build {
-        width: 100%;
-        height: auto;
-        display: block;
-        margin-bottom: 10px;
-    }
-    .build-info {
-        margin: 10px;
-        padding: 0;
-    }
-    .build-pic {
-        text-align: center;
-    }
-    .build-pic-img-land {
-        height: 220px;
-        width: 350px;
-    }
-    .build-pic-img-port {
-        height: 375px; 
-        width: 290px;
-    }
-
-    .inputs {
-        width: 100%;
-        text-align: left;
-    }
-    
-    .comments {
-        width:100%;
-        text-align: left;
-    }
-    
-    .buttons {
-        margin-right: auto;
-    }
-    
-    .dt-mod {
-        margin-top: 15px;
-    }
-
-    .dt-links {
-        margin-bottom: 5px;
-    }
-    
-    .first-header {
-        margin-top: 0px;
-    }
-    
-    .input-mod {
-        display:block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 10px;
-        height:30px;
-        padding: 0; border: 0;
+    /********************* HEADER *********************/
+    .headerLink {
+        color: white;
+        text-decoration: none;
         font-family: Verdana, Geneva, sans-serif;
     }
 
-    .fancytxt {
-        color: #FFFFFF;
-        text-decoration: underline;
-        font-weight: bold;
-        cursor: pointer;
+    #banner {
+        float: left;
     }
-
-    .fancytxt:hover {
-        color:#5bb75b;
-        cursor: pointer;
+    
+    .banner-nav {
+        display: none;
     }
 
     #banner-small img {
@@ -1245,33 +840,10 @@
         margin-right: 0px; 
     }
     
-    #bannerBar {
+    .bannerBar-size {
         height: 60px;
-        background-color: rgb(33,40,55);
-        padding-right: 6px;
-        border-bottom-color: white;
-        border-bottom-style: solid;
-        border-bottom-width: 1px;
-        
-        /* Make content scroll "under" banner */
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-    }
- 
-    .banner-nav {
-        display: none;
-    }
-    
-    #banner {
-        float:left;
     }
 
-    .banner-nav {
-        display: none;
-    }
-    
     #sectionTitle-menu {
         float: right;
         width: 60px;
@@ -1318,7 +890,7 @@
         background-color: rgb(33,40,55);
         position: absolute;
         box-shadow: 0 0 0 4px #FFFFFF inset;
-        float:left; clear:right;
+        float: left; clear: right;
         left: 0px;
         right: 0px;
     }
@@ -1336,91 +908,38 @@
     #menu-click {
         height: 56px;
     }
-    
-    .content {
-        color:#FFFAFA;
-        width: auto;
+
+    /********************* CONTENT *********************/
+    .section-header-size {
+        width: 100%;
+        min-height: 60px;
+        background-repeat: no-repeat;
+        background-position: 50%, 50%;
+        background-position-x: 50%;
+        background-position-y: 50%;
+        line-height: 55px;
+        font-size: 30px;
+    }
+
+    .content-size {
         background-color: #414753;
+        width: auto;
         margin-bottom: 0; /* Add more spacing between footer and content */
         margin-top: 60px; /* Used for a fixed banner */
         padding-bottom: 10px; /* Make same as footer padding top */
-        font-family: Verdana, Geneva, sans-serif;
-        font-size: medium;
-    }
-    
-    .content-text {
-        padding: 5px;
-    }
-        
-    .headerLink {
-        color: white;
-        text-decoration: none;
-        font-family: Verdana, Geneva, sans-serif;
+
     }
 
     #about-me, #my-resume, #my-builds, #my-projects, #contact-me {
-        display:none;
+        display: none;
     }
 
-    #footer {
-        color:#FFFAFA;
-        position: absolute;
-        bottom: 0px;
-        height:auto; /* make bigger to add more lines in footer */
-        left:0;
-        right:0;
+    /********************* BUILDS *********************/
+    .build-pic {
         text-align: center;
-        background-color: rgb(33,40,55);
-        font-family: Verdana, Geneva, sans-serif;
-        font-size: small; 
-        width:auto;
-        border-top-color: white;
-        border-top-style: solid;
-        border-top-width: 1px;
-    }
-    
-    .footer-links {
-        display: block;
-        text-align: center;
-        margin-bottom: 10px;
-        padding-right: 10px;
-        padding-left: 10px;
-        padding-top: 10px;
-    }
-    
-    .footer-social {
-        display: inline-block;
-        vertical-align: middle;
-    }
-    
-    .footer-bullets {
-        display: inline-block;
-        vertical-align: middle;
-    }
-    
-    .footer-resume {
-        display: inline-block;
-        vertical-align: middle;
     }
 
-    .footer-years {
-        display: block;
-        text-align: center;
-        padding-right: 10px;
-        padding-left: 10px;
-        margin-bottom: 10px;
-    }
-    
-    /* Used in projects section */
-    .proj {
-        height: auto;
-    }
-    
-    .projWrapper {
-        margin: 10px;
-        padding: 0;
-    }
-    
+    /********************* PROJECTS *********************/
     .projImages {
         text-align: center;
     }
@@ -1440,116 +959,57 @@
         width: 175px;
     }
     
-    .projImages-small-img-square, .projImages-small-img-port {
-        height: 40px;
-        width: 40px;
-    }
-    
-    .projImages-small-img-land {
-        height: 25px;
-        width: 60px;
-    }
-    
     .projImages-small {
         text-align: center;
         text-decoration: none;
     }
-    
-    .no-decoration {
-        text-decoration: none;
+
+    /********************* CONTACT *********************/
+    .alert-offset {
+        margin-left: 5px;
     }
     
-    .li-filled {
-        list-style-type: disc;
-    }
-    
-    /* This button was generated using CSSButtonGenerator.com */
-    .submit-button {
-        background-color:#5bb75b;
-        -webkit-border-top-left-radius:0px;
-        -moz-border-radius-topleft:0px;
-        border-top-left-radius:0px;
-        -webkit-border-top-right-radius:0px;
-        -moz-border-radius-topright:0px;
-        border-top-right-radius:0px;
-        -webkit-border-bottom-right-radius:0px;
-        -moz-border-radius-bottomright:0px;
-        border-bottom-right-radius:0px;
-        -webkit-border-bottom-left-radius:0px;
-        -moz-border-radius-bottomleft:0px;
-        border-bottom-left-radius:0px;
-        text-indent:0;
-        border:1px solid #000000;
-        display:inline-block;
-        color:#ffffff;
-        font-family:Arial;
-        font-size:15px;
-        font-weight:normal;
-        font-style:normal;
-        height:40px;
-        line-height:30px;
-        width:100px;
-        text-decoration:none;
-        text-align:center;
-    }
-    .submit-button:hover {
-        background-color:#187a87;
-    }.submit-button:active {
-        position:relative;
-        top:1px;
-    }
-    .submit-button:focus {
-        outline: 0;
-    }
-    
-    .inputbox-mod {
+    .contact-links {
         padding-left: 5px;
-        width: calc(100% - 5px); /* 100% - padding-left - padding-right */
-        font-size: small;
-        -moz-border-radius: 4px;
-        -webkit-border-radius: 4px;
-        border-radius: 4px;
-        -moz-background-clip: padding;
-        -webkit-background-clip: padding-box;
-        background-clip: padding-box;
-    }
-    .inputbox-mod:focus {
-        outline: none;
-        border-color: #5bb75b;
-        box-shadow: 0 0 10px #5bb75b;
-    }
-    .inputbox-mod::-ms-clear {
-        width: 0px;
-        height: 0px;
+        margin-bottom: 20px;
     }
 
     .textarea-mod {
-        padding-left: 5px;
-        width: calc(100% - 7px); /* 100% - padding-left - padding-right(see .comments for extra 2px) */
-        height: 100px;
-        font-size: small;
-        -moz-border-radius: 4px;
-        -webkit-border-radius: 4px;
-        -moz-background-clip: padding;
-        -webkit-background-clip: padding-box;
         resize: none;
-        border: 0;
-        font-family: Verdana, Geneva, sans-serif;
-    }
-    .textarea-mod:focus {
-        outline: none;
-        border-color: #5bb75b;
-        box-shadow: 0 0 10px #5bb75b;
     }
 
+    /********************* FOOTER *********************/
+    .footer-size {
+        width: auto;
+        position: absolute;
+        text-align: center;
+    }
+    
+    .footer-links {
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+
+    .footer-years {
+        display: block;
+        text-align: center;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    /********************* PROMPT *********************/
     #prompt-div, #prompt-caret, #prompt {
         display: none;
     }  
 }
 
-
 /* 
-    Document   : csselements_print
+    Document   : csselements_print.css
     Created on : Dec 10, 2014, 8:20:16 PM
     Author     : Chris Meyers
     Description:
@@ -1561,25 +1021,18 @@
         font-family: Verdana, Geneva, sans-serif;
     }
 
-    #bannerBar {
-        display: none;
+    .fancytxt {
+        color: #000000;
     }
 
-    .banner-img-small, .banner-img, .proj-link, .proj-bullets, .banner-nav, #banner-icon, #footer,
-        #slide-code-cm,
-        #slide-code-genomic,
-        #slide-website-pine, #slide-code-pine,
-        #slide-code-ttt,
-        #slide-website-lol_player, #slide-code-lol_player,
-        #slide-code-pca,
-        #slide-code-bms,
-        #slide-code-lol_status
-    {
+    #bannerBar {
         display: none;
     }
     
     .section-header {
         font-size: 28px;
+        background-color: #FFFFFF;
+        text-align: left;
     }
     
     .content {
@@ -1652,11 +1105,15 @@
 
     #prompt-div, #prompt-caret, #prompt {
         display: none;
-    }   
+    }
+
+    #footer {
+        display: none;
+    }
 }
 
 /* 
-    Document   : csselements_resume
+    Document   : csselements_resume.css
     Created on : Dec 27, 2014, 1:38:04 AM
     Author     : Chris Meyers
     Description:

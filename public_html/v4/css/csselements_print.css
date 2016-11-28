@@ -1,5 +1,5 @@
 /* 
-    Document   : csselements_print
+    Document   : csselements_print.css
     Created on : Dec 10, 2014, 8:20:16 PM
     Author     : Chris Meyers
     Description:
@@ -11,25 +11,18 @@
         font-family: Verdana, Geneva, sans-serif;
     }
 
-    #bannerBar {
-        display: none;
+    .fancytxt {
+        color: #000000;
     }
 
-    .banner-img-small, .banner-img, .proj-link, .proj-bullets, .banner-nav, #banner-icon, #footer,
-        #slide-code-cm,
-        #slide-code-genomic,
-        #slide-website-pine, #slide-code-pine,
-        #slide-code-ttt,
-        #slide-website-lol_player, #slide-code-lol_player,
-        #slide-code-pca,
-        #slide-code-bms,
-        #slide-code-lol_status
-    {
+    #bannerBar {
         display: none;
     }
     
     .section-header {
         font-size: 28px;
+        background-color: #FFFFFF;
+        text-align: left;
     }
     
     .content {
@@ -102,5 +95,9 @@
 
     #prompt-div, #prompt-caret, #prompt {
         display: none;
-    }   
+    }
+
+    #footer {
+        display: none;
+    }
 }

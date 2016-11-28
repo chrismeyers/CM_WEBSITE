@@ -1,11 +1,13 @@
 /* 
-    Document   : csselements
+    Document   : csselements.css
     Created on : Oct 4, 2013, 7:09:07 PM
     Author     : Chris Meyers
     Description:
         Fullscreen desktop stylesheet.
 */
+
 @media screen and (min-width: 1218px){
+    /********************* GENERAL *********************/
     html {
         position: relative;
         min-height: 100%;
@@ -18,199 +20,17 @@
         background-size: cover;
         margin: 0 0 60px; /* 3rd parameter must = #footer height */
     }
-    
-    img {
-      border: 0; /* Remove IE img link border */
-    }
 
-    .errors {
-        font-weight: bold;
-        color: red;
-        text-align: left;
-        margin-bottom: 10px;
-    }
-
-    .success {
-        font-weight: bold;
-        color: #5bb75b;
-        text-align: left;
-        margin-bottom: 10px;
-    }
-
-    .contact-alert-symbol {
-        float: left;
-        margin-right: 5px;
-    }
-
-    .contact-alert-text {
-        margin-left: 25px;
-        font-size: medium;
-        font-weight: normal; 
-    }
-    
-    .contact-links {
-        float: left;
-    }
-
-    .contact-link-image {
-        float: left;
-        margin-right: 5px;
-    }
-
-    .project-link-image {
-        margin-bottom: 10px;
-    }
-
-    .link-image-big {
-        height: 20px;
-        width: 20px;
-    }
-
-    .link-image-small {
-        height: 16px;
-        width: 16px;
-    }
-
-    .link-txt {
-        margin-bottom: 10px;
-        display: block;
-    }
-    
-    .content {
-        color:#FFFAFA;
-        width: 790px;
-        display: block;
-        top: 90px;
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 100px; /* Add more spacing between footer and content */
-        -webkit-margin-bottom-collapse: separate; /* Fixes margin-bottom for non-chrome browsers */
-        margin-top: 20px;
-        background-color: rgba(33,40,55,0.85);
-        font-family: Verdana, Geneva, sans-serif;
-        font-size: medium;
-        position: relative;
-    }
-    
-    .content-text {
-        padding: 5px;
-    }
-    
-    .spacer {
-        overflow: hidden;
-        height: 0px;
-        width: 0px;
-    }
-
+    /********************* HEADER *********************/
     .headerLink {
         color: white;
         text-decoration: none !important;
         font-family: Verdana, Geneva, sans-serif;
         display: inline-block;
     }
-    
-    .section-header {
-        width: 790px;
-        height: 90px;
-        background-color: rgb(33,40,55);
-        line-height: 80px;
-        text-align: center;
-        vertical-align: middle;
-        font-family: Verdana, Geneva, sans-serif;
-        font-size: 40px;
-        border-bottom-color: white;
-        border-bottom-style: solid;
-        border-bottom-width: 1px;
-    }
-    
-    .wide {
-        width: 50%;
-    }
-    
-    .build {
-        width: 100%;
-        height: auto;
-        display: inline-block;
-        margin-bottom: 10px;
-    }
-    .build-info {
-        margin: 10px;
-        padding: 0;
-    }
-    .build-pic {
-        float: left;
-    }
-    .build-pic-img-land {
-        height: 220px;
-        width: 350px;
-    }
-    .build-pic-img-port {
-        height: 375px; 
-        width: 290px;
-    }
-    .build-specs {
-        margin-left: 50%;
-    }
-    
-    .inputs {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: left;
-    }
-    
-    .comments {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: left;
-    }
-    
-    .buttons {
-        margin-right: auto;
-    }
-
-    .dt-mod {
-        margin-top: 15px;
-    }
-
-    .dt-links {
-        margin-bottom: 5px;
-    }
-    
-    .first-header {
-        margin-top: 0px;
-    }
-    
-    .contact-form {
-        margin-left: 40%;
-    }
-
-    .input-mod {
-        height: 25px;
-        font-family: Verdana, Geneva, sans-serif;
-    }
-    
-    .name-input {
-        padding-bottom: 10px;
-    }
-
-    .fancytxt {
-        color: #FFFFFF;
-        text-decoration: underline;
-        font-weight: bold;
-        cursor: pointer;
-    }
-
-    .fancytxt:hover {
-        color:#5bb75b;
-        cursor: pointer;
-    }
 
     #banner {
-        float:left;
+        float: left;
         height: 90px;
     }
     
@@ -223,26 +43,14 @@
         float: left;
     }
     
-    #bannerBar {
+    .bannerBar-size {
         height: 90px;
-        background-color: rgb(33,40,55);
-        padding-right: 6px;
-        border-bottom-color: white;
-        border-bottom-style: solid;
-        border-bottom-width: 1px;
-
-        /* Make content scroll "under" banner */
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1;
     }
-    
+
     .sectionTitle-about, .sectionTitle-resume, .sectionTitle-builds, .sectionTitle-projects {
         float: right;
-        width:100px;
-        height:90px;
+        width: 100px;
+        height: 90px;
         background-color: rgb(33,40,55);
         display: inline-block;
         margin-right: 30px;
@@ -276,69 +84,45 @@
     
     .sectionTitle-about:hover, .sectionTitle-resume:hover, .sectionTitle-builds:hover, 
         .sectionTitle-projects:hover, .sectionTitle-contact:hover, #sectionTitle-menu:hover {
-        /*background-color: #5bb75b;*/
         box-sizing: border-box;
-        border-bottom:solid 5px #5bb75b;
+        border-bottom: solid 5px #5bb75b;
         cursor: pointer;
     }
-    
-    #footer {
-        font-size: small; 
-        font-family: Verdana, Geneva, sans-serif;
-        color:white;
-        position: fixed;
-        bottom: 0;
-        height: auto;
-        left:0;
-        right:0;
-        background-color: rgb(33,40,55);
-        padding-top:5px;
-        padding-bottom: 5px;
-        border-top-color: #FFFFFF;
-        border-top-style: solid;
-        border-top-width: 1px;
+
+    /********************* CONTENT *********************/
+    .section-header-size {
+        width: 790px;
+        height: 90px;
+        line-height: 80px;
+        font-size: 40px;
     }
 
-    .footer-links {
-        padding-left: 10px;
-        display: inline-block;
-        float: left;
-    }
-    
-    .footer-social {
-        display: inline-block;
-        vertical-align: middle;
-    }
-    
-    .footer-bullets {
-        display: inline-block;
-        vertical-align: middle;
-    }
-    
-    .footer-resume {
-        display: inline-block;
-        vertical-align: middle;
-    }
-
-    .footer-years {
-        display: inline-block;
-        float: right;
-        padding-right: 10px;
+    .content-size {
+        width: 790px;
+        top: 90px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px; /* Add more spacing between footer and content */
+        margin-top: 20px;
+        position: relative;
     }
 
     #about-me, #my-resume, #my-builds, #my-projects, #contact-me {
-        display:none;
+        display: none;
     }
 
-    .proj {
-        height: auto;
+    /********************* BUILDS *********************/
+    .build-pic {
+        float: left;
     }
-    
-    .projWrapper {
-        margin: 10px;
-        padding: 0;
+
+    .build-specs {
+        margin-left: 50%;
     }
-    
+
+    /********************* PROJECTS *********************/
     .projImages {
         float: left;
     }
@@ -358,111 +142,43 @@
         width: 150px;
     }
     
-    .projImages-small-img-square, .projImages-small-img-port {
-        height: 40px;
-        width: 40px;
-    }
-    
-    .projImages-small-img-land {
-        height: 25px;
-        width: 60px;
-    }
-    
     .projDesc {
         margin-left: 40%;
     }
-    
-    .no-decoration {
-        text-decoration: none !important;
-    }
-    
-    .li-filled {
-        list-style-type: disc;
-    }
-    
-    /* This button was generated using CSSButtonGenerator.com */
-    .submit-button {
-        background-color:#5bb75b;
-        -webkit-border-top-left-radius:0px;
-        -moz-border-radius-topleft:0px;
-        border-top-left-radius:0px;
-        -webkit-border-top-right-radius:0px;
-        -moz-border-radius-topright:0px;
-        border-top-right-radius:0px;
-        -webkit-border-bottom-right-radius:0px;
-        -moz-border-radius-bottomright:0px;
-        border-bottom-right-radius:0px;
-        -webkit-border-bottom-left-radius:0px;
-        -moz-border-radius-bottomleft:0px;
-        border-bottom-left-radius:0px;
-        text-indent:0;
-        border:1px solid #000000;
-        display:inline-block;
-        color:#ffffff;
-        font-family:Arial;
-        font-size:15px;
-        font-weight:normal;
-        font-style:normal;
-        height:40px;
-        line-height:30px;
-        width:100px;
-        text-decoration:none;
-        text-align:center;
-    }
-    .submit-button:hover {
-        background-color:#187a87;
-    }.submit-button:active {
-        position:relative;
-        top:1px;
-    }
-    .submit-button:focus {
-        outline: 0;
-    }
-    
-    .inputbox-mod {
-        width: calc(100% - 5px - 5px); /* 100% - padding-left - padding-right */
-        padding-left: 5px;
-        padding-right: 5px;
-        font-size: small;
-        -moz-border-radius: 4px;
-        -webkit-border-radius: 4px;
-        border-radius: 4px;
-        -moz-background-clip: padding;
-        -webkit-background-clip: padding-box;
-        background-clip: padding-box;
-        border: 1px solid #cccccc;
-    }
-    .inputbox-mod:focus {
-        outline: none;
-        border-color: #5bb75b;
-        box-shadow: 0 0 10px #5bb75b;
-    }
-    .inputbox-mod::-ms-clear {
-        width: 0px;
-        height: 0px;
-    }
-    
-    .textarea-mod {
-        height: 100px;
-        width: calc(100% - 5px - 5px); /* 100% - padding-left - padding-right */
-        padding-left: 5px;
-        padding-right: 5px;
-        font-size: small;
-        -moz-border-radius: 4px;
-        -webkit-border-radius: 4px;
-        border-radius: 4px;
-        -moz-background-clip: padding;
-        -webkit-background-clip: padding-box;
-        background-clip: padding-box;
-        border: 1px solid #cccccc;
-        max-width: 750px;
-    }
-    .textarea-mod:focus {
-        outline: none;
-        border-color: #5bb75b;
-        box-shadow: 0 0 10px #5bb75b;
+
+    /********************* CONTACT *********************/
+    .alert-offset {
+        margin-left: 0px;
     }
 
+    .contact-links {
+        float: left;
+    }
+
+    .contact-form {
+        margin-left: 40%;
+    }
+
+    /********************* FOOTER *********************/
+    .footer-size {
+        position: fixed;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .footer-links {
+        padding-left: 10px;
+        display: inline-block;
+        float: left;
+    }
+
+    .footer-years {
+        display: inline-block;
+        float: right;
+        padding-right: 10px;
+    }
+
+    /********************* PROMPT *********************/
     .prompt-style {
         background-color: rgba(0,0,0,0.85);
         color: #00CC00;
@@ -499,10 +215,11 @@
     }
 
     #prompt-textarea {
+        width: 525px;
         border: 0;
         resize: none;
         position: absolute;
-        bottom:30px;
+        bottom: 30px;
         display: none;
         font-size: 12px;
         height: 125px;

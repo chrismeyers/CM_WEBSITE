@@ -1,5 +1,5 @@
-<div id="my-builds" class="content">
-            <div class="section-header">Builds</div>
+<div id="my-builds" class="content content-size">
+            <div class="section-header section-header-size">Builds</div>
 
             <div class="content-text">
             <?php

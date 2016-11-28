@@ -1,4 +1,4 @@
-<div id="bannerBar">
+<div id="bannerBar" class="bannerBar-size">
             <div class="banner-img">
                 <a href="index.php" id="banner">
                     <img src="images/banner/v4/no-border/titlepic-v4-NObrackets.png" 

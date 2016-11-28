@@ -1,5 +1,5 @@
-<div id="my-resume" class="content">
-            <div class="section-header">Résumé</div>
+<div id="my-resume" class="content content-size">
+            <div class="section-header section-header-size">Résumé</div>
             
             <div class="content-text">
                 <h2>Work Experience</h2>

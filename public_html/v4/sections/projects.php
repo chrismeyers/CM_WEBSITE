@@ -1,5 +1,5 @@
-<div id="my-projects" class="content">
-            <div class="section-header">Projects</div>
+<div id="my-projects" class="content content-size">
+            <div class="section-header section-header-size">Projects</div>
             <div class='content-text'>
             <?php
                 $result = mysqli_query($con, "SELECT * FROM `projects`");

@@ -1,5 +1,5 @@
 <div class="spacer"></div>
-        <div id='footer'>
+        <div id='footer' class='footer-size'>
             <div class='footer-links'>
                 <div class='footer-social'>
                     <a href='https://www.facebook.com/meyers42'
