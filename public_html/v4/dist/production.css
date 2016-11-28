@@ -173,7 +173,7 @@ img {
     margin-right: auto;
 }
 
-.inputs {
+.inputs, .comments {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -265,18 +265,12 @@ img {
     background-clip: padding-box;
     border: 1px solid #cccccc;
     max-width: 750px;
+    font-family: Verdana, Geneva, sans-serif;
 }
 .textarea-mod:focus {
     outline: none;
     border-color: #5bb75b;
     box-shadow: 0 0 10px #5bb75b;
-}
-
-.comments {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
 }
 
 /********************* FOOTER *********************/
