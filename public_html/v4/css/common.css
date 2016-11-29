@@ -180,6 +180,79 @@ img {
     text-align: left;
 }
 
+.name-input {
+    padding-bottom: 15px;
+}
+
+.email-input {
+    padding-bottom: 5px;
+}
+
+.email-confirm-input {
+    padding-bottom: 25px;
+}
+
+.comment-input {
+    padding-bottom: 20px;
+}
+
+.button-input {
+    padding-bottom: 5px;
+}
+
+.input-mod {
+    height: 25px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.inputbox-mod {
+    height: 25px;
+    width: calc(100% - 5px - 5px - 2px); /* 100% - padding-left - padding-right - 2 * border width */
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: small;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #cccccc;
+    font-family: Verdana, Geneva, sans-serif;
+}
+.inputbox-mod:focus {
+    outline: none;
+    border-color: #5bb75b;
+    box-shadow: 0 0 10px #5bb75b;
+}
+.inputbox-mod::-ms-clear {
+    width: 0px;
+    height: 0px;
+}
+
+.textarea-mod {
+    height: 100px;
+    width: calc(100% - 5px - 5px - 2px); /* 100% - padding-left - padding-right - 2 * border width  */
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: small;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #cccccc;
+    font-family: Verdana, Geneva, sans-serif;
+    resize: vertical;
+    overflow: auto;
+}
+.textarea-mod:focus {
+    outline: none;
+    border-color: #5bb75b;
+    box-shadow: 0 0 10px #5bb75b;
+}
+
 /* This button was generated using CSSButtonGenerator.com */
 .submit-button {
     background-color:#5bb75b;
@@ -219,60 +292,6 @@ img {
     outline: 0;
 }
 
-.inputbox-mod {
-    width: calc(100% - 5px - 5px); /* 100% - padding-left - padding-right */
-    padding-left: 5px;
-    padding-right: 5px;
-    font-size: small;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    border: 1px solid #cccccc;
-}
-.inputbox-mod:focus {
-    outline: none;
-    border-color: #5bb75b;
-    box-shadow: 0 0 10px #5bb75b;
-}
-.inputbox-mod::-ms-clear {
-    width: 0px;
-    height: 0px;
-}
-
-.input-mod {
-    height: 25px;
-    font-family: Verdana, Geneva, sans-serif;
-}
-
-.name-input {
-    padding-bottom: 15px;
-}
-
-.textarea-mod {
-    height: 100px;
-    width: calc(100% - 5px - 5px); /* 100% - padding-left - padding-right */
-    padding-left: 5px;
-    padding-right: 5px;
-    font-size: small;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    border: 1px solid #cccccc;
-    max-width: 750px;
-    font-family: Verdana, Geneva, sans-serif;
-}
-.textarea-mod:focus {
-    outline: none;
-    border-color: #5bb75b;
-    box-shadow: 0 0 10px #5bb75b;
-}
-
 /********************* FOOTER *********************/
 #footer {
     font-size: small; 
@@ -307,5 +326,3 @@ img {
     display: inline-block;
     vertical-align: middle;
 }
-
-/********************* PROMPT *********************/

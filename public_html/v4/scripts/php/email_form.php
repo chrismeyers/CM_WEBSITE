@@ -46,7 +46,7 @@ if (strcmp($message, "000") != 0) {
 $myemail = "chris@chrismeyers.info";
 $emess = "Name: " . $_SESSION["name"] . "\n";
 $emess.= "Email: " . $_SESSION["fromemail"] . "\n";
-$emess.= "Comments: " . $_SESSION["usercomments"];
+$emess.= "Comments:\n" . $_SESSION["usercomments"];
 $ehead = "From: " . $_SESSION["fromemail"] . "\r\n";
 $subj = "An Email from " . $_SESSION["name"] . ", via chrismeyers.info [SITEGROUND]";
 mail("$myemail", "$subj", "$emess", "$ehead");

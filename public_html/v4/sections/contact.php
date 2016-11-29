@@ -34,7 +34,6 @@
                                 if ($err_arr[2] == "1") {
                                     echo "<img class='contact-link-image' src='images/icons/alert.svg'><div class='contact-alert-text'> Email Addresses don't match.</div>";
                                 }
-
                                 echo '</div>';
                             }
                             else {
@@ -45,57 +44,44 @@
                         }
                         ?>
 
-                        <table class="inputs">
-                            <tr>
-                                <td class="name-input">
-                                    <input id="name-input" class="input-mod inputbox-mod" type="text" placeholder="Name" name="name"<?php
-                                    if (isset($_SESSION["name"])) {
-                                        echo ' value="' . $_SESSION["name"] . '">';
-                                    } else {
-                                        echo '>';
-                                    }
-                                    ?></td>
-                            </tr>
-                            <tr>
-                                <td class="email-input">
-                                    <input id="email1-input" class="input-mod inputbox-mod" type="email" placeholder="Primary Email" name="fromemail"<?php
-                                    if (isset($_SESSION["fromemail"])) {
-                                        echo ' value="' . $_SESSION["fromemail"] . '">';
-                                    } else {
-                                        echo '>';
-                                    }
-                                    ?></td>
-                            </tr>
-                            <tr>
-                                <td class="email-input">
-                                    <input id="email2-input" class="input-mod inputbox-mod" type="email" placeholder="Confirm Primary Email" name="confirmfromemail">
-                                </td> 
-                            </tr>
-                        </table>
+                        <div class="inputs">
+                            <div class="name-input">
+                                <input id="name-input" class="inputbox-mod" type="text" placeholder="Name" name="name"<?php
+                                if (isset($_SESSION["name"])) {
+                                    echo ' value="' . $_SESSION["name"] . '">';
+                                } else {
+                                    echo '>';
+                                }
+                                ?></div>
 
-                        <br />
-                        <table class="comments">
-                            <tr>
-                                <td>
-                                    <textarea class="textarea-mod" name="usercomments" placeholder="Message" maxlength="5000"><?php
-                                        if (isset($_SESSION["usercomments"])) {
-                                            echo $_SESSION["usercomments"] . '</textarea>';
-                                        } else {
-                                            echo '</textarea>';
-                                        }
-                                        ?></td>
-                            </tr>
-                        </table>
+                            <div class="email-input">
+                                <input id="email1-input" class="inputbox-mod" type="email" placeholder="Primary Email" name="fromemail"<?php
+                                if (isset($_SESSION["fromemail"])) {
+                                    echo ' value="' . $_SESSION["fromemail"] . '">';
+                                } else {
+                                    echo '>';
+                                }
+                                ?></div>
                         
-                        <br />
-                        <table class="buttons">
-                            <tr>
-                                <td>
-                                    <button class="submit-button" type="submit">Send</button>
-                                    <button class="submit-button" type="reset" onclick="deleteCookie('PHPSESSID'); window.location='index.php#contact';">Reset</button>
-                                </td>
-                            </tr>                                        
-                        </table>
+                            <div class="email-confirm-input">
+                                <input id="email2-input" class="inputbox-mod" type="email" placeholder="Confirm Primary Email" name="confirmfromemail">
+                            </div>
+                        </div>
+
+                        <div class="comments comment-input">
+                            <textarea class="textarea-mod" name="usercomments" placeholder="Message" maxlength="5000"><?php
+                                if (isset($_SESSION["usercomments"])) {
+                                    echo $_SESSION["usercomments"] . '</textarea>';
+                                } else {
+                                    echo '</textarea>';
+                                }
+                                ?>
+                        </div>
+                        
+                        <div class="buttons button-input">
+                            <button class="submit-button" type="submit">Send</button>
+                            <button class="submit-button" type="reset" onclick="deleteCookie('PHPSESSID'); window.location='index.php#contact';">Reset</button>                                  
+                        </div>
                     </form> 
                 </div>
             </div>
