@@ -222,6 +222,16 @@
         margin-bottom: 10px;
     }
 
+    .footer-bullets {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .svg-hover {
+        height: 24px;
+        width: 24px;
+    }
+
     /********************* PROMPT *********************/
     #prompt-div, #prompt-caret, #prompt {
         display: none;

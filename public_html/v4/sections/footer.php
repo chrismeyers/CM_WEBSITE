@@ -4,11 +4,10 @@
                 <div class='footer-social'>
                     <a href='https://www.facebook.com/meyers42'
                        target='_blank'
-                       style='text-decoration: none;'>
-                        <img src='images/social/facebook-logo.svg'
-                             class='link-image-small'
-                             alt='Facebook'
-                             title='Facebook'>
+                       style='text-decoration: none;'
+                       alt='Facebook' 
+                       title='Facebook'>
+                        <?php echo file_get_contents("images/social/facebook-logo.svg"); ?>
                     </a> 
                 </div>
 
@@ -17,11 +16,10 @@
                 <div class='footer-social'>
                     <a href='https://www.linkedin.com/in/chris-meyers'
                        target='_blank' 
-                       style='text-decoration: none;'>
-                        <img src='images/social/linkedin-logo.svg'
-                             class='link-image-small'
-                             alt='LinkedIn' 
-                             title='LinkedIn'>
+                       style='text-decoration: none;'
+                       alt='LinkedIn' 
+                       title='LinkedIn'>
+                        <?php echo file_get_contents("images/social/linkedin-logo.svg"); ?>
                     </a> 
                 </div>
 
@@ -30,11 +28,10 @@
                 <div class='footer-social'>
                     <a href='https://github.com/chrismeyers' 
                        target='_blank'
-                       style='text-decoration: none;'>
-                        <img src='images/social/mark-github.svg'
-                             class='link-image-small'
-                             alt='GitHub'
-                             title='GitHub'>
+                       style='text-decoration: none;'
+                       alt='GitHub'
+                       title='GitHub'>
+                        <?php echo file_get_contents("images/social/mark-github.svg"); ?>
                     </a> 
                 </div>
 

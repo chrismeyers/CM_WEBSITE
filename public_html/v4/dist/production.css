@@ -64,6 +64,14 @@ img {
     border-bottom-width: 1px;
 }
 
+.content {
+    color: #FFFAFA;
+    -webkit-margin-bottom-collapse: separate; /* Fixes margin-bottom for non-chrome browsers */
+    background-color: rgba(33,40,55,0.85);
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: medium;
+}
+
 .content-text {
     padding: 5px;
 }
@@ -126,14 +134,6 @@ img {
 }
 
 /********************* CONTACT *********************/
-.content {
-    color: #FFFAFA;
-    -webkit-margin-bottom-collapse: separate; /* Fixes margin-bottom for non-chrome browsers */
-    background-color: rgba(33,40,55,0.85);
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: medium;
-}
-
 .errors {
     font-weight: bold;
     color: red;
@@ -325,6 +325,14 @@ img {
 .footer-resume {
     display: inline-block;
     vertical-align: middle;
+}
+
+.svg-hover {
+    height: 16px;
+    width: 16px;
+}
+.footer-social:hover .svg-hover {
+    fill: #5bb75b;
 }
 
 /* 
@@ -1011,6 +1019,16 @@ img {
         padding-right: 10px;
         padding-left: 10px;
         margin-bottom: 10px;
+    }
+
+    .footer-bullets {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .svg-hover {
+        height: 24px;
+        width: 24px;
     }
 
     /********************* PROMPT *********************/
