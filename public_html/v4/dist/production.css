@@ -69,7 +69,7 @@ img {
     -webkit-margin-bottom-collapse: separate; /* Fixes margin-bottom for non-chrome browsers */
     background-color: rgba(33,40,55,0.85);
     font-family: Verdana, Geneva, sans-serif;
-    font-size: medium;
+    font-size: 16px;
 }
 
 .content-text {
@@ -150,7 +150,7 @@ img {
 
 .contact-alert-text {
     margin-left: 25px;
-    font-size: medium;
+    font-size: 16px;
     font-weight: normal; 
 }
 
@@ -207,17 +207,11 @@ img {
 
 .inputbox-mod {
     height: 25px;
-    width: calc(100% - 5px - 5px - 2px); /* 100% - padding-left - padding-right - 2 * border width */
+    width: calc(100% - 5px - 5px - 2px); /* 100% - padding-left - padding-right - (2 * border size) */
     padding-left: 5px;
     padding-right: 5px;
-    font-size: small;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    border: 1px solid #cccccc;
+    font-size: 16px;
+    border: 1px solid #FFFFFF;
     font-family: Verdana, Geneva, sans-serif;
 }
 .inputbox-mod:focus {
@@ -232,17 +226,11 @@ img {
 
 .textarea-mod {
     height: 100px;
-    width: calc(100% - 5px - 5px - 2px); /* 100% - padding-left - padding-right - 2 * border width  */
+    width: calc(100% - 5px - 5px - 2px); /* 100% - padding-left - padding-right - (2 * border size) */
     padding-left: 5px;
     padding-right: 5px;
-    font-size: small;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    border: 1px solid #cccccc;
+    font-size: 16px;
+    border: 1px solid #FFFFFF;
     font-family: Verdana, Geneva, sans-serif;
     resize: vertical;
     overflow: auto;
@@ -273,7 +261,7 @@ img {
     display:inline-block;
     color:#ffffff;
     font-family:Arial;
-    font-size:15px;
+    font-size:16px;
     font-weight:normal;
     font-style:normal;
     height:40px;
@@ -294,7 +282,7 @@ img {
 
 /********************* FOOTER *********************/
 #footer {
-    font-size: small; 
+    font-size: 13px; 
     font-family: Verdana, Geneva, sans-serif;
     color: #FFFFFF;
     bottom: 0;
