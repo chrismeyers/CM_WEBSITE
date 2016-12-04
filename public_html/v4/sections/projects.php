@@ -60,7 +60,7 @@
                                    title='" . $title . "'>
                                     <img src='" . $url . "'
                                         class='projImages-small-img-" . $orient ."'
-                                        alt='Mid size version of my personal website.'
+                                        alt='" . $title . "'
                                         title='Click to enlarge'>
                                     </a>";
                             }
