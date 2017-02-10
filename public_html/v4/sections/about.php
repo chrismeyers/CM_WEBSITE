@@ -7,7 +7,7 @@
                 <a class="fancytxt" href="http://www.rowan.edu/" target="_blank">Rowan University</a>
                 in Glassboro, NJ and earned a Bachelor of Science in Computer Science. 
                 Currently, I am employed as a Software Engineer at 
-                <a class="fancytxt" href="http://asrcfederal.com/mse" target="_blank">ASRC Federal Mission Solutions</a>.
+                <a class="fancytxt" href="https://www.mcgstrategic.com" target="_blank">MCG Strategic</a>.
                 Some of my professional interests include: Software Development, Web Development and Computer Networking.
                 Over the past few years, I have picked up experience with the following programming languages and technologies:
                 

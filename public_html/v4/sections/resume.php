@@ -4,8 +4,17 @@
             <div class="content-text">
                 <h2>Work Experience</h2>
 
+                <div class="left">&bull; <b>MCG Strategic, Marlton, NJ</b></div>
+                <div class="right"><b>Feb 2017 – Present</b></div>
+                <div class=info>
+                    <div class="first">&#9702; Software Engineer</div>
+                        <div class="second">&#9642; More info coming soon!</div>
+                </div>
+
+                <br /> <br />
+
                 <div class="left">&bull; <b>ASRC Federal Mission Solutions, Moorestown, NJ</b></div>
-                <div class="right"><b>May 2015 – Present</b></div>
+                <div class="right"><b>May 2015 – Feb 2017</b></div>
                 <div class=info>
                     <div class="first">&#9702; Software Engineer, Display Systems</div>
                         <div class="second">&#9642; Designed, developed, and tested solutions in
