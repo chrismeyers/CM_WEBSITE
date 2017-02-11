@@ -2,7 +2,7 @@
             <div class="section-header section-header-size">Résumé</div>
             
             <div class="content-text">
-                <h2>Work Experience</h2>
+                <h2>Experience</h2>
 
                 <div class="left">&bull; <b>MCG Strategic, Marlton, NJ</b></div>
                 <div class="right"><b>Feb 2017 – Present</b></div>
@@ -67,7 +67,7 @@
 
                 <br /> <br /> <hr>
                 
-                <h2>Technical Experience</h2>
+                <h2>Technical Skills</h2>
 
                 <div>&bull; Experience developing various software using languages
                     such as Java, C++, and C#.</div>
@@ -92,8 +92,6 @@
 
                 <div>&bull; Highly proficient with Windows, Mac OSX, and Command
                     Line Interfaces (Unix, Linux, Solaris).</div>
-
-                <div>&bull; Highly proficient with Microsoft Office.</div>
 
                 <div>&bull; Experience installing, maintaining, and relocating data
                     center hardware.</div>
