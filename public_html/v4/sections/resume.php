@@ -8,7 +8,8 @@
                 <div class="right"><b>Feb 2017 – Present</b></div>
                 <div class=info>
                     <div class="first">&#9702; Software Engineer</div>
-                        <div class="second">&#9642; More info coming soon!</div>
+                        <div class="second">&#9642; Developed mobile applications using Apache
+                            Cordova with Javascript, CSS3, and HTML5.</div>
                 </div>
 
                 <br /> <br />
@@ -73,7 +74,8 @@
                     such as Java, C++, and C#.</div>
 
                 <div>&bull; Experience developing websites and web applications using
-                    languages and technologies such as HTML, CSS, PHP, Javascript, JSON, and MySQL.</div>
+                    languages and technologies such as HTML, CSS, PHP, Javascript, JSON, MySQL,
+                    and Apache Cordova.</div>
 
                 <div>&bull; Experience writing Bash and Python scripts to automate 
                     processes and aid in development.</div>
