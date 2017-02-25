@@ -9,5 +9,7 @@ public_html/v3/downloads/
 public_html/v4/downloads/
 public_html/v4/projects/
 public_html/v4/db/*.txt
+public_html/v5/projects/
+public_html/v5/db/*.txt
 test/
 node_modules/

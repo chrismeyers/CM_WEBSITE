@@ -1,0 +1,13 @@
+{
+  "name": "chrismeyers.info",
+  "version": "5.0.0",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-newer": "^1.2.0",
+    "grunt-processhtml": "^0.4.0",
+    "time-grunt": "^1.4.0"
+  }
+}

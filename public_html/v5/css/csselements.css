@@ -1,0 +1,145 @@
+/* 
+    Document   : csselements.css
+    Created on : Feb 25, 2017
+    Author     : Chris Meyers
+    Description:
+        Fullscreen desktop stylesheet.
+*/
+
+@media screen and (min-width: 807px){
+    /********************* GENERAL *********************/
+    html {
+        position: relative;
+        min-height: 100%;
+    }
+    
+    body { 
+        margin: 0 0 60px; /* 3rd parameter must = #footer height */
+    }
+
+    /********************* CONTENT *********************/
+    .section-header-size {
+        width: 790px;
+        height: 90px;
+        line-height: 80px;
+        font-size: 40px;
+    }
+
+    .content-size {
+        width: 790px;
+        top: 60px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px; /* Add more spacing between footer and content */
+        position: relative;
+    }
+
+    #about-me, #my-resume, #my-builds, #my-projects, #contact-me {
+        display: none;
+    }
+
+    /********************* BUILDS *********************/
+    .build-pic {
+        float: left;
+    }
+
+    .build-specs {
+        margin-left: 50%;
+    }
+
+    /********************* PROJECTS *********************/
+    .projImages {
+        float: left;
+    }
+    
+    .projImages-full-img-square {
+        height: 250px;
+        width: 250px;
+    }
+    
+    .projImages-full-img-land {
+        height: 150px;
+        width: 250px;
+    }
+    
+    .projImages-full-img-port {
+        height: 250px;
+        width: 150px;
+    }
+    
+    .projDesc {
+        margin-left: 40%;
+    }
+
+    /********************* CONTACT *********************/
+    .alert-offset {
+        margin-left: 0px;
+    }
+
+    .contact-links {
+        float: left;
+    }
+
+    .contact-form {
+        margin-left: 40%;
+    }
+
+    /********************* PROMPT *********************/
+    .prompt-style {
+        background-color: rgba(0,0,0,0.85);
+        color: #00CC00;
+        font-family: "Courier New", Courier, monospace;
+        border: 0;
+    }
+
+    #prompt-div {
+        bottom: 35px;
+        margin-left: 5px;
+        position: fixed;
+        display: none;
+    }
+
+    #prompt-caret {
+        width: 1.5%;
+        float: left;
+        font-weight: bold;
+    }
+    #prompt-caret:focus {
+        outline: none;
+    }
+
+    #prompt {
+        width: 500px;
+        float: right;
+    }
+    #prompt:focus {
+        outline: none;
+    }
+    #prompt::-ms-clear {
+        width: 0px;
+        height: 0px;
+    }
+
+    #prompt-textarea {
+        width: 525px;
+        border: 0;
+        resize: none;
+        position: absolute;
+        bottom: 30px;
+        display: none;
+        font-size: 12px;
+        height: 125px;
+    }
+    #prompt-textarea:focus {
+        outline: none;
+    }
+
+    #prompt-textarea-btn {
+        border: 0;
+    }
+    #prompt-textarea-btn:focus {
+        outline: none;
+    }
+}

@@ -1,0 +1,1271 @@
+/* 
+    Document   : common.css
+    Created on : Nov 27, 2016
+    Author     : Chris Meyers
+    Description:
+        Common rules shared between all stylesheets.
+*/
+
+/********************* GENERAL *********************/
+img {
+    border: 0; /* Remove IE img link border */
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.spacer {
+    overflow: hidden;
+    height: 0px;
+    width: 0px;
+}
+
+.fancytxt {
+    color: #000000;
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.fancytxt:hover {
+    color: #5bb75b;
+    cursor: pointer;
+}
+
+.no-decoration {
+    text-decoration: none !important;
+}
+
+.li-filled {
+    list-style-type: disc;
+}
+
+/********************* HEADER *********************/
+#bannerBar {
+    width: 790px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    /* Make content scroll "under" banner */
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.headerLink {
+    color: #000000;
+    text-decoration: none;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+#banner {
+    float: left;
+    height: 60px;
+}
+
+#banner-small img {
+    height: 30px;
+    width: 113px;
+    padding-top: 15px;
+    float: left;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.banner-img-small {
+    float: left;
+    height: 20px;
+    width: 70px;
+}
+
+#banner-icon {
+    float: right;
+    margin-right: 0px; 
+}
+
+.bannerBar-size {
+    height: 60px;
+}
+
+.sectionTitle-txt {
+    margin-top: 24px;
+}
+
+#sectionTitle-menu {
+    float: right;
+    width: 60px;
+    height: 60px;
+    background-color: #FFFFFF;
+    display: table-cell;
+    margin-top: 0px; /* 2px with border */
+    color: white;
+    font-size: x-large;
+    font-family: Verdana, Geneva, sans-serif;
+    text-align: center;
+}
+#sectionTitle-menu:hover {
+    cursor: pointer;
+}
+
+.sectionTitle-small-txt {
+    vertical-align: middle;
+    line-height: 45px;
+    text-align: center;
+}
+.sectionTitle-small-txt-last {
+    vertical-align: middle;
+    line-height: 45px;
+    text-align: center;
+}
+
+#menu-dropdown {
+    margin: 0; 
+    padding: 0;
+    list-style: none;
+}
+
+#menu-items {
+    padding: 0px;
+    list-style: none;
+    display: none;
+    position: absolute;
+    float: left; clear: right;
+    left: 0px;
+    right: 0px;
+    background: #FFFFFF;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#menu-items li {
+    height: 50px;
+}
+
+#menu-toggle {
+    width: 25px;
+    height: 27px;
+    margin-top: 14px;
+}
+
+#menu-click {
+    height: 56px;
+}
+
+/********************* CONTENT *********************/
+.section-header {
+    text-align: center;
+    vertical-align: middle;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.content {
+    -webkit-margin-bottom-collapse: separate; /* Fixes margin-bottom for non-chrome browsers */
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+}
+
+.content-text {
+    padding: 0 5px 10px 5px;
+}
+
+.dt-mod {
+    margin-top: 15px;
+}
+
+.dt-links {
+    margin-bottom: 5px;
+}
+
+.first-header {
+    margin-top: 0px;
+}
+
+/********************* BUILDS *********************/
+.build {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.build-pic-img-land {
+    height: 220px;
+    width: 350px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #707070;
+}
+.build-pic-img-port {
+    height: 375px; 
+    width: 290px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #707070;
+}
+.build-info {
+    margin: 10px;
+    padding: 0;
+}
+
+/********************* PROJECTS *********************/
+.project-link-image {
+    margin-bottom: 10px;
+}
+
+.proj {
+    height: auto;
+}
+
+.projWrapper {
+    margin: 10px;
+    padding: 0;
+}
+
+.projImages-small-img-square, .projImages-small-img-port {
+    height: 40px;
+    width: 40px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #707070;
+}
+
+.projImages-small-img-land {
+    height: 25px;
+    width: 60px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #707070;
+}
+
+.projImages-full-img-square, .projImages-full-img-land, .projImages-full-img-port  {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #707070;
+}
+
+/********************* CONTACT *********************/
+.errors {
+    font-weight: bold;
+    color: red;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.success {
+    font-weight: bold;
+    color: #5bb75b;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.contact-alert-text {
+    margin-left: 25px;
+    font-size: 16px;
+    font-weight: normal; 
+}
+
+.contact-link-image {
+    float: left;
+    margin-right: 5px;
+}
+
+.link-image-big {
+    height: 20px;
+    width: 20px;
+}
+
+.link-txt {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.buttons {
+    margin-right: auto;
+}
+
+.inputs, .comments {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.name-input {
+    padding-bottom: 15px;
+}
+
+.email-input {
+    padding-bottom: 5px;
+}
+
+.email-confirm-input {
+    padding-bottom: 25px;
+}
+
+.comment-input {
+    padding-bottom: 20px;
+}
+
+.button-input {
+    padding-bottom: 5px;
+}
+
+.input-mod {
+    height: 25px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.inputbox-mod {
+    height: 25px;
+    width: calc(100% - 5px - 5px - 2px); /* 100% - padding-left - padding-right - (2 * border size) */
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 13px;
+    border: 1px solid #000000;
+    font-family: Verdana, Geneva, sans-serif;
+}
+.inputbox-mod:focus {
+    outline: none;
+    border-color: #5bb75b;
+}
+.inputbox-mod::-ms-clear {
+    width: 0px;
+    height: 0px;
+}
+
+.textarea-mod {
+    height: 100px;
+    width: calc(100% - 5px - 5px - 2px); /* 100% - padding-left - padding-right - (2 * border size) */
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 13px;
+    border: 1px solid #000000;
+    font-family: Verdana, Geneva, sans-serif;
+    resize: vertical;
+    overflow: auto;
+}
+.textarea-mod:focus {
+    outline: none;
+    border-color: #5bb75b;
+}
+
+/* This button was generated using CSSButtonGenerator.com */
+.submit-button {
+    background-color:#5bb75b;
+    -webkit-border-top-left-radius:0px;
+    -moz-border-radius-topleft:0px;
+    border-top-left-radius:0px;
+    -webkit-border-top-right-radius:0px;
+    -moz-border-radius-topright:0px;
+    border-top-right-radius:0px;
+    -webkit-border-bottom-right-radius:0px;
+    -moz-border-radius-bottomright:0px;
+    border-bottom-right-radius:0px;
+    -webkit-border-bottom-left-radius:0px;
+    -moz-border-radius-bottomleft:0px;
+    border-bottom-left-radius:0px;
+    text-indent:0;
+    border:1px solid #000000;
+    display:inline-block;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:16px;
+    font-weight:normal;
+    font-style:normal;
+    height:40px;
+    line-height:30px;
+    width:100px;
+    text-decoration:none;
+    text-align:center;
+}
+.submit-button:hover {
+    background-color:#187a87;
+}.submit-button:active {
+    position:relative;
+    top:1px;
+}
+.submit-button:focus {
+    outline: 0;
+}
+
+/********************* FOOTER *********************/
+#footer {
+    font-size: 13px; 
+    font-family: Verdana, Geneva, sans-serif;
+    bottom: 0;
+    height: auto;
+    left: 0;
+    right: 0;
+    border-top: 10px;
+}
+
+.footer-size {
+    width: auto;
+    position: absolute;
+    text-align: center;
+}
+
+.footer-links {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.footer-years {
+    display: block;
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.link-image-small {
+    height: 16px;
+    width: 16px;
+}
+
+.footer-social, .footer-bullets, .footer-resume {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.svg-hover {
+    height: 16px;
+    width: 16px;
+}
+.footer-social:hover .svg-hover {
+    fill: #5bb75b;
+}
+
+/* 
+    Document   : csselements.css
+    Created on : Feb 25, 2017
+    Author     : Chris Meyers
+    Description:
+        Fullscreen desktop stylesheet.
+*/
+
+@media screen and (min-width: 807px){
+    /********************* GENERAL *********************/
+    html {
+        position: relative;
+        min-height: 100%;
+    }
+    
+    body { 
+        margin: 0 0 60px; /* 3rd parameter must = #footer height */
+    }
+
+    /********************* CONTENT *********************/
+    .section-header-size {
+        width: 790px;
+        height: 90px;
+        line-height: 80px;
+        font-size: 40px;
+    }
+
+    .content-size {
+        width: 790px;
+        top: 60px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px; /* Add more spacing between footer and content */
+        position: relative;
+    }
+
+    #about-me, #my-resume, #my-builds, #my-projects, #contact-me {
+        display: none;
+    }
+
+    /********************* BUILDS *********************/
+    .build-pic {
+        float: left;
+    }
+
+    .build-specs {
+        margin-left: 50%;
+    }
+
+    /********************* PROJECTS *********************/
+    .projImages {
+        float: left;
+    }
+    
+    .projImages-full-img-square {
+        height: 250px;
+        width: 250px;
+    }
+    
+    .projImages-full-img-land {
+        height: 150px;
+        width: 250px;
+    }
+    
+    .projImages-full-img-port {
+        height: 250px;
+        width: 150px;
+    }
+    
+    .projDesc {
+        margin-left: 40%;
+    }
+
+    /********************* CONTACT *********************/
+    .alert-offset {
+        margin-left: 0px;
+    }
+
+    .contact-links {
+        float: left;
+    }
+
+    .contact-form {
+        margin-left: 40%;
+    }
+
+    /********************* PROMPT *********************/
+    .prompt-style {
+        background-color: rgba(0,0,0,0.85);
+        color: #00CC00;
+        font-family: "Courier New", Courier, monospace;
+        border: 0;
+    }
+
+    #prompt-div {
+        bottom: 35px;
+        margin-left: 5px;
+        position: fixed;
+        display: none;
+    }
+
+    #prompt-caret {
+        width: 1.5%;
+        float: left;
+        font-weight: bold;
+    }
+    #prompt-caret:focus {
+        outline: none;
+    }
+
+    #prompt {
+        width: 500px;
+        float: right;
+    }
+    #prompt:focus {
+        outline: none;
+    }
+    #prompt::-ms-clear {
+        width: 0px;
+        height: 0px;
+    }
+
+    #prompt-textarea {
+        width: 525px;
+        border: 0;
+        resize: none;
+        position: absolute;
+        bottom: 30px;
+        display: none;
+        font-size: 12px;
+        height: 125px;
+    }
+    #prompt-textarea:focus {
+        outline: none;
+    }
+
+    #prompt-textarea-btn {
+        border: 0;
+    }
+    #prompt-textarea-btn:focus {
+        outline: none;
+    }
+}
+
+/* 
+    Document   : csselements_small.css
+    Created on : Feb 25, 2017
+    Author     : Chris Meyers
+    Description:
+        Small window desktop stylesheet and mobile stylesheet.
+*/
+
+@media screen and (max-width: 806px) {
+    /********************* GENERAL *********************/
+    html {
+        position: relative;
+        min-height: 100%;
+    }
+    
+    body { 
+        margin: 0 0 100px; /* 3rd parameter must = #footer height */
+    }
+
+    /********************* HEADER *********************/
+    #bannerBar {
+        width: auto;
+    }
+
+    /********************* CONTENT *********************/
+    .section-header-size {
+        width: 100%;
+        min-height: 60px;
+        background-repeat: no-repeat;
+        background-position: 50%, 50%;
+        background-position-x: 50%;
+        background-position-y: 50%;
+        line-height: 55px;
+        font-size: 30px;
+    }
+
+    .content-size {
+        width: auto;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 0; /* Add more spacing between footer and content */
+        margin-top: 60px; /* Used for a fixed banner */
+        padding-bottom: 10px; /* Make same as footer padding top */
+    }
+
+    #about-me, #my-resume, #my-builds, #my-projects, #contact-me {
+        display: none;
+    }
+
+    /********************* BUILDS *********************/
+    .build-pic {
+        text-align: center;
+    }
+
+    /********************* PROJECTS *********************/
+    .projImages {
+        text-align: center;
+    }
+    
+    .projImages-full-img-square {
+        height: 300px;
+        width: 300px;
+    }
+    
+    .projImages-full-img-land {
+        height: 200px;
+        width: 300px;
+    }
+    
+    .projImages-full-img-port {
+        height: 300px;
+        width: 175px;
+    }
+    
+    .projImages-small {
+        text-align: center;
+        text-decoration: none;
+    }
+
+    /********************* CONTACT *********************/
+    .alert-offset {
+        margin-left: 5px;
+    }
+    
+    .contact-links {
+        padding-left: 5px;
+        margin-bottom: 20px;
+    }
+
+    .textarea-mod {
+        resize: none;
+    }
+
+    /********************* FOOTER *********************/
+    .footer-bullets {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .svg-hover {
+        height: 24px;
+        width: 24px;
+    }
+
+    /********************* PROMPT *********************/
+    #prompt-div, #prompt-caret, #prompt {
+        display: none;
+    }  
+}
+
+/* 
+    Document   : csselements_print.css
+    Created on : Feb 25, 2017
+    Author     : Chris Meyers
+    Description:
+        Printing stylesheet.
+*/
+
+@media print{
+    html {
+        font-family: Verdana, Geneva, sans-serif;
+    }
+
+    .fancytxt {
+        color: #000000;
+    }
+
+    #bannerBar {
+        display: none;
+    }
+    
+    .section-header {
+        font-size: 28px;
+        background-color: #FFFFFF;
+        text-align: left;
+    }
+    
+    .content {
+        font-size: 12px;
+    }
+    
+    .build-pic-img-land {
+        height: 220px;
+        width: 350px;
+    }
+    .build-pic-img-port {
+        height: 375px; 
+        width: 290px;
+    }
+    
+    .projImages-full-img-square {
+        height:200px;
+        width: 200px;
+    }
+    
+    .projImages-full-img-land {
+        height:125px;
+        width: 200px;
+    }
+    
+    .projImages-full-img-port {
+        height:200px;
+        width: 125px;
+    }
+    
+    .projImages-small {
+        display: inline;
+    }
+    
+    .projImages-small-img-square {
+        height: 200px;
+        width: 200px;
+        margin-left: 20px;
+    }
+    
+    .projImages-small-img-land {
+        height: 40%;
+        width: 40%;
+        margin-left: 20px;
+    }
+    
+    .projImages-small-img-port {
+        height: 25%;
+        width: 25%;
+        margin-left: 20px;
+    }
+    
+    .no-decoration {
+        text-decoration: none;
+    }
+    
+    .proj-link {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .force-col-specs {
+        display: block;
+    }
+    
+    .textarea-mod {
+        height: 700px;
+        width: 750px;
+    }
+
+    #prompt-div, #prompt-caret, #prompt {
+        display: none;
+    }
+
+    #footer {
+        display: none;
+    }
+}
+
+/* 
+    Document   : csselements_resume.css
+    Created on : Feb 25, 2017
+    Author     : Chris Meyers
+    Description:
+        Stylesheet for HTML resume.
+*/
+
+.wrapper {
+    width: 100%;
+}
+
+.left {
+    width: 65%;
+    float: left;
+}
+
+.right {
+    float: right;
+    width: 35%;
+    text-align: right;
+}
+
+.first {
+    padding-left: 40px;
+}
+
+.second {
+    padding-left: 80px;
+}
+
+.info {
+    display: inline-block;
+}
+
+/*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
+.fancybox-wrap,
+.fancybox-skin,
+.fancybox-outer,
+.fancybox-inner,
+.fancybox-image,
+.fancybox-wrap iframe,
+.fancybox-wrap object,
+.fancybox-nav,
+.fancybox-nav span,
+.fancybox-tmp
+{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	vertical-align: top;
+}
+
+.fancybox-wrap {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 8020;
+}
+
+.fancybox-skin {
+	position: relative;
+	background: #f9f9f9;
+	color: #444;
+	text-shadow: none;
+	-webkit-border-radius: 4px;
+	   -moz-border-radius: 4px;
+	        border-radius: 4px;
+}
+
+.fancybox-opened {
+	z-index: 8030;
+}
+
+.fancybox-opened .fancybox-skin {
+	-webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+	   -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+	        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.fancybox-outer, .fancybox-inner {
+	position: relative;
+}
+
+.fancybox-inner {
+	overflow: hidden;
+}
+
+.fancybox-type-iframe .fancybox-inner {
+	-webkit-overflow-scrolling: touch;
+}
+
+.fancybox-error {
+	color: #444;
+	font: 14px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+	margin: 0;
+	padding: 15px;
+	white-space: nowrap;
+}
+
+.fancybox-image, .fancybox-iframe {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.fancybox-image {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+	background-image: url('fancybox_sprite.png');
+}
+
+#fancybox-loading {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -22px;
+	margin-left: -22px;
+	background-position: 0 -108px;
+	opacity: 0.8;
+	cursor: pointer;
+	z-index: 8060;
+}
+
+#fancybox-loading div {
+	width: 44px;
+	height: 44px;
+	background: url('fancybox_loading.gif') center center no-repeat;
+}
+
+.fancybox-close {
+	position: absolute;
+	top: -18px;
+	right: -18px;
+	width: 36px;
+	height: 36px;
+	cursor: pointer;
+	z-index: 8040;
+}
+
+.fancybox-nav {
+	position: absolute;
+	top: 0;
+	width: 40%;
+	height: 100%;
+	cursor: pointer;
+	text-decoration: none;
+	background: transparent url('blank.gif'); /* helps IE */
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	z-index: 8040;
+}
+
+.fancybox-prev {
+	left: 0;
+}
+
+.fancybox-next {
+	right: 0;
+}
+
+.fancybox-nav span {
+	position: absolute;
+	top: 50%;
+	width: 36px;
+	height: 34px;
+	margin-top: -18px;
+	cursor: pointer;
+	z-index: 8040;
+	visibility: hidden;
+}
+
+.fancybox-prev span {
+	left: 10px;
+	background-position: 0 -36px;
+}
+
+.fancybox-next span {
+	right: 10px;
+	background-position: 0 -72px;
+}
+
+.fancybox-nav:hover span {
+	visibility: visible;
+}
+
+.fancybox-tmp {
+	position: absolute;
+	top: -99999px;
+	left: -99999px;
+	visibility: hidden;
+	max-width: 99999px;
+	max-height: 99999px;
+	overflow: visible !important;
+}
+
+/* Overlay helper */
+
+.fancybox-lock {
+    overflow: hidden !important;
+    width: auto;
+}
+
+.fancybox-lock body {
+    overflow: hidden !important;
+}
+
+.fancybox-lock-test {
+    overflow-y: hidden !important;
+}
+
+.fancybox-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	display: none;
+	z-index: 8010;
+	background: url('fancybox_overlay.png');
+}
+
+.fancybox-overlay-fixed {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+
+.fancybox-lock .fancybox-overlay {
+	overflow: auto;
+	overflow-y: scroll;
+}
+
+/* Title helper */
+
+.fancybox-title {
+	visibility: hidden;
+	font: normal 13px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+	position: relative;
+	text-shadow: none;
+	z-index: 8050;
+}
+
+.fancybox-opened .fancybox-title {
+	visibility: visible;
+}
+
+.fancybox-title-float-wrap {
+	position: absolute;
+	bottom: 0;
+	right: 50%;
+	margin-bottom: -35px;
+	z-index: 8050;
+	text-align: center;
+}
+
+.fancybox-title-float-wrap .child {
+	display: inline-block;
+	margin-right: -100%;
+	padding: 2px 20px;
+	background: transparent; /* Fallback for web browsers that doesn't support RGBa */
+	background: rgba(0, 0, 0, 0.8);
+	-webkit-border-radius: 15px;
+	   -moz-border-radius: 15px;
+	        border-radius: 15px;
+	text-shadow: 0 1px 2px #222;
+	color: #FFF;
+	font-weight: bold;
+	line-height: 24px;
+	white-space: nowrap;
+}
+
+.fancybox-title-outside-wrap {
+	position: relative;
+	margin-top: 10px;
+	color: #fff;
+}
+
+.fancybox-title-inside-wrap {
+	padding-top: 10px;
+}
+
+.fancybox-title-over-wrap {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: #fff;
+	padding: 10px;
+	background: #000;
+	background: rgba(0, 0, 0, .8);
+}
+
+/*Retina graphics!*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+	   only screen and (min--moz-device-pixel-ratio: 1.5),
+	   only screen and (min-device-pixel-ratio: 1.5){
+
+	#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+		background-image: url('fancybox_sprite@2x.png');
+		background-size: 44px 152px; /*The size of the normal image, half the size of the hi-res image*/
+	}
+
+	#fancybox-loading div {
+		background-image: url('fancybox_loading@2x.gif');
+		background-size: 24px 24px; /*The size of the normal image, half the size of the hi-res image*/
+	}
+}
+#fancybox-buttons {
+	position: fixed;
+	left: 0;
+	width: 100%;
+	z-index: 8050;
+}
+
+#fancybox-buttons.top {
+	top: 10px;
+}
+
+#fancybox-buttons.bottom {
+	bottom: 10px;
+}
+
+#fancybox-buttons ul {
+	display: block;
+	width: 166px;
+	height: 30px;
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	border: 1px solid #111;
+	border-radius: 3px;
+	-webkit-box-shadow: inset 0 0 0 1px rgba(255,255,255,.05);
+	   -moz-box-shadow: inset 0 0 0 1px rgba(255,255,255,.05);
+	        box-shadow: inset 0 0 0 1px rgba(255,255,255,.05);
+	background: rgb(50,50,50);
+	background: -moz-linear-gradient(top, rgb(68,68,68) 0%, rgb(52,52,52) 50%, rgb(41,41,41) 50%, rgb(51,51,51) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(68,68,68)), color-stop(50%,rgb(52,52,52)), color-stop(50%,rgb(41,41,41)), color-stop(100%,rgb(51,51,51)));
+	background: -webkit-linear-gradient(top, rgb(68,68,68) 0%,rgb(52,52,52) 50%,rgb(41,41,41) 50%,rgb(51,51,51) 100%);
+	background: -o-linear-gradient(top, rgb(68,68,68) 0%,rgb(52,52,52) 50%,rgb(41,41,41) 50%,rgb(51,51,51) 100%);
+	background: -ms-linear-gradient(top, rgb(68,68,68) 0%,rgb(52,52,52) 50%,rgb(41,41,41) 50%,rgb(51,51,51) 100%);
+	background: linear-gradient(top, rgb(68,68,68) 0%,rgb(52,52,52) 50%,rgb(41,41,41) 50%,rgb(51,51,51) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444444', endColorstr='#222222',GradientType=0 );
+}
+
+#fancybox-buttons ul li {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+#fancybox-buttons a {
+	display: block;
+	width: 30px;
+	height: 30px;
+	text-indent: -9999px;
+	background-color: transparent;
+	background-image: url('fancybox_buttons.png');
+	background-repeat: no-repeat;
+	outline: none;
+	opacity: 0.8;
+}
+
+#fancybox-buttons a:hover {
+	opacity: 1;
+}
+
+#fancybox-buttons a.btnPrev {
+	background-position: 5px 0;
+}
+
+#fancybox-buttons a.btnNext {
+	background-position: -33px 0;
+	border-right: 1px solid #3e3e3e;
+}
+
+#fancybox-buttons a.btnPlay {
+	background-position: 0 -30px;
+}
+
+#fancybox-buttons a.btnPlayOn {
+	background-position: -30px -30px;
+}
+
+#fancybox-buttons a.btnToggle {
+	background-position: 3px -60px;
+	border-left: 1px solid #111;
+	border-right: 1px solid #3e3e3e;
+	width: 35px
+}
+
+#fancybox-buttons a.btnToggleOn {
+	background-position: -27px -60px;
+}
+
+#fancybox-buttons a.btnClose {
+	border-left: 1px solid #111;
+	width: 35px;
+	background-position: -56px 0px;
+}
+
+#fancybox-buttons a.btnDisabled {
+	opacity : 0.4;
+	cursor: default;
+}
+#fancybox-thumbs {
+	position: fixed;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	z-index: 8050;
+}
+
+#fancybox-thumbs.bottom {
+	bottom: 2px;
+}
+
+#fancybox-thumbs.top {
+	top: 2px;
+}
+
+#fancybox-thumbs ul {
+	position: relative;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#fancybox-thumbs ul li {
+	float: left;
+	padding: 1px;
+	opacity: 0.5;
+}
+
+#fancybox-thumbs ul li.active {
+	opacity: 0.75;
+	padding: 0;
+	border: 1px solid #fff;
+}
+
+#fancybox-thumbs ul li:hover {
+	opacity: 1;
+}
+
+#fancybox-thumbs ul li a {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	border: 1px solid #222;
+	background: #111;
+	outline: none;
+}
+
+#fancybox-thumbs ul li img {
+	display: block;
+	position: relative;
+	border: 0;
+	padding: 0;
+	max-width: none;
+}
