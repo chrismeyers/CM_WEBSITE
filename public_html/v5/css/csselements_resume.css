@@ -6,29 +6,49 @@
         Stylesheet for HTML resume.
 */
 
-.wrapper {
-    width: 100%;
+@media screen and (min-width: 807px) {
+    ul {
+        overflow: hidden;
+    }
+    ul.more-info {
+        padding-top: 10px;
+    }
+
+    .left-column {
+        width: 70%;
+        float: left;
+    }
+
+    .sub-left-column {
+        list-style-type: none;
+    }
+
+    .right-column {
+        float: right;
+        width: 30%;
+        text-align: right;
+        list-style-type: none;
+    }
+
+    .company, .school, .location {
+        font-weight: bold;
+    }   
+
+    .degree, .job-title, .tenure {
+        font-style: italic;
+    }
 }
 
-.left {
-    width: 65%;
-    float: left;
-}
+@media screen and (max-width: 806px) {
+    .company, .school {
+        font-weight: bold;
+    }   
 
-.right {
-    float: right;
-    width: 35%;
-    text-align: right;
-}
+    .location, .degree {
+        font-weight: normal;
+    }
 
-.first {
-    padding-left: 40px;
-}
-
-.second {
-    padding-left: 80px;
-}
-
-.info {
-    display: inline-block;
+    .location, .degree, .job-title, .tenure {
+        margin-left: 10px; 
+    }
 }

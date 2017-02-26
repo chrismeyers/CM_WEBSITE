@@ -18,6 +18,10 @@ hr {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+h2.top {
+    margin-top: 0px;
+}
+
 .spacer {
     overflow: hidden;
     height: 0px;
