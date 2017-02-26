@@ -103,7 +103,7 @@
     }
 
     /********************* PROMPT *********************/
-    #prompt-div, #prompt-caret, #prompt {
+    #prompt-div, #prompt-caret, #prompt, #prompt-textarea, #prompt-textarea-btn {
         display: none;
     }  
 }

@@ -193,9 +193,6 @@ h2.top {
     margin-top: 0px;
 }
 
-/********************* RESUME *********************/
-
-
 /********************* BUILDS *********************/
 .build {
     width: 100%;
@@ -707,7 +704,7 @@ h2.top {
     }
 
     /********************* PROMPT *********************/
-    #prompt-div, #prompt-caret, #prompt {
+    #prompt-div, #prompt-caret, #prompt, #prompt-textarea, #prompt-textarea-btn {
         display: none;
     }  
 }
