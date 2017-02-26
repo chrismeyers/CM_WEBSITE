@@ -18,23 +18,23 @@
                             </div>
                             <ul id="menu-items">
                                 <a href="#about" class="headerLink">
-                                    <li class="sectionTitle-small-txt fancytxt" onclick="showSection('about-me')">About</li>
+                                    <li id="sectionTitle-about" class="sectionTitle-small-txt fancytxt" onclick="showSection('about-me')">About</li>
                                 </a>
                                 
                                 <a href="#resume" class="headerLink">
-                                    <li class="sectionTitle-small-txt fancytxt" onclick="showSection('my-resume')">Résumé</li>
+                                    <li id="sectionTitle-resume" class="sectionTitle-small-txt fancytxt" onclick="showSection('my-resume')">Résumé</li>
                                 </a>
                                 
                                 <a href="#builds" class="headerLink">
-                                    <li class="sectionTitle-small-txt fancytxt" onclick="showSection('my-builds')">Builds</li>
+                                    <li id="sectionTitle-builds" class="sectionTitle-small-txt fancytxt" onclick="showSection('my-builds')">Builds</li>
                                 </a>
 
                                 <a href="#projects" class="headerLink">
-                                    <li class="sectionTitle-small-txt fancytxt" onclick="showSection('my-projects')">Projects</li>
+                                    <li id="sectionTitle-projects" class="sectionTitle-small-txt fancytxt" onclick="showSection('my-projects')">Projects</li>
                                 </a>
 
                                 <a href="#contact" class="headerLink">
-                                    <li class="sectionTitle-small-txt-last fancytxt" onclick="showSection('contact-me')">Contact</li>
+                                    <li id="sectionTitle-contact" class="sectionTitle-small-txt-last fancytxt" onclick="showSection('contact-me')">Contact</li>
                                 </a>
                             </ul>
                         </li>

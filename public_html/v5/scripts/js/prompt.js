@@ -1,6 +1,6 @@
 /* 
     Document   : prompt.js
-    Created on : June 13, 2016
+    Created on : Feb 25, 2017
     Author     : Chris Meyers
     Description:
         Handles the functionality of the hidden prompt.

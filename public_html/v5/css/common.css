@@ -1,6 +1,6 @@
 /* 
     Document   : common.css
-    Created on : Nov 27, 2016
+    Created on : Feb 25, 2017
     Author     : Chris Meyers
     Description:
         Common rules shared between all stylesheets.
@@ -32,7 +32,7 @@ hr {
 }
 
 .fancytxt:hover {
-    color: #5bb75b;
+    color: #5bb75b !important;
     cursor: pointer;
 }
 

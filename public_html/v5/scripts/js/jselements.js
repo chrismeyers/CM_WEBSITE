@@ -1,12 +1,12 @@
 /* 
     Document   : jselements.js
-    Created on : June 13, 2016
+    Created on : Feb 25, 2017
     Author     : Chris Meyers
     Description:
         General Javascript functionality.
 */
 
-var mobileCutoffWidth, about, resume, builds, projects, contact;
+var about, resume, builds, projects, contact;
 var promptHistory = new Array();
 var sectionTranslations = {};
 
@@ -32,13 +32,12 @@ function init() {
 
 // Displays new section.
 function showSection(section) {
-    var newSection = section || "about";
-    var toShow = document.getElementById(newSection);
+    var toShow = document.getElementById(section);
     hideAll();
     toShow.style.display = 'block';
 
-    deselectAllSectionTitles();
-    selectSectionTitle(newSection);
+    resetColorOfMenuItems();
+    colorSelectedMenuItem(section);
 
     topOfPage();
 }
@@ -65,18 +64,6 @@ function translateToHash(value) {
     }
     else if(value.substring(value.length - 3) === "-me") {
         return value.substring(0, value.length - 3);
-    }
-}
-
-function showProjectString(type, proj) {
-    if($(window).width() > mobileCutoffWidth) { // Don't show string on mobile.
-        document.getElementById('slide-' + type + '-' + proj).style.display = 'inline-block';
-    }
-}
-
-function hideProjectString(type, proj) {
-    if($(window).width() > mobileCutoffWidth) { // Don't show string on mobile.
-        document.getElementById('slide-' + type + '-' + proj).style.display = 'none';
     }
 }
 

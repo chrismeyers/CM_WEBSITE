@@ -5,7 +5,7 @@ void 0!==c?e&&"set"in e&&void 0!==(d=e.set(a,c,b))?d:a[b]=c:e&&"get"in e&&null!=
 
 /* 
     Document   : callbacks.js
-    Created on : June 13, 2016
+    Created on : Feb 25, 2017
     Author     : Chris Meyers
     Description:
         Handles all Javascript callbacks.
@@ -119,34 +119,33 @@ function handlePageNav() {
 
 /* 
     Document   : header.js
-    Created on : June 13, 2016
+    Created on : Feb 25, 2017
     Author     : Chris Meyers
     Description:
-        Handles the functionality of the dynamic header.
+        Handles the functionality of the header.
 */
 
-function selectSectionTitle(section) {
-    var newSection = section || "about";
-    $('.sectionTitle-' + translateToHash(section)).css('border-bottom', 'solid 5px #5bb75b');
-    $('.sectionTitle-' + translateToHash(section)).css('box-sizing', 'border-box');
+function colorSelectedMenuItem(section) {
+    // The section name comes in as the raw id and must be sanitized.
+    var sanitizedSection = translateToHash(section);
+    $('#sectionTitle-' + sanitizedSection).css('color', '#5bb75b');
 }
 
-function deselectAllSectionTitles() {
+function resetColorOfMenuItems() {
     for(var section in sectionTranslations) {
-        $('.sectionTitle-' + section).css('border-bottom', '');
-        $('.sectionTitle-' + section).css('box-sizing', '');
+        $('#sectionTitle-' + section).css('color', '#000000');
     }
 }
 
 /* 
     Document   : jselements.js
-    Created on : June 13, 2016
+    Created on : Feb 25, 2017
     Author     : Chris Meyers
     Description:
         General Javascript functionality.
 */
 
-var mobileCutoffWidth, about, resume, builds, projects, contact;
+var about, resume, builds, projects, contact;
 var promptHistory = new Array();
 var sectionTranslations = {};
 
@@ -172,13 +171,12 @@ function init() {
 
 // Displays new section.
 function showSection(section) {
-    var newSection = section || "about";
-    var toShow = document.getElementById(newSection);
+    var toShow = document.getElementById(section);
     hideAll();
     toShow.style.display = 'block';
 
-    deselectAllSectionTitles();
-    selectSectionTitle(newSection);
+    resetColorOfMenuItems();
+    colorSelectedMenuItem(section);
 
     topOfPage();
 }
@@ -205,18 +203,6 @@ function translateToHash(value) {
     }
     else if(value.substring(value.length - 3) === "-me") {
         return value.substring(0, value.length - 3);
-    }
-}
-
-function showProjectString(type, proj) {
-    if($(window).width() > mobileCutoffWidth) { // Don't show string on mobile.
-        document.getElementById('slide-' + type + '-' + proj).style.display = 'inline-block';
-    }
-}
-
-function hideProjectString(type, proj) {
-    if($(window).width() > mobileCutoffWidth) { // Don't show string on mobile.
-        document.getElementById('slide-' + type + '-' + proj).style.display = 'none';
     }
 }
 
@@ -251,7 +237,7 @@ function colorIncorrectInputs() {
 
 /* 
     Document   : prompt.js
-    Created on : June 13, 2016
+    Created on : Feb 25, 2017
     Author     : Chris Meyers
     Description:
         Handles the functionality of the hidden prompt.
