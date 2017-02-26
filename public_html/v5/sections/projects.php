@@ -41,7 +41,6 @@
                             if($j == 1) {
                                 echo "<div class='projImages'>
                                         <a class='fancybox no-decoration'
-                                           style='color: #000000'
                                            rel='" . $rel . "'
                                            href='" . $url . "'
                                            title='" . $title . "'>
