@@ -119,6 +119,7 @@ hr {
     vertical-align: middle;
     line-height: 45px;
     text-align: center;
+    border-bottom: 1px solid #707070;
 }
 .sectionTitle-small-txt-last {
     vertical-align: middle;
@@ -156,7 +157,7 @@ hr {
 }
 
 #menu-click {
-    height: 56px;
+    height: 60px;
 }
 
 /********************* CONTENT *********************/
