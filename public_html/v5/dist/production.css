@@ -561,6 +561,8 @@ h2.top {
         width: 10px;
         float: left;
         font-weight: bold;
+        padding-left: 1px;
+        padding-right: 1px;
     }
     #prompt-caret:focus {
         outline: none;
@@ -569,6 +571,8 @@ h2.top {
     #prompt {
         width: 500px;
         float: right;
+        padding-left: 1px;
+        padding-right: 1px;
     }
     #prompt:focus {
         outline: none;
