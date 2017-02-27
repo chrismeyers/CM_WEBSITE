@@ -547,6 +547,7 @@ h2.top {
         color: #00CC00;
         font-family: "Courier New", Courier, monospace;
         border: 0;
+        font-weight: bold;
     }
 
     #prompt-div {
@@ -557,7 +558,7 @@ h2.top {
     }
 
     #prompt-caret {
-        width: 1.5%;
+        width: 10px;
         float: left;
         font-weight: bold;
     }
@@ -585,7 +586,7 @@ h2.top {
         bottom: 30px;
         display: none;
         font-size: 12px;
-        height: 125px;
+        height: 150px;
     }
     #prompt-textarea:focus {
         outline: none;
@@ -593,6 +594,8 @@ h2.top {
 
     #prompt-textarea-btn {
         border: 0;
+        width: 21px;
+        height: 27px;
     }
     #prompt-textarea-btn:focus {
         outline: none;

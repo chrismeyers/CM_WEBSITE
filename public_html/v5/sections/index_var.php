@@ -58,6 +58,10 @@
         <?php include 'sections/footer.php'; ?>
 
 <!-- PROMPT -->
+<!-- HEY!  What are you doing here?  This is a top secret command prompt
+that no one knows about!  Well, if you're reading this, I guess you know
+what you're doing.  Or you're really lost.  If you press the tilde ~ key
+on the non-mobile version of this website, a command prompt will appear! -->
         <?php include 'sections/prompt.php'; ?>
 
         <!-- build:js:dist dist/production.min.js -->

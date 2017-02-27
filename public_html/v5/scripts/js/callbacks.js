@@ -48,13 +48,7 @@ $(function() {
 
         // toggles prompt on ~
         if(currentKey === 192) {
-            if(isIdShown('prompt-div')) {
-                $('#prompt-div').css('display', 'none');
-            }
-            else {
-                $('#prompt-div').css('display', 'flex');
-                movePromptCursorToEnd();
-            }
+            handlePromptDisplay();
         }
     });
 

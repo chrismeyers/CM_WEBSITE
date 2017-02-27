@@ -4,4 +4,3 @@
             <input class="input-mod prompt-style" id="prompt" maxlength="75">
             <button class="prompt-style" id="prompt-textarea-btn" onclick="showHistory(false)">&#9650;</button>
         </div>
-        

@@ -64,6 +64,10 @@ function processPromptInput(input) {
             printHelpMessage();
             return;
         }
+        case "exit": {
+            handlePromptDisplay();
+            break;
+        }
         default:
             return;
     }
@@ -105,6 +109,17 @@ function showHistory(fromText) {
     }
 }
 
+function handlePromptDisplay() {
+    if(isIdShown('prompt-div')) {
+        hidePromptTextarea();
+        $('#prompt-div').css('display', 'none');
+    }
+    else {
+        $('#prompt-div').css('display', 'flex');
+        movePromptCursorToEnd();
+    }
+}
+
 function showPromptTextarea() {
     $('#prompt-textarea').css('display', 'flex');
     $('#prompt-textarea-btn').html("&#9660;"); // down symbol
@@ -125,6 +140,7 @@ function printHelpMessage() {
     msg +=    "  echo [text] - raises alert window with text.  \n";
     msg +=    "  clear - clears prompt textarea and history.   \n";
     msg +=    "  close - lowers the prompt textarea, if shown. \n";
+    msg +=    "  exit - closes the prompt.                     \n";
     msg +=    "  help - displays this message.                 ";
 
     $('#prompt-textarea').append(msg);
