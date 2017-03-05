@@ -79,7 +79,7 @@
                         
                         <div class="buttons button-input">
                             <button class="submit-button" type="submit">Send</button>
-                            <button class="submit-button" type="reset" onclick="deleteCookie('PHPSESSID'); window.location='index.php#contact';">Reset</button>                                  
+                            <button class="submit-button" type="reset" id="reset-contact-form">Reset</button>                                  
                         </div>
                     </form> 
                 </div>

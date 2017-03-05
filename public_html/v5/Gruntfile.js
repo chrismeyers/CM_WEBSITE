@@ -22,7 +22,6 @@ module.exports = function(grunt) {
             js: {
                 src: [
                     'scripts/vendor/jquery-2.2.4.min.js',
-                    'scripts/js/callbacks.js',
                     'scripts/js/header.js',
                     'scripts/js/jselements.js',
                     'scripts/js/prompt.js',
