@@ -9,8 +9,8 @@
                     <li class="left-column sub-left-column job-title">Software Engineer</li>
                     <li class="right-column tenure">Feb 2017 – Present</li>
                     <ul class="more-info">
-                        <li>Developed mobile and web applications using PHP,
-                            Javascript, CSS3, and HTML5.</li>
+                        <li class="more-info">Worked on a small team to take mobile and web applications 
+                            through the entire development life cycle.</li>
                     </ul>
                 </ul>
 
@@ -80,8 +80,7 @@
                         such as C++, Java, and C#.</li>
 
                     <li>Experience developing websites and web applications using
-                        languages and technologies such as HTML5, CSS3, PHP, Javascript, JSON, MySQL,
-                        Apache Cordova, and concrete5.</li>
+                        languages and technologies such as HTML5, CSS3, PHP, Javascript, JSON, and MySQL.</li>
 
                     <li>Experience writing Bash and Python scripts to automate 
                         processes and aid in development.</li>
