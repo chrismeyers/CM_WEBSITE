@@ -26,9 +26,12 @@
                 </ul>
 
                 <p>
-                I enjoy building custom computers as a hobby and have done so for myself and others over the past few years.
-                My builds can be seen 
-                <a href='#builds' class="fancytxt">here</a>.
+                I enjoy <a href='#builds' class="fancytxt">building custom computers</a> as a hobby and have done so for 
+                myself and others over the past few years.
+                </p>
+
+                <p>
+                Oh, I'm also the owner of this <a href="images/v5/clark/clark_02262017_215407.jpg" class="fancytxt fancybox" title="Clark the Corgi">majestic beast</a>.
                 </p>
             </div>
         </div>
