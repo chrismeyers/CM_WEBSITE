@@ -76,38 +76,30 @@
                 
                 <h2>Technical Skills</h2>
                 <ul>
-                    <li>Experience developing various software using languages
-                        such as C++, Java, and C#.</li>
+                    <li>Experience developing various software using languages such as C++, Java, and C#.</li>
 
-                    <li>Experience developing websites and web applications using
-                        languages and technologies such as HTML5, CSS3, PHP, Javascript, JSON, and MySQL.</li>
+                    <li>Experience developing websites and web applications using languages and technologies such as
+                        HTML5, CSS3, PHP, Javascript, JSON, and MySQL.</li>
 
-                    <li>Experience writing Bash and Python scripts to automate 
-                        processes and aid in development.</li>
+                    <li>Experience writing Bash and Python scripts to automate processes and aid in development.</li>
 
-                    <li>Experience as a member of an Agile software development team
-                        utilizing JIRA to track issues.</li>
+                    <li>Experience as a member of an Agile software development team utilizing JIRA to track issues.</li>
 
-                    <li>Experience with ClearCase, Git, and Subversion
-                        version control.</li>
+                    <li>Experience with ClearCase, Git, and Subversion version control.</li>
 
-                    <li>Experience debugging software with visual debuggers
-                        (Netbeans, Eclipse, Visual Studio) and the command line GNU debugger (GDB).</li>
+                    <li>Experience debugging software with visual debuggers (Netbeans, Eclipse, Visual Studio) and the
+                        command line GNU debugger (GDB).</li>
 
-                    <li>Highly proficient with modern IDE’s such as Netbeans,
-                        Eclipse, and Visual Studio.</li>
+                    <li>Highly proficient with modern IDE’s such as Netbeans, Eclipse, and Visual Studio.</li>
 
-                    <li>Highly proficient with Windows, macOS, and Command
-                        Line Interfaces (Unix, Linux, Solaris).</li>
+                    <li>Highly proficient with Windows, macOS, and Command Line Interfaces (Unix, Linux, Solaris).</li>
 
-                    <li>Experience installing, maintaining, and relocating data
-                        center hardware.</li>
+                    <li>Experience installing, maintaining, and relocating data center hardware.</li>
 
-                    <li>Very familiar with computer hardware.  Built multiple
-                        computers from individual components.</li>
+                    <li>Very familiar with computer hardware.  Built multiple computers from individual components.</li>
 
-                    <li>Experience with 2D and 3D Computer Aided Drafting (CAD)
-                        using technologies such as Autodesk AutoCAD, Rhinoceros 4, and Autodesk Inventor.</li>
+                    <li>Experience with 2D and 3D Computer Aided Drafting (CAD) using technologies such as Autodesk
+                        AutoCAD, Rhinoceros 4, and Autodesk Inventor.</li>
                 </ul> 
             </div>
         </div>

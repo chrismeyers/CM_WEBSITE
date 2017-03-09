@@ -49,6 +49,9 @@
     }
 
     .location, .degree, .job-title, .tenure {
-        margin-left: 10px; 
+        list-style-type: none;
+    }
+    .location:before, .degree:before, .job-title:before, .tenure:before {
+        content: "- ";
     }
 }
