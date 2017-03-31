@@ -36,11 +36,16 @@
 
     .content-size {
         width: auto;
-        margin-left: 5px;
-        margin-right: 5px;
+        margin-left: auto;
+        margin-right: auto;
         margin-bottom: 0; /* Add more spacing between footer and content */
         margin-top: 60px; /* Used for a fixed banner */
         padding-bottom: 10px; /* Make same as footer padding top */
+    }
+
+    .content-text {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 10px 10px;
     }
 
     #about-me, #my-resume, #my-builds, #my-projects, #contact-me {
@@ -100,6 +105,10 @@
     .svg-hover {
         height: 24px;
         width: 24px;
+    }
+
+    #footer {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
     }
 
     /********************* PROMPT *********************/

@@ -34,6 +34,14 @@
         margin-right: auto;
         margin-bottom: 100px; /* Add more spacing between footer and content */
         position: relative;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-top: none;
+        box-sizing: border-box;
+    }
+
+    .content-text {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 10px;
     }
 
     #about-me, #my-resume, #my-builds, #my-projects, #contact-me {
