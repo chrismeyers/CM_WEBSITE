@@ -56,7 +56,8 @@ var jselements = function() {
 
     var showSection = function(section) {
         var toShow = document.getElementById(section);
-        currentSection.style.display = 'none';
+
+        hideAll();
         toShow.style.display = 'block';
 
         header.resetColorOfMenuItems();
