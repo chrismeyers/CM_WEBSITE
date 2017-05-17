@@ -18,7 +18,8 @@ hr {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-input {
+input,
+textarea {
     border-radius: 0;
     -webkit-border-radius: 0;
     -webkit-appearance: none;
