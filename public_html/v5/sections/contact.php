@@ -37,7 +37,7 @@
                             }
                             else {
                                 echo '<div class="success alert-offset">';
-                                echo "<img class='contact-link-image' src='images/icons/check.svg'><div class='contact-alert-text'> Your request has been successfully submitted. Thank you!</div>";
+                                echo "<img class='contact-link-image' src='images/icons/check.svg'><div class='contact-alert-text'> Your message has been sent. Thank you!</div>";
                                 echo '</div>';
                             }
                         }
@@ -65,6 +65,10 @@
                             <div class="email-confirm-input">
                                 <input id="email2-input" class="inputbox-mod" type="email" placeholder="Confirm Primary Email" name="confirmfromemail">
                             </div>
+
+                            <div class="antispam antispam-input">
+                                <input class="inputbox-mod" type="text" placeholder="Leave this field blank!" name="spam">
+                            </div>
                         </div>
 
                         <div class="comments comment-input">
@@ -76,7 +80,7 @@
                                 }
                                 ?>
                         </div>
-                        
+
                         <div class="buttons button-input">
                             <button class="submit-button" type="submit">Send</button>
                             <button class="submit-button" type="reset" id="reset-contact-form">Reset</button>                                  

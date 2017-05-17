@@ -302,7 +302,8 @@ h2.top {
     text-align: left;
 }
 
-.name-input {
+.name-input,
+.antispam-input {
     padding-bottom: 15px;
 }
 
@@ -398,6 +399,10 @@ h2.top {
 }
 .submit-button:focus {
     outline: 0;
+}
+
+.antispam {
+    display: none;
 }
 
 /********************* FOOTER *********************/

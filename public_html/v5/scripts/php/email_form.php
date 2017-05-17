@@ -8,7 +8,6 @@ $_SESSION["confirmfromemail"] = $_POST['confirmfromemail'];
 $_SESSION["usercomments"] = $_POST['usercomments'];
 $message = "";
 
-
 // Verifies the correct format for each field.  If a field is incorrect, a value
 // of "1" is concatenated to the return message; otherwise "0" is concatenated.
 //
@@ -39,17 +38,26 @@ else {
 
 if (strcmp($message, "000") != 0) {
     header("Location: ../../index.php?message=$message#contact");
-    die();
+    exit;
 }
 
-// Constuct and send email from form information.
-$myemail = "cm.02.93@gmail.com";
-$emess = "Name: " . $_SESSION["name"] . "\n";
-$emess.= "Email: " . $_SESSION["fromemail"] . "\n";
-$emess.= "Comments:\n" . $_SESSION["usercomments"];
-$ehead = "From: " . $_SESSION["fromemail"] . "\r\n";
-$subj = "An Email from " . $_SESSION["name"] . ", via chrismeyers.info [SITEGROUND]";
-mail("$myemail", "$subj", "$emess", "$ehead");
+if(isset($_POST["spam"]) && $_POST["spam"] == '') {
+    // Constuct and send email from form information if the spam field is blank.
+    $myemail = "cm.02.93@gmail.com";
+
+    $msg = "Name: " . $_SESSION["name"] . "\n";
+    $msg .= "Email: " . $_SESSION["fromemail"] . "\n";
+    $msg .= "Comments:\n" . $_SESSION["usercomments"];
+
+    $subject = "An Email from " . $_SESSION["name"] . ", via chrismeyers.info [SITEGROUND]";
+    $headers = "From: " . $myemail;
+
+    if($_POST["fromemail" && !preg_match("/[\r\n]/", $_POST["fromemail"])]) {
+        $headers = "From: " . $_SESSION["fromemail"];
+    }
+
+    mail($myemail, $subject, $msg, $headers);
+}
 
 // Cleanup session variables.
 session_unset();
