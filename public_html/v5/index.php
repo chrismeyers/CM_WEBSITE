@@ -14,25 +14,7 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- build:css:dist dist/production.min.css -->
-        <!-- /build -->
-        <!-- build:remove:dist -->
-        <link rel="stylesheet" href="css/common.css" />
-        <link rel="stylesheet" href="css/csselements.css" />
-        <link rel="stylesheet" href="css/csselements_small.css" />
-        <link rel="stylesheet" href="css/csselements_print.css" />
-        <link rel="stylesheet" href="css/csselements_resume.css" />
-        <link rel="stylesheet" href="scripts/vendor/fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
-        <link rel="stylesheet" href="scripts/vendor/fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
-        <link rel="stylesheet" href="scripts/vendor/fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
-
-        <script type="text/javascript" src="scripts/vendor/jquery-2.2.4.min.js"></script>
-        <script type="text/javascript" src="scripts/vendor/fancybox/source/jquery.fancybox.pack.js"></script>
-        <script type="text/javascript" src="scripts/vendor/fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
-        <script type="text/javascript" src="scripts/vendor/fancybox/source/helpers/jquery.fancybox-media.js"></script>
-        <script type="text/javascript" src="scripts/vendor/fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
-        <!-- /build -->
-        
+        <link rel="stylesheet" href="dist/production.min.css"/>        
     </head>
 
     <body>
@@ -64,14 +46,7 @@ what you're doing.  Or you're really lost.  If you press the tilde ~ key
 on the non-mobile version of this website, a command prompt will appear! -->
         <?php include 'sections/prompt.php'; ?>
 
-        <!-- build:js:dist dist/production.min.js -->
-        <!-- /build -->
-        <!-- build:remove:dist -->
-        <script type="text/javascript" src="scripts/js/header.js"></script>
-        <script type="text/javascript" src="scripts/js/jselements.js"></script>
-        <script type="text/javascript" src="scripts/js/prompt.js"></script>
-        <!-- /build -->
-        
+        <script src="dist/production.min.js"></script>        
             
     </body>
 </html>

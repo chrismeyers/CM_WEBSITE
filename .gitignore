@@ -13,10 +13,3 @@ public_html/v5/projects/
 public_html/v5/db/*.txt
 test/
 node_modules/
-
-# Blacklist all resume files
-/resume/*
-# Whitelist all resume directories
-!resume/*/
-# Whitelist non-generated LaTeX files
-!resume/*.tex
