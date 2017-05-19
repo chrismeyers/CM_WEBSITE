@@ -1,0 +1,9 @@
+# Blacklist everything
+*
+
+# Whitelist all directories
+!*/
+
+# Whitelist some files
+!.gitignore
+!*.tex
