@@ -4,7 +4,7 @@
             <div class="content-text">
             <?php
                 include 'scripts/php/db_connect.php';
-                $con = getConnection();
+                $con = DatabaseConnection::connect();
 
                 $result = mysqli_query($con, "SELECT * FROM `builds`");
 

@@ -1,22 +1,24 @@
 <?php
-    function getConnection() {
-        $login = parseLogin();
+class DatabaseConnection {
+    public static function connect() {
+        $db = new DatabaseConnection();
+
+        $login = $db->parseLogin();
         $con = mysqli_connect($login["host"], $login["user"], $login["pass"], $login["db"]);
         if(mysqli_connect_errno()) {
-          echo "<h1>Failed to connect to MySQL: " . mysqli_connect_error() . "</h1>";
-          die();
+          die("Failed to connect to database!");
         }
         return $con;
     }
 
-    function parseLogin($mode) {
+    private function parseLogin() {
         $info = [];
         $file = fopen("db/login_config.txt", "r");
         $i = 0;
         $mode = "none";
 
-        if ($file) {
-            while (($line = fgets($file)) !== false) {
+        if($file) {
+            while(($line = fgets($file)) !== false) {
                 $parts = explode(" ", $line);
                 $parts[0] = str_replace(array("\r", "\n"), '', $parts[0]);
 
@@ -37,3 +39,4 @@
         }
         return $info;
     }
+}
