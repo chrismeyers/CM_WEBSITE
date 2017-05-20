@@ -52,7 +52,7 @@ if(isset($_POST["spam"]) && $_POST["spam"] == '') {
     $subject = "An Email from " . $_SESSION["name"] . ", via chrismeyers.info [SITEGROUND]";
     $headers = "From: " . $myemail;
 
-    if($_POST["fromemail" && !preg_match("/[\r\n]/", $_POST["fromemail"])]) {
+    if($_POST["fromemail"] && !preg_match("/[\r\n]/", $_POST["fromemail"])) {
         $headers = "From: " . $_SESSION["fromemail"];
     }
 
