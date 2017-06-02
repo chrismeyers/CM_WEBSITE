@@ -22,15 +22,8 @@
         <link rel="stylesheet" href="css/csselements_small.css" />
         <link rel="stylesheet" href="css/csselements_print.css" />
         <link rel="stylesheet" href="css/csselements_resume.css" />
-        <link rel="stylesheet" href="scripts/vendor/fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
-        <link rel="stylesheet" href="scripts/vendor/fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
-        <link rel="stylesheet" href="scripts/vendor/fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
 
-        <script type="text/javascript" src="scripts/vendor/jquery-2.2.4.min.js"></script>
-        <script type="text/javascript" src="scripts/vendor/fancybox/source/jquery.fancybox.pack.js"></script>
-        <script type="text/javascript" src="scripts/vendor/fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
-        <script type="text/javascript" src="scripts/vendor/fancybox/source/helpers/jquery.fancybox-media.js"></script>
-        <script type="text/javascript" src="scripts/vendor/fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+        <link rel="stylesheet" href="scripts/vendor/fancybox-3.0/dist/jquery.fancybox.min.css" />
         <!-- /build -->
         
     </head>
@@ -67,6 +60,9 @@ on the non-mobile version of this website, a command prompt will appear! -->
         <!-- build:js:dist dist/production.min.js -->
         <!-- /build -->
         <!-- build:remove:dist -->
+        <script type="text/javascript" src="scripts/vendor/jquery-2.2.4.min.js"></script>
+        <script type="text/javascript" src="scripts/vendor/fancybox-3.0/dist/jquery.fancybox.min.js"></script>
+
         <script type="text/javascript" src="scripts/js/header.js"></script>
         <script type="text/javascript" src="scripts/js/jselements.js"></script>
         <script type="text/javascript" src="scripts/js/prompt.js"></script>

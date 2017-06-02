@@ -13,9 +13,7 @@ module.exports = function(grunt) {
                     'css/csselements_small.css',
                     'css/csselements_print.css',
                     'css/csselements_resume.css',
-                    'scripts/vendor/fancybox/source/jquery.fancybox.css',
-                    'scripts/vendor/fancybox/source/helpers/jquery.fancybox-buttons.css',
-                    'scripts/vendor/fancybox/source/helpers/jquery.fancybox-thumbs.css'
+                    'scripts/vendor/fancybox-3.0/dist/jquery.fancybox.min.css'
                 ],
                 dest: 'dist/production.concat.css'
             },
@@ -25,10 +23,7 @@ module.exports = function(grunt) {
                     'scripts/js/header.js',
                     'scripts/js/jselements.js',
                     'scripts/js/prompt.js',
-                    'scripts/vendor/fancybox/source/jquery.fancybox.pack.js',
-                    'scripts/vendor/fancybox/source/helpers/jquery.fancybox-buttons.js',
-                    'scripts/vendor/fancybox/source/helpers/jquery.fancybox-media.js',
-                    'scripts/vendor/fancybox/source/helpers/jquery.fancybox-thumbs.js'
+                    'scripts/vendor/fancybox-3.0/dist/jquery.fancybox.min.js'
                 ],
                 dest: 'dist/production.concat.js'
             },

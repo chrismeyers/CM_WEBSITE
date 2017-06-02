@@ -40,7 +40,8 @@
 
                             if($j == 1) {
                                 echo "<div class='projImages'>
-                                        <a class='fancybox no-decoration'
+                                        <a class='no-decoration no-outline'
+                                           data-fancybox='gallery_project_" . $i . "'
                                            rel='" . $rel . "'
                                            href='" . $url . "'
                                            title='" . $title . "'>
@@ -54,7 +55,8 @@
                                     }
                             }
                             else {
-                                echo "<a class='fancybox no-decoration'
+                                echo "<a class='no-decoration no-outline'
+                                   data-fancybox='gallery_project_" . $i . "'
                                    rel='" . $rel . "'
                                    href='" . $url . "'
                                    title='" . $title . "'>

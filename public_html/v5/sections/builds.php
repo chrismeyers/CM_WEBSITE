@@ -36,7 +36,7 @@
                         }
                         echo "<div class='build-info'>
                                 <div class='build-pic'>
-                                    <a href='" . $url . "' class='fancybox' title='" . $title . "'>
+                                    <a href='" . $url . "' class='no-decoration no-outline' data-fancybox='gallery_build_" . $i . "' title='" . $title . "'>
                                         <img src='" . $url . "'
                                              class='build-pic-img-" . $orient . "'
                                              alt='" . $title . "'
