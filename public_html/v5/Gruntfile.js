@@ -17,7 +17,7 @@ module.exports = function(grunt) {
                     'scripts/vendor/fancybox/source/helpers/jquery.fancybox-buttons.css',
                     'scripts/vendor/fancybox/source/helpers/jquery.fancybox-thumbs.css'
                 ],
-                dest: 'dist/production.css'
+                dest: 'dist/production.concat.css'
             },
             js: {
                 src: [
@@ -30,7 +30,7 @@ module.exports = function(grunt) {
                     'scripts/vendor/fancybox/source/helpers/jquery.fancybox-media.js',
                     'scripts/vendor/fancybox/source/helpers/jquery.fancybox-thumbs.js'
                 ],
-                dest: 'dist/production.js'
+                dest: 'dist/production.concat.js'
             },
             db_dev: {
                 options: {
@@ -55,13 +55,13 @@ module.exports = function(grunt) {
         },
         uglify: {
             js: {
-                src: 'dist/production.js',
+                src: 'dist/production.concat.js',
                 dest: 'dist/production.min.js'
             }
         },
         cssmin: {
             css: {
-                src: 'dist/production.css',
+                src: 'dist/production.concat.css',
                 dest: 'dist/production.min.css'
             }
         },
@@ -76,7 +76,8 @@ module.exports = function(grunt) {
                     'index.php': ['sections/index_var.php']
                 }
             }
-        }
+        },
+        clean: ['dist/production.concat.*']
 
     });
 
@@ -86,10 +87,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-processhtml');
     grunt.loadNpmTasks('grunt-newer');
-
+    grunt.loadNpmTasks('grunt-contrib-clean');
 
     // "grunt" commands
-    grunt.registerTask('default', ['newer:concat:css', 'newer:concat:js', 'concat:db_prod', 'newer:uglify', 'newer:cssmin', 'processhtml:dist']);
-    grunt.registerTask('dist',    ['newer:concat:css', 'newer:concat:js', 'concat:db_prod', 'newer:uglify', 'newer:cssmin', 'processhtml:dist']);
+    grunt.registerTask('default', ['newer:concat:css', 'newer:concat:js', 'concat:db_dev', 'newer:uglify', 'newer:cssmin', 'processhtml:dist', 'clean']);
+    grunt.registerTask('prod',    ['newer:concat:css', 'newer:concat:js', 'concat:db_prod', 'newer:uglify', 'newer:cssmin', 'processhtml:dist', 'clean']);
     grunt.registerTask('dev',     ['concat:db_dev', 'processhtml:dev']);
 };
