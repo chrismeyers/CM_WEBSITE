@@ -31,18 +31,28 @@ var header = function() {
             if(index == 0) {
                 // First section, hide the left button.
                 setLeftButtonDisplay(false);
-                $("#move-right").attr("href", "#" + pageFlow[index + 1]);
+                setRightButtonContent(pageFlow[index + 1]);
             }
             else if(index == pageFlow.length - 1) {
                 // Last section, hide the right button.
                 setRightButtonDisplay(false);
-                $("#move-left").attr("href", "#" + pageFlow[index - 1]);
+                setLeftButtonContent(pageFlow[index - 1]);
             }
             else {
-                $("#move-left").attr("href", "#" + pageFlow[index - 1]);
-                $("#move-right").attr("href", "#" + pageFlow[index + 1]);
+                setLeftButtonContent(pageFlow[index - 1]);
+                setRightButtonContent(pageFlow[index + 1]);
             }
         }
+    }
+
+    var setLeftButtonContent = function(section) {
+        $("#move-left").attr("href", "#" + section);
+        $("#move-left").attr("title", section.charAt(0).toUpperCase() + section.slice(1));
+    }
+
+    var setRightButtonContent = function(section) {
+        $("#move-right").attr("href", "#" + section);
+        $("#move-right").attr("title", section.charAt(0).toUpperCase() + section.slice(1));
     }
 
     var setLeftButtonDisplay = function(state) {
