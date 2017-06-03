@@ -9,7 +9,7 @@
 */
 
 var prompt = function() {
-    var promptHistory = new Array();
+    var promptHistory = [];
     var promptHistoryLocation = 0;
 
     var processPromptInput = function(input) {
@@ -27,9 +27,13 @@ var prompt = function() {
         switch(parts[0]) {
             case "cd": {
                 var newPage = ((parts.length > 1) ? parts[1] : "about");
-                if(newPage in jselements.getSectionTranslations()) {
-                    location.hash = "#" + newPage;
-                }
+                $.each(jselements.getSectionTranslations(), function(i, section) {
+                    console.log(section["hash"] + " " + newPage);
+                    if(section["hash"] == newPage) {
+                        location.hash = "#" + newPage;
+                        return false; // break loop
+                    }
+                });
                 break;
             }
             case "history":

@@ -17,6 +17,48 @@
         margin: 0 0 60px; /* 3rd parameter must = #footer height */
     }
 
+    /********************* HEADER **********************/
+    #full-menu {
+        position: absolute;
+        right: 10px;
+        top: 20px;
+    }
+
+    .headerLink {
+        margin-left: 20px
+    }
+
+    #banner-icon {
+        display: none; /* Hide hamburger menu on desktop */
+    }
+
+    #nav-chevrons {
+        display: block;
+    }
+
+    .svg-hover-chevrons {
+        height: 64px;
+        width: 64px;
+    }
+
+    #move-left {
+        display: block;
+        position: absolute;
+        left: 0px;
+        top: 72px;
+    }
+    #move-right {
+        display: block;
+        position: absolute;
+        right: 0px;
+        top: 72px;
+    }    
+    #move-left:hover .svg-hover-chevrons,
+    #move-right:hover .svg-hover-chevrons {
+        fill: #5bb75b;
+        cursor: pointer;
+    }
+
     /********************* CONTENT *********************/
     .section-header-size {
         width: 790px;

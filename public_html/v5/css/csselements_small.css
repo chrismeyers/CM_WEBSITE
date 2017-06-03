@@ -22,6 +22,18 @@
         width: auto;
     }
 
+    #full-menu {
+        display: none; /* Hide full menu on mobile */
+    }
+    
+    #banner-icon {
+        display: block; /* Show hamburger menu on mobile */
+    }
+
+    #nav-arrows {
+        display: none;
+    }
+
     /********************* CONTENT *********************/
     .section-header-size {
         width: 100%;

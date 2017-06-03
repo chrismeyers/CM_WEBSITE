@@ -7,40 +7,59 @@
 */
 
 var jselements = function() {
-    var sectionTranslations = {};
     var currentSection;
 
-    var init = function() {
-        currentSection = document.getElementById('about-me');
+    var sectionTranslations = [
+        {
+            "id": "about-me",
+            "hash": "about"
+        },
+        {
+            "id": "my-resume",
+            "hash": "resume"
+        },
+        {
+            "id": "my-builds",
+            "hash": "builds"
+        },
+        {
+            "id": "my-projects",
+            "hash": "projects"
+        },
+        {
+            "id": "contact-me",
+            "hash": "contact"
+        }
+    ];
 
-        sectionTranslations["about"] = "about-me";
-        sectionTranslations["resume"] = "my-resume";
-        sectionTranslations["builds"] = "my-builds";
-        sectionTranslations["projects"] = "my-projects";
-        sectionTranslations["contact"] = "contact-me";
+    var init = function() {
+        currentSection = $('#about-me');
 
         colorIncorrectInputs();
     }
 
-    var showSection = function(section) {
-        var toShow = document.getElementById(section);
+    var showSection = function(id, hash) {
+        var toShow = $("#" + id);
 
         hideAll();
-        toShow.style.display = 'block';
+        toShow.show();
 
         header.resetColorOfMenuItems();
-        header.colorSelectedMenuItem(section);
+        header.colorSelectedMenuItem(hash);
 
         topOfPage();
         currentSection = toShow;
+        header.setArrowNav();
+    }
+
+    var getCurrentSection = function() {
+        return currentSection;
     }
 
     var hideAll = function() {
-        document.getElementById('about-me').style.display = 'none';
-        document.getElementById('my-resume').style.display = 'none';
-        document.getElementById('my-builds').style.display = 'none';
-        document.getElementById('my-projects').style.display = 'none';
-        document.getElementById('contact-me').style.display = 'none';
+        $.each(sectionTranslations, function(key, value) {
+            $("#" + value["id"]).hide();
+        });
     }
 
     var deleteCookie = function(name) {
@@ -49,15 +68,6 @@ var jselements = function() {
 
     var topOfPage = function() {
         window.scrollTo(0, 0);
-    }
-
-    var translateToHash = function(value) {
-        if(value.substring(0, 3) === "my-") {
-            return value.substring(3);
-        }
-        else if(value.substring(value.length - 3) === "-me") {
-            return value.substring(0, value.length - 3);
-        }
     }
 
     var isIdShown = function(id) {
@@ -94,10 +104,15 @@ var jselements = function() {
         var specificPage = window.location.hash;
 
         if(specificPage === null || specificPage === '') {
-            showSection('about-me');
+            showSection(sectionTranslations[0]["id"], sectionTranslations[0]["hash"]);
         }
         else {
-            showSection(sectionTranslations[specificPage.substr(1)]);
+            $.each(sectionTranslations, function(i, section) {
+                if(section["hash"] === specificPage.substr(1)) {
+                    showSection(section["id"], section["hash"]);
+                    return false; // break loop
+                }
+            });
         }
     }
 
@@ -106,9 +121,13 @@ var jselements = function() {
     }
 
     $(document).ready(function() {
-        $(".fancybox").fancybox({
-            openEffect  : 'none',
-            closeEffect : 'none'
+        $("[data-fancybox]").fancybox({
+            afterLoad: function(instance, slide) {
+                header.lock();
+            },
+            afterClose: function(instance, slide) {
+                header.unlock();
+            }
         });
 
         handlePageNav();
@@ -118,6 +137,10 @@ var jselements = function() {
     window.onhashchange = function() {
         handlePageNav();
     };
+
+    $(window).scroll(function() {
+        header.moveNavArrows();
+    });
 
     // Click menu
     $(document).each(function() {
@@ -148,6 +171,16 @@ var jselements = function() {
         if(currentKey === 192) {
             prompt.handlePromptDisplay();
         }
+
+        // Left arrow - move left one section.
+        if(currentKey === 37 && !header.locked()) {
+            $("#move-left")[0].click();
+        }
+
+        // Right arrow - move right one section.
+        if(currentKey === 39 && !header.locked()) {
+            $("#move-right")[0].click();
+        }
     });
 
     $("#reset-contact-form").on("click", function() {
@@ -158,9 +191,9 @@ var jselements = function() {
     return {
         init : init,
         handlePageNav : handlePageNav,
-        translateToHash : translateToHash,
         isIdShown : isIdShown,
         showSection : showSection,
+        getCurrentSection : getCurrentSection,
         getSectionTranslations : getSectionTranslations
     }
 }();
