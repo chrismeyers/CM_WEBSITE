@@ -1,4 +1,4 @@
-<div id="my-builds" class="content content-size">
+<div data-section-name="builds" class="content content-size">
             <div class="section-header section-header-size">Builds</div>
 
             <div class="content-text">

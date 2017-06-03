@@ -7,45 +7,19 @@
 */
 
 var jselements = function() {
-    var currentSection;
+    var currentSection = null;
+    var pageFlow = ["about", "resume", "builds", "projects", "contact"];
+    var sectionIndex = 0;
 
-    var sectionTranslations = [
-        {
-            "id": "about-me",
-            "hash": "about"
-        },
-        {
-            "id": "my-resume",
-            "hash": "resume"
-        },
-        {
-            "id": "my-builds",
-            "hash": "builds"
-        },
-        {
-            "id": "my-projects",
-            "hash": "projects"
-        },
-        {
-            "id": "contact-me",
-            "hash": "contact"
-        }
-    ];
-
-    var init = function() {
-        currentSection = $('#about-me');
-
-        colorIncorrectInputs();
-    }
-
-    var showSection = function(id, hash) {
-        var toShow = $("#" + id);
+    var showSection = function(section) {
+        var toShow = $("[data-section-name='" + section + "']");
 
         hideAll();
+        determineSectionIndex();
         toShow.show();
 
         header.resetColorOfMenuItems();
-        header.colorSelectedMenuItem(hash);
+        header.colorSelectedMenuItem(section);
 
         topOfPage();
         currentSection = toShow;
@@ -57,8 +31,8 @@ var jselements = function() {
     }
 
     var hideAll = function() {
-        $.each(sectionTranslations, function(key, value) {
-            $("#" + value["id"]).hide();
+        $.each(pageFlow, function(i, section) {
+            $("[data-section-name='" + section + "']").hide();
         });
     }
 
@@ -99,39 +73,36 @@ var jselements = function() {
         }
     }
 
+    var determineSectionIndex = function() {
+        var currentPage = window.location.hash;
+
+        $.each(pageFlow, function(i, section) {
+            if(section === currentPage.substring(1)) {
+                sectionIndex = i;
+                return false; // break loop
+            }
+        });
+    }
+
+    var getSectionIndex = function() {
+        return sectionIndex;
+    }
+
     var handlePageNav = function() {
         // Reads the hash from the url and changes the page, defaults to about.
         var specificPage = window.location.hash;
 
         if(specificPage === null || specificPage === '') {
-            showSection(sectionTranslations[0]["id"], sectionTranslations[0]["hash"]);
+            showSection(pageFlow[0]);
         }
         else {
-            $.each(sectionTranslations, function(i, section) {
-                if(section["hash"] === specificPage.substr(1)) {
-                    showSection(section["id"], section["hash"]);
-                    return false; // break loop
-                }
-            });
+            showSection(specificPage.substring(1));
         }
     }
 
-    var getSectionTranslations = function() {
-        return sectionTranslations;
+    var getPageFlow = function() {
+        return pageFlow;
     }
-
-    $(document).ready(function() {
-        $("[data-fancybox]").fancybox({
-            afterLoad: function(instance, slide) {
-                header.lock();
-            },
-            afterClose: function(instance, slide) {
-                header.unlock();
-            }
-        });
-
-        handlePageNav();
-    });
 
     // Handles browser back and forward.
     window.onhashchange = function() {
@@ -183,19 +154,32 @@ var jselements = function() {
         }
     });
 
-    $("#reset-contact-form").on("click", function() {
+    $("#reset-contact-form").click(function() {
         deleteCookie('PHPSESSID');
         window.location = "index.php#contact";
     });
 
+    // Main
+    $(document).ready(function() {
+        $("[data-fancybox]").fancybox({
+            afterLoad: function(instance, slide) {
+                header.lock();
+            },
+            afterClose: function(instance, slide) {
+                header.unlock();
+            }
+        });
+
+        handlePageNav();
+        colorIncorrectInputs();
+    });
+
     return {
-        init : init,
         handlePageNav : handlePageNav,
         isIdShown : isIdShown,
         showSection : showSection,
         getCurrentSection : getCurrentSection,
-        getSectionTranslations : getSectionTranslations
+        getPageFlow : getPageFlow,
+        getSectionIndex : getSectionIndex,
     }
 }();
-
-jselements.init();

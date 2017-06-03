@@ -1,4 +1,4 @@
-<div id="my-projects" class="content content-size">
+<div data-section-name="projects" class="content content-size">
             <div class="section-header section-header-size">Projects</div>
             <div class='content-text'>
             <?php

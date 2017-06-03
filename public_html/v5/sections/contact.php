@@ -1,4 +1,4 @@
-<div id="contact-me" class="content content-size">
+<div data-section-name="contact" class="content content-size">
             <div class="section-header section-header-size">Contact</div>
 
             <div class="content-text">

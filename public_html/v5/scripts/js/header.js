@@ -10,27 +10,19 @@ var header = function() {
     var fancyboxLock = false;
     var arrowsExtended = false;
 
-    var colorSelectedMenuItem = function(hash) {
-        $('.sectionTitle-' + hash).css('color', '#5bb75b');
+    var colorSelectedMenuItem = function(section) {
+        $('.sectionTitle-' + section).css('color', '#5bb75b');
     }
 
     var resetColorOfMenuItems = function() {
-        $.each(jselements.getSectionTranslations(), function(i, section) {
-            $('.sectionTitle-' + section["hash"]).css('color', '#000000');
+        $.each(jselements.getPageFlow(), function(i, section) {
+            $('.sectionTitle-' + section).css('color', '#000000');
         });
     }
 
     var setArrowNav = function () {
-        var currentPage = jselements.getCurrentSection().attr("id");
-        var pageFlow = jselements.getSectionTranslations();
-
-        var index = -1;
-        $.each(pageFlow, function(i, value) {
-            if(value["id"] === currentPage) {
-                index = i;
-                return false; // break loop
-            }
-        });
+        var pageFlow = jselements.getPageFlow();
+        var index = jselements.getSectionIndex();
 
         if(index >= 0) {
             setLeftButtonDisplay(true);
@@ -39,16 +31,16 @@ var header = function() {
             if(index == 0) {
                 // First section, hide the left button.
                 setLeftButtonDisplay(false);
-                $("#move-right").attr("href", "#" + pageFlow[index + 1]["hash"]);
+                $("#move-right").attr("href", "#" + pageFlow[index + 1]);
             }
             else if(index == pageFlow.length - 1) {
                 // Last section, hide the right button.
                 setRightButtonDisplay(false);
-                $("#move-left").attr("href", "#" + pageFlow[index - 1]["hash"]);
+                $("#move-left").attr("href", "#" + pageFlow[index - 1]);
             }
             else {
-                $("#move-left").attr("href", "#" + pageFlow[index - 1]["hash"]);
-                $("#move-right").attr("href", "#" + pageFlow[index + 1]["hash"]);
+                $("#move-left").attr("href", "#" + pageFlow[index - 1]);
+                $("#move-right").attr("href", "#" + pageFlow[index + 1]);
             }
         }
     }

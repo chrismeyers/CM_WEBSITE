@@ -86,10 +86,6 @@
         padding: 10px;
     }
 
-    #about-me, #my-resume, #my-builds, #my-projects, #contact-me {
-        display: none;
-    }
-
     /********************* BUILDS *********************/
     .build-pic {
         float: left;

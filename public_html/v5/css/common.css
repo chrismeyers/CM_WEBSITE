@@ -205,6 +205,10 @@ h2.top {
     margin-top: 0px;
 }
 
+[data-section-name='about'], [data-section-name='resume'], [data-section-name='builds'], [data-section-name='projects'], [data-section-name='contact']  {
+    display: none;
+}
+
 /********************* BUILDS *********************/
 .build {
     width: 100%;

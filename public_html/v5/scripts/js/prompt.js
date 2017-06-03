@@ -27,10 +27,10 @@ var prompt = function() {
         switch(parts[0]) {
             case "cd": {
                 var newPage = ((parts.length > 1) ? parts[1] : "about");
-                $.each(jselements.getSectionTranslations(), function(i, section) {
-                    console.log(section["hash"] + " " + newPage);
-                    if(section["hash"] == newPage) {
-                        location.hash = "#" + newPage;
+                // Ensure the page exists.
+                $.each(jselements.getPageFlow(), function(i, section) {
+                    if(section == newPage) {
+                        window.location.hash = newPage;
                         return false; // break loop
                     }
                 });

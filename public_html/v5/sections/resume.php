@@ -1,4 +1,4 @@
-<div id="my-resume" class="content content-size">
+<div data-section-name="resume" class=" content content-size">
             <div class="section-header section-header-size">Résumé</div>
             
             <div class="content-text">
