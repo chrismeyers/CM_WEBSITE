@@ -6,7 +6,7 @@
         Small window desktop stylesheet and mobile stylesheet.
 */
 
-@media screen and (max-width: 806px) {
+@media screen and (max-width: 889px) {
     /********************* GENERAL *********************/
     html {
         position: relative;
