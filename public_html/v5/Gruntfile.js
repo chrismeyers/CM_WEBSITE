@@ -1,6 +1,7 @@
 module.exports = function(grunt) {
 
     require('time-grunt')(grunt);
+    var timestamp = Math.round((new Date()).getTime() / 1000);
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -51,13 +52,13 @@ module.exports = function(grunt) {
         uglify: {
             js: {
                 src: 'dist/production.concat.js',
-                dest: 'dist/production.min.js'
+                dest: 'dist/production.min.' + timestamp + '.js'
             }
         },
         cssmin: {
             css: {
                 src: 'dist/production.concat.css',
-                dest: 'dist/production.min.css'
+                dest: 'dist/production.min.' + timestamp + '.css'
             }
         },
         processhtml: {
@@ -72,8 +73,32 @@ module.exports = function(grunt) {
                 }
             }
         },
-        clean: ['dist/production.concat.*']
-
+        replace: {
+            dist: {
+                options: {
+                    patterns: [
+                        {
+                            match: 'jsMinFile',
+                            replacement: '<script type="text/javascript" src="dist/production.min.' + timestamp + '.js"></script>'
+                        },
+                        {
+                            match: 'cssMinFile',
+                            replacement: '<link rel="stylesheet" href="dist/production.min.' + timestamp + '.css" />'
+                        }
+                    ]
+                },
+                files: [
+                    {
+                        src: 'index.php',
+                        dest: 'index.php'
+                    }
+                ]
+            }
+        },
+        clean: {
+            all: ['dist/*'],
+            concat: ['dist/production.concat.*']
+        }
     });
 
     // Plugins
@@ -83,9 +108,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-processhtml');
     grunt.loadNpmTasks('grunt-newer');
     grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-replace');
 
     // "grunt" commands
-    grunt.registerTask('default', ['newer:concat:css', 'newer:concat:js', 'concat:db_dev', 'newer:uglify', 'newer:cssmin', 'processhtml:dist', 'clean']);
-    grunt.registerTask('prod',    ['newer:concat:css', 'newer:concat:js', 'concat:db_prod', 'newer:uglify', 'newer:cssmin', 'processhtml:dist', 'clean']);
+    grunt.registerTask('default', ['clean:all', 'newer:concat:css', 'newer:concat:js', 'concat:db_dev', 'newer:uglify', 'newer:cssmin', 'processhtml:dist', 'replace:dist', 'clean:concat']);
+    grunt.registerTask('prod',    ['clean:all', 'newer:concat:css', 'newer:concat:js', 'concat:db_prod', 'newer:uglify', 'newer:cssmin', 'processhtml:dist', 'replace:dist', 'clean:concat']);
     grunt.registerTask('dev',     ['concat:db_dev', 'processhtml:dev']);
 };

@@ -14,8 +14,9 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- build:css:dist dist/production.min.css -->
-        <!-- /build -->
+        <!-- build:template:dist
+        @@cssMinFile
+        /build -->
         <!-- build:remove:dist -->
         <link rel="stylesheet" href="css/common.css" />
         <link rel="stylesheet" href="css/csselements.css" />
@@ -25,7 +26,8 @@
 
         <link rel="stylesheet" href="scripts/vendor/fancybox-3.0/dist/jquery.fancybox.min.css" />
         <!-- /build -->
-        
+
+
     </head>
 
     <body>
@@ -57,8 +59,9 @@ what you're doing.  Or you're really lost.  If you press the tilde ~ key
 on the non-mobile version of this website, a command prompt will appear! -->
         <?php include 'sections/prompt.php'; ?>
 
-        <!-- build:js:dist dist/production.min.js -->
-        <!-- /build -->
+        <!-- build:template:dist
+        @@jsMinFile
+        /build -->
         <!-- build:remove:dist -->
         <script type="text/javascript" src="scripts/vendor/jquery-2.2.4.min.js"></script>
         <script type="text/javascript" src="scripts/vendor/fancybox-3.0/dist/jquery.fancybox.min.js"></script>
@@ -67,7 +70,7 @@ on the non-mobile version of this website, a command prompt will appear! -->
         <script type="text/javascript" src="scripts/js/jselements.js"></script>
         <script type="text/javascript" src="scripts/js/prompt.js"></script>
         <!-- /build -->
-        
-            
+
+
     </body>
 </html>
