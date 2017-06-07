@@ -14,7 +14,7 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="stylesheet" href="dist/production.min.1496708433.css" />
+        <link rel="stylesheet" href="dist/production.min.1496871859.css" />
 
     </head>
 
@@ -47,7 +47,7 @@ what you're doing.  Or you're really lost.  If you press the tilde ~ key
 on the non-mobile version of this website, a command prompt will appear! -->
         <?php include 'sections/prompt.php'; ?>
 
-        <script type="text/javascript" src="dist/production.min.1496708433.js"></script>
+        <script type="text/javascript" src="dist/production.min.1496871859.js"></script>
 
     </body>
 </html>

@@ -42,13 +42,13 @@
     }
 
     #move-left {
-        display: block;
+        display: none;
         position: absolute;
         left: 0px;
         top: 72px;
     }
     #move-right {
-        display: block;
+        display: none;
         position: absolute;
         right: 0px;
         top: 72px;
