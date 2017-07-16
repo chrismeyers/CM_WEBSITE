@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:8889
--- Generation Time: Jul 16, 2017 at 02:48 AM
+-- Generation Time: Jul 16, 2017 at 11:08 PM
 -- Server version: 5.5.42
 -- PHP Version: 7.0.0
 
@@ -129,8 +129,8 @@ INSERT INTO `projects_images` (`id`, `abbrev`, `url`, `title`, `orient`) VALUES
 (5, 'pine', 'images/project_screenshots/pinelands/pinelands_landing.jpg', 'Pinelands landing page', 'square'),
 (6, 'pine', 'images/project_screenshots/pinelands/pinelands_tour.jpg', 'Pinelands tour page', 'square'),
 (7, 'pine', 'images/project_screenshots/pinelands/pinelands_contact.jpg', 'Pinelands contact page', 'square'),
-(8, 'ttt', 'images/project_screenshots/ttt/ttt_port.png', 'Tic tac toe Portrait', 'port'),
-(9, 'ttt', 'images/project_screenshots/ttt/ttt_land.png', 'Tic Tac Toe Landscape', 'land'),
+(8, 'ttt', 'images/project_screenshots/ttt/ttt_land.png', 'Tic Tac Toe Landscape', 'land'),
+(9, 'ttt', 'images/project_screenshots/ttt/ttt_port.png', 'Tic Tac Toe Portrait', 'port'),
 (10, 'lol_player', 'images/project_screenshots/lol_playerdata/loldata_landing.png', 'LoL player data landing page.', 'square'),
 (11, 'lol_player', 'images/project_screenshots/lol_playerdata/loldata.png', 'LoL player data results.', 'square'),
 (12, 'lol_player', 'images/project_screenshots/lol_playerdata/loldata_small.png', 'LoL player data results optimized for mobile.', 'port'),
