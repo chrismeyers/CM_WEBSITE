@@ -35,15 +35,6 @@
                             echo "<h3>" . $date . "</h3>";
                         }
                         echo "<div class='build-info'>
-                                <div class='build-pic'>
-                                    <a href='" . $url . "' class='no-decoration no-outline' data-fancybox='gallery_build_" . $i . "' title='" . $title . "'>
-                                        <img src='" . $url . "'
-                                             class='build-pic-img-" . $orient . "'
-                                             alt='" . $title . "'
-                                             title='Click to enlarge'>
-                                    </a>
-                                </div>
-
                                 <div class='build-specs'>
                                     <dl>
                                         <dt class='dt-mod'><b>Processor:</b></dt>
@@ -65,6 +56,14 @@
                                         echo "<dt class='dt-mod'><b>Video Card:</b></dt>
                                             <dd>" . $vid . "</dd>
                                     </dl>
+                                </div>
+                                <div class='build-pic'>
+                                    <a href='" . $url . "' class='no-decoration no-outline' data-fancybox='gallery_build_" . $i . "' title='" . $title . "'>
+                                        <img src='" . $url . "'
+                                             class='build-pic-img-" . $orient . "'
+                                             alt='" . $title . "'
+                                             title='Click to enlarge'>
+                                    </a>
                                 </div>
                             </div>
                         </div>";

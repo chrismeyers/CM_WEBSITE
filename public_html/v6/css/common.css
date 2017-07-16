@@ -38,12 +38,11 @@ h2.top {
 .fancytxt {
     color: #000000;
     text-decoration: underline;
-    font-weight: bold;
     cursor: pointer;
 }
 
 .fancytxt:hover {
-    color: #5bb75b !important;
+    background-color: rgba(91, 183, 91, 0.6);
     cursor: pointer;
 }
 
@@ -193,10 +192,13 @@ h2.top {
 
 /********************* BUILDS *********************/
 .build {
-    width: 100%;
-    height: auto;
-    display: inline-block;
     margin-bottom: 10px;
+}
+
+.build-info {
+    margin: 10px;
+    padding: 0;
+    display: flex;
 }
 
 .build-pic-img-land {
@@ -206,15 +208,13 @@ h2.top {
     border-width: 1px;
     border-color: #707070;
 }
+
 .build-pic-img-port {
     height: 375px; 
     width: 290px;
     border-style: solid;
     border-width: 1px;
     border-color: #707070;
-}
-.build-info {
-    padding: 0;
 }
 
 /********************* PROJECTS *********************/
@@ -229,11 +229,12 @@ h2.top {
 .projWrapper {
     margin: 10px;
     padding: 0;
+    display: flex;
 }
 
 .projImages-small-img-square, .projImages-small-img-port {
-    height: 40px;
-    width: 40px;
+    height: 44px;
+    width: 44px;
     border-style: solid;
     border-width: 1px;
     border-color: #707070;

@@ -67,6 +67,10 @@
         height: 70px;
         font-size: 33px;
     }
+    .side-nav-items > li > a:hover {
+        color: #5bb75b !important;
+        cursor: pointer;
+    }
 
     /********************* CONTENT *********************/
     .content {
@@ -85,27 +89,24 @@
     }
 
     /********************* BUILDS *********************/
-    .build-pic {
-        float: left;
-    }
-
     .build-specs {
-        margin-left: 50%;
+        flex: 1;
     }
 
     /********************* PROJECTS *********************/
-    .projImages {
-        float: left;
+    .projDesc {
+        flex: 1;
+        padding-right: 10px;
     }
-    
+
     .projImages-full-img-square {
-        height: 250px;
-        width: 250px;
+        height: 251px;
+        width: 251px;
     }
     
     .projImages-full-img-land {
-        height: 150px;
-        width: 250px;
+        height: 151px;
+        width: 251px;
     }
     
     .projImages-full-img-port {
@@ -113,10 +114,6 @@
         width: 150px;
     }
     
-    .projDesc {
-        margin-left: 40%;
-    }
-
     /********************* CONTACT *********************/
     .alert-offset {
         margin-left: 0px;

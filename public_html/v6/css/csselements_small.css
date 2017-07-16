@@ -71,11 +71,19 @@
     }
 
     /********************* BUILDS *********************/
+    .build-info {
+        flex-flow: column wrap; 
+    }
+
     .build-pic {
         text-align: center;
     }
 
     /********************* PROJECTS *********************/
+    .projWrapper {
+        flex-flow: column wrap; 
+    }
+
     .projImages {
         text-align: center;
     }
@@ -96,7 +104,6 @@
     }
     
     .projImages-small {
-        text-align: center;
         text-decoration: none;
     }
 
