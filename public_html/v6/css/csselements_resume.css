@@ -6,6 +6,10 @@
         Stylesheet for HTML resume.
 */
 
+.remove-bullets {
+    list-style-type: none;
+}
+
 @media screen and (min-width: 860px) {
     ul {
         overflow: hidden;

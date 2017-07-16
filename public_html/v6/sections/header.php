@@ -29,25 +29,11 @@
                                 <img id="menu-toggle" src="images/v5/icons/three-bars.svg" title="Menu" alt="Menu">
                             </div>
                             <ul id="menu-items">
-                                <a href="#about" class="headerLink">
-                                    <li class="sectionTitle-about sectionTitle-small-txt headerLink">About</li>
-                                </a>
-                                
-                                <a href="#resume" class="headerLink">
-                                    <li class="sectionTitle-resume sectionTitle-small-txt headerLink">Résumé</li>
-                                </a>
-                                
-                                <a href="#builds" class="headerLink">
-                                    <li class="sectionTitle-builds sectionTitle-small-txt headerLink">Builds</li>
-                                </a>
-
-                                <a href="#projects" class="headerLink">
-                                    <li class="sectionTitle-projects sectionTitle-small-txt headerLink">Projects</li>
-                                </a>
-
-                                <a href="#contact" class="headerLink">
-                                    <li class="sectionTitle-contact sectionTitle-small-txt-last headerLink">Contact</li>
-                                </a>
+                                <li class="sectionTitle-small-txt"><a href="#about" class="sectionTitle-about headerLink">About</a></li>                                
+                                <li class="sectionTitle-small-txt"><a href="#resume" class="sectionTitle-resume headerLink">Résumé</a></li>
+                                <li class="sectionTitle-small-txt"><a href="#builds" class="sectionTitle-builds headerLink">Builds</a></li>
+                                <li class="sectionTitle-small-txt"><a href="#projects" class="sectionTitle-projects headerLink">Projects</a></li>
+                                <li class="sectionTitle-small-txt-last"><a href="#contact" class="sectionTitle-contact headerLink">Contact</a></li>
                             </ul>
                         </li>
                     </ul>

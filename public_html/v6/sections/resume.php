@@ -21,11 +21,13 @@
                     <li class="right-column location"><?php echo $job["firstLine"][1]; ?></li>
                     <li class="left-column sub-left-column job-title"><?php echo $job["secondLine"][0]; ?></li>
                     <li class="right-column tenure"><?php echo $job["secondLine"][1]; ?></li>
-                    <ul class="more-info">
-                        <?php foreach($job["info"] as $info) { ?>
-                        <li class="more-info"><?php echo $info; ?></li>
-                        <?php } ?>
-                    </ul>
+                    <li class="remove-bullets">
+                        <ul class="more-info">
+                            <?php foreach($job["info"] as $info) { ?>
+                            <li class="more-info"><?php echo $info; ?></li>
+                            <?php } ?>
+                        </ul>
+                    </li>
                 </ul>
                 <?php } ?>
 
