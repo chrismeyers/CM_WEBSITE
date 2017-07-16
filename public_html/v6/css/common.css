@@ -198,7 +198,6 @@ h2.top {
 .build-info {
     margin: 10px;
     padding: 0;
-    display: flex;
 }
 
 .build-pic-img-land {
@@ -229,12 +228,19 @@ h2.top {
 .projWrapper {
     margin: 10px;
     padding: 0;
-    display: flex;
 }
 
-.projImages-small-img-square, .projImages-small-img-port {
+.projImages-small-img-square {
     height: 44px;
     width: 44px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #707070;
+}
+
+.projImages-small-img-port {
+    height: 50px;
+    width: 25px;
     border-style: solid;
     border-width: 1px;
     border-color: #707070;

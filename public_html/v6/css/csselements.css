@@ -6,7 +6,7 @@
         Fullscreen desktop stylesheet.
 */
 
-@media screen and (min-width: 1050px){
+@media screen and (min-width: 860px){
     /********************* GENERAL *********************/
     html {
         position: relative;
@@ -89,11 +89,19 @@
     }
 
     /********************* BUILDS *********************/
+    .build-info {
+        display: flex;
+    }
+
     .build-specs {
         flex: 1;
     }
 
     /********************* PROJECTS *********************/
+    .projWrapper {
+        display: flex;
+    }
+
     .projDesc {
         flex: 1;
         padding-right: 10px;

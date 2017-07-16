@@ -6,7 +6,7 @@
         Stylesheet for HTML resume.
 */
 
-@media screen and (min-width: 807px) {
+@media screen and (min-width: 860px) {
     ul {
         overflow: hidden;
     }
