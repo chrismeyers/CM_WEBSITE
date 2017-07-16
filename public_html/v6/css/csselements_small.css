@@ -1,0 +1,136 @@
+/* 
+    Document   : csselements_small.css
+    Created on : Feb 25, 2017
+    Author     : Chris Meyers
+    Description:
+        Small window desktop stylesheet and mobile stylesheet.
+*/
+
+@media screen and (max-width: 1049px) {
+    /********************* GENERAL *********************/
+    html {
+        position: relative;
+        min-height: 100%;
+    }
+    
+    body { 
+        margin: 0 0 80px;
+    }
+
+    /********************* HEADER *********************/
+    #bannerBar {
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #FFFFFF;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        /* Make content scroll "under" banner */
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    #full-menu {
+        display: none; /* Hide full menu on mobile */
+    }
+    
+    #banner-icon {
+        display: block; /* Show hamburger menu on mobile */
+    }
+
+    #banner-small img {
+        height: 30px;
+        width: 113px;
+        left: 10px;
+        position: absolute;
+        padding-top: 15px;
+    }
+
+    /********************* CONTENT *********************/
+    .section-header-size {
+        width: 100%;
+        min-height: 60px;
+        background-repeat: no-repeat;
+        background-position: 50%, 50%;
+        background-position-x: 50%;
+        background-position-y: 50%;
+        line-height: 70px;
+        font-size: 35px;
+    }
+
+    .content-text {
+        padding: 10px 10px;
+    }
+
+    .content {
+        top: 60px;
+        margin: 60px auto 0;
+    }
+
+    /********************* BUILDS *********************/
+    .build-pic {
+        text-align: center;
+    }
+
+    /********************* PROJECTS *********************/
+    .projImages {
+        text-align: center;
+    }
+    
+    .projImages-full-img-square {
+        height: 300px;
+        width: 300px;
+    }
+    
+    .projImages-full-img-land {
+        height: 200px;
+        width: 300px;
+    }
+    
+    .projImages-full-img-port {
+        height: 300px;
+        width: 175px;
+    }
+    
+    .projImages-small {
+        text-align: center;
+        text-decoration: none;
+    }
+
+    /********************* CONTACT *********************/
+    .alert-offset {
+        margin-left: 5px;
+    }
+    
+    .contact-links {
+        padding-left: 5px;
+        margin-bottom: 20px;
+    }
+
+    .textarea-mod {
+        resize: none;
+    }
+
+    .contact-form {
+        max-width: 600px;
+    }
+
+    /********************* FOOTER *********************/
+    .footer-bullets {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .svg-hover {
+        height: 24px;
+        width: 24px;
+    }
+
+    /********************* PROMPT *********************/
+    #prompt-div, #prompt-caret, #prompt, #prompt-textarea, #prompt-textarea-btn {
+        display: none;
+    }  
+}

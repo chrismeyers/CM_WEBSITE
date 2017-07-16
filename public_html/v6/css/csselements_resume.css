@@ -1,0 +1,57 @@
+/* 
+    Document   : csselements_resume.css
+    Created on : Feb 25, 2017
+    Author     : Chris Meyers
+    Description:
+        Stylesheet for HTML resume.
+*/
+
+@media screen and (min-width: 807px) {
+    ul {
+        overflow: hidden;
+    }
+    ul.more-info {
+        padding-top: 10px;
+    }
+
+    .left-column {
+        width: 70%;
+        float: left;
+    }
+
+    .sub-left-column {
+        list-style-type: none;
+    }
+
+    .right-column {
+        float: right;
+        width: 30%;
+        text-align: right;
+        list-style-type: none;
+    }
+
+    .company, .school, .location {
+        font-weight: bold;
+    }   
+
+    .degree, .job-title, .tenure {
+        font-style: italic;
+    }
+}
+
+@media screen and (max-width: 806px) {
+    .company, .school {
+        font-weight: bold;
+    }   
+
+    .location, .degree {
+        font-weight: normal;
+    }
+
+    .location, .degree, .job-title, .tenure {
+        list-style-type: none;
+    }
+    .location:before, .degree:before, .job-title:before, .tenure:before {
+        content: "- ";
+    }
+}

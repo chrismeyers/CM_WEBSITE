@@ -1,0 +1,202 @@
+/* 
+    Document   : csselements.css
+    Created on : Feb 25, 2017
+    Author     : Chris Meyers
+    Description:
+        Fullscreen desktop stylesheet.
+*/
+
+@media screen and (min-width: 1050px){
+    /********************* GENERAL *********************/
+    html {
+        position: relative;
+        min-height: 100%;
+    }
+    
+    body { 
+        margin: 0;
+    }
+
+    .parent {
+        display: flex;
+    }
+
+    /********************* HEADER **********************/
+    .nav {
+        width: 300px;
+    }
+
+    #full-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 100%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .headerLink {
+        margin-left: 20px
+    }
+
+    #banner-icon {
+        display: none; /* Hide hamburger menu on desktop */
+    }
+
+    #banner-small img {
+        padding-top: 10px;
+    }
+
+    .side-nav-logo {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+
+    .side-nav-items {
+        list-style: none;
+        text-align: right;
+        padding-left: 0;
+        padding-right: 10px;
+        padding-top: 40px;
+        margin-top: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .side-nav-items > li {
+        height: 70px;
+        font-size: 33px;
+    }
+
+    /********************* CONTENT *********************/
+    .content {
+        flex: 1;
+    }
+
+    .content-text {
+        padding: 10px 10px 10px 15px;
+    }
+
+    .section-header-size {
+        height: 90px;
+        line-height: 80px;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    /********************* BUILDS *********************/
+    .build-pic {
+        float: left;
+    }
+
+    .build-specs {
+        margin-left: 50%;
+    }
+
+    /********************* PROJECTS *********************/
+    .projImages {
+        float: left;
+    }
+    
+    .projImages-full-img-square {
+        height: 250px;
+        width: 250px;
+    }
+    
+    .projImages-full-img-land {
+        height: 150px;
+        width: 250px;
+    }
+    
+    .projImages-full-img-port {
+        height: 250px;
+        width: 150px;
+    }
+    
+    .projDesc {
+        margin-left: 40%;
+    }
+
+    /********************* CONTACT *********************/
+    .alert-offset {
+        margin-left: 0px;
+    }
+
+    .contact-links {
+        float: left;
+    }
+
+    .contact-form {
+        margin-left: 230px;
+        max-width: 600px;
+    }
+
+    /********************* PROMPT *********************/
+    .prompt-style {
+        background-color: rgba(0,0,0,0.85);
+        color: #00CC00;
+        font-family: "Courier New", Courier, monospace;
+        border: 0;
+        font-weight: bold;
+    }
+
+    #prompt-div {
+        bottom: 30px;
+        margin-left: 5px;
+        position: fixed;
+        display: none;
+    }
+
+    #prompt-caret {
+        width: 10px;
+        float: left;
+        font-weight: bold;
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+    #prompt-caret:focus {
+        outline: none;
+    }
+
+    #prompt {
+        width: 500px;
+        float: right;
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+    #prompt:focus {
+        outline: none;
+    }
+    #prompt::-ms-clear {
+        width: 0px;
+        height: 0px;
+    }
+
+    #prompt-textarea {
+        width: 525px;
+        border: 0;
+        resize: none;
+        position: absolute;
+        bottom: 30px;
+        display: none;
+        font-size: 12px;
+        height: 150px;
+    }
+    #prompt-textarea:focus {
+        outline: none;
+    }
+
+    #prompt-textarea-btn {
+        border: 0;
+        width: 21px;
+        height: 27px;
+    }
+    #prompt-textarea-btn:focus {
+        outline: none;
+    }
+
+    /********************* FOOTER *********************/
+    .footer-content {
+        display: none;
+    }
+}
