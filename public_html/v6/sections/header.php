@@ -20,7 +20,7 @@
 
     <!-- HAMBURGER MENU-->
     <div id="banner-icon">
-        <a href="index.php" id="banner-small"><img src="images/logos/v2/meyers-logo-green.png" alt="Chris Meyers. Developer, Tech enthusiast." class="banner-img" title="Home"></a>
+        <a href="index.php" id="banner-small"><img src="images/logos/v2/meyers-logo-green.svg" alt="Chris Meyers. Developer, Tech enthusiast." class="banner-img" title="Home"></a>
 
         <div id="sectionTitle-menu">
             <ul id="menu-dropdown">
