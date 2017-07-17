@@ -1,11 +1,9 @@
-<?php
-    session_start();
-?>
+<?php session_start(); ?>
 <!DOCTYPE html>
 <!-- HOSTED ON SITEGROUND -->
 <html lang="en">
     <head>
-        <title>Chris Meyers: Homepage</title>
+        <title>Chris Meyers - Developer, Tech Enthusiast</title>
         <link rel="shortcut icon" href="images/icons/cmlogocolor_nobackground_GREEN_small.ico">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="Author" content="Chris Meyers" />
@@ -14,7 +12,7 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="stylesheet" href="dist/production.min.1500258086.css" />
+        <link rel="stylesheet" href="dist/production.min.1500331583.css" />
 
     </head>
 
@@ -55,7 +53,7 @@
             </div>
         </div>
 
-        <script type="text/javascript" src="dist/production.min.1500258086.js"></script>
+        <script type="text/javascript" src="dist/production.min.1500331583.js"></script>
 
     </body>
 </html>
