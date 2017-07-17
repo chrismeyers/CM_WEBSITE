@@ -90,14 +90,10 @@
                         }
                     }
                     if(mysqli_num_rows($images) > 1) {
-                        echo "</div>";
+                        echo "</div>"; // projImages-small 
                     }
 
-                    echo "</div></div>";
-                    
-                    if(mysqli_num_rows($images) > 1) {
-                        echo "</div>";
-                    }
+                    echo "</div></div></div>"; // projImages, projWrapper, proj
 
                     if($i != mysqli_num_rows($result)) {
                         echo "<br /> <hr>";
