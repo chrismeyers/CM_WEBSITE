@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:8889
--- Generation Time: Jul 16, 2017 at 11:08 PM
+-- Generation Time: Jul 17, 2017 at 04:20 AM
 -- Server version: 5.5.42
 -- PHP Version: 7.0.0
 
@@ -126,19 +126,19 @@ INSERT INTO `projects_images` (`id`, `abbrev`, `url`, `title`, `orient`) VALUES
 (1, 'cm', 'images/v6/project_screenshots/cm/cm.jpg', 'Full size version of my personal website.', 'land'),
 (3, 'cm', 'images/v5/project_screenshots/cm/cm_mobile.jpg', 'Mobile version of my personal website.', 'port'),
 (4, 'genomic', 'images/project_screenshots/genomic/genomic.png', 'Genomic Solutions Now! Software', 'land'),
-(5, 'pine', 'images/project_screenshots/pinelands/pinelands_landing.jpg', 'Pinelands landing page', 'square'),
+(5, 'pine', 'images/project_screenshots/pinelands/pinelands_landing.jpg', 'Pinelands landing page', 'land'),
 (6, 'pine', 'images/project_screenshots/pinelands/pinelands_tour.jpg', 'Pinelands tour page', 'square'),
 (7, 'pine', 'images/project_screenshots/pinelands/pinelands_contact.jpg', 'Pinelands contact page', 'square'),
 (8, 'ttt', 'images/project_screenshots/ttt/ttt_land.png', 'Tic Tac Toe Landscape', 'land'),
 (9, 'ttt', 'images/project_screenshots/ttt/ttt_port.png', 'Tic Tac Toe Portrait', 'port'),
-(10, 'lol_player', 'images/project_screenshots/lol_playerdata/loldata_landing.png', 'LoL player data landing page.', 'square'),
+(10, 'lol_player', 'images/project_screenshots/lol_playerdata/loldata_landing.png', 'LoL player data landing page.', 'land'),
 (11, 'lol_player', 'images/project_screenshots/lol_playerdata/loldata.png', 'LoL player data results.', 'square'),
 (12, 'lol_player', 'images/project_screenshots/lol_playerdata/loldata_small.png', 'LoL player data results optimized for mobile.', 'port'),
-(13, 'pca', 'images/project_screenshots/pca/scoresPlot.png', 'A scores plot generated from calculated principal components.', 'square'),
+(13, 'pca', 'images/project_screenshots/pca/scoresPlot.png', 'A scores plot generated from calculated principal components.', 'land'),
 (14, 'pca', 'images/project_screenshots/pca/scoresData.png', 'The calculated principal component data.', 'square'),
 (15, 'pca', 'images/project_screenshots/pca/addinBar.PNG', 'The Excel add-in bar. Scores and loadings plot were added in this project.', 'land'),
 (16, 'pca', 'images/project_screenshots/pca/scoresInput-full.png', 'Input form that is dynamically populated based on the number of principal components.', 'port'),
-(17, 'bms', 'images/project_screenshots/bms/bms_rawData.png', 'The raw data taken from the lab to be processed.', 'square'),
+(17, 'bms', 'images/project_screenshots/bms/bms_rawData.png', 'The raw data taken from the lab to be processed.', 'land'),
 (18, 'bms', 'images/project_screenshots/bms/bms_formatForm.png', 'Input form used to select the worksheet to be processed.', 'square'),
 (19, 'bms', 'images/project_screenshots/bms/bms_formattedData.png', 'The entire formatted data set.', 'square'),
 (20, 'bms', 'images/project_screenshots/bms/bms_finalData.png', 'A further refined formatted data set used for plotting.', 'square'),

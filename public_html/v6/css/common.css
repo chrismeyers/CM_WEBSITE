@@ -144,6 +144,13 @@ h2.top {
 
 #menu-items li {
     height: 50px;
+    padding: 0px;
+}
+
+#menu-items li a {
+    display: block;
+    height: 100%;
+    width: 100%;
 }
 
 #menu-toggle {
@@ -200,17 +207,8 @@ h2.top {
     padding: 0;
 }
 
-.build-pic-img-land {
-    height: 220px;
-    width: 350px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #707070;
-}
-
+.build-pic-img-land,
 .build-pic-img-port {
-    height: 375px; 
-    width: 290px;
     border-style: solid;
     border-width: 1px;
     border-color: #707070;

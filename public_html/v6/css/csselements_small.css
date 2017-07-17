@@ -6,7 +6,7 @@
         Small window desktop stylesheet and mobile stylesheet.
 */
 
-@media screen and (max-width: 859px) {
+@media screen and (max-width: 969px) {
     /********************* GENERAL *********************/
     html {
         position: relative;
@@ -85,6 +85,16 @@
         width: 100%;
     }
 
+    /*.build-pic-img-land {
+        max-height: 260px;
+        max-width: 415px;
+    }*/
+
+    .build-pic-img-port {
+        max-height: 525px; /* 522 */
+        max-width: 406px;
+    }
+
     /********************* PROJECTS *********************/
     .projWrapper {
         flex-flow: column wrap; 
@@ -99,6 +109,12 @@
     .projImages-full-img-port {
         height: 100%;
         width: 100%;
+    }
+
+    .projImages-full-img-square {
+        max-width: 415px;
+        max-width: 415px;
+
     }
     
     .projImages-small {

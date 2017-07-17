@@ -6,7 +6,7 @@
         Fullscreen desktop stylesheet.
 */
 
-@media screen and (min-width: 860px){
+@media screen and (min-width: 970px){
     /********************* GENERAL *********************/
     html {
         position: relative;
@@ -95,6 +95,17 @@
 
     .build-specs {
         flex: 1;
+        padding-right: 10px;
+    }
+
+    .build-pic-img-land {
+        height: 260px;
+        width: 415px;
+    }
+
+    .build-pic-img-port {
+        height: 450px; 
+        width: 348px;
     }
 
     /********************* PROJECTS *********************/
@@ -108,18 +119,18 @@
     }
 
     .projImages-full-img-square {
-        height: 251px;
-        width: 251px;
+        height: 415px;
+        width: 415px;
     }
     
     .projImages-full-img-land {
-        height: 151px;
-        width: 251px;
+        height: 260px;
+        width: 415px;
     }
     
     .projImages-full-img-port {
-        height: 250px;
-        width: 150px;
+        height: 415px;
+        width: 260px;
     }
     
     /********************* CONTACT *********************/
