@@ -31,7 +31,7 @@
         </p>
 
         <p>
-        Oh, I'm also the owner of this <a data-fancybox="gallery_clark" href="images/v5/clark/clark_02262017_215407.jpg" title="Clark the Corgi" class="fancytxt no-outline">majestic beast</a>.
+        I'm also the owner of this <a data-fancybox="gallery_clark" href="images/v6/clark/DSC_0783-2.jpg" title="Clark the Corgi" class="fancytxt no-outline">majestic beast</a>.
         </p>
     </div>
 </div>
