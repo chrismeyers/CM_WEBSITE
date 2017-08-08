@@ -89,11 +89,15 @@
                         </a>";
                 }
             }
-            if(mysqli_num_rows($images) > 1) {
-                echo "</div>"; // projImages-small 
+
+            if(mysqli_num_rows($images) != 0) {
+                echo "</div>"; // projImages
+                if(mysqli_num_rows($images) > 1) {
+                    echo "</div>"; // projImages-small
+                } 
             }
 
-            echo "</div></div></div>"; // projImages, projWrapper, proj
+            echo "</div></div>"; // projWrapper, proj
 
             if($i != mysqli_num_rows($result)) {
                 echo "<br /> <hr>";
