@@ -7,6 +7,8 @@
 */
 
 var header = function() {
+    var open = false;
+
     var colorSelectedMenuItem = function(section) {
         $('.sectionTitle-' + section).css('color', '#5bb75b');
     }
@@ -17,8 +19,24 @@ var header = function() {
         });
     }
 
+    var hideHamburgerMenu = function() {
+        open = false;
+
+        $("#menu-click").siblings('#menu-items').slideUp("fast");
+        $(".overlay").hide();
+    }
+
+    var toggleHamburgerMenu = function() {
+        open = !open;
+
+        $('#menu-click').siblings('#menu-items').slideToggle("fast");
+        open ? $(".overlay").show() : $(".overlay").hide();
+    }
+
     return {
         colorSelectedMenuItem : colorSelectedMenuItem,
-        resetColorOfMenuItems : resetColorOfMenuItems
+        resetColorOfMenuItems : resetColorOfMenuItems,
+        hideHamburgerMenu : hideHamburgerMenu,
+        toggleHamburgerMenu : toggleHamburgerMenu
     }
 }();

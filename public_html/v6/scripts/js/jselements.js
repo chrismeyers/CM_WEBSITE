@@ -115,11 +115,11 @@ var jselements = function() {
 
             if(currentID === "menu-click" || currentID === "menu-toggle") {
                 // Toggles the menu upon clicking the menu button.
-                $('#menu-click').siblings('#menu-items').slideToggle("fast");
+                header.toggleHamburgerMenu();
             }
             else {
                 // Closes the menu upon clicking anywhere other than the menu button.
-                $("#menu-click").siblings('#menu-items').slideUp("fast");
+                header.hideHamburgerMenu();
             }
         });
     });
@@ -130,7 +130,7 @@ var jselements = function() {
 
         // Closes the menu when esc is pressed.
         if(currentKey === 27) {
-            $("#menu-click").siblings('#menu-items').slideUp("fast");
+            header.hideHamburgerMenu();
         }
 
         // Toggles the prompt when ~ is pressed.

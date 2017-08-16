@@ -73,6 +73,10 @@
         cursor: pointer;
     }
 
+    .overlay {
+        display: none;
+    }
+
     /********************* CONTENT *********************/
     .content {
         -webkit-flex: 1;
