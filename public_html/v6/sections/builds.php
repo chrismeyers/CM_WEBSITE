@@ -29,10 +29,10 @@
 
             echo "<div class='build'>";
                 if($i == 1) {
-                    echo "<h3 class='first-header'>" . $date . "</h3>";
+                    echo "<h2 class='first-header'>" . $date . "</h2>";
                 }
                 else {
-                    echo "<h3>" . $date . "</h3>";
+                    echo "<h2>" . $date . "</h2>";
                 }
                 echo "<div class='build-info'>
                         <div class='build-specs'>

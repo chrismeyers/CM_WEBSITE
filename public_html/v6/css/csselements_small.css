@@ -23,7 +23,7 @@
         margin-left: auto;
         margin-right: auto;
         background-color: #FFFFFF;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
         /* Make content scroll "under" banner */
         position: fixed;
@@ -72,7 +72,8 @@
 
     /********************* BUILDS *********************/
     .build-info {
-        flex-flow: column wrap; 
+        -webkit-flex-flow: column wrap;
+        flex-flow: column wrap;
     }
 
     .build-pic {
@@ -97,6 +98,7 @@
 
     /********************* PROJECTS *********************/
     .projWrapper {
+        -webkit-flex-flow: column wrap;
         flex-flow: column wrap; 
     }
 
@@ -125,18 +127,13 @@
     .alert-offset {
         margin-left: 5px;
     }
-    
-    .contact-links {
-        padding-left: 5px;
-        margin-bottom: 20px;
-    }
 
     .textarea-mod {
         resize: none;
     }
 
-    .contact-form {
-        max-width: 600px;
+    .contact-links {
+        justify-content: center;
     }
 
     /********************* FOOTER *********************/

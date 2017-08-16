@@ -18,6 +18,7 @@
     }
 
     .parent {
+        display: -webkit-flex;
         display: flex;
     }
 
@@ -32,7 +33,7 @@
         left: 0;
         width: 300px;
         height: 100%;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
     }
 
     .headerLink {
@@ -59,7 +60,7 @@
         text-align: right;
         padding-left: 0;
         padding-right: 10px;
-        padding-top: 40px;
+        padding-top: 20px;
         margin-top: 0;
         border-top: 1px solid rgba(0, 0, 0, 0.1);
     }
@@ -74,11 +75,13 @@
 
     /********************* CONTENT *********************/
     .content {
+        -webkit-flex: 1;
         flex: 1;
     }
 
     .content-text {
         padding: 10px 10px 10px 15px;
+        max-width: 1595px; /* max width = 1920, adjusted for margins and nav */
     }
 
     .section-header-size {
@@ -90,10 +93,12 @@
 
     /********************* BUILDS *********************/
     .build-info {
+        display: -webkit-flex;
         display: flex;
     }
 
     .build-specs {
+        -webkit-flex: 1;
         flex: 1;
         padding-right: 10px;
     }
@@ -110,10 +115,12 @@
 
     /********************* PROJECTS *********************/
     .projWrapper {
+        display: -webkit-flex;
         display: flex;
     }
 
     .projDesc {
+        -webkit-flex: 1;
         flex: 1;
         padding-right: 10px;
     }
@@ -139,12 +146,7 @@
     }
 
     .contact-links {
-        float: left;
-    }
-
-    .contact-form {
-        margin-left: 230px;
-        max-width: 600px;
+        margin-left: 20px;
     }
 
     /********************* PROMPT *********************/

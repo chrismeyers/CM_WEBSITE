@@ -2,6 +2,8 @@
     <div class="section-header section-header-size">Contact</div>
 
     <div class="content-text">
+        <h3 class="first-header">View my social media...</h3>
+        
         <div class="contact-links">
             <div class='contact-social'>
                 <a href='https://www.facebook.com/meyers42'
@@ -10,10 +12,8 @@
                    alt='Facebook' 
                    title='Facebook'>
                     <?php echo file_get_contents("images/v6/social/facebook-logo-contact.svg"); ?>
-                </a> 
+                </a>
             </div>
-            <span>/meyers42</span>
-            <br><br>
 
             <div class='contact-social'>
                 <a href='https://www.linkedin.com/in/chris-meyers'
@@ -24,8 +24,6 @@
                     <?php echo file_get_contents("images/v6/social/linkedin-logo-contact.svg"); ?>
                 </a> 
             </div>
-            <span>/chris-meyers</span>
-            <br><br>
 
             <div class='contact-social'>
                 <a href='https://github.com/chrismeyers' 
@@ -36,11 +34,11 @@
                     <?php echo file_get_contents("images/v6/social/mark-github-contact.svg"); ?>
                 </a> 
             </div>
-            <span>/chrismeyers</span>
-            <br><br>
         </div>
 
-         <div class="contact-form">
+        <h3>...or send me a message directly.</h3>
+
+        <div class="contact-form">
             <form action="scripts/php/email_form.php" id="contact-form" method="post" target="_top">
                 <?php
                 if (!empty($_GET['message'])) {
