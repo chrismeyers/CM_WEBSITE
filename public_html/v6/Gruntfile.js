@@ -24,6 +24,7 @@ module.exports = function(grunt) {
                     'scripts/js/header.js',
                     'scripts/js/jselements.js',
                     'scripts/js/prompt.js',
+                    'scripts/js/contact.js',
                     'scripts/vendor/fancybox-3.0/dist/jquery.fancybox.min.js'
                 ],
                 dest: 'dist/production.concat.js'

@@ -41,31 +41,18 @@
         <div class="contact-form">
             <form action="scripts/php/email_form.php" id="contact-form" method="post" target="_top">
                 <?php
-                if (!empty($_GET['message'])) {
-                    $message = $_GET['message'];
+                $textareaMsg = "";
+
+                if (!empty($_GET["message"])) {
+                    $message = $_GET["message"];
                     
-                    if ($message == "resume") {
-                        $_SESSION["usercomments"] = "I would like a copy of your résumé.";
-                        echo '<div class="errors alert-offset">';
+                    if($message == "resume") {
+                        $textareaMsg = "I would like a copy of your résumé.";
+                        echo '<div class="alert alert-offset">';
                         echo "<img class='contact-link-image' src='images/icons/info.svg'><div class='contact-alert-text'> To request a PDF version of my résumé, please enter your name, email and any additional information.</div>";
                         echo '</div>';
                     }
-                    else if(strcmp($message, "000") != 0) {
-                        $err_arr = str_split($message);
-                        
-                        echo '<div class="errors alert-offset">';
-                        if ($err_arr[0] == "1") {
-                            echo "<img class='contact-link-image' src='images/icons/alert.svg'><div class='contact-alert-text'> Name required.</div>";
-                        } 
-                        if ($err_arr[1] == "1") {
-                            echo "<img class='contact-link-image' src='images/icons/alert.svg'><div class='contact-alert-text'> Email Address format is incorrect.</div>";
-                        }
-                        if ($err_arr[2] == "1") {
-                            echo "<img class='contact-link-image' src='images/icons/alert.svg'><div class='contact-alert-text'> Email Addresses don't match.</div>";
-                        }
-                        echo '</div>';
-                    }
-                    else {
+                    else if($message == "success") {
                         echo '<div class="success alert-offset">';
                         echo "<img class='contact-link-image' src='images/icons/check.svg'><div class='contact-alert-text'> Your message has been sent. Thank you!</div>";
                         echo '</div>';
@@ -73,24 +60,16 @@
                 }
                 ?>
 
+                <div id="validation-errors" class="errors alert-offset"></div>
+
                 <div class="inputs">
                     <div class="name-input">
-                        <input id="name-input" class="inputbox-mod" type="text" placeholder="Name" name="name"<?php
-                        if (isset($_SESSION["name"])) {
-                            echo ' value="' . $_SESSION["name"] . '">';
-                        } else {
-                            echo '>';
-                        }
-                        ?></div>
+                        <input id="name-input" class="inputbox-mod" type="text" placeholder="Name" name="name">
+                    </div>
 
                     <div class="email-input">
-                        <input id="email1-input" class="inputbox-mod" type="email" placeholder="Primary Email" name="fromemail"<?php
-                        if (isset($_SESSION["fromemail"])) {
-                            echo ' value="' . $_SESSION["fromemail"] . '">';
-                        } else {
-                            echo '>';
-                        }
-                        ?></div>
+                        <input id="email1-input" class="inputbox-mod" type="email" placeholder="Primary Email" name="fromemail">
+                    </div>
                 
                     <div class="email-confirm-input">
                         <input id="email2-input" class="inputbox-mod" type="email" placeholder="Confirm Primary Email" name="confirmfromemail">
@@ -102,17 +81,11 @@
                 </div>
 
                 <div class="comments comment-input">
-                    <textarea class="textarea-mod" name="usercomments" placeholder="Message" maxlength="5000"><?php
-                        if (isset($_SESSION["usercomments"])) {
-                            echo $_SESSION["usercomments"] . '</textarea>';
-                        } else {
-                            echo '</textarea>';
-                        }
-                        ?>
+                    <textarea class="textarea-mod" name="usercomments" placeholder="Message" maxlength="5000"><?php echo $textareaMsg; ?></textarea>
                 </div>
 
                 <div class="buttons button-input">
-                    <button class="submit-button" type="submit">Send</button>
+                    <button class="submit-button" type="button" id="send-contact-form">Send</button>
                     <button class="submit-button reset-button" type="reset" id="reset-contact-form">Reset</button>                                  
                 </div>
             </form> 

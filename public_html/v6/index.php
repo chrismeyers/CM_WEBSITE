@@ -1,4 +1,3 @@
-<?php session_start(); ?>
 <!DOCTYPE html>
 <!-- HOSTED ON SITEGROUND -->
 <html lang="en">
@@ -12,7 +11,7 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="stylesheet" href="dist/production.min.1502926798.css" />
+        <link rel="stylesheet" href="dist/production.min.1502933733.css" />
 
     </head>
 
@@ -53,7 +52,7 @@
             </div>
         </div>
 
-        <script type="text/javascript" src="dist/production.min.1502926798.js"></script>
+        <script type="text/javascript" src="dist/production.min.1502933733.js"></script>
 
     </body>
 </html>

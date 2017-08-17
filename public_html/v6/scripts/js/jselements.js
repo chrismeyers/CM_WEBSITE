@@ -139,11 +139,6 @@ var jselements = function() {
         }
     });
 
-    $("#reset-contact-form").click(function() {
-        deleteCookie('PHPSESSID');
-        window.location = "index.php#contact";
-    });
-
     // Main
     $(document).ready(function() {
         handlePageNav();
@@ -156,6 +151,7 @@ var jselements = function() {
         showSection : showSection,
         getCurrentSection : getCurrentSection,
         getPageFlow : getPageFlow,
-        getSectionIndex : getSectionIndex
+        getSectionIndex : getSectionIndex,
+        deleteCookie : deleteCookie
     }
 }();

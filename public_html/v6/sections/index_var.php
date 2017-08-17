@@ -1,4 +1,3 @@
-<?php session_start(); ?>
 <!DOCTYPE html>
 <!-- HOSTED ON SITEGROUND -->
 <html lang="en">
@@ -75,6 +74,7 @@
         <script type="text/javascript" src="scripts/js/header.js"></script>
         <script type="text/javascript" src="scripts/js/jselements.js"></script>
         <script type="text/javascript" src="scripts/js/prompt.js"></script>
+        <script type="text/javascript" src="scripts/js/contact.js"></script>
         <!-- /build -->
 
 
