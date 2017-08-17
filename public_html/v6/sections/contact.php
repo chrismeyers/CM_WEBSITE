@@ -49,7 +49,7 @@
                     if($message == "resume") {
                         $textareaMsg = "I would like a copy of your résumé.";
                         echo '<div class="alert alert-offset">';
-                        echo "<img class='contact-link-image' src='images/icons/info.svg'><div class='contact-alert-text'> To request a PDF version of my résumé, please enter your name, email and any additional information.</div>";
+                        echo "<img class='contact-link-image' src='images/icons/info.svg?v=2'><div class='contact-alert-text'> To request a PDF version of my résumé, please enter your name, email and any additional information.</div>";
                         echo '</div>';
                     }
                     else if($message == "success") {
