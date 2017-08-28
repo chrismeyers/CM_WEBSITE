@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <title>Chris Meyers - Developer, Tech Enthusiast</title>
-        <link rel="shortcut icon" href="images/icons/cmlogocolor_nobackground_GREEN_small.ico">
+        <link rel="shortcut icon" href="images/v6/icons/favicon.ico">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="Author" content="Chris Meyers" />
         <meta name="google-site-verification" content="hhNNTAa4qOt8sxeukKOI1u9o1w07nP3oHaT-07KvbO0" />
