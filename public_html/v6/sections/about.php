@@ -10,7 +10,7 @@
             <li>Some of my professional interests include: Software Development, Web Development, and Computer Networking.</li>
             <li>Aside from programming, I have interests in: Computer Aided Drafting (CAD), 3D Modeling, and Photography.</li>
             <li>I enjoy <a href='#builds' class="fancytxt">building custom computers</a> as a hobby and have done so for myself and others over the past few years.</li>
-            <li>I am the owner of this <a data-fancybox="gallery_clark" href="images/v6/clark/DSC_0783-2.jpg" title="Clark the Corgi" class="fancytxt no-outline">majestic beast</a>.</li>
+            <li>I am the owner of this <a data-fancybox="gallery_clark" href="images/v6/clark/DSC_0813-2.jpg" title="Clark the Corgi" class="fancytxt no-outline">majestic beast</a>.</li>
         </ul>
 
         <span>Feel free to view my social media or contact me on the <a class="fancytxt" href="#contact">contact page</a>.</span>
