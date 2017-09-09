@@ -101,7 +101,7 @@ class ResumeParser {
           );
         }
         else {
-          $cleaned = substr($line, ($infoPattern + strlen($infoPattern) + 1));
+          $cleaned = substr($line, (strlen($infoPattern) + 1));
           $cleaned = $this->cleanString($cleaned);
 
           array_push($entry["info"], $cleaned);
@@ -132,7 +132,7 @@ class ResumeParser {
 
     foreach($this->items[$section] as $line) {
       if(strpos($line, $itemPattern) !== false) {
-        $cleaned = substr($line, ($itemPattern + strlen($itemPattern) + 1));
+        $cleaned = substr($line, (strlen($itemPattern) + 1));
         $cleaned = $this->cleanString($cleaned);
 
         array_push($skills, $cleaned);
