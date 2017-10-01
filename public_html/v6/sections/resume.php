@@ -56,6 +56,7 @@
             ?>
             <li><?php echo $skill; ?></li>
             <?php } ?>
-        </ul> 
+        </ul>
+        <span class="timestamp">Last updated on: <?php echo date("F d Y H:i:s", filemtime("sections/Meyers_Chris_Resume.tex")); ?></span> 
     </div>
 </div>

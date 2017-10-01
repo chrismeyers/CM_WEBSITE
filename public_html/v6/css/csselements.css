@@ -84,8 +84,9 @@
     }
 
     .content-text {
-        padding: 10px 10px 10px 15px;
-        max-width: 1595px; /* max width = 1920, adjusted for margins and nav */
+        padding: 10px 15px;
+        max-width: 1595px; /* Max width = 1920, adjusted for margins and nav. Does not account for scroll bars. */
+        margin: 0 auto; /* Centers content if width is greater than 1920px. */
     }
 
     .section-header-size {
@@ -151,6 +152,47 @@
 
     .contact-links {
         margin-left: 20px;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .contact-links > a {
+        margin-bottom: 10px;
+    }
+
+    .contact-methods {
+        display: -webkit-flex;
+        display: flex;
+        max-width: 1000px;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+
+    .contact-social-block {
+        -webkit-flex: 2 0 0;
+        flex: 2 0 0;
+        padding-right: 50px;
+    }
+
+    .contact-form-block {
+        -webkit-flex: 3 0 0;
+        flex: 3 0 0;
+        text-align: right;
+    }
+
+    .contact-social {
+        width: 100%;
+    }
+
+    .contact-social:hover > span {
+        color: #5bb75b;
+    }
+
+    .contact-social-words {
+        color: #000000;
+        margin-bottom: 20px;
+        position: relative;
+        top: -25px;
     }
 
     /********************* PROMPT *********************/

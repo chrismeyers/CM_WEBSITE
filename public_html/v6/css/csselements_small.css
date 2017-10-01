@@ -147,6 +147,15 @@
 
     .contact-links {
         justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .contact-social-words {
+        display: none;
+    }
+
+    .svg-spacer {
+        margin-right: 30px;
     }
 
     /********************* FOOTER *********************/

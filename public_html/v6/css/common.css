@@ -42,7 +42,7 @@ h2.top {
 }
 
 .fancytxt:hover {
-    background-color: rgba(91, 183, 91, 0.6);
+    background-color: rgba(91, 183, 91, 0.8);
     cursor: pointer;
 }
 
@@ -56,6 +56,12 @@ h2.top {
 
 .li-filled {
     list-style-type: disc;
+}
+
+.timestamp {
+    font-style: italic;
+    font-size: 0.75em;
+    color: #A9A9A9;
 }
 
 /********************* HEADER *********************/
@@ -417,7 +423,7 @@ h2.top {
 }
 
 .svg-spacer {
-    margin-right: 30px;
+    margin-right: 10px;
 }
 
 .contact-social:hover .svg-hover-contact {
@@ -438,7 +444,6 @@ h2.top {
 
 .contact-form {
     margin-top: 10px;
-    max-width: 600px;
 }
 
 /********************* FOOTER *********************/
