@@ -42,7 +42,7 @@ h2.top {
 }
 
 .fancytxt:hover {
-    background-color: rgba(91, 183, 91, 0.8);
+    background-color: rgba(91, 183, 91, 0.7);
     cursor: pointer;
 }
 
@@ -357,6 +357,12 @@ h2.top {
 .inputbox-mod:focus {
     outline: none;
     border-color: #5bb75b;
+}
+.inputbox-mod-error {
+    border-color: red;
+}
+.inputbox-mod-error:focus {
+    border-color: red;
 }
 .inputbox-mod::-ms-clear {
     width: 0px;
