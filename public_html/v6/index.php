@@ -11,7 +11,7 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="stylesheet" href="dist/production.min.1506993587.css" />
+        <link rel="stylesheet" href="dist/production.min.1507335931.css" />
 
     </head>
 
@@ -52,7 +52,7 @@
             </div>
         </div>
 
-        <script type="text/javascript" src="dist/production.min.1506993587.js"></script>
+        <script type="text/javascript" src="dist/production.min.1507335931.js"></script>
 
     </body>
 </html>

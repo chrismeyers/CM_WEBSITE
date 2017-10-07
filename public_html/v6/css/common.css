@@ -403,6 +403,7 @@ h2.top {
 .submit-button:hover {
     background-color:#5bb75b;
     color: #FFFFFF;
+    cursor: pointer;
 }.submit-button:active {
     position:relative;
     top:1px;
