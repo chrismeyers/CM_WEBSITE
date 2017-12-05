@@ -14,3 +14,4 @@ public_html/v6/projects/
 public_html/v6/db/*.txt
 test/
 node_modules/
+recaptcha_secret.json

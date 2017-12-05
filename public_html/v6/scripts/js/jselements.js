@@ -143,6 +143,10 @@ var jselements = function() {
     $(document).ready(function() {
         handlePageNav();
         colorIncorrectInputs();
+
+        // Expose the callback function that will be used as a URL parameter
+        // when loading the reCAPTCHA API. 
+        recaptchaContactOnLoad = contact.recaptchaContactOnLoad;
     });
 
     return {

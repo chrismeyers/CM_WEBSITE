@@ -52,6 +52,11 @@
                                 echo "<img class='contact-link-image' src='images/icons/check.svg'><div class='contact-alert-text'> Your message has been sent. Thank you!</div>";
                                 echo '</div>';
                             }
+                            else if($message == "recaptcha") {
+                                echo '<div class="errors alert-offset">';
+                                echo "<img class='contact-link-image' src='images/icons/alert.svg'><div class='contact-alert-text'> A reCAPTCHA error has occurred. Please try again.</div>";
+                                echo '</div>';
+                            }
                         }
                         ?>
 
@@ -77,6 +82,10 @@
 
                         <div class="comments comment-input">
                             <textarea class="textarea-mod" name="usercomments" placeholder="Message" maxlength="5000"><?php echo $textareaMsg; ?></textarea>
+                        </div>
+
+                        <div class="recaptcha-contact-wrap">
+                            <div id="recaptcha-contact"></div>
                         </div>
 
                         <div class="buttons button-input">

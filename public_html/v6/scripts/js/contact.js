@@ -8,6 +8,7 @@
 
 var contact = function() {
     var possibleErrors = ["#name-input", "#email1-input", "#email2-input"];
+    var contactRecaptcha = null;
 
     $("#send-contact-form").click(function() {
         var name = $(possibleErrors[0]).val();
@@ -30,6 +31,11 @@ var contact = function() {
             $(possibleErrors[2]).addClass("inputbox-mod-error");
         }
 
+        var recaptchaResponse = grecaptcha.getResponse(contactRecaptcha);
+        if(recaptchaResponse === "") {
+            errorHTML += "<img class='contact-link-image' src='images/icons/alert.svg'><div class='contact-alert-text'> Please prove you're not a robot by checking the reCAPTCHA box!</div>";
+        }
+
         if(errorHTML === "") {
             $("#contact-form").submit();
         }
@@ -43,6 +49,7 @@ var contact = function() {
         
         $("#validation-errors").html("");
         removeErrorClass();
+        grecaptcha.reset(contactRecaptcha);
     });
 
     var validateEmail = function(email) {
@@ -56,7 +63,13 @@ var contact = function() {
         });
     }
 
-    return {
+    var recaptchaContactOnLoad = function() {
+        contactRecaptcha = grecaptcha.render("recaptcha-contact", {
+            "sitekey": "6LepnzsUAAAAAKSz6HMOPeZCJMaugZFG2dS4tyUC"
+        });
+    }
 
+    return {
+        recaptchaContactOnLoad : recaptchaContactOnLoad
     }
 }();

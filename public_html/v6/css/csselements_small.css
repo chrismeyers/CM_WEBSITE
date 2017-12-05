@@ -158,6 +158,11 @@
         margin-right: 30px;
     }
 
+    .recaptcha-contact-wrap {
+        display: flex;
+        justify-content: flex-start;
+    }
+
     /********************* FOOTER *********************/
     .footer-bullets {
         margin-left: 5px;

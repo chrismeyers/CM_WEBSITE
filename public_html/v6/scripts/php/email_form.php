@@ -1,11 +1,13 @@
 <?php
 
+require_once "recaptcha_server_side.php";
+
 $name= filter_var($_POST["name"], FILTER_SANITIZE_STRING);
 $fromemail = filter_var($_POST["fromemail"], FILTER_SANITIZE_EMAIL);
 $usercomments = filter_var($_POST["usercomments"], FILTER_SANITIZE_STRING);
 
 if(isset($_POST["spam"]) && $_POST["spam"] == "") {
-    // Constuct and send email from form information if the spam field is blank.
+    // Construct and send email from form information if the spam field is blank.
     $to = "cm.02.93@gmail.com";
 
     $msg = "Name: " . $name . "\n";
@@ -19,7 +21,18 @@ if(isset($_POST["spam"]) && $_POST["spam"] == "") {
         $headers = "From: " . $fromemail;
     }
 
-    mail($to, $subject, $msg, $headers);
-}
+    $captchaData = array(
+        "secret" => RecaptchaServerSide::getSecretKey(),
+        "response" => $_POST["g-recaptcha-response"],
+        "remoteip" => $_SERVER["REMOTE_ADDR"]
+    );
+    $resp = RecaptchaServerSide::verify($captchaData);
 
-header("Location: ../../index.php?message=success#contact");
+    if($resp["success"]) {
+        mail($to, $subject, $msg, $headers);
+        header("Location: ../../index.php?message=success#contact");
+    }
+    else {
+        header("Location: ../../index.php?message=recaptcha#contact");
+    }
+}

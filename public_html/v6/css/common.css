@@ -415,6 +415,10 @@ h2.top {
     background-color: #d9534f;
 }
 
+.recaptcha-contact-wrap {
+    padding-bottom: 10px;
+}
+
 .antispam {
     display: none;
 }
