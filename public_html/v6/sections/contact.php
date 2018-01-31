@@ -3,36 +3,7 @@
 
     <div class="content-text">
         <div class="contact-methods">
-            <div class="contact-social-block">
-                <h2 class="first-header">Visit my social media...</h2>
-                
-                <div class="contact-links">
-                    <a href='https://www.facebook.com/meyers42' target='_blank' alt='Facebook' title='Facebook'>
-                        <div class='contact-social'>
-                            <?php echo file_get_contents("images/v6/social/facebook-logo-contact.svg"); ?>
-                            <span class="contact-social-words">/meyers42</span>
-                        </div>
-                    </a>
-
-                    <a href='https://www.linkedin.com/in/chris-meyers' target='_blank' alt='LinkedIn' title='LinkedIn'>
-                        <div class='contact-social'>
-                            <?php echo file_get_contents("images/v6/social/linkedin-logo-contact.svg"); ?>
-                            <span class="contact-social-words">/chris-meyers</span>
-                        </div>
-                    </a> 
-                
-                    <a href='https://github.com/chrismeyers' target='_blank' alt='GitHub' title='GitHub'>
-                        <div class='contact-social'>
-                            <?php echo file_get_contents("images/v6/social/mark-github-contact.svg"); ?>
-                            <span class="contact-social-words">/chrismeyers</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
             <div class="contact-form-block">
-                <h2 class="first-header">...or send me a message directly.</h2>
-
                 <div class="contact-form">
                     <form action="scripts/php/email_form.php" id="contact-form" method="post" target="_top">
                         <?php

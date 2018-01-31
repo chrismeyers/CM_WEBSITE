@@ -177,7 +177,6 @@
     .contact-form-block {
         -webkit-flex: 3 0 0;
         flex: 3 0 0;
-        text-align: right;
     }
 
     .contact-social {
@@ -193,11 +192,6 @@
         margin-bottom: 20px;
         position: relative;
         top: -25px;
-    }
-
-    .recaptcha-contact-wrap {
-        display: flex;
-        justify-content: flex-end;
     }
 
     /********************* PROMPT *********************/
