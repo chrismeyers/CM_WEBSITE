@@ -45,7 +45,7 @@ var contact = function() {
     });
 
     $("#reset-contact-form").click(function() {
-        window.location = "index.php#contact";
+        window.location = "/#contact";
         
         $("#validation-errors").html("");
         removeErrorClass();

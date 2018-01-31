@@ -30,9 +30,9 @@ if(isset($_POST["spam"]) && $_POST["spam"] == "") {
 
     if($resp["success"]) {
         mail($to, $subject, $msg, $headers);
-        header("Location: ../../index.php?message=success#contact");
+        header("Location: /?message=success#contact");
     }
     else {
-        header("Location: ../../index.php?message=recaptcha#contact");
+        header("Location: /?message=recaptcha#contact");
     }
 }

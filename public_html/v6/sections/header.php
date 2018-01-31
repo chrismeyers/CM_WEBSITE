@@ -3,7 +3,7 @@
     <!-- FULL MENU -->
     <div id="full-menu">
         <div class="side-nav-logo">
-            <a href="index.php" id="banner-small"><img src="images/logos/v2/meyers-logo-green.svg" alt="Chris Meyers. Developer, Tech enthusiast." class="banner-img" title="Home"></a>
+            <a href="/" id="banner-small"><img src="images/logos/v2/meyers-logo-green.svg" alt="Chris Meyers. Developer, Tech enthusiast." class="banner-img" title="Home"></a>
         </div>
         <ul class="side-nav-items">
             <li><a href="#about" class="sectionTitle-about headerLink">About</a></li>
@@ -20,7 +20,7 @@
 
     <!-- HAMBURGER MENU-->
     <div id="banner-icon">
-        <a href="index.php" id="banner-small"><img src="images/logos/v2/meyers-logo-green.svg" alt="Chris Meyers. Developer, Tech enthusiast." class="banner-img" title="Home"></a>
+        <a href="/" id="banner-small"><img src="images/logos/v2/meyers-logo-green.svg" alt="Chris Meyers. Developer, Tech enthusiast." class="banner-img" title="Home"></a>
 
         <div id="sectionTitle-menu">
             <ul id="menu-dropdown">
