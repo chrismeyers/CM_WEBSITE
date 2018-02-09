@@ -113,7 +113,7 @@ var jselements = function() {
         $(this).click(function(event) {
             var currentID = event.target.id;
 
-            if(currentID === "menu-click" || currentID === "menu-toggle") {
+            if(currentID === "menu-click" || currentID === "menu-click-box" || currentID === "menu-click-inner") {
                 // Toggles the menu upon clicking the menu button.
                 header.toggleHamburgerMenu();
             }

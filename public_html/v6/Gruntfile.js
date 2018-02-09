@@ -14,7 +14,8 @@ module.exports = function(grunt) {
                     'css/csselements_small.css',
                     'css/csselements_print.css',
                     'css/csselements_resume.css',
-                    'scripts/vendor/fancybox-3.0/dist/jquery.fancybox.min.css'
+                    'scripts/vendor/fancybox-3.0/dist/jquery.fancybox.min.css',
+                    'scripts/vendor/hamburgers/dist/hamburgers.min.css'
                 ],
                 dest: 'dist/production.concat.css'
             },

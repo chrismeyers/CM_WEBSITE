@@ -6,5 +6,7 @@ a place to present who I am and the technology skills I possess.  Aside from its
 (hence the domain extension), it also serves as a sandbox where I can experiment with new technologies.
 
 ## Credit
-The site uses the [fancyBox3](http://fancyapps.com/fancybox/3/) tool to make viewing images a lot more
-pleasant.  Aside from that, everything else has been handmade by myself (and a little help from Google).
++ The site uses a few open source tools/libraries:
+  * [jQuery](https://jquery.com/) to simplify animations and DOM traversal/manipulation.
+  * [fancyBox3](http://fancyapps.com/fancybox/3/) to make viewing images a lot more pleasant.
+  * [hamburgers](https://jonsuh.com/hamburgers/) to animate the hamburger menu icon.

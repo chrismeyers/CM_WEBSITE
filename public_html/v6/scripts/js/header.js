@@ -22,14 +22,16 @@ var header = function() {
     var hideHamburgerMenu = function() {
         open = false;
 
-        $("#menu-click").siblings('#menu-items').slideUp("fast");
+        $('#menu-items').slideUp("fast");
+        $("#menu-click").removeClass("is-active");
         $(".overlay").hide();
     }
 
     var toggleHamburgerMenu = function() {
         open = !open;
 
-        $('#menu-click').siblings('#menu-items').slideToggle("fast");
+        $("#menu-items").slideToggle("fast");
+        $("#menu-click").toggleClass("is-active");
         open ? $(".overlay").show() : $(".overlay").hide();
     }
 

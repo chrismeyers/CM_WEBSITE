@@ -22,12 +22,15 @@
     <div id="banner-icon">
         <a href="/" id="banner-small"><img src="images/logos/v2/meyers-logo-green.svg" alt="Chris Meyers. Developer, Tech enthusiast." class="banner-img" title="Home"></a>
 
+        <button id="menu-click" class="hamburger hamburger--collapse" type="button">
+            <span id="menu-click-box" class="hamburger-box">
+                <span id="menu-click-inner" class="hamburger-inner"></span>
+            </span>
+        </button>
+
         <div id="sectionTitle-menu">
             <ul id="menu-dropdown">
                 <li>
-                    <div id="menu-click">
-                        <img id="menu-toggle" src="images/v5/icons/three-bars.svg" title="Menu" alt="Menu">
-                    </div>
                     <ul id="menu-items">
                         <li class="sectionTitle-small-txt"><a href="#about" class="sectionTitle-about headerLink">About</a></li>                                
                         <li class="sectionTitle-small-txt"><a href="#resume" class="sectionTitle-resume headerLink">Résumé</a></li>

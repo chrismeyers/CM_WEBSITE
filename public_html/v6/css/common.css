@@ -101,12 +101,8 @@ h2.top {
 }
 
 #sectionTitle-menu {
-    float: right;
-    width: 60px;
-    height: 60px;
     background-color: #FFFFFF;
     display: table-cell;
-    margin-top: 0px; /* 2px with border */
     color: white;
     font-size: x-large;
     font-family: Verdana, Geneva, sans-serif;
@@ -167,6 +163,7 @@ h2.top {
 
 #menu-click {
     height: 60px;
+    outline: none;
 }
 
 /********************* CONTENT *********************/

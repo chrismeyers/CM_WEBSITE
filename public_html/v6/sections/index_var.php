@@ -22,6 +22,7 @@
         <link rel="stylesheet" href="css/csselements_resume.css" />
 
         <link rel="stylesheet" href="scripts/vendor/fancybox-3.0/dist/jquery.fancybox.min.css" />
+        <link rel="stylesheet" href="scripts/vendor/hamburgers/dist/hamburgers.min.css" />
         <!-- /build -->
 
 
