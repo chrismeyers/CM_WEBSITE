@@ -257,7 +257,8 @@
     }
 
     /********************* FOOTER *********************/
-    .footer-content {
+    .footer-content,
+    .footer-spacer {
         display: none;
     }
 }

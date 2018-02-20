@@ -51,6 +51,7 @@
 <!-- CONTACT SECTION -->
                 <?php include 'sections/contact.php'; ?>
 
+                <div class="footer-spacer"></div>
                 <div class="footer-content">
 <!-- FOOTER -->
                     <?php include 'sections/footer.php'; ?>
