@@ -36,6 +36,18 @@
         </div>
 
         <div class='footer-bullets'>&bull;</div>
+
+        <div class='footer-social'>
+            <a href='https://medium.com/@chris.meyers' 
+               target='_blank'
+               style='text-decoration: none;'
+               alt='Medium'
+               title='Medium'>
+                <?php echo file_get_contents("images/v6/social/medium_logo.svg"); ?>
+            </a> 
+        </div>
+
+        <div class='footer-bullets'>&bull;</div>
         
         <div class='footer-resume'>
             <a href="?message=resume#contact" class="fancytxt">
