@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Feb 22, 2018 at 08:39 PM
+-- Generation Time: Feb 25, 2018 at 12:20 PM
 -- Server version: 5.6.35
 -- PHP Version: 7.1.8
 
@@ -124,7 +124,7 @@ CREATE TABLE IF NOT EXISTS `projects_images` (
   `title` text NOT NULL,
   `orient` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `projects_images`
@@ -152,4 +152,9 @@ INSERT INTO `projects_images` (`id`, `abbrev`, `url`, `title`, `orient`) VALUES
 (22, 'bms', 'images/project_screenshots/bms/bms_plot.png', 'The final plot.', 'square'),
 (23, 'lol_status', 'images/project_screenshots/lol_status/gui.png', 'The Java GUI that displays the current status of services in a specified region.', 'square'),
 (24, 'lol_status', 'images/project_screenshots/lol_status/polling.png', 'Input form that allows users to specify how often the GUI updates.', 'square'),
-(25, 'lol_status', 'images/project_screenshots/lol_status/tray.png', 'Notification area functionality.', 'square');
+(25, 'lol_status', 'images/project_screenshots/lol_status/tray.png', 'Notification area functionality.', 'square'),
+(26, 'trump', 'images/v6/project_screenshots/trumppet/trumppet_landing.jpg', 'Trumppet website landing page', 'land'),
+(27, 'trump', 'images/v6/project_screenshots/trumppet/trumppet_playback.jpg', 'Playback screen that displays a list of  previous tweets.', 'square'),
+(28, 'trump', 'images/v6/project_screenshots/trumppet/trumppet_freq.jpg', 'Displays a list of unique words and the number of times they\'re used throughout the tweet database.', 'square'),
+(29, 'trump', 'images/v6/project_screenshots/trumppet/trumppet_search.jpg', 'Searches the tweet database for a specified word or phrase.', 'square'),
+(30, 'trump', 'images/v6/project_screenshots/trumppet/trumppet_freestyle.jpg', 'Generates a Trumpian-style tweet: Sentance. Sentance. Exclamation! (NOTE: these tweets are not real)', 'square');
