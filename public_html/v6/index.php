@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- HOSTED ON SITEGROUND -->
 <html lang="en">
     <head>
         <title>Chris Meyers - Developer, Tech Enthusiast</title>

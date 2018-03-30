@@ -1,0 +1,3 @@
+# These files will be generated on the server in the post-receive hook
+*
+!.gitignore
