@@ -14,7 +14,7 @@ if(isset($_POST["spam"]) && $_POST["spam"] == "") {
     $msg .= "Email: " . $fromemail . "\n";
     $msg .= "Comments:\n" . $usercomments;
 
-    $subject = "An Email from " . $name . ", via chrismeyers.info [SITEGROUND]";
+    $subject = "An Email from " . $name . ", via chrismeyers.info [LINODE]";
     
     $headers = "From: " . $to;
     if($fromemail && !preg_match("/[\r\n]/", $fromemail)) {
