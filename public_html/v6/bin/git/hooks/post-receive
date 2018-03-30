@@ -13,8 +13,8 @@ do
     if [[ $ref =~ .*/master$ ]];
     then
         echo "Deploying $ref branch to production..."
-        git --work-tree=/home/chris/php/CM_WEBSITE --git-dir=/home/chris/repo/CM_WEBSITE.git checkout -f
-        cd /home/chris/php/CM_WEBSITE/public_html/v6
+        git --work-tree=/home/chris/www/CM_WEBSITE --git-dir=/home/chris/repo/CM_WEBSITE.git checkout -f
+        cd /home/chris/www/CM_WEBSITE/public_html/v6
         /usr/bin/npm install
         /usr/bin/grunt prod
     else
