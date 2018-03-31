@@ -1,5 +1,5 @@
 # CM_WEBSITE
-This is the codebase for my personal website currently located at <http://chrismeyers.info/>
+This is the codebase for my personal website currently located at <https://chrismeyers.info>
 
 This website was my first attempt at a web project started back in Fall 2013.  It primarily serves as 
 a place to present who I am and the technology skills I possess.  Aside from its informational purpose
