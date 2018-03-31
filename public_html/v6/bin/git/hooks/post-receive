@@ -17,7 +17,6 @@ do
         cd /home/chris/www/CM_WEBSITE/public_html/v6
         /usr/bin/npm install
         /usr/bin/grunt prod
-        cp /home/chris/db/chrismeyers.info/login_config.txt /home/chris/www/CM_WEBSITE/public_html/v6/db
     else
         echo "Ref $ref successfully received.  Doing nothing: only the master branch may be deployed on this server."
     fi
