@@ -10,7 +10,20 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="stylesheet" href="dist/production.min.1519086089.css" />
+        <!-- build:template:dist
+        @@cssMinFile
+        /build -->
+        <!-- build:remove:dist -->
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/csselements.css" />
+        <link rel="stylesheet" href="css/csselements_small.css" />
+        <link rel="stylesheet" href="css/csselements_print.css" />
+        <link rel="stylesheet" href="css/csselements_resume.css" />
+
+        <link rel="stylesheet" href="scripts/vendor/fancybox-3.0/dist/jquery.fancybox.min.css" />
+        <link rel="stylesheet" href="scripts/vendor/hamburgers/dist/hamburgers.min.css" />
+        <!-- /build -->
+
 
     </head>
 
@@ -52,7 +65,19 @@
             </div>
         </div>
 
-        <script type="text/javascript" src="dist/production.min.1519086089.js"></script>
+        <!-- build:template:dist
+        @@jsMinFile
+        /build -->
+        <!-- build:remove:dist -->
+        <script type="text/javascript" src="scripts/vendor/jquery-2.2.4.min.js"></script>
+        <script type="text/javascript" src="scripts/vendor/fancybox-3.0/dist/jquery.fancybox.min.js"></script>
+
+        <script type="text/javascript" src="scripts/js/header.js"></script>
+        <script type="text/javascript" src="scripts/js/jselements.js"></script>
+        <script type="text/javascript" src="scripts/js/prompt.js"></script>
+        <script type="text/javascript" src="scripts/js/contact.js"></script>
+        <!-- /build -->
+
 
         <script src="https://www.google.com/recaptcha/api.js?onload=recaptchaContactOnLoad&render=explicit" async defer></script>
 
