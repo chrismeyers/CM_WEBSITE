@@ -42,7 +42,7 @@ h2.top {
 }
 
 .fancytxt:hover {
-    background-color: rgba(91, 183, 91, 0.7);
+    color: rgb(91, 183, 91);
     cursor: pointer;
 }
 
