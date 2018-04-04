@@ -5,6 +5,7 @@
         <div class="contact-methods">
             <div class="contact-form-block">
                 <div class="contact-form">
+                    <h3>Have any questions or comments? Send me a message:</h3>
                     <form action="scripts/php/email_form.php" id="contact-form" method="post" target="_top">
                         <?php
                         $textareaMsg = "";
