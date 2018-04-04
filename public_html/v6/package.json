@@ -1,6 +1,9 @@
 {
-  "name": "chrismeyers.info",
-  "version": "5.0.0",
+  "name": "CM_WEBSITE",
+  "version": "6.0.0",
+  "description": "Code for my personal website.",
+  "repository": "https://github.com/chrismeyers/CM_WEBSITE",
+  "homepage": "https://chrismeyers.info",
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-clean": "^1.1.0",
@@ -11,5 +14,6 @@
     "grunt-processhtml": "^0.4.0",
     "grunt-replace": "^1.0.1",
     "time-grunt": "^1.4.0"
-  }
+  },
+  "license": "MIT"
 }
