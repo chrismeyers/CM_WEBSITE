@@ -17,7 +17,7 @@
             <ul>
                 <li>Photography</li>
                 <li>Reading</li>
-                <li><a href='#builds' class="fancytxt">Building custom computers</a></li>
+                <li><a href="#builds" class="fancytxt">Building custom computers</a></li>
                 <li>Playing video games</li>
             </ul>
             <li>I am the owner of this <a data-fancybox="gallery_clark" href="images/v6/clark/DSC_1564-6.jpg" title="Clark the Corgi" class="fancytxt no-outline">majestic beast</a>.</li>
@@ -26,5 +26,7 @@
         <span>I have spent my entire professional career striving to write clean, modular, and maintainable code. I am always up for the challenge of learning new
         languages and frameworks. If a language or framework that I'm unfamiliar with is the best choice for a project, I have no hesitation in breaking away from
         my comfort zones to explore new options. My primary goal is to create innovative and usable applications that solve problems.</span>
+
+        <p>I am currently available for freelance work. <a href="#contact" class="fancytxt">Send me a message</a> if you have any questions, comments, or would like to work together on a project.</p>
     </div>
 </div>
