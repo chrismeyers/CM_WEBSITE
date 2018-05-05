@@ -80,7 +80,7 @@
 
     .content {
         top: 60px;
-        margin: 60px auto 60px;
+        margin: 60px auto auto;
     }
 
     /********************* BUILDS *********************/
