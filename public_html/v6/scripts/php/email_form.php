@@ -8,7 +8,7 @@ $usercomments = filter_var($_POST["usercomments"], FILTER_SANITIZE_STRING);
 
 if(isset($_POST["spam"]) && $_POST["spam"] == "") {
     // Construct and send email from form information if the spam field is blank.
-    $to = "cm.02.93@gmail.com";
+    $to = "chris@chrismeyers.info";
 
     $msg = "Name: " . $name . "\n";
     $msg .= "Email: " . $fromemail . "\n";
