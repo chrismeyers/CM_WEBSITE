@@ -6,10 +6,10 @@
 
         <ul>
             <li>I studied Computer Science at <a class="fancytxt" href="http://www.rowan.edu/" target="_blank">Rowan University</a> in Glassboro, NJ and earned a Bachelor of Science in Computer Science.</li>
-            <li>Currently, I am employed as a Software Engineer at <a class="fancytxt" href="https://www.mcgstrategic.com" target="_blank">MCG Strategic</a>.</li>
+            <li>Currently, I am employed as a Software Engineer at <a class="fancytxt" href="http://asrcfederal.com/afms" target="_blank">ASRC Federal Mission Solutions</a>.</li>
             <li>Some of my professional interests include:
                 <ul>
-                    <li>Web Development, Software Development, Computer Networking</li>
+                    <li>Software Development, Web Development, Computer Networking</li>
                 </ul>
             </li>
             <li>My hobbies include:
@@ -20,7 +20,7 @@
             <li>I am the owner of this <a data-fancybox="gallery_clark" href="images/v6/clark/DSC_1564-6.jpg" title="Clark the Corgi" class="fancytxt no-outline">majestic beast</a>.</li>
         </ul>
 
-        <p>I've gained experience with the following programming languages and frameworks:</p>
+        <p>Over the years, I've gained experience with the following programming languages and frameworks:</p>
 
         <ul>
             <li>Desktop and CLI applications:
