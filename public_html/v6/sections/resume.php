@@ -19,15 +19,17 @@
         <ul>
             <li class="left-column company"><?php echo $job["firstLine"][0]; ?></li>
             <li class="right-column location"><?php echo $job["firstLine"][1]; ?></li>
-            <li class="left-column sub-left-column job-title"><?php echo $job["secondLine"][0]; ?></li>
-            <li class="right-column tenure"><?php echo $job["secondLine"][1]; ?></li>
+            <?php foreach($job["secondLine"] as $i=>$secondLine) { ?>
+            <li class="left-column sub-left-column job-title <?= ($i > 0) ? 'same-company-spacing' : '' ?>"><?php echo $secondLine[0]; ?></li>
+            <li class="right-column tenure <?= ($i > 0) ? 'same-company-spacing' : '' ?>"><?php echo $secondLine[1]; ?></li>
             <li class="remove-bullets">
                 <ul class="more-info">
-                    <?php foreach($job["info"] as $info) { ?>
+                    <?php foreach($job["info"][$i] as $info) { ?>
                     <li class="more-info"><?php echo $info; ?></li>
                     <?php } ?>
                 </ul>
             </li>
+            <?php } ?>
         </ul>
         <?php } ?>
 
@@ -41,8 +43,10 @@
         <ul>
             <li class="left-column school"><?php echo $school["firstLine"][0]; ?></li>
             <li class="right-column location"><?php echo $school["firstLine"][1]; ?></li>
-            <li class="left-column sub-left-column degree"><?php echo $school["secondLine"][0]; ?></li>
-            <li class="right-column tenure"><?php echo $school["secondLine"][1]; ?></li>
+            <?php foreach($school["secondLine"] as $i=>$secondLine) { ?>
+            <li class="left-column sub-left-column degree"><?php echo $secondLine[0]; ?></li>
+            <li class="right-column tenure"><?php echo $secondLine[1]; ?></li>
+            <?php } ?>
         </ul>
         <?php } ?>
 

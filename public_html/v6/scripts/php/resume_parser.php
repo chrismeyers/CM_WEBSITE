@@ -26,7 +26,7 @@ class ResumeParser {
         }
         else if($section !== "" && strpos($line, $end) === false) { // Between $begin and $end
           if(array_key_exists($section, $this->items) && $line !== "") {
-            array_push($this->items[$section], $line);
+            $this->items[$section][] = $line;
           }
         }
         else { // Between $end and $begin
@@ -66,6 +66,10 @@ class ResumeParser {
     $secondLinePattern = '{\emph{';
     $endPattern = '}}';
     $infoPattern = '\item';
+    $sameCompanyPattern = '% Same Company';
+
+    $currentSecondLine = array();
+    $currentInfo = array();
 
     foreach($this->items[$section] as $i=>$line) {
       if(strpos($line, $firstLinePattern) !== false) {
@@ -76,7 +80,7 @@ class ResumeParser {
         $cleaned = str_replace($endPattern, "", $cleaned);
         $cleaned = $this->cleanString($cleaned);
 
-        array_push($entry["firstLine"], $cleaned);
+        $entry["firstLine"][] = $cleaned;
       }
       else if(strpos($line, $secondLinePattern) !== false) {
         $beginPatternIndex = strpos($line, $secondLinePattern) + strlen($secondLinePattern);
@@ -86,31 +90,45 @@ class ResumeParser {
         $cleaned = str_replace($endPattern, "", $cleaned);
         $cleaned = $this->cleanString($cleaned);
 
-        array_push($entry["secondLine"], $cleaned);
+        $currentSecondLine[] = $cleaned;
+      }
+      else if(strpos($line, $sameCompanyPattern) !== false) {
+        $entry["secondLine"][] = $currentSecondLine;
+        $entry["info"][] = $currentInfo;
+
+        $currentSecondLine = array();
+        $currentInfo = array();
       }
       else if(strpos($line, $infoPattern) !== false) {
         if($i == 0) {
           continue;
         }
         else if(strlen($line) == strlen($infoPattern)) { // Beginning of new entry (blank $infoPattern line)
-          array_push($entries, $entry);
+          $entry["secondLine"][] = $currentSecondLine;
+          $entry["info"][] = $currentInfo;
+          $entries[] = $entry;
+
           $entry = array(
             "firstLine" => array(),
             "secondLine" => array(),
             "info" => array()
           );
+          $currentSecondLine = array();
+          $currentInfo = array();
         }
         else {
           $cleaned = substr($line, (strlen($infoPattern) + 1));
           $cleaned = $this->cleanString($cleaned);
 
-          array_push($entry["info"], $cleaned);
+          $currentInfo[] = $cleaned;
         }
       }
     }
 
-    // The loop is exited before the last item can be added. Add it here.
-    array_push($entries, $entry);
+    // The loop exits before the last item can be added. Add it here.
+    $entry["secondLine"][] = $currentSecondLine;
+    $entry["info"][] = $currentInfo;
+    $entries[] = $entry;
 
     return $entries;
   }
@@ -135,7 +153,7 @@ class ResumeParser {
         $cleaned = substr($line, (strlen($itemPattern) + 1));
         $cleaned = $this->cleanString($cleaned);
 
-        array_push($skills, $cleaned);
+        $skills[] = $cleaned;
       }
     }
 
