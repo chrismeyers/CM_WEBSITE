@@ -114,13 +114,13 @@ h2.top {
 
 .sectionTitle-small-txt {
     vertical-align: middle;
-    line-height: 45px;
+    line-height: 50px;
     text-align: center;
     border-bottom: 1px solid #DCDCDC;
 }
 .sectionTitle-small-txt-last {
     vertical-align: middle;
-    line-height: 45px;
+    line-height: 50px;
     text-align: center;
 }
 
@@ -169,7 +169,6 @@ h2.top {
 /********************* CONTENT *********************/
 .section-header {
     text-align: center;
-    vertical-align: middle;
     font-family: 'Open Sans', sans-serif;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
