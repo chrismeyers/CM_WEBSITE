@@ -68,7 +68,7 @@ h2.top {
 .headerLink {
     color: #000000;
     text-decoration: none;
-    font-family: Verdana, Geneva, sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #banner {
@@ -105,7 +105,7 @@ h2.top {
     display: table-cell;
     color: white;
     font-size: x-large;
-    font-family: Verdana, Geneva, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     text-align: center;
 }
 #sectionTitle-menu:hover {
@@ -170,13 +170,13 @@ h2.top {
 .section-header {
     text-align: center;
     vertical-align: middle;
-    font-family: Verdana, Geneva, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .content {
     -webkit-margin-bottom-collapse: separate; /* Fixes margin-bottom for non-chrome browsers */
-    font-family: Verdana, Geneva, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 }
 
@@ -339,7 +339,7 @@ h2.top {
 
 .input-mod {
     height: 25px;
-    font-family: Verdana, Geneva, sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .inputbox-mod {
@@ -349,7 +349,7 @@ h2.top {
     padding-right: 5px;
     font-size: 13px;
     border: 1px solid #000000;
-    font-family: Verdana, Geneva, sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 .inputbox-mod:focus {
     outline: none;
@@ -373,7 +373,7 @@ h2.top {
     padding-right: 5px;
     font-size: 13px;
     border: 1px solid #000000;
-    font-family: Verdana, Geneva, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     resize: vertical;
     overflow: auto;
 }
@@ -389,7 +389,7 @@ h2.top {
     text-indent:0;
     border:1px solid #000000;
     display:inline-block;
-    font-family: Verdana, Geneva, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     height:40px;
     line-height:30px;
@@ -457,7 +457,7 @@ h2.top {
 /********************* FOOTER *********************/
 #footer {
     font-size: 13px; 
-    font-family: Verdana, Geneva, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     bottom: 0;
     height: auto;
     left: 0;
