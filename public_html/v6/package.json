@@ -5,7 +5,7 @@
   "repository": "https://github.com/chrismeyers/CM_WEBSITE",
   "homepage": "https://chrismeyers.info",
   "devDependencies": {
-    "grunt": "~0.4.1",
+    "grunt": "^1.0.3",
     "grunt-contrib-clean": "^1.1.0",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-cssmin": "^1.0.1",
