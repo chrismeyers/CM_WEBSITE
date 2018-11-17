@@ -25,12 +25,12 @@
         <ul>
             <li>Desktop and CLI applications:
                 <ul>
-                    <li>C++, Python, Java, C#</li>
+                    <li>C++, Java, Python, C#</li>
                 </ul>
             </li>
             <li>Websites, Web Apps, and APIs:
                 <ul>
-                    <li>LAMP stack (Linux, Apache, MySQL, PHP), Flask (Python web framework), JavaScript (jQuery, AngularJS, Node.js, React)</li>
+                    <li>LAMP stack (Linux, Apache, MySQL, PHP), Flask (Python framework), Aqueduct (Dart framework), JavaScript (jQuery, Angular, Node, Vue)</li>
                 </ul>
             </li>
         </ul>
