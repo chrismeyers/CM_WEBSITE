@@ -1,6 +1,6 @@
 # CM_WEBSITE
-This is the legacy codebase for my personal website.  The code for the current production site can be
-found [here](https://github.com/chrismeyers/chrismeyers.info).
+**This is the legacy codebase for my personal website.  The code for the current production site can be
+found [here](https://github.com/chrismeyers/chrismeyers.info).**
 
 This website was my first attempt at a web project started back in Fall 2013.  It primarily serves as 
 a place to present who I am and the technology skills I possess.  Aside from its informational purpose
